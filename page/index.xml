@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on まろぴよの部屋</title>
+        <link>https://maropiyooo.com/page/</link>
+        <description>Recent content in Pages on まろぴよの部屋</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja</language>
+        <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyooo.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>このサイトについて</title>
+        <link>https://maropiyooo.com/page/about/</link>
+        <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyooo.com/page/about/</guid>
+        <description>&lt;p&gt;開発時に詰まったことの備忘録や日常の出来事について書いていこう思います。&lt;/p&gt;
+&lt;h2 id=&#34;免責事項&#34;&gt;免責事項&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;当サイトは個人のブログです。このブログに示されている見解や意見は個人的なものであり、所属組織の見解や意見を表明するものではありません。&lt;/li&gt;
+&lt;li&gt;当サイトのコンテンツは情報提供のみを目的としています。公開情報を踏まえて正確な情報を掲載するよう努めますが、その内容の完全性や正確性、有用性、安全性、最新性について一切保証しません。&lt;/li&gt;
+&lt;li&gt;添付文章やリンク先などを含む本サイトの内容は作成時点でのものであり、予告なく変更される場合があります。&lt;/li&gt;
+&lt;li&gt;本サイトの利用に起因した事故や損害、不利益について、いかなる責任も負いません。あらかじめご了承ください&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://maropiyooo.com/page/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyooo.com/page/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://maropiyooo.com/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyooo.com/page/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
