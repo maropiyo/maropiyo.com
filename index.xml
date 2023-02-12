@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>まろぴよの部屋</title>
-        <link>https://maropiyooo.com/</link>
+        <link>https://maropiyo.com/</link>
         <description>Recent content on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sun, 12 Feb 2023 04:43:39 +0900</lastBuildDate><atom:link href="https://maropiyooo.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Feb 2023 04:43:39 +0900</lastBuildDate><atom:link href="https://maropiyo.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>初めての投稿</title>
-        <link>https://maropiyooo.com/post/first-post/</link>
+        <link>https://maropiyo.com/post/first-post/</link>
         <pubDate>Sun, 12 Feb 2023 04:43:39 +0900</pubDate>
         
-        <guid>https://maropiyooo.com/post/first-post/</guid>
+        <guid>https://maropiyo.com/post/first-post/</guid>
         <description>&lt;p&gt;ブログを開設しました！&lt;/p&gt;
 &lt;p&gt;開発の備忘録や日常での出来事について、不定期に投稿していこうと思います。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>このサイトについて</title>
-        <link>https://maropiyooo.com/page/about/</link>
+        <link>https://maropiyo.com/page/about/</link>
         <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://maropiyooo.com/page/about/</guid>
+        <guid>https://maropiyo.com/page/about/</guid>
         <description>&lt;p&gt;開発時に詰まったことの備忘録や日常の出来事について書いていこう思います。&lt;/p&gt;
 &lt;h2 id=&#34;免責事項&#34;&gt;免責事項&lt;/h2&gt;
 &lt;ul&gt;
@@ -34,18 +34,18 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>https://maropiyooo.com/page/archives/</link>
+        <link>https://maropiyo.com/page/archives/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://maropiyooo.com/page/archives/</guid>
+        <guid>https://maropiyo.com/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>https://maropiyooo.com/page/search/</link>
+        <link>https://maropiyo.com/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://maropiyooo.com/page/search/</guid>
+        <guid>https://maropiyo.com/page/search/</guid>
         <description></description>
         </item>
         
