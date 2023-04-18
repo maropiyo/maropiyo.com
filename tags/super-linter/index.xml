@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on まろぴよの部屋</title>
-        <link>https://maropiyo.com/post/</link>
-        <description>Recent content in Posts on まろぴよの部屋</description>
+        <title>Super Linter on まろぴよの部屋</title>
+        <link>https://maropiyo.com/tags/super-linter/</link>
+        <description>Recent content in Super Linter on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Wed, 19 Apr 2023 01:35:25 +0900</lastBuildDate><atom:link href="https://maropiyo.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 19 Apr 2023 01:35:25 +0900</lastBuildDate><atom:link href="https://maropiyo.com/tags/super-linter/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>GitHub ActionsとSuper Linterでお手軽にコード品質を向上させよう！</title>
         <link>https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/</link>
         <pubDate>Wed, 19 Apr 2023 01:35:25 +0900</pubDate>
@@ -67,16 +67,6 @@ jobs:
     &gt;Super-Linterの公式ドキュメント&lt;/a&gt;を参照してください。&lt;/p&gt;
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 &lt;p&gt;これらの設定をするだけで、プロジェクトのコードが綺麗に保たれるのでぜひ活用してみてください！&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>初めての投稿</title>
-        <link>https://maropiyo.com/post/first-post/</link>
-        <pubDate>Sun, 12 Feb 2023 04:43:39 +0900</pubDate>
-        
-        <guid>https://maropiyo.com/post/first-post/</guid>
-        <description>&lt;p&gt;ブログを開設しました！&lt;/p&gt;
-&lt;p&gt;開発の備忘録や日常での出来事について、不定期に投稿していこうと思います！&lt;/p&gt;
 </description>
         </item>
         

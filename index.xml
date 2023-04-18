@@ -6,7 +6,70 @@
         <description>Recent content on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 19 Apr 2023 01:35:25 +0900</lastBuildDate><atom:link href="https://maropiyo.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>GitHub ActionsとSuper Linterでお手軽にコード品質を向上させよう！</title>
+        <link>https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/</link>
+        <pubDate>Wed, 19 Apr 2023 01:35:25 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/</guid>
+        <description>&lt;p&gt;GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォーマットに対応した静的解析ツールをまとめたもので、GitHubが提供しています。これにより、コードの品質やスタイルを維持し続けることができます！&lt;/p&gt;
+&lt;h2 id=&#34;super-linterの料金&#34;&gt;Super-Linterの料金&lt;/h2&gt;
+&lt;p&gt;Super-Linterは無料で利用できますが、GitHub Actionsの実行時間には制限があります。プライベートリポジトリでは、無料プランの場合、月に2000分の実行時間が付与されます。パブリックリポジトリの場合、無料で無制限の実行時間が利用できます。&lt;/p&gt;
+&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHubアカウントを持っていること&lt;/li&gt;
+&lt;li&gt;Gitリポジトリが作成済みであること&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
+&lt;h3 id=&#34;1-githubリポジトリにアクセス&#34;&gt;1. GitHubリポジトリにアクセス&lt;/h3&gt;
+&lt;p&gt;対象のGitHubリポジトリにアクセスし、ページ上部のタブから「Actions」をクリックします。&lt;/p&gt;
+&lt;h3 id=&#34;2-search-workflowsを使ってsuper-linterを検索&#34;&gt;2. 「Search workflows」を使ってSuper-Linterを検索&lt;/h3&gt;
+&lt;p&gt;「Actions」ページ内の「Search workflows」検索ボックスに「Super-Linter」と入力して検索します。検索結果に「Super-Linter」が表示されるので、「configure」クリックします。&lt;/p&gt;
+&lt;h3 id=&#34;3-ワークフロー設定ファイルをコミット&#34;&gt;3. ワークフロー設定ファイルをコミット&lt;/h3&gt;
+&lt;p&gt;.github/workflows/super_linter.ymlファイルが作成され、以下のような内容が記載されていると思います。ワークフローの内容を必要があれば修正し、コミットします。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# This workflow executes several linters on changed files based on languages used in your code base whenever
+# you push a code or open a pull request.
+#
+# You can adjust the behavior by modifying this file.
+# For more information, see:
+# https://github.com/github/super-linter
+name: Lint Code Base
+
+on:
+  push:
+    branches: [ &amp;quot;main&amp;quot; ]
+  pull_request:
+    branches: [ &amp;quot;main&amp;quot; ]
+jobs:
+  run-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: &amp;quot;main&amp;quot;
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;この設定ファイルでは、mainブランチへのpushやプルリクエスト時にSuper-Linterが実行されるように設定されています。また、ubuntu-latestを実行環境として指定しています。&lt;/p&gt;
+&lt;h3 id=&#34;5-ワークフローの実行確認&#34;&gt;5. ワークフローの実行確認&lt;/h3&gt;
+&lt;p&gt;GitHubリポジトリのページにアクセスし、「Actions」タブをクリックして、Super-Linterが実行されていることを確認してください。mainブランチへのpushやプルリクエストが行われると、Super-Linterが自動的に実行されるようになります。ワークフローが正常に実行されたかどうかは、「Actions」タブ内で確認できます。&lt;/p&gt;
+&lt;h3 id=&#34;6-結果の確認&#34;&gt;6. 結果の確認&lt;/h3&gt;
+&lt;p&gt;ワークフロー実行後、Super-Linterによる静的解析の結果が表示されます。エラーや警告がある場合は、詳細をクリックして確認し、問題のあるコードを修正してください。修正後、再度プッシュするとSuper-Linterが再度実行され、問題が解消されたかどうかを確認できます。&lt;/p&gt;
+&lt;h3 id=&#34;7-オプション設定&#34;&gt;7. オプション設定&lt;/h3&gt;
+&lt;p&gt;必要に応じて、Super-Linterの設定をカスタマイズできます。例えば、特定の言語のルールを無効にしたり、カスタムルールを追加したりすることができます。詳細は&lt;a class=&#34;link&#34; href=&#34;https://github.com/github/super-linter/blob/main/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Super-Linterの公式ドキュメント&lt;/a&gt;を参照してください。&lt;/p&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;これらの設定をするだけで、プロジェクトのコードが綺麗に保たれるのでぜひ活用してみてください！&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title></title>
         <link>https://maropiyo.com/page/privacy/</link>
         <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
