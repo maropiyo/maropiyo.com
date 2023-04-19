@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォ'>
-<title>GitHub ActionsとSuper Linterでお手軽にコード品質を向上させよう！</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='はじめに この記事では、GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Li'>
+<title>【Github Actions】GitHub ActionsとSuper-Linterで手軽にコードの品質を保つ</title>
 
 <link rel='canonical' href='https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/'>
 
-<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.a4b80d2ef8cb84c7da62c3254fd754fcbb42f0bb2f1ebc43e8390d10ff6e5c80.css"><meta property='og:title' content='GitHub ActionsとSuper Linterでお手軽にコード品質を向上させよう！'>
-<meta property='og:description' content='GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォ'>
+<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.a4b80d2ef8cb84c7da62c3254fd754fcbb42f0bb2f1ebc43e8390d10ff6e5c80.css"><meta property='og:title' content='【Github Actions】GitHub ActionsとSuper-Linterで手軽にコードの品質を保つ'>
+<meta property='og:description' content='はじめに この記事では、GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Li'>
 <meta property='og:url' content='https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/'>
 <meta property='og:site_name' content='まろぴよの部屋'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Github Actions' /><meta property='article:tag' content='Super Linter' /><meta property='article:published_time' content='2023-04-19T01:35:25&#43;09:00'/><meta property='article:modified_time' content='2023-04-19T01:35:25&#43;09:00'/>
-<meta name="twitter:title" content="GitHub ActionsとSuper Linterでお手軽にコード品質を向上させよう！">
-<meta name="twitter:description" content="GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォ">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Github Actions' /><meta property='article:tag' content='Super-Linter' /><meta property='article:published_time' content='2023-04-19T01:35:25&#43;09:00'/><meta property='article:modified_time' content='2023-04-19T01:35:25&#43;09:00'/>
+<meta name="twitter:title" content="【Github Actions】GitHub ActionsとSuper-Linterで手軽にコードの品質を保つ">
+<meta name="twitter:description" content="はじめに この記事では、GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Li">
     <link rel="shortcut icon" href="https://maropiyo.com/favicon.ico" />
 
     </head>
@@ -245,7 +245,8 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#super-linterの料金">Super-Linterの料金</a></li>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#料金">料金</a></li>
     <li><a href="#前提条件">前提条件</a></li>
     <li><a href="#手順">手順</a>
       <ol>
@@ -285,7 +286,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/">GitHub ActionsとSuper Linterでお手軽にコード品質を向上させよう！</a>
+            <a href="https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/">【Github Actions】GitHub ActionsとSuper-Linterで手軽にコードの品質を保つ</a>
         </h2>
     
         
@@ -337,8 +338,9 @@
     <section class="article-content">
     
     
-    <p>GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォーマットに対応した静的解析ツールをまとめたもので、GitHubが提供しています。これにより、コードの品質やスタイルを維持し続けることができます！</p>
-<h2 id="super-linterの料金">Super-Linterの料金</h2>
+    <h2 id="はじめに">はじめに</h2>
+<p>この記事では、GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォーマットに対応した静的解析ツールをまとめたもので、GitHubが提供しています。コードの品質やスタイルを維持し続けることができるのでお得です。</p>
+<h2 id="料金">料金</h2>
 <p>Super-Linterは無料で利用できますが、GitHub Actionsの実行時間には制限があります。プライベートリポジトリでは、無料プランの場合、月に2000分の実行時間が付与されます。パブリックリポジトリの場合、無料で無制限の実行時間が利用できます。</p>
 <h2 id="前提条件">前提条件</h2>
 <ul>
@@ -402,7 +404,7 @@ jobs:
         
             <a href="https://maropiyo.com/tags/github-actions/">Github Actions</a>
         
-            <a href="https://maropiyo.com/tags/super-linter/">Super Linter</a>
+            <a href="https://maropiyo.com/tags/super-linter/">Super-Linter</a>
         
     </section>
 

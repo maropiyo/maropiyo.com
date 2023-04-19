@@ -7,13 +7,14 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
         <lastBuildDate>Wed, 19 Apr 2023 01:35:25 +0900</lastBuildDate><atom:link href="https://maropiyo.com/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>GitHub ActionsとSuper Linterでお手軽にコード品質を向上させよう！</title>
+        <title>【Github Actions】GitHub ActionsとSuper-Linterで手軽にコードの品質を保つ</title>
         <link>https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/</link>
         <pubDate>Wed, 19 Apr 2023 01:35:25 +0900</pubDate>
         
         <guid>https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/</guid>
-        <description>&lt;p&gt;GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォーマットに対応した静的解析ツールをまとめたもので、GitHubが提供しています。これにより、コードの品質やスタイルを維持し続けることができます！&lt;/p&gt;
-&lt;h2 id=&#34;super-linterの料金&#34;&gt;Super-Linterの料金&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;この記事では、GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォーマットに対応した静的解析ツールをまとめたもので、GitHubが提供しています。コードの品質やスタイルを維持し続けることができるのでお得です。&lt;/p&gt;
+&lt;h2 id=&#34;料金&#34;&gt;料金&lt;/h2&gt;
 &lt;p&gt;Super-Linterは無料で利用できますが、GitHub Actionsの実行時間には制限があります。プライベートリポジトリでは、無料プランの場合、月に2000分の実行時間が付与されます。パブリックリポジトリの場合、無料で無制限の実行時間が利用できます。&lt;/p&gt;
 &lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;
 &lt;ul&gt;
