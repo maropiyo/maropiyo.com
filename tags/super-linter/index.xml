@@ -13,7 +13,7 @@
         
         <guid>https://maropiyo.com/post/how-to-use-super-linter-with-github-actions/</guid>
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;この記事では、GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォーマットに対応した静的解析ツールをまとめたもので、GitHubが提供しています。コードの品質やスタイルを維持し続けることができるのでお得です。&lt;/p&gt;
+&lt;p&gt;この記事では、GitHub Actionsを使ってSuper-Linterによる静的解析を行う方法について説明します。Super-Linterは、さまざまな言語やフォーマットに対応した静的解析ツールをまとめたもので、GitHubが提供しています。手軽にコードの品質やスタイルを維持し続けることができるのでおすすめです。&lt;/p&gt;
 &lt;h2 id=&#34;料金&#34;&gt;料金&lt;/h2&gt;
 &lt;p&gt;Super-Linterは無料で利用できますが、GitHub Actionsの実行時間には制限があります。プライベートリポジトリでは、無料プランの場合、月に2000分の実行時間が付与されます。パブリックリポジトリの場合、無料で無制限の実行時間が利用できます。&lt;/p&gt;
 &lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;
@@ -67,7 +67,7 @@ jobs:
 &lt;p&gt;必要に応じて、Super-Linterの設定をカスタマイズできます。例えば、特定の言語のルールを無効にしたり、カスタムルールを追加したりすることができます。詳細は&lt;a class=&#34;link&#34; href=&#34;https://github.com/github/super-linter/blob/main/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Super-Linterの公式ドキュメント&lt;/a&gt;を参照してください。&lt;/p&gt;
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
-&lt;p&gt;これらの設定をするだけで、プロジェクトのコードが綺麗に保たれるのでぜひ活用してみてください！&lt;/p&gt;
+&lt;p&gt;Dockerイメージのサイズがかなり大きいため、実行開始までに2~3分くらいかかるのがデメリットかなと思います。ですが簡単に静的解析を自動で実行できる環境を作れるのは素晴らしいと思いました！&lt;/p&gt;
 </description>
         </item>
         
