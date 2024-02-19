@@ -6,7 +6,36 @@
         <description>Recent content on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sun, 18 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 19 Feb 2024 20:59:44 +0900</lastBuildDate><atom:link href="https://maropiyo.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</title>
+        <link>https://maropiyo.com/post/admob-ios-app-stop-bgm/</link>
+        <pubDate>Mon, 19 Feb 2024 20:59:44 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/admob-ios-app-stop-bgm/</guid>
+        <description>&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Unity 2022.3.13.f1&lt;/li&gt;
+&lt;li&gt;Google Mobile Ads SDK 8.7.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
+&lt;p&gt;以下はUnityの例です&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;void Start()
+{
+    // Google Mobile Ads SDKを初期化する
+    MobileAds.Initialize(initStatus =&amp;gt; { });
+
+    //iOSでフルスクリーン広告が表示されている間アプリを一時停止する
+    MobileAds.SetiOSAppPauseOnBackground(true); //この行を追加
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title></title>
         <link>https://maropiyo.com/page/contact/</link>
         <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>

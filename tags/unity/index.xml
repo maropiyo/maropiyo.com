@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on まろぴよの部屋</title>
-        <link>https://maropiyo.com/post/</link>
-        <description>Recent content in Posts on まろぴよの部屋</description>
+        <title>Unity on まろぴよの部屋</title>
+        <link>https://maropiyo.com/tags/unity/</link>
+        <description>Recent content in Unity on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Mon, 19 Feb 2024 20:59:44 +0900</lastBuildDate><atom:link href="https://maropiyo.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 19 Feb 2024 20:59:44 +0900</lastBuildDate><atom:link href="https://maropiyo.com/tags/unity/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</title>
         <link>https://maropiyo.com/post/admob-ios-app-stop-bgm/</link>
         <pubDate>Mon, 19 Feb 2024 20:59:44 +0900</pubDate>
@@ -33,16 +33,6 @@
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>初めての投稿</title>
-        <link>https://maropiyo.com/post/first-post/</link>
-        <pubDate>Sun, 12 Feb 2023 04:43:39 +0900</pubDate>
-        
-        <guid>https://maropiyo.com/post/first-post/</guid>
-        <description>&lt;p&gt;ブログを開設しました！&lt;/p&gt;
-&lt;p&gt;開発の備忘録や日常での出来事について、不定期に投稿していこうと思います！&lt;/p&gt;
 </description>
         </item>
         
