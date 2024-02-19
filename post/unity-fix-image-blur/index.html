@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='環境 Unity 2022.3.13.f1 Google Mobile Ads SDK 8.7.0 方法 以下はUnityの例です void Start() { // Google Mobile Ads SDKを初期化する MobileAds.Initialize(initStatus =&amp;gt; { }); //iOSでフルスクリーン広告が表示されている間アプリ'>
-<title>【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='はじめに Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。 before after 環境 Unity 2022.3.13.f1 方法 対象となる画像のInspecterで以下'>
+<title>【Unity】インポートした画像素材がぼやける時の対処法</title>
 
-<link rel='canonical' href='https://maropiyo.com/post/admob-ios-app-stop-bgm/'>
+<link rel='canonical' href='https://maropiyo.com/post/unity-fix-image-blur/'>
 
-<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.a4b80d2ef8cb84c7da62c3254fd754fcbb42f0bb2f1ebc43e8390d10ff6e5c80.css"><meta property='og:title' content='【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法'>
-<meta property='og:description' content='環境 Unity 2022.3.13.f1 Google Mobile Ads SDK 8.7.0 方法 以下はUnityの例です void Start() { // Google Mobile Ads SDKを初期化する MobileAds.Initialize(initStatus =&amp;gt; { }); //iOSでフルスクリーン広告が表示されている間アプリ'>
-<meta property='og:url' content='https://maropiyo.com/post/admob-ios-app-stop-bgm/'>
+<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.a4b80d2ef8cb84c7da62c3254fd754fcbb42f0bb2f1ebc43e8390d10ff6e5c80.css"><meta property='og:title' content='【Unity】インポートした画像素材がぼやける時の対処法'>
+<meta property='og:description' content='はじめに Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。 before after 環境 Unity 2022.3.13.f1 方法 対象となる画像のInspecterで以下'>
+<meta property='og:url' content='https://maropiyo.com/post/unity-fix-image-blur/'>
 <meta property='og:site_name' content='まろぴよの部屋'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AdMob' /><meta property='article:tag' content='Unity' /><meta property='article:tag' content='iOS' /><meta property='article:published_time' content='2024-02-19T20:59:44&#43;09:00'/><meta property='article:modified_time' content='2024-02-19T20:59:44&#43;09:00'/>
-<meta name="twitter:title" content="【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法">
-<meta name="twitter:description" content="環境 Unity 2022.3.13.f1 Google Mobile Ads SDK 8.7.0 方法 以下はUnityの例です void Start() { // Google Mobile Ads SDKを初期化する MobileAds.Initialize(initStatus =&amp;gt; { }); //iOSでフルスクリーン広告が表示されている間アプリ">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Unity' /><meta property='article:published_time' content='2024-02-19T21:21:42&#43;09:00'/><meta property='article:modified_time' content='2024-02-19T21:21:42&#43;09:00'/>
+<meta name="twitter:title" content="【Unity】インポートした画像素材がぼやける時の対処法">
+<meta name="twitter:description" content="はじめに Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。 before after 環境 Unity 2022.3.13.f1 方法 対象となる画像のInspecterで以下">
     <link rel="shortcut icon" href="https://maropiyo.com/favicon.ico" />
 
     </head>
@@ -245,9 +245,9 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
+    <li><a href="#はじめに">はじめに</a></li>
     <li><a href="#環境">環境</a></li>
     <li><a href="#方法">方法</a></li>
-    <li><a href="#参考">参考</a></li>
   </ol>
 </nav>
         </div>
@@ -275,7 +275,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="https://maropiyo.com/post/admob-ios-app-stop-bgm/">【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</a>
+            <a href="https://maropiyo.com/post/unity-fix-image-blur/">【Unity】インポートした画像素材がぼやける時の対処法</a>
         </h2>
     
         
@@ -327,27 +327,50 @@
     <section class="article-content">
     
     
-    <h2 id="環境">環境</h2>
+    <h2 id="はじめに">はじめに</h2>
+<p>Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://maropiyo.com/./images/1.jpeg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></td>
+<td><img src="https://maropiyo.com/./images/2.jpeg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="環境">環境</h2>
 <ul>
 <li>Unity 2022.3.13.f1</li>
-<li>Google Mobile Ads SDK 8.7.0</li>
 </ul>
 <h2 id="方法">方法</h2>
-<p>以下はUnityの例です</p>
-<pre><code class="language-cs">void Start()
-{
-    // Google Mobile Ads SDKを初期化する
-    MobileAds.Initialize(initStatus =&gt; { });
-
-    //iOSでフルスクリーン広告が表示されている間アプリを一時停止する
-    MobileAds.SetiOSAppPauseOnBackground(true); //この行を追加
-}
-</code></pre>
-<h2 id="参考">参考</h2>
-<ul>
-<li><a class="link" href="https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground"  target="_blank" rel="noopener"
-    >https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground</a></li>
-</ul>
+<p>対象となる画像のInspecterで以下のように設定します。</p>
+<p><img src="https://maropiyo.com/./images/3.jpeg"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
 
 </section>
 
@@ -356,11 +379,7 @@
     
     <section class="article-tags">
         
-            <a href="https://maropiyo.com/tags/admob/">AdMob</a>
-        
             <a href="https://maropiyo.com/tags/unity/">Unity</a>
-        
-            <a href="https://maropiyo.com/tags/ios/">iOS</a>
         
     </section>
 
@@ -394,12 +413,12 @@
             
                 
 <article class="">
-    <a href="https://maropiyo.com/post/unity-fix-image-blur/">
+    <a href="https://maropiyo.com/post/admob-ios-app-stop-bgm/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">【Unity】インポートした画像素材がぼやける時の対処法</h2>
+            <h2 class="article-title">【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</h2>
         </div>
     </a>
 </article>
