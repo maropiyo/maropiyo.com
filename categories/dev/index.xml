@@ -23,20 +23,32 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img src=&#34;https://maropiyo.com/./img/1.png&#34;
-	
-	
+&lt;td&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/1.png&#34;
+	width=&#34;954&#34;
+	height=&#34;366&#34;
 	
 	loading=&#34;lazy&#34;
 	
+		alt=&#34;画像1&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;260&#34;
+		data-flex-basis=&#34;625px&#34;
 	
 &gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src=&#34;https://maropiyo.com/./img/2.png&#34;
-	
-	
+&lt;td&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/2.png&#34;
+	width=&#34;954&#34;
+	height=&#34;366&#34;
 	
 	loading=&#34;lazy&#34;
 	
+		alt=&#34;画像2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;260&#34;
+		data-flex-basis=&#34;625px&#34;
 	
 &gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -48,12 +60,18 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
 &lt;p&gt;対象となる画像のInspecterで以下のように設定します。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/./img/3.png&#34;
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/3.png&#34;
+	width=&#34;628&#34;
+	height=&#34;1388&#34;
 	
 	loading=&#34;lazy&#34;
 	
+		alt=&#34;画像3&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;45&#34;
+		data-flex-basis=&#34;108px&#34;
 	
 &gt;&lt;/p&gt;
 </description>
