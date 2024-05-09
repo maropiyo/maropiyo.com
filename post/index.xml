@@ -6,7 +6,30 @@
         <description>Recent content in Posts on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Mon, 19 Feb 2024 21:21:42 +0900</lastBuildDate><atom:link href="https://maropiyo.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 01 Mar 2024 20:00:00 +0900</lastBuildDate><atom:link href="https://maropiyo.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>インコゲームをリリースしました！</title>
+        <link>https://maropiyo.com/post/release-parrot-game/</link>
+        <pubDate>Fri, 01 Mar 2024 20:00:00 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/release-parrot-game/</guid>
+        <description>&lt;img src="https://maropiyo.com/post/release-parrot-game/image/parrot_game.png" alt="Featured image of post インコゲームをリリースしました！" /&gt;&lt;p&gt;スマホゲームアプリ「インコゲーム」をAppStoreとGooglePlayでリリースしました！&lt;/p&gt;
+&lt;p&gt;とてもかわいい雰囲気にできたので、ぜひ遊んでもらえると嬉しいです！&lt;/p&gt;
+&lt;h2 id=&#34;紹介動画&#34;&gt;紹介動画&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+    &lt;iframe
+        src=&#34;https://www.youtube.com/embed/aru3mgWOkmw?si=LZbLJwcTqw4E8mIJ&#34;
+        style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
+        title=&#34;YouTube video player&#34;
+        frameborder=&#34;0&#34;
+        allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;&lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; width=&#34;150&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ParrotGame&#34;&gt;&lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; width=&#34;150&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>【Unity】インポートした画像素材がぼやける時の対処法</title>
         <link>https://maropiyo.com/post/unity-fix-image-blur/</link>
         <pubDate>Mon, 19 Feb 2024 21:21:42 +0900</pubDate>
