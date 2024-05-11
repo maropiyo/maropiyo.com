@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://maropiyo.com/</loc>
-    <lastmod>2024-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/categories/</loc>
-    <lastmod>2024-03-01T20:00:00+09:00</lastmod>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/%E3%82%A4%E3%83%B3%E3%82%B3%E3%82%B2%E3%83%BC%E3%83%A0/</loc>
     <lastmod>2024-03-01T20:00:00+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/release-parrot-game/</loc>
     <lastmod>2024-03-01T20:00:00+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/categories/release/</loc>
-    <lastmod>2024-03-01T20:00:00+09:00</lastmod>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/unity-fix-image-blur/</loc>
-    <lastmod>2024-02-19T21:21:42+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/tags/</loc>
     <lastmod>2024-02-19T21:21:42+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/tags/unity/</loc>
@@ -39,16 +42,22 @@
     <lastmod>2024-02-19T20:59:44+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/page/</loc>
-    <lastmod>2024-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/page/contact/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://maropiyo.com/page/tori-jump-policy/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/%E3%81%A8%E3%82%8A%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/post/release-tori-jump/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://maropiyo.com/page/privacy/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/page/tori-jump-policy/</loc>
-    <lastmod>2024-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/categories/blog/</loc>
     <lastmod>2023-02-12T04:43:39+09:00</lastmod>
