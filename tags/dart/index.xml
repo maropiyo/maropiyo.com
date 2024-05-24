@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Dart on まろぴよの部屋</title>
+        <link>https://maropiyo.com/tags/dart/</link>
+        <description>Recent content in Dart on まろぴよの部屋</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja</language>
+        <lastBuildDate>Sat, 25 May 2024 01:44:21 +0900</lastBuildDate><atom:link href="https://maropiyo.com/tags/dart/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【Flutter】ModalBottomSheetをBottomNavigationBarの前面に表示する方法</title>
+        <link>https://maropiyo.com/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/</link>
+        <pubDate>Sat, 25 May 2024 01:44:21 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/</guid>
+        <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;FlutterでBottomNavigationBarとModalBottomSheetを組み合わせて使う際、ModalBottomSheetがBottomNavigationBarの背面に表示されて困っていました。&lt;/p&gt;
+&lt;p&gt;この記事では、ModalBottomSheetをBottomNavigationBarの前面に表示する方法を紹介します。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;before&lt;/th&gt;
+&lt;th&gt;after&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&#34;./image/1.png&#34; width=&#34;200&#34; &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;./image/2.png&#34; width=&#34;200&#34; &gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Flutter 3.19.6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-dart&#34;&gt;// ModalBottomSheetを表示する
+showModalBottomSheet&amp;lt;void&amp;gt;(
+    useRootNavigator: true, // この行を追加する
+    context: context,
+    builder: (context) {
+        return PhraseActionBottomSheet(
+        phrase: phraseList[i],
+        );
+    },
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;公式ドキュメントによると、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The useRootNavigator parameter ensures that the root navigator is used to display the BottomSheet when set to true. This is useful in the case that a modal BottomSheet needs to be displayed above all other content but the caller is inside another Navigator.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;useRootNavigator: true&lt;/code&gt;を指定することで、ModalBottomSheetがRootNavigatorを使用して表示されるようになります。これにより、ModalBottomSheetが他のコンテンツの上に表示されるようになります。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;とのことです。&lt;/p&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://api.flutter.dev/flutter/material/showModalBottomSheet.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://api.flutter.dev/flutter/material/showModalBottomSheet.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
