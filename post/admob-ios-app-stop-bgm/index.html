@@ -308,7 +308,7 @@
     
     <header class="article-category">
         
-            <a href="https://maropiyo.com/categories/dev/" style="background-color: #f9aa5d; color: #FFF;">
+            <a href="https://maropiyo.com/categories/dev/" style="background-color: #f9aa80; color: #FFF;">
                 開発
             </a>
         
@@ -376,16 +376,15 @@
 </ul>
 <h2 id="方法">方法</h2>
 <p>以下はUnityの例です</p>
-<pre><code class="language-cs">void Start()
-{
-    // Google Mobile Ads SDKを初期化する
-    MobileAds.Initialize(initStatus =&gt; { });
-
-    //iOSでフルスクリーン広告が表示されている間アプリを一時停止する
-    MobileAds.SetiOSAppPauseOnBackground(true); //この行を追加
-}
-</code></pre>
-<h2 id="参考">参考</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cs" data-lang="cs"><span class="line"><span class="cl"><span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Google Mobile Ads SDKを初期化する</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MobileAds</span><span class="p">.</span><span class="n">Initialize</span><span class="p">(</span><span class="n">initStatus</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">//iOSでフルスクリーン広告が表示されている間アプリを一時停止する</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MobileAds</span><span class="p">.</span><span class="n">SetiOSAppPauseOnBackground</span><span class="p">(</span><span class="k">true</span><span class="p">);</span> <span class="c1">//この行を追加</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="参考">参考</h2>
 <ul>
 <li><a class="link" href="https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground"  target="_blank" rel="noopener"
     >https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground</a></li>

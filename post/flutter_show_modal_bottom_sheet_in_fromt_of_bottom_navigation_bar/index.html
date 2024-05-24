@@ -309,7 +309,7 @@
     
     <header class="article-category">
         
-            <a href="https://maropiyo.com/categories/dev/" style="background-color: #f9aa5d; color: #FFF;">
+            <a href="https://maropiyo.com/categories/dev/" style="background-color: #f9aa80; color: #FFF;">
                 開発
             </a>
         
@@ -392,18 +392,17 @@
 <li>Flutter 3.19.6</li>
 </ul>
 <h2 id="方法">方法</h2>
-<pre><code class="language-dart">// ModalBottomSheetを表示する
-showModalBottomSheet&lt;void&gt;(
-    useRootNavigator: true, // この行を追加する
-    context: context,
-    builder: (context) {
-        return PhraseActionBottomSheet(
-        phrase: phraseList[i],
-        );
-    },
-);
-</code></pre>
-<p>公式ドキュメントによると、</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="c1">// ModalBottomSheetを表示する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">showModalBottomSheet</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">useRootNavigator:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// この行を追加する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nl">context:</span> <span class="n">context</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nl">builder:</span> <span class="p">(</span><span class="n">context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">PhraseActionBottomSheet</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">phrase:</span> <span class="n">phraseList</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span></code></pre></div><p>公式ドキュメントによると、</p>
 <blockquote>
 <p>The useRootNavigator parameter ensures that the root navigator is used to display the BottomSheet when set to true. This is useful in the case that a modal BottomSheet needs to be displayed above all other content but the caller is inside another Navigator.</p>
 </blockquote>
