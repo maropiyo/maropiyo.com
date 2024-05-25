@@ -13,7 +13,7 @@
         
         <guid>https://maropiyo.com/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/</guid>
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-&lt;p&gt;FlutterでBottomNavigationBarとModalBottomSheetを組み合わせて使う際、ModalBottomSheetがBottomNavigationBarの背面に表示されて困っていました。&lt;/p&gt;
+&lt;p&gt;FlutterでBottomNavigationBarとModalBottomSheetを組み合わせて使う際、ModalBottomSheetがBottomNavigationBarの背面(上)に表示されて困っていました。&lt;/p&gt;
 &lt;p&gt;この記事では、ModalBottomSheetをBottomNavigationBarの前面に表示する方法を紹介します。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
