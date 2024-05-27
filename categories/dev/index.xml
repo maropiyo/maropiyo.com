@@ -53,10 +53,8 @@
 &lt;/blockquote&gt;
 &lt;p&gt;とのことです。&lt;/p&gt;
 &lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://api.flutter.dev/flutter/material/showModalBottomSheet.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://api.flutter.dev/flutter/material/showModalBottomSheet.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://api.flutter.dev/flutter/material/showModalBottomSheet.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://api.flutter.dev/flutter/material/showModalBottomSheet.html&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -151,10 +149,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;MobileAds&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SetiOSAppPauseOnBackground&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//この行を追加&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         
