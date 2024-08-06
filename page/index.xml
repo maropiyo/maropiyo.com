@@ -6,7 +6,77 @@
         <description>Recent content in Pages on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sun, 18 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>作ったもの</title>
+        <link>https://maropiyo.com/page/works/</link>
+        <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyo.com/page/works/</guid>
+        <description>&lt;h2 id=&#34;とりジャンプ&#34;&gt;とりジャンプ&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/page/works/image/tori_jump.png&#34;
+	width=&#34;2544&#34;
+	height=&#34;1242&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ToriJump&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;プラットフォーム: Android, iOS&lt;/p&gt;
+&lt;p&gt;使用技術: Unity, C#&lt;/p&gt;
+&lt;p&gt;ソースコード: 非公開&lt;/p&gt;
+&lt;p&gt;制作期間: 2023年2月 - 2023年4月&lt;/p&gt;
+&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ToriJump&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;インコゲーム&#34;&gt;インコゲーム&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/page/works/image/parrot_game.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;500&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ParrotGame&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;プラットフォーム: Android, iOS, UnityRoom(デモ版)&lt;/p&gt;
+&lt;p&gt;使用技術: Unity, C#&lt;/p&gt;
+&lt;p&gt;ソースコード: 非公開&lt;/p&gt;
+&lt;p&gt;制作期間: 2023年11月 - 2024年2月&lt;/p&gt;
+&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ParrotGame&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;スライドリ開発中&#34;&gt;スライドリ(開発中)&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/slide-bird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;デモ版&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;プラットフォーム: UnityRoomでデモ版を公開中&lt;/p&gt;
+&lt;p&gt;使用技術: Unity, C#&lt;/p&gt;
+&lt;p&gt;ソースコード: &lt;a class=&#34;link&#34; href=&#34;https://github.com/maropiyo/SlideBird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;制作期間: 2023年7月 - 開発中&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>お問い合わせ</title>
         <link>https://maropiyo.com/page/contact/</link>
         <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
@@ -85,67 +155,16 @@
 </description>
         </item>
         <item>
-        <title>About me</title>
+        <title>自己紹介</title>
         <link>https://maropiyo.com/page/about/</link>
         <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
         
         <guid>https://maropiyo.com/page/about/</guid>
-        <description>&lt;h2 id=&#34;はじめましてまろぴよです&#34;&gt;はじめまして！まろぴよです🐤&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;はじめましてまろぴよです&#34;&gt;はじめまして！まろぴよです！&lt;/h2&gt;
 &lt;p&gt;インコが好きすぎて、インコをモチーフにしたゲームやアプリを作ったりしてます！&lt;br&gt;
-このサイトでは作ったアプリの紹介や、制作の備忘録、日々の出来事などを投稿しています！&lt;br&gt;
+このサイトでは作ったアプリの紹介や、制作の備忘録、日々の出来事などを投稿していきたいと思っています！&lt;br&gt;
 どうぞよろしくお願いします！&lt;/p&gt;
-&lt;h2 id=&#34;作ったもの&#34;&gt;作ったもの&lt;/h2&gt;
-&lt;h3 id=&#34;とりジャンプ&#34;&gt;とりジャンプ&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/page/about/image/tori_jump.png&#34;
-	width=&#34;2544&#34;
-	height=&#34;1242&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ToriJump&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;204&#34;
-		data-flex-basis=&#34;491px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;プラットフォーム: Android, iOS&lt;/p&gt;
-&lt;p&gt;制作期間: 2023年2月 - 2023年4月&lt;/p&gt;
-&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ToriJump&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;インコゲーム&#34;&gt;インコゲーム&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/page/about/image/parrot_game.png&#34;
-	width=&#34;1024&#34;
-	height=&#34;500&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ParrotGame&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;204&#34;
-		data-flex-basis=&#34;491px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;プラットフォーム: Android, iOS&lt;/p&gt;
-&lt;p&gt;制作期間: 2023年11月 - 2024年2月&lt;/p&gt;
-&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ParrotGame&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
+&lt;h2 id=&#34;お問い合わせ&#34;&gt;お問い合わせ&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;X(Twitter): &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/maropiyooo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
