@@ -68,9 +68,8 @@
     &lt;/a&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;スライドリ開発中&#34;&gt;スライドリ(開発中)&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/slide-bird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;デモ版&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;プラットフォーム: UnityRoomでデモ版を公開中&lt;/p&gt;
+&lt;p&gt;プラットフォーム: &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/slide-bird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UnityRoomでデモ版&lt;/a&gt;を公開中&lt;/p&gt;
 &lt;p&gt;使用技術: Unity, C#&lt;/p&gt;
 &lt;p&gt;ソースコード: &lt;a class=&#34;link&#34; href=&#34;https://github.com/maropiyo/SlideBird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;&lt;/p&gt;
