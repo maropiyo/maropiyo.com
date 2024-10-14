@@ -6,7 +6,142 @@
         <description>Recent content in ブログ on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sun, 12 Feb 2023 04:43:39 +0900</lastBuildDate><atom:link href="https://maropiyo.com/categories/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 14 Oct 2024 09:06:22 +0900</lastBuildDate><atom:link href="https://maropiyo.com/categories/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>情報処理安全確保支援士試験を受験しました</title>
+        <link>https://maropiyo.com/post/report-ipa-sc/</link>
+        <pubDate>Mon, 14 Oct 2024 09:06:22 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/report-ipa-sc/</guid>
+        <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;2024年10月13日(日)に情報処理安全確保支援士試験を受験してきました！
+この記事では、試験までに取り組んだことや試験当日の感想などを備忘録を兼ねて書いていきます。&lt;/p&gt;
+&lt;h2 id=&#34;情報処理安全確保支援士試験とは&#34;&gt;情報処理安全確保支援士試験とは&lt;/h2&gt;
+&lt;p&gt;詳しい説明は公式から、超簡単に言うと情報セキュリティに試験です。
+合格率は15~20%程度らしいです。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ipa.go.jp/shiken/kubun/sc.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.ipa.go.jp/shiken/kubun/sc.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;受けようと思った理由&#34;&gt;受けようと思った理由&lt;/h2&gt;
+&lt;p&gt;2024年の春に応用情報を受験してなんとか合格できたので、高度区分の午前1の免除制度が適用されることになりました。「免除」という魅力的な言葉につられて、せっかくなら受けてみようという気持ちで受験を決意しました。&lt;/p&gt;
+&lt;p&gt;また、基本情報や応用情報の勉強をしてから、基礎的な知識はさっさと身につけておくに越したことはないと感じていたのももう理由の一つです。&lt;/p&gt;
+&lt;h2 id=&#34;受験までの準備&#34;&gt;受験までの準備&lt;/h2&gt;
+&lt;h3 id=&#34;やったこと&#34;&gt;やったこと&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sc-siken.com/sckakomon.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;情報処理安全確保支援士過去問道場&lt;/a&gt;&lt;br&gt;
+▶︎直近10回分が9割以上取れるくらいまでやった&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/3EhyoAa&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;情報処理教科書 情報処理安全確保支援士 2024年版&lt;/a&gt;&lt;br&gt;
+▶︎途中(4章)まで読んで挫折した(付録の試験直前チェックシートは最高すぎたので試験直前は枕の下に置いて寝た)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/4rjjMyn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2024 情報処理安全確保支援士「専門知識＋午後問題」の重点対策&lt;/a&gt;&lt;br&gt;
+▶︎2周半くらい解いた(これに一番時間を費やした)&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/6LxgNme&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;うかる！情報処理安全確保支援士 午後問題集[第2版]&lt;/a&gt;&lt;br&gt;
+▶︎速攻サプリ©️と呼ばれているもの。1周半くらい読んだ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;勉強方法&#34;&gt;勉強方法&lt;/h3&gt;
+&lt;h4 id=&#34;2か月半前くらいから&#34;&gt;2か月半前くらいから&lt;/h4&gt;
+&lt;p&gt;とりあえず「情報処理教科書 情報処理安全確保支援士」を読み始めました&amp;hellip;がまだ危機感もなかったため、読んだ内容は全然頭に入ってこなかったです。&lt;/p&gt;
+&lt;h4 id=&#34;2か月前くらいから&#34;&gt;2か月前くらいから&lt;/h4&gt;
+&lt;p&gt;1日50問を目標に、過去問道場をやり始めました。過去問道場の成果をXでツイートしたら、過去問道場の公式アカウントがいいねしてくれるので嬉しいです。&lt;/p&gt;
+&lt;h4 id=&#34;1か月半前くらいから&#34;&gt;1か月半前くらいから&lt;/h4&gt;
+&lt;p&gt;重点対策本に載っている過去問を解き始めました。本で問題を見ながら、iPadに解答を書いていく感じです。&lt;br&gt;
+大問1つを解くのになれるまでは1時間以上かかるので、1日に2問を解くことを目標にしました。
+午後問題は問題を読むだけでもしんどくて、家に帰ったら途中で意思が折れることが分かりきっていたので、仕事終わりに空いているカフェに直行して21時くらいまで勉強してから家に帰る生活を1か月半くらい続けました(←すごくない?)(眠すぎて全然勉強せずに帰る日ももちろんありましたぞよ)&lt;/p&gt;
+&lt;p&gt;モチベがある時はどこでも勉強することはできると思うのですが、受かるためにはモチベがない時にも勉強する必要があって、私の場合はとりあえずカフェという環境に身を置いておくことで、モチベがない時でも強制的に勉強する環境を整えるようにしてました。&lt;/p&gt;
+&lt;p&gt;あと、いろんなカフェに通う生活を送ったおかげで、やっとコーヒーの味の違いがわかるようになってきました。
+私はタリーズのコーヒーが一番美味しいと思いました。&lt;/p&gt;
+&lt;p&gt;途中で発見したおすすめの勉強法↓&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;なぜ今までダウンロードできる解答用紙のPDFをiPadに読み込むという発想がなかったのか！！&lt;br&gt;白紙ページに解答欄を自作していた時間が消えたね！！ &lt;a href=&#34;https://t.co/2cTlKgtIzS&#34;&gt;pic.twitter.com/2cTlKgtIzS&lt;/a&gt;&lt;/p&gt;&amp;mdash; まろぴよ🐤@ゲーム制作インコ (@maropiyooo) &lt;a href=&#34;https://twitter.com/maropiyooo/status/1838077500901237140?ref_src=twsrc%5Etfw&#34;&gt;September 23, 2024&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;h4 id=&#34;2週間前&#34;&gt;2週間前&lt;/h4&gt;
+&lt;p&gt;悔いの無いように、村山先生の速攻サプリ©️を購入して仕事のお昼休憩の時間に読み始めました。
+難しい話こそ、かわいいキャラが説明すると頭に入ってきやすいですね。解説にもユーモアがあってとても読みやすかったです。&lt;/p&gt;
+&lt;h2 id=&#34;試験当日の流れ&#34;&gt;試験当日の流れ&lt;/h2&gt;
+&lt;h3 id=&#34;起床試験&#34;&gt;起床試験&lt;/h3&gt;
+&lt;p&gt;午前1免除ということもあり、起床試験は応用情報の時に比べて易化していた気がします。&lt;br&gt;
+前日は23時に就寝して、朝は7時に起床し、余裕を持って起床試験を突破することができました。なんだか悪夢を見た気がしますが、内容は忘れました。&lt;/p&gt;
+&lt;h3 id=&#34;会場到着試験&#34;&gt;会場到着試験&lt;/h3&gt;
+&lt;p&gt;こちらも、応用情報を受けた時と同じ試験会場であったため、応用情報の時の知識で問題なく突破することができました。会場には余裕を持って試験の40分前くらいに到着しました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/./image/%e4%bc%9a%e5%a0%b4%e5%88%b0%e7%9d%80%e8%a9%a6%e9%a8%93%e9%80%9a%e9%81%8e.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;会場到着試験通過&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;午前i試験&#34;&gt;午前I試験&lt;/h3&gt;
+&lt;p&gt;免除！(最高！)&lt;/p&gt;
+&lt;h3 id=&#34;午前試験&#34;&gt;午前Ⅱ試験&lt;/h3&gt;
+&lt;p&gt;見たことない単語の選択肢が多くて普通に難しかったです。
+過去問道場では、道場破りのまろぴよと心の中で自称していましたが、やはり本番道場は一筋縄ではいかないようですね&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;昼休憩で帰らない試験&#34;&gt;昼休憩で帰らない試験&lt;/h3&gt;
+&lt;p&gt;午前試験が終わったら、1時間ほど昼休憩があるので、試験会場に行く途中のコンビニで買った昼飯最強デッキを食べました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/./image/%e6%98%bc%e9%a3%af%e3%83%87%e3%83%83%e3%82%ad.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;昼飯デッキ&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;昼休憩中に午前試験の自己採点をするのは、午後試験へのメンタルに影響するため見ないのが吉なのですが、なぜか私がご飯を食べている最中に、私のスマホは言うことを聞かずに自己採点をしてしまっていました&amp;hellip;。&lt;br&gt;
+恐る恐るスマホを覗いてみると、&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/./image/%e8%87%aa%e5%b7%b1%e6%8e%a1%e7%82%b9_%e5%8b%9d%e6%89%8b%e3%81%ab.PNG&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;自己採点&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;25問中15問&amp;hellip;?&lt;br&gt;
+えーっと合格は60点/100点で合格なので、15×4=60点&amp;hellip;?&lt;/p&gt;
+&lt;p&gt;危なすぎる&amp;hellip;!&lt;/p&gt;
+&lt;p&gt;ギリギリボーダー上にはいたのでまだメンタルはやられなかったですが、やっぱり昼休憩中の自己採点は良くないですね&amp;hellip;!&lt;/p&gt;
+&lt;p&gt;少し動揺してしまったので、その後は試験会場の外を少し散歩して残りの時間はリフレッシュに当てました。&lt;/p&gt;
+&lt;h3 id=&#34;午後試験&#34;&gt;午後試験&lt;/h3&gt;
+&lt;p&gt;そして、いよいよラスボス、午後試験です。&lt;/p&gt;
+&lt;p&gt;大問4つのうち２問を選択して解く形式なのですが、試験開始してからどの問題を解くかを選ぶ必要があります。&lt;/p&gt;
+&lt;p&gt;主に問題としては、当てはまる単語を答えさせる知識問題と、ながーい記述で解答させる問題などが含まれるのですが、今回の選択の作戦は以下の通りです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;単語を答えさせる知識問題(解答欄の枠が小さい問題)を見て一通り見て、答えられる問題がある大問を選ぶ。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;これだけです。&lt;/p&gt;
+&lt;p&gt;知識問題に関しては、記述問題と違ってを問題文を深くまで読み込む必要はないことが多いので、すぐに解けるか判定できますし、わからなかったら0点、わかったら場合は確実に加点が見込まれるので、この作戦を計画しました。&lt;/p&gt;
+&lt;p&gt;今回だと、大問2がメールサーバーのセキュリティの話で、これは答えが「SMTPS」じゃないか&amp;hellip;?という問題があったので大問2を選択しました。&lt;/p&gt;
+&lt;p&gt;あとは気合いで問題文を読みながら解答欄を埋めていきました。&lt;/p&gt;
+&lt;p&gt;ちょうど1時間で大問2を解き終え、残りの1時間半で解く問題を考え始めました。&lt;/p&gt;
+&lt;p&gt;大問3はパッと見てわかるほどのくそデカ解答欄があったので遠慮させていただきました。&lt;/p&gt;
+&lt;p&gt;なんとなくで大問4を解き始めましたが、設問3つ目くらい?に差し掛かったときに、問題中の画面遷移図を眺めていたら頭がおかしくなってきました。
+これはまずい!と明らかに脳さんが拒否反応を示していたので、15分ほど無駄にはしましたが、大問1に急遽路線変更する判断をしました。&lt;/p&gt;
+&lt;p&gt;そして最終的には大問1と2を選択し、なんとか時間内に解答欄を埋めることはできました。(よかった&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;途中の問題変更が運命の導きであることを祈り、私は結果を待ちます。悔いはありません！&lt;/p&gt;
+&lt;h2 id=&#34;帰ってから&#34;&gt;帰ってから&lt;/h2&gt;
+&lt;p&gt;帰宅後、公式から正式に午前の解答がでたので改めて自己採点をしました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/./image/%e8%87%aa%e5%b7%b1%e6%8e%a1%e7%82%b9_%e7%a2%ba%e5%ae%9a.PNG&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;自己採点_確定&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;なんか４点増えてる&amp;hellip;？やったあ！(？)&lt;br&gt;
+これ、仮に昼時点で自己採点して11点だった(実際には4点増えて15点通過だった可能性がある)人が午後を諦めて帰っていたら&amp;hellip;って考えると、試験はちゃんと最後まで受けることが大事だなぁと思いました。&lt;/p&gt;
+&lt;h2 id=&#34;勉強してみて&#34;&gt;勉強してみて&lt;/h2&gt;
+&lt;p&gt;「セキュリティ何も知らない」から「セキュリティちょっとわかる」になれたと思います。&lt;/p&gt;
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+&lt;p&gt;合格発表は12/26だそうです。合格できるといいなぁ&amp;hellip;🐤&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>初めての投稿</title>
         <link>https://maropiyo.com/post/first-post/</link>
         <pubDate>Sun, 12 Feb 2023 04:43:39 +0900</pubDate>

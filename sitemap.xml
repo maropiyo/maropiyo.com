@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://maropiyo.com/</loc>
-    <lastmod>2024-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-14T09:06:22+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/categories/</loc>
+    <lastmod>2024-10-14T09:06:22+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/post/</loc>
+    <lastmod>2024-10-14T09:06:22+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/</loc>
+    <lastmod>2024-10-14T09:06:22+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/categories/blog/</loc>
+    <lastmod>2024-10-14T09:06:22+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E5%AE%89%E5%85%A8%E7%A2%BA%E4%BF%9D%E6%94%AF%E6%8F%B4%E5%A3%AB%E8%A9%A6%E9%A8%93/</loc>
+    <lastmod>2024-10-14T09:06:22+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/post/report-ipa-sc/</loc>
+    <lastmod>2024-10-14T09:06:22+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/page/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
@@ -14,19 +32,10 @@
     <loc>https://maropiyo.com/post/hugo_long_url_word_break/</loc>
     <lastmod>2024-05-28T01:45:35+09:00</lastmod>
   </url><url>
-    <loc>https://maropiyo.com/categories/</loc>
-    <lastmod>2024-05-28T01:45:35+09:00</lastmod>
-  </url><url>
     <loc>https://maropiyo.com/tags/css/</loc>
     <lastmod>2024-05-28T01:45:35+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/tags/hugo/</loc>
-    <lastmod>2024-05-28T01:45:35+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/post/</loc>
-    <lastmod>2024-05-28T01:45:35+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/tags/</loc>
     <lastmod>2024-05-28T01:45:35+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/categories/dev/</loc>
@@ -88,9 +97,6 @@
   </url><url>
     <loc>https://maropiyo.com/page/privacy/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/categories/blog/</loc>
-    <lastmod>2023-02-12T04:43:39+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/first-post/</loc>
     <lastmod>2023-02-12T04:43:39+09:00</lastmod>
