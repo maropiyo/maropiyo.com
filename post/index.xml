@@ -6,7 +6,94 @@
         <description>Recent content in Posts on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Tue, 15 Oct 2024 09:06:22 +0900</lastBuildDate><atom:link href="https://maropiyo.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 22 Oct 2024 02:09:15 +0900</lastBuildDate><atom:link href="https://maropiyo.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ</title>
+        <link>https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/</link>
+        <pubDate>Tue, 22 Oct 2024 02:09:15 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/</guid>
+        <description>&lt;p&gt;Unity6にアップデート後、Androidビルド時に以下のエラーが出た時の解決方法メモです。&lt;/p&gt;
+&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Unity 6000.0.23f1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;エラー内容&#34;&gt;エラー内容&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Could not determine the dependencies of task &amp;#39;:unityLibrary:GoogleMobileAdsPlugin.androidlib:generateDebugRFile&amp;#39;.
+&amp;gt; Failed to install the following Android SDK packages as some licences have not been accepted.
+     platforms;android-31 Android SDK Platform 31
+  To build this project, accept the SDK license agreements and install the missing components using the Android Studio SDK Manager.
+  All licenses can be accepted using the sdkmanager command line tool:
+  sdkmanager.bat --licenses
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/error_log.png&#34;
+	width=&#34;1762&#34;
+	height=&#34;800&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;220&#34;
+		data-flex-basis=&#34;528px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;PlayerSettingsのAndroidの設定から、Minimum API LevelとTarget API Levelを31に変更する&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_1.png&#34;
+	width=&#34;2452&#34;
+	height=&#34;1440&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;408px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;その状態でapkビルドするとダイアログが表示されるので、「Update Android SDK」をクリックする&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_2.png&#34;
+	width=&#34;744&#34;
+	height=&#34;732&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;101&#34;
+		data-flex-basis=&#34;243px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Minimum API LevelとTarget API Levelを元に戻す&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_3.png&#34;
+	width=&#34;2452&#34;
+	height=&#34;1440&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;408px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;再度apkビルドすると成功した&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
+&lt;p&gt;sdkmanagerを探して、以下のコマンドでもいけるかもしれない&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sdkmanager --licenses
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://discussions.unity.com/t/solved-gradle-build-error-not-accepted-licenses/1537570&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://discussions.unity.com/t/solved-gradle-build-error-not-accepted-licenses/1537570&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>情報処理安全確保支援士試験を受けてきました！</title>
         <link>https://maropiyo.com/post/report-ipa-sc/</link>
         <pubDate>Tue, 15 Oct 2024 09:06:22 +0900</pubDate>

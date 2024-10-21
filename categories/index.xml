@@ -6,21 +6,21 @@
         <description>Recent content in Categories on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Tue, 15 Oct 2024 09:06:22 +0900</lastBuildDate><atom:link href="https://maropiyo.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 22 Oct 2024 02:09:15 +0900</lastBuildDate><atom:link href="https://maropiyo.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>開発</title>
+        <link>https://maropiyo.com/categories/dev/</link>
+        <pubDate>Tue, 22 Oct 2024 02:09:15 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/categories/dev/</guid>
+        <description>&lt;img src="https://maropiyo.com/categories/dev/okame.png" alt="Featured image of post 開発" /&gt;</description>
+        </item>
+        <item>
         <title>ブログ</title>
         <link>https://maropiyo.com/categories/blog/</link>
         <pubDate>Tue, 15 Oct 2024 09:06:22 +0900</pubDate>
         
         <guid>https://maropiyo.com/categories/blog/</guid>
         <description>&lt;img src="https://maropiyo.com/categories/blog/sekisei_lightblue.png" alt="Featured image of post ブログ" /&gt;</description>
-        </item>
-        <item>
-        <title>開発</title>
-        <link>https://maropiyo.com/categories/dev/</link>
-        <pubDate>Tue, 28 May 2024 01:45:35 +0900</pubDate>
-        
-        <guid>https://maropiyo.com/categories/dev/</guid>
-        <description>&lt;img src="https://maropiyo.com/categories/dev/okame.png" alt="Featured image of post 開発" /&gt;</description>
         </item>
         <item>
         <title>リリース</title>

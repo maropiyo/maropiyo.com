@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='はじめに Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。 before after 環境 Unity 2022.3.13.f1 方法 対象となる画像のInspecterで以下'>
-<title>【Unity】インポートした画像素材がぼやける時の対処法</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Unity6にアップデート後、Androidビルド時に以下のエラーが出た時の解決方法メモです。 環境 Unity 6000.0.23f1 エラー内容 Could not determine the dependencies of task &amp;#39;:unityLibrary:GoogleMobileAdsPlugin.androidlib:generateDebugRFile&amp;#39;. &amp;gt; Failed to install the following'>
+<title>【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ</title>
 
-<link rel='canonical' href='https://maropiyo.com/post/unity-fix-image-blur/'>
+<link rel='canonical' href='https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/'>
 
-<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.4850d34e8569af432b46ba1956d549415220a2845fa635945f6defc6aa1b3c51.css"><meta property='og:title' content='【Unity】インポートした画像素材がぼやける時の対処法'>
-<meta property='og:description' content='はじめに Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。 before after 環境 Unity 2022.3.13.f1 方法 対象となる画像のInspecterで以下'>
-<meta property='og:url' content='https://maropiyo.com/post/unity-fix-image-blur/'>
+<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.4850d34e8569af432b46ba1956d549415220a2845fa635945f6defc6aa1b3c51.css"><meta property='og:title' content='【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ'>
+<meta property='og:description' content='Unity6にアップデート後、Androidビルド時に以下のエラーが出た時の解決方法メモです。 環境 Unity 6000.0.23f1 エラー内容 Could not determine the dependencies of task &amp;#39;:unityLibrary:GoogleMobileAdsPlugin.androidlib:generateDebugRFile&amp;#39;. &amp;gt; Failed to install the following'>
+<meta property='og:url' content='https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/'>
 <meta property='og:site_name' content='まろぴよの部屋'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Unity' /><meta property='article:published_time' content='2024-02-19T21:21:42&#43;09:00'/><meta property='article:modified_time' content='2024-02-19T21:21:42&#43;09:00'/>
-<meta name="twitter:title" content="【Unity】インポートした画像素材がぼやける時の対処法">
-<meta name="twitter:description" content="はじめに Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。 before after 環境 Unity 2022.3.13.f1 方法 対象となる画像のInspecterで以下">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Unity' /><meta property='article:tag' content='Android' /><meta property='article:published_time' content='2024-10-22T02:09:15&#43;09:00'/><meta property='article:modified_time' content='2024-10-22T02:09:15&#43;09:00'/>
+<meta name="twitter:title" content="【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ">
+<meta name="twitter:description" content="Unity6にアップデート後、Androidビルド時に以下のエラーが出た時の解決方法メモです。 環境 Unity 6000.0.23f1 エラー内容 Could not determine the dependencies of task &amp;#39;:unityLibrary:GoogleMobileAdsPlugin.androidlib:generateDebugRFile&amp;#39;. &amp;gt; Failed to install the following">
     <link rel="shortcut icon" href="https://maropiyo.com/favicon.ico" />
 
     </head>
@@ -299,9 +299,11 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#はじめに">はじめに</a></li>
     <li><a href="#環境">環境</a></li>
-    <li><a href="#方法">方法</a></li>
+    <li><a href="#エラー内容">エラー内容</a></li>
+    <li><a href="#解決方法">解決方法</a></li>
+    <li><a href="#備考">備考</a></li>
+    <li><a href="#参考">参考</a></li>
   </ol>
 </nav>
         </div>
@@ -329,7 +331,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="https://maropiyo.com/post/unity-fix-image-blur/">【Unity】インポートした画像素材がぼやける時の対処法</a>
+            <a href="https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/">【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ</a>
         </h2>
     
         
@@ -351,7 +353,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024/02/19</time>
+                <time class="article-time--published">2024/10/22</time>
             </div>
         
 
@@ -381,68 +383,85 @@
     <section class="article-content">
     
     
-    <h2 id="はじめに">はじめに</h2>
-<p>Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。</p>
-<div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>before</th>
-<th>after</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="https://maropiyo.com/post/unity-fix-image-blur/img/1.png"
-	width="954"
-	height="366"
-	
-	loading="lazy"
-	
-		alt="画像1"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="260"
-		data-flex-basis="625px"
-	
-></td>
-<td><img src="https://maropiyo.com/post/unity-fix-image-blur/img/2.png"
-	width="954"
-	height="366"
-	
-	loading="lazy"
-	
-		alt="画像2"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="260"
-		data-flex-basis="625px"
-	
-></td>
-</tr>
-</tbody>
-</table></div>
+    <p>Unity6にアップデート後、Androidビルド時に以下のエラーが出た時の解決方法メモです。</p>
 <h2 id="環境">環境</h2>
 <ul>
-<li>Unity 2022.3.13.f1</li>
+<li>Unity 6000.0.23f1</li>
 </ul>
-<h2 id="方法">方法</h2>
-<p>対象となる画像のInspecterで以下のように設定します。</p>
-<p><img src="https://maropiyo.com/post/unity-fix-image-blur/img/3.png"
-	width="628"
-	height="1388"
+<h2 id="エラー内容">エラー内容</h2>
+<pre tabindex="0"><code>Could not determine the dependencies of task &#39;:unityLibrary:GoogleMobileAdsPlugin.androidlib:generateDebugRFile&#39;.
+&gt; Failed to install the following Android SDK packages as some licences have not been accepted.
+     platforms;android-31 Android SDK Platform 31
+  To build this project, accept the SDK license agreements and install the missing components using the Android Studio SDK Manager.
+  All licenses can be accepted using the sdkmanager command line tool:
+  sdkmanager.bat --licenses
+</code></pre><p><img src="https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/error_log.png"
+	width="1762"
+	height="800"
 	
 	loading="lazy"
 	
-		alt="画像3"
+	
+		class="gallery-image" 
+		data-flex-grow="220"
+		data-flex-basis="528px"
+	
+></p>
+<h2 id="解決方法">解決方法</h2>
+<ol>
+<li>PlayerSettingsのAndroidの設定から、Minimum API LevelとTarget API Levelを31に変更する</li>
+</ol>
+<p><img src="https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_1.png"
+	width="2452"
+	height="1440"
+	
+	loading="lazy"
 	
 	
 		class="gallery-image" 
-		data-flex-grow="45"
-		data-flex-basis="108px"
+		data-flex-grow="170"
+		data-flex-basis="408px"
 	
 ></p>
+<ol start="2">
+<li>その状態でapkビルドするとダイアログが表示されるので、「Update Android SDK」をクリックする</li>
+</ol>
+<p><img src="https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_2.png"
+	width="744"
+	height="732"
+	
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="101"
+		data-flex-basis="243px"
+	
+></p>
+<ol start="3">
+<li>Minimum API LevelとTarget API Levelを元に戻す</li>
+</ol>
+<p><img src="https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_3.png"
+	width="2452"
+	height="1440"
+	
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="170"
+		data-flex-basis="408px"
+	
+></p>
+<ol start="4">
+<li>再度apkビルドすると成功した</li>
+</ol>
+<h2 id="備考">備考</h2>
+<p>sdkmanagerを探して、以下のコマンドでもいけるかもしれない</p>
+<pre tabindex="0"><code>sdkmanager --licenses
+</code></pre><h2 id="参考">参考</h2>
+<p><a class="link" href="https://discussions.unity.com/t/solved-gradle-build-error-not-accepted-licenses/1537570"  target="_blank" rel="noopener"
+    >https://discussions.unity.com/t/solved-gradle-build-error-not-accepted-licenses/1537570</a></p>
 
 </section>
 
@@ -452,6 +471,8 @@
     <section class="article-tags">
         
             <a href="https://maropiyo.com/tags/unity/">Unity</a>
+        
+            <a href="https://maropiyo.com/tags/android/">Android</a>
         
     </section>
 
@@ -496,12 +517,12 @@
             
                 
 <article class="">
-    <a href="https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/">
+    <a href="https://maropiyo.com/post/unity-fix-image-blur/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ</h2>
+            <h2 class="article-title">【Unity】インポートした画像素材がぼやける時の対処法</h2>
         </div>
     </a>
 </article>

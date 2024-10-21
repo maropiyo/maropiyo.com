@@ -3,16 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://maropiyo.com/</loc>
-    <lastmod>2024-10-15T09:06:22+09:00</lastmod>
+    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/</loc>
+    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/android/</loc>
+    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/categories/</loc>
-    <lastmod>2024-10-15T09:06:22+09:00</lastmod>
+    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/</loc>
-    <lastmod>2024-10-15T09:06:22+09:00</lastmod>
+    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/tags/</loc>
-    <lastmod>2024-10-15T09:06:22+09:00</lastmod>
+    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/unity/</loc>
+    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/categories/dev/</loc>
+    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/categories/blog/</loc>
     <lastmod>2024-10-15T09:06:22+09:00</lastmod>
@@ -39,9 +51,6 @@
     <lastmod>2024-05-28T01:45:35+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/tags/hugo/</loc>
-    <lastmod>2024-05-28T01:45:35+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/categories/dev/</loc>
     <lastmod>2024-05-28T01:45:35+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/</loc>
@@ -72,9 +81,6 @@
     <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/unity-fix-image-blur/</loc>
-    <lastmod>2024-02-19T21:21:42+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/tags/unity/</loc>
     <lastmod>2024-02-19T21:21:42+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/admob-ios-app-stop-bgm/</loc>
