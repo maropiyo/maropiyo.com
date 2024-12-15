@@ -66,10 +66,24 @@
     &lt;/a&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;スライドリ開発中&#34;&gt;スライドリ(開発中)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/page/works/image/slide_bird.png&#34;
+	width=&#34;1025&#34;
+	height=&#34;500&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;SlideBird&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;p&gt;プラットフォーム: &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/slide-bird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;UnityRoomでデモ版&lt;/a&gt;を公開中&lt;/p&gt;
 &lt;p&gt;使用技術: Unity, C#&lt;/p&gt;
-&lt;p&gt;制作期間: 2023年7月 - 開発中&lt;/p&gt;
+&lt;p&gt;制作期間: 2023年7月 - 2024年12月&lt;/p&gt;
 </description>
         </item>
         <item>
