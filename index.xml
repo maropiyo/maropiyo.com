@@ -193,12 +193,12 @@
         </item>
         <item>
         <title>作ったもの</title>
-        <link>https://maropiyo.com/page/works/</link>
+        <link>https://maropiyo.com/works/</link>
         <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://maropiyo.com/page/works/</guid>
+        <guid>https://maropiyo.com/works/</guid>
         <description>&lt;h2 id=&#34;とりジャンプ&#34;&gt;とりジャンプ&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/page/works/image/tori_jump.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/tori_jump.png&#34;
 	width=&#34;2544&#34;
 	height=&#34;1242&#34;
 	
@@ -213,8 +213,6 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;プラットフォーム: Android, iOS&lt;/p&gt;
-&lt;p&gt;使用技術: Unity, C#&lt;/p&gt;
-&lt;p&gt;制作期間: 2023年2月 - 2023年4月&lt;/p&gt;
 &lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
     &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
         &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
@@ -224,7 +222,7 @@
     &lt;/a&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;インコゲーム&#34;&gt;インコゲーム&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/page/works/image/parrot_game.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/parrot_game.png&#34;
 	width=&#34;1024&#34;
 	height=&#34;500&#34;
 	
@@ -239,9 +237,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;プラットフォーム: Android, iOS, &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/parrot-game&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;UnityRoom(ミニ版)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;使用技術: Unity, C#&lt;/p&gt;
-&lt;p&gt;制作期間: 2023年11月 - 2024年2月&lt;/p&gt;
+    &gt;UnityRoom&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
     &lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;
         &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
@@ -251,7 +247,7 @@
     &lt;/a&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;スライドリ開発中&#34;&gt;スライドリ(開発中)&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/page/works/image/slide_bird.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/slide_bird.png&#34;
 	width=&#34;1025&#34;
 	height=&#34;500&#34;
 	
@@ -265,10 +261,8 @@
 		data-flex-basis=&#34;492px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;プラットフォーム: &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/slide-bird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;UnityRoomでデモ版&lt;/a&gt;を公開中&lt;/p&gt;
-&lt;p&gt;使用技術: Unity, C#&lt;/p&gt;
-&lt;p&gt;制作期間: 2023年7月 - 2024年12月&lt;/p&gt;
+&lt;p&gt;プラットフォーム: Android, iOS, &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/slide-bird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UnityRoom(デモ版)&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -645,9 +639,8 @@
         
         <guid>https://maropiyo.com/page/about/</guid>
         <description>&lt;h2 id=&#34;はじめましてまろぴよです&#34;&gt;はじめまして！まろぴよです！&lt;/h2&gt;
-&lt;p&gt;インコが好きすぎて、インコをモチーフにしたゲームやアプリを作ったりしてます！&lt;br&gt;
-このサイトでは作ったアプリの紹介や、制作の備忘録、日々の出来事などを投稿していきたいと思っています！&lt;br&gt;
-どうぞよろしくお願いします！&lt;/p&gt;
+&lt;p&gt;そこらへんにいるただの鳥好きです！
+個人でゲームとか作ったりしてます！&lt;/p&gt;
 &lt;h2 id=&#34;お問い合わせ&#34;&gt;お問い合わせ&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
