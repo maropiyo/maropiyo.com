@@ -192,80 +192,6 @@
 </description>
         </item>
         <item>
-        <title>作ったもの</title>
-        <link>https://maropiyo.com/works/</link>
-        <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/works/</guid>
-        <description>&lt;h2 id=&#34;とりジャンプ&#34;&gt;とりジャンプ&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/tori_jump.png&#34;
-	width=&#34;2544&#34;
-	height=&#34;1242&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ToriJump&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;204&#34;
-		data-flex-basis=&#34;491px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;プラットフォーム: Android, iOS&lt;/p&gt;
-&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ToriJump&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;インコゲーム&#34;&gt;インコゲーム&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/parrot_game.png&#34;
-	width=&#34;1024&#34;
-	height=&#34;500&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ParrotGame&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;204&#34;
-		data-flex-basis=&#34;491px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;プラットフォーム: Android, iOS, &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/parrot-game&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;UnityRoom&lt;/a&gt;&lt;/p&gt;
-&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ParrotGame&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;スライドリ開発中&#34;&gt;スライドリ(開発中)&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/slide_bird.png&#34;
-	width=&#34;1025&#34;
-	height=&#34;500&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;SlideBird&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;205&#34;
-		data-flex-basis=&#34;492px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;プラットフォーム: Android, iOS, &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/slide-bird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;UnityRoom(デモ版)&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>【Hugo】長いURLをはみ出さないように改行する方法</title>
         <link>https://maropiyo.com/post/hugo_long_url_word_break/</link>
         <pubDate>Tue, 28 May 2024 01:45:35 +0900</pubDate>
@@ -722,6 +648,80 @@
         
         <guid>https://maropiyo.com/page/search/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>作ったもの</title>
+        <link>https://maropiyo.com/works/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyo.com/works/</guid>
+        <description>&lt;h2 id=&#34;とりジャンプ&#34;&gt;とりジャンプ&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/tori_jump.png&#34;
+	width=&#34;2544&#34;
+	height=&#34;1242&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ToriJump&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;プラットフォーム: Android, iOS&lt;/p&gt;
+&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ToriJump&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;インコゲーム&#34;&gt;インコゲーム&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/parrot_game.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;500&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ParrotGame&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;プラットフォーム: Android, iOS, &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/parrot-game&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UnityRoom&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ParrotGame&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;スライドリ開発中&#34;&gt;スライドリ(開発中)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/slide_bird.png&#34;
+	width=&#34;1025&#34;
+	height=&#34;500&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;SlideBird&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;プラットフォーム: Android, iOS, &lt;a class=&#34;link&#34; href=&#34;https://unityroom.com/games/slide-bird&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UnityRoom(デモ版)&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         
     </channel>

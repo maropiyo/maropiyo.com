@@ -38,9 +38,6 @@
     <loc>https://maropiyo.com/post/report-ipa-sc/</loc>
     <lastmod>2024-10-15T09:06:22+09:00</lastmod>
   </url><url>
-    <loc>https://maropiyo.com/works/</loc>
-    <lastmod>2024-08-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://maropiyo.com/post/hugo_long_url_word_break/</loc>
     <lastmod>2024-05-28T01:45:35+09:00</lastmod>
   </url><url>
@@ -120,5 +117,7 @@
     <loc>https://maropiyo.com/page/archives/</loc>
   </url><url>
     <loc>https://maropiyo.com/page/search/</loc>
+  </url><url>
+    <loc>https://maropiyo.com/works/</loc>
   </url>
 </urlset>
