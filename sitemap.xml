@@ -87,7 +87,7 @@
     <lastmod>2024-02-19T20:59:44+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/page/</loc>
-    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/page/contact/</loc>
     <lastmod>2024-02-18T00:00:00+00:00</lastmod>
@@ -107,9 +107,6 @@
     <loc>https://maropiyo.com/post/first-post/</loc>
     <lastmod>2023-02-12T04:43:39+09:00</lastmod>
   </url><url>
-    <loc>https://maropiyo.com/page/about/</loc>
-    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://maropiyo.com/parrot-game/</loc>
   </url><url>
     <loc>https://maropiyo.com/slide-bird/</loc>
@@ -119,5 +116,7 @@
     <loc>https://maropiyo.com/page/search/</loc>
   </url><url>
     <loc>https://maropiyo.com/works/</loc>
+  </url><url>
+    <loc>https://maropiyo.com/page/about/</loc>
   </url>
 </urlset>
