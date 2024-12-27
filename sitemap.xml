@@ -3,21 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://maropiyo.com/</loc>
-    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
+    <lastmod>2024-12-27T21:26:23+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/categories/</loc>
+    <lastmod>2024-12-27T21:26:23+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/post/</loc>
+    <lastmod>2024-12-27T21:26:23+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/</loc>
+    <lastmod>2024-12-27T21:26:23+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/tags/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%83%AA/</loc>
+    <lastmod>2024-12-27T21:26:23+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/post/release-slide-bird/</loc>
+    <lastmod>2024-12-27T21:26:23+09:00</lastmod>
+  </url><url>
+    <loc>https://maropiyo.com/categories/release/</loc>
+    <lastmod>2024-12-27T21:26:23+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/</loc>
     <lastmod>2024-10-22T02:09:15+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/tags/android/</loc>
-    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/categories/</loc>
-    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/post/</loc>
-    <lastmod>2024-10-22T02:09:15+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/tags/</loc>
     <lastmod>2024-10-22T02:09:15+09:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/tags/unity/</loc>
@@ -70,9 +79,6 @@
   </url><url>
     <loc>https://maropiyo.com/post/release-parrot-game/</loc>
     <lastmod>2024-03-01T20:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://maropiyo.com/categories/release/</loc>
-    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maropiyo.com/post/unity-fix-image-blur/</loc>
     <lastmod>2024-02-19T21:21:42+09:00</lastmod>
