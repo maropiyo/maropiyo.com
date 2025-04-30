@@ -21,7 +21,7 @@
 &lt;ul&gt;
 &lt;li&gt;AndroidStudio: Meerkat | 2024.3.1 Patch 1&lt;/li&gt;
 &lt;li&gt;Xcode: Version 16.0 (16A242d)&lt;/li&gt;
-&lt;li&gt;SqlDelight: 2.0.2&lt;/li&gt;
+&lt;li&gt;SQLDelight: 2.0.2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
 &lt;p&gt;Xcodeで以下の手順を実行します&lt;/p&gt;
