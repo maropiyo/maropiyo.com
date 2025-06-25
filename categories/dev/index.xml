@@ -6,7 +6,40 @@
         <description>Recent content in 開発 on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Tue, 22 Oct 2024 02:09:15 +0900</lastBuildDate><atom:link href="https://maropiyo.com/categories/dev/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 25 Jun 2025 12:00:00 +0900</lastBuildDate><atom:link href="https://maropiyo.com/categories/dev/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【SQLDelight】&#34;no such column&#34; エラーの対処法</title>
+        <link>https://maropiyo.com/post/sqldelight-no-such-column-error/</link>
+        <pubDate>Wed, 25 Jun 2025 12:00:00 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/sqldelight-no-such-column-error/</guid>
+        <description>&lt;h2 id=&#34;エラー内容&#34;&gt;エラー内容&lt;/h2&gt;
+&lt;p&gt;KMPアプリでSQLDelightを使用していたところ、初回インストール時に以下のエラーが発生しました。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;no such column: Reminder.is_completed in &amp;#34;SELECT Reminder.id, Reminder.text, Reminder.is_completed, Reminder.created_at, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;Reminder.forget_at FROM Reminder&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Android API30/31 エミュレータ・実機&lt;/li&gt;
+&lt;li&gt;SQLDelight使用のKMPアプリ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;試した解決策効果なし&#34;&gt;試した解決策（効果なし）&lt;/h2&gt;
+&lt;p&gt;通常のアンインストール・再インストールでは解決できませんでした。&lt;/p&gt;
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;古いデータベースファイルが端末に残っていた&lt;/strong&gt;ことが原因でした。&lt;/p&gt;
+&lt;p&gt;開発中にスキーマ変更を行っていたため、見た目は「初回インストール」でも内部的に古いDBファイルが残存していました。&lt;/p&gt;
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+&lt;h3 id=&#34;エミュレータの場合&#34;&gt;エミュレータの場合&lt;/h3&gt;
+&lt;p&gt;Android Studio &amp;gt; AVD Manager &amp;gt; 対象エミュレータ &amp;gt; Wipe Data&lt;/p&gt;
+&lt;h3 id=&#34;実機の場合&#34;&gt;実機の場合&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell &lt;span class=&#34;s2&#34;&gt;&amp;#34;am force-stop com.yourpackage.yourapp&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell &lt;span class=&#34;s2&#34;&gt;&amp;#34;pm clear com.yourpackage.yourapp&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb uninstall com.yourpackage.yourapp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./gradlew clean &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./gradlew :composeApp:assembleDebug
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb install composeApp/build/outputs/apk/debug/composeApp-debug.apk
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;「初回インストール」に見えても古いデータが残っている場合があります。SQLDelightのスキーマエラーが出た際は、コード修正の前に端末の完全リセットを試してみることをおすすめします。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ</title>
         <link>https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/</link>
         <pubDate>Tue, 22 Oct 2024 02:09:15 +0900</pubDate>

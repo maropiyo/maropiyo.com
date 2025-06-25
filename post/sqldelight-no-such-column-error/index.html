@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='環境 Unity 2022.3.13.f1 Google Mobile Ads SDK 8.7.0 方法 以下はUnityの例です。 void Start() { // Google Mobile Ads SDKを初期化する MobileAds.Initialize(initStatus =&amp;gt; { }); //iOSでフルスクリーン広告が表示されている間アプ'>
-<title>【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='エラー内容 KMPアプリでSQLDelightを使用していたところ、初回インストール時に以下のエラーが発生しました。 no such column: Reminder.is_completed in &amp;#34;SELECT Reminder.id, Reminder.text, Reminder.is_completed, Reminder.created_at, Reminder.forget_at FROM Reminder&amp;#34;'>
+<title>【SQLDelight】&#34;no such column&#34; エラーの対処法</title>
 
-<link rel='canonical' href='https://maropiyo.com/post/admob-ios-app-stop-bgm/'>
+<link rel='canonical' href='https://maropiyo.com/post/sqldelight-no-such-column-error/'>
 
-<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.4850d34e8569af432b46ba1956d549415220a2845fa635945f6defc6aa1b3c51.css"><meta property='og:title' content='【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法'>
-<meta property='og:description' content='環境 Unity 2022.3.13.f1 Google Mobile Ads SDK 8.7.0 方法 以下はUnityの例です。 void Start() { // Google Mobile Ads SDKを初期化する MobileAds.Initialize(initStatus =&amp;gt; { }); //iOSでフルスクリーン広告が表示されている間アプ'>
-<meta property='og:url' content='https://maropiyo.com/post/admob-ios-app-stop-bgm/'>
+<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.4850d34e8569af432b46ba1956d549415220a2845fa635945f6defc6aa1b3c51.css"><meta property='og:title' content='【SQLDelight】&#34;no such column&#34; エラーの対処法'>
+<meta property='og:description' content='エラー内容 KMPアプリでSQLDelightを使用していたところ、初回インストール時に以下のエラーが発生しました。 no such column: Reminder.is_completed in &amp;#34;SELECT Reminder.id, Reminder.text, Reminder.is_completed, Reminder.created_at, Reminder.forget_at FROM Reminder&amp;#34;'>
+<meta property='og:url' content='https://maropiyo.com/post/sqldelight-no-such-column-error/'>
 <meta property='og:site_name' content='まろぴよの部屋'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AdMob' /><meta property='article:tag' content='Unity' /><meta property='article:tag' content='iOS' /><meta property='article:published_time' content='2024-02-19T20:59:44&#43;09:00'/><meta property='article:modified_time' content='2024-02-19T20:59:44&#43;09:00'/>
-<meta name="twitter:title" content="【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法">
-<meta name="twitter:description" content="環境 Unity 2022.3.13.f1 Google Mobile Ads SDK 8.7.0 方法 以下はUnityの例です。 void Start() { // Google Mobile Ads SDKを初期化する MobileAds.Initialize(initStatus =&amp;gt; { }); //iOSでフルスクリーン広告が表示されている間アプ">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='KMP' /><meta property='article:tag' content='SQLDelight' /><meta property='article:tag' content='Android' /><meta property='article:published_time' content='2025-06-25T12:00:00&#43;09:00'/><meta property='article:modified_time' content='2025-06-25T12:00:00&#43;09:00'/>
+<meta name="twitter:title" content="【SQLDelight】&#34;no such column&#34; エラーの対処法">
+<meta name="twitter:description" content="エラー内容 KMPアプリでSQLDelightを使用していたところ、初回インストール時に以下のエラーが発生しました。 no such column: Reminder.is_completed in &amp;#34;SELECT Reminder.id, Reminder.text, Reminder.is_completed, Reminder.created_at, Reminder.forget_at FROM Reminder&amp;#34;">
     <link rel="shortcut icon" href="https://maropiyo.com/favicon.ico" />
 
     </head>
@@ -293,9 +293,17 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
+    <li><a href="#エラー内容">エラー内容</a></li>
     <li><a href="#環境">環境</a></li>
-    <li><a href="#方法">方法</a></li>
-    <li><a href="#参考">参考</a></li>
+    <li><a href="#試した解決策効果なし">試した解決策（効果なし）</a></li>
+    <li><a href="#原因">原因</a></li>
+    <li><a href="#解決方法">解決方法</a>
+      <ol>
+        <li><a href="#エミュレータの場合">エミュレータの場合</a></li>
+        <li><a href="#実機の場合">実機の場合</a></li>
+      </ol>
+    </li>
+    <li><a href="#まとめ">まとめ</a></li>
   </ol>
 </nav>
         </div>
@@ -323,7 +331,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="https://maropiyo.com/post/admob-ios-app-stop-bgm/">【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</a>
+            <a href="https://maropiyo.com/post/sqldelight-no-such-column-error/">【SQLDelight】&#34;no such column&#34; エラーの対処法</a>
         </h2>
     
         
@@ -345,7 +353,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024/02/19</time>
+                <time class="article-time--published">2025/06/25</time>
             </div>
         
 
@@ -375,24 +383,31 @@
     <section class="article-content">
     
     
-    <h2 id="環境">環境</h2>
+    <h2 id="エラー内容">エラー内容</h2>
+<p>KMPアプリでSQLDelightを使用していたところ、初回インストール時に以下のエラーが発生しました。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">no such column: Reminder.is_completed in &#34;SELECT Reminder.id, Reminder.text, Reminder.is_completed, Reminder.created_at, 
+</span></span></span><span class="line"><span class="cl"><span class="go">Reminder.forget_at FROM Reminder&#34;
+</span></span></span></code></pre></div><h2 id="環境">環境</h2>
 <ul>
-<li>Unity 2022.3.13.f1</li>
-<li>Google Mobile Ads SDK 8.7.0</li>
+<li>Android API30/31 エミュレータ・実機</li>
+<li>SQLDelight使用のKMPアプリ</li>
 </ul>
-<h2 id="方法">方法</h2>
-<p>以下はUnityの例です。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cs" data-lang="cs"><span class="line"><span class="cl"><span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// Google Mobile Ads SDKを初期化する</span>
-</span></span><span class="line"><span class="cl">    <span class="n">MobileAds</span><span class="p">.</span><span class="n">Initialize</span><span class="p">(</span><span class="n">initStatus</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="p">});</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">//iOSでフルスクリーン広告が表示されている間アプリを一時停止する</span>
-</span></span><span class="line"><span class="cl">    <span class="n">MobileAds</span><span class="p">.</span><span class="n">SetiOSAppPauseOnBackground</span><span class="p">(</span><span class="k">true</span><span class="p">);</span> <span class="c1">//この行を追加</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h2 id="参考">参考</h2>
-<p><a class="link" href="https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground"  target="_blank" rel="noopener"
-    >https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground</a></p>
+<h2 id="試した解決策効果なし">試した解決策（効果なし）</h2>
+<p>通常のアンインストール・再インストールでは解決できませんでした。</p>
+<h2 id="原因">原因</h2>
+<p><strong>古いデータベースファイルが端末に残っていた</strong>ことが原因でした。</p>
+<p>開発中にスキーマ変更を行っていたため、見た目は「初回インストール」でも内部的に古いDBファイルが残存していました。</p>
+<h2 id="解決方法">解決方法</h2>
+<h3 id="エミュレータの場合">エミュレータの場合</h3>
+<p>Android Studio &gt; AVD Manager &gt; 対象エミュレータ &gt; Wipe Data</p>
+<h3 id="実機の場合">実機の場合</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adb shell <span class="s2">&#34;am force-stop com.yourpackage.yourapp&#34;</span>
+</span></span><span class="line"><span class="cl">adb shell <span class="s2">&#34;pm clear com.yourpackage.yourapp&#34;</span>
+</span></span><span class="line"><span class="cl">adb uninstall com.yourpackage.yourapp
+</span></span><span class="line"><span class="cl">./gradlew clean <span class="o">&amp;&amp;</span> ./gradlew :composeApp:assembleDebug
+</span></span><span class="line"><span class="cl">adb install composeApp/build/outputs/apk/debug/composeApp-debug.apk
+</span></span></code></pre></div><h2 id="まとめ">まとめ</h2>
+<p>「初回インストール」に見えても古いデータが残っている場合があります。SQLDelightのスキーマエラーが出た際は、コード修正の前に端末の完全リセットを試してみることをおすすめします。</p>
 
 </section>
 
@@ -401,11 +416,11 @@
     
     <section class="article-tags">
         
-            <a href="https://maropiyo.com/tags/admob/">AdMob</a>
+            <a href="https://maropiyo.com/tags/kmp/">KMP</a>
         
-            <a href="https://maropiyo.com/tags/unity/">Unity</a>
+            <a href="https://maropiyo.com/tags/sqldelight/">SQLDelight</a>
         
-            <a href="https://maropiyo.com/tags/ios/">iOS</a>
+            <a href="https://maropiyo.com/tags/android/">Android</a>
         
     </section>
 
@@ -463,6 +478,19 @@
             
                 
 <article class="">
+    <a href="https://maropiyo.com/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【Flutter】ModalBottomSheetをBottomNavigationBarの前面に表示する方法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
     <a href="https://maropiyo.com/post/unity-fix-image-blur/">
         
         
@@ -476,25 +504,12 @@
             
                 
 <article class="">
-    <a href="https://maropiyo.com/post/sqldelight-no-such-column-error/">
+    <a href="https://maropiyo.com/post/admob-ios-app-stop-bgm/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">【SQLDelight】&#34;no such column&#34; エラーの対処法</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="https://maropiyo.com/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">【Flutter】ModalBottomSheetをBottomNavigationBarの前面に表示する方法</h2>
+            <h2 class="article-title">【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</h2>
         </div>
     </a>
 </article>
