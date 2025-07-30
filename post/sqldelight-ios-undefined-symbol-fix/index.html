@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='エラー内容 Undefined symbol: _sqlite3_bind_blob Undefined symbol:_sqlite3_bind_double Undefined symbol: _sqlite3_bind_int64 ... 環境 AndroidStudio: Meerkat | 2024.3.1 Patch 1 Xcode: Version 16.0 (16A242d) SQLDelight: 2.0.2 解決方法 Xcodeで以下の手順を実行します プロジェクトファイルを選択 「Build Ph'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='エラー内容 Undefined symbol: _sqlite3_bind_blob Undefined symbol:_sqlite3_bind_double Undefined symbol: _sqlite3_bind_int64 ... 環境 AndroidStudio: Meerkat | 2024.3.1 Patch 1 Xcode: Version 16.0 (16A242d) SQLDelight: 2.0.2 解決方法 Xcodeで以下の手順を実行します
+プロジェクトファイルを選択 「Build Phases」タブをクリック 「Link Binary With Libraries」セクションを展開 「&#43;」ボタンをクリック 「libsqlite3.tbd」を検索して追加 これでSQLite関連の未定義シンボルエラーが解決しました。
+'>
 <title>【Xcode】SQLite未定義シンボルエラーの対処法</title>
 
-<link rel='canonical' href='https://maropiyo.com/post/sqldelight-ios-undefined-symbol-fix/'>
+<link rel='canonical' href='http://localhost:1313/post/sqldelight-ios-undefined-symbol-fix/'>
 
-<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.4850d34e8569af432b46ba1956d549415220a2845fa635945f6defc6aa1b3c51.css"><meta property='og:title' content='【Xcode】SQLite未定義シンボルエラーの対処法'>
-<meta property='og:description' content='エラー内容 Undefined symbol: _sqlite3_bind_blob Undefined symbol:_sqlite3_bind_double Undefined symbol: _sqlite3_bind_int64 ... 環境 AndroidStudio: Meerkat | 2024.3.1 Patch 1 Xcode: Version 16.0 (16A242d) SQLDelight: 2.0.2 解決方法 Xcodeで以下の手順を実行します プロジェクトファイルを選択 「Build Ph'>
-<meta property='og:url' content='https://maropiyo.com/post/sqldelight-ios-undefined-symbol-fix/'>
+<link rel="stylesheet" href="http://localhost:1313/scss/style.min.3c9d5d72a16baa74cfd583718ed11aa4d8ce8e29279374f529f2539e58f36ac2.css"><meta property='og:title' content='【Xcode】SQLite未定義シンボルエラーの対処法'>
+<meta property='og:description' content='エラー内容 Undefined symbol: _sqlite3_bind_blob Undefined symbol:_sqlite3_bind_double Undefined symbol: _sqlite3_bind_int64 ... 環境 AndroidStudio: Meerkat | 2024.3.1 Patch 1 Xcode: Version 16.0 (16A242d) SQLDelight: 2.0.2 解決方法 Xcodeで以下の手順を実行します
+プロジェクトファイルを選択 「Build Phases」タブをクリック 「Link Binary With Libraries」セクションを展開 「&#43;」ボタンをクリック 「libsqlite3.tbd」を検索して追加 これでSQLite関連の未定義シンボルエラーが解決しました。
+'>
+<meta property='og:url' content='http://localhost:1313/post/sqldelight-ios-undefined-symbol-fix/'>
 <meta property='og:site_name' content='まろぴよの部屋'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='KMP' /><meta property='article:tag' content='Xcode' /><meta property='article:tag' content='SqlDelight' /><meta property='article:published_time' content='2025-05-01T00:18:43&#43;09:00'/><meta property='article:modified_time' content='2025-05-01T00:18:43&#43;09:00'/>
 <meta name="twitter:title" content="【Xcode】SQLite未定義シンボルエラーの対処法">
-<meta name="twitter:description" content="エラー内容 Undefined symbol: _sqlite3_bind_blob Undefined symbol:_sqlite3_bind_double Undefined symbol: _sqlite3_bind_int64 ... 環境 AndroidStudio: Meerkat | 2024.3.1 Patch 1 Xcode: Version 16.0 (16A242d) SQLDelight: 2.0.2 解決方法 Xcodeで以下の手順を実行します プロジェクトファイルを選択 「Build Ph">
-    <link rel="shortcut icon" href="https://maropiyo.com/favicon.ico" />
+<meta name="twitter:description" content="エラー内容 Undefined symbol: _sqlite3_bind_blob Undefined symbol:_sqlite3_bind_double Undefined symbol: _sqlite3_bind_int64 ... 環境 AndroidStudio: Meerkat | 2024.3.1 Patch 1 Xcode: Version 16.0 (16A242d) SQLDelight: 2.0.2 解決方法 Xcodeで以下の手順を実行します
+プロジェクトファイルを選択 「Build Phases」タブをクリック 「Link Binary With Libraries」セクションを展開 「&#43;」ボタンをクリック 「libsqlite3.tbd」を検索して追加 これでSQLite関連の未定義シンボルエラーが解決しました。
+">
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico" />
 
     </head>
     <body class="
@@ -52,13 +58,13 @@
         
             
             <figure class="site-avatar">
-                <a href="https://maropiyo.com/">
+                <a href="http://localhost:1313/">
                 
                     
                     
                     
                         
-                        <img src="https://maropiyo.com/img/icon_hu64ee2f473a059529afae5d9bf26b2420_9328_300x0_resize_box_3.png" width="300"
+                        <img src="http://localhost:1313/img/icon_hu_ae63655e030e5e1.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -69,7 +75,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="https://maropiyo.com/">まろぴよの部屋</a></h1>
+            <h1 class="site-name"><a href="http://localhost:1313/">まろぴよの部屋</a></h1>
             <h2 class="site-description">インコ好きの個人ブログ</h2>
         </div>
     </header><ol class="social-menu">
@@ -155,7 +161,7 @@
         
         
         <li >
-            <a href='https://maropiyo.com/' >
+            <a href='http://localhost:1313/' >
                 
                 
                 
@@ -175,7 +181,7 @@
         
         
         <li >
-            <a href='https://maropiyo.com/page/about/' >
+            <a href='http://localhost:1313/page/about/' >
                 
                 
                 
@@ -194,7 +200,7 @@
         
         
         <li >
-            <a href='https://maropiyo.com/works/' >
+            <a href='http://localhost:1313/works/' >
                 
                 
                 
@@ -206,7 +212,7 @@
         
         
         <li >
-            <a href='https://maropiyo.com/page/archives/' >
+            <a href='http://localhost:1313/page/archives/' >
                 
                 
                 
@@ -226,7 +232,7 @@
         
         
         <li >
-            <a href='https://maropiyo.com/page/search/' >
+            <a href='http://localhost:1313/page/search/' >
                 
                 
                 
@@ -245,6 +251,25 @@
         
 
         <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="http://localhost:1313/" selected></option>
+                        
+                    </select>
+                </li>
+            
             
             
                 <li id="dark-mode-toggle">
@@ -315,7 +340,7 @@
     
     <header class="article-category">
         
-            <a href="https://maropiyo.com/categories/dev/" style="background-color: #f9aa80; color: #FFF;">
+            <a href="http://localhost:1313/categories/dev/" style="background-color: #f9aa80; color: #FFF;">
                 開発
             </a>
         
@@ -324,7 +349,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="https://maropiyo.com/post/sqldelight-ios-undefined-symbol-fix/">【Xcode】SQLite未定義シンボルエラーの対処法</a>
+            <a href="http://localhost:1313/post/sqldelight-ios-undefined-symbol-fix/">【Xcode】SQLite未定義シンボルエラーの対処法</a>
         </h2>
     
         
@@ -397,7 +422,7 @@
 <li>「libsqlite3.tbd」を検索して追加</li>
 </ol>
 <p>これでSQLite関連の未定義シンボルエラーが解決しました。</p>
-<p><img src="https://maropiyo.com/post/sqldelight-ios-undefined-symbol-fix/image/screenshot.png"
+<p><img src="http://localhost:1313/post/sqldelight-ios-undefined-symbol-fix/image/screenshot.png"
 	width="2670"
 	height="1842"
 	
@@ -421,11 +446,11 @@
     
     <section class="article-tags">
         
-            <a href="https://maropiyo.com/tags/kmp/">KMP</a>
+            <a href="http://localhost:1313/tags/kmp/">KMP</a>
         
-            <a href="https://maropiyo.com/tags/xcode/">Xcode</a>
+            <a href="http://localhost:1313/tags/xcode/">Xcode</a>
         
-            <a href="https://maropiyo.com/tags/sqldelight/">SqlDelight</a>
+            <a href="http://localhost:1313/tags/sqldelight/">SQLDelight</a>
         
     </section>
 
@@ -470,7 +495,20 @@
             
                 
 <article class="">
-    <a href="https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/">
+    <a href="http://localhost:1313/post/sqldelight-no-such-column-error/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【SQLDelight】&#34;no such column&#34; エラーの対処法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/">
         
         
 
@@ -483,7 +521,7 @@
             
                 
 <article class="">
-    <a href="https://maropiyo.com/post/hugo_long_url_word_break/">
+    <a href="http://localhost:1313/post/hugo_long_url_word_break/">
         
         
 
@@ -496,7 +534,7 @@
             
                 
 <article class="">
-    <a href="https://maropiyo.com/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/">
+    <a href="http://localhost:1313/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/">
         
         
 
@@ -509,25 +547,12 @@
             
                 
 <article class="">
-    <a href="https://maropiyo.com/post/unity-fix-image-blur/">
+    <a href="http://localhost:1313/post/unity-fix-image-blur/">
         
         
 
         <div class="article-details">
             <h2 class="article-title">【Unity】インポートした画像素材がぼやける時の対処法</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="https://maropiyo.com/post/admob-ios-app-stop-bgm/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</h2>
         </div>
     </a>
 </article>
@@ -687,7 +712,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="https://maropiyo.com/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="http://localhost:1313/ts/main.js" defer></script>
 
 
     </body>

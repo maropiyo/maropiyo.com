@@ -17,9 +17,9 @@
 &lt;p&gt;追記(2024/05/11): AppStoreでもリリースしました！&lt;/p&gt;
 &lt;h2 id=&#34;スクリーンショット&#34;&gt;スクリーンショット&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_1.png&#34;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_1.png&#34;
 	width=&#34;1242&#34;
 	height=&#34;2208&#34;
 	
@@ -33,7 +33,7 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;&lt;/th&gt;
-&lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_2.png&#34;
+          &lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_2.png&#34;
 	width=&#34;1242&#34;
 	height=&#34;2208&#34;
 	
@@ -47,7 +47,7 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;&lt;/th&gt;
-&lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_3.png&#34;
+          &lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_3.png&#34;
 	width=&#34;1242&#34;
 	height=&#34;2208&#34;
 	
@@ -61,8 +61,10 @@
 		data-flex-basis=&#34;135px&#34;
 	
 &gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
 &lt;div style=&#34;display: flex; align-items: center; &#34;&gt;

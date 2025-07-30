@@ -103,18 +103,18 @@
 &lt;p&gt;FlutterでBottomNavigationBarとModalBottomSheetを組み合わせて使う際、ModalBottomSheetがBottomNavigationBarの背面(上)に表示されて困っていました。&lt;/p&gt;
 &lt;p&gt;この記事では、ModalBottomSheetをBottomNavigationBarの前面に表示する方法を紹介します。&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;before&lt;/th&gt;
-&lt;th&gt;after&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src=&#34;./image/1.png&#34; width=&#34;200&#34; &gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src=&#34;./image/2.png&#34; width=&#34;200&#34; &gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;before&lt;/th&gt;
+          &lt;th&gt;after&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;./image/1.png&#34; width=&#34;200&#34; &gt;&lt;/td&gt;
+          &lt;td&gt;&lt;img src=&#34;./image/2.png&#34; width=&#34;200&#34; &gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 &lt;ul&gt;
@@ -133,11 +133,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;公式ドキュメントによると、&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The useRootNavigator parameter ensures that the root navigator is used to display the BottomSheet when set to true. This is useful in the case that a modal BottomSheet needs to be displayed above all other content but the caller is inside another Navigator.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The useRootNavigator parameter ensures that the root navigator is used to display the BottomSheet when set to true. This is useful in the case that a modal BottomSheet needs to be displayed above all other content but the caller is inside another Navigator.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;useRootNavigator: true&lt;/code&gt;を指定することで、ModalBottomSheetがRootNavigatorを使用して表示されるようになります。これにより、ModalBottomSheetが他のコンテンツの上に表示されるようになります。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;useRootNavigator: true&lt;/code&gt;を指定することで、ModalBottomSheetがRootNavigatorを使用して表示されるようになります。これにより、ModalBottomSheetが他のコンテンツの上に表示されるようになります。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;とのことです。&lt;/p&gt;
 &lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://api.flutter.dev/flutter/material/showModalBottomSheet.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -153,15 +151,15 @@
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;before&lt;/th&gt;
-&lt;th&gt;after&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/1.png&#34;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;before&lt;/th&gt;
+          &lt;th&gt;after&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/1.png&#34;
 	width=&#34;954&#34;
 	height=&#34;366&#34;
 	
@@ -175,7 +173,7 @@
 		data-flex-basis=&#34;625px&#34;
 	
 &gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/2.png&#34;
+          &lt;td&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/2.png&#34;
 	width=&#34;954&#34;
 	height=&#34;366&#34;
 	
@@ -189,8 +187,8 @@
 		data-flex-basis=&#34;625px&#34;
 	
 &gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 &lt;ul&gt;
@@ -233,7 +231,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;MobileAds&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Initialize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;initStatus&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;//iOSでフルスクリーン広告が表示されている間アプリを一時停止する&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;MobileAds&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SetiOSAppPauseOnBackground&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//この行を追加&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;MobileAds&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SetiOSAppPauseOnBackground&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//この行を追加&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/admob/unity/reference/class/google-mobile-ads/api/mobile-ads#setiosapppauseonbackground&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
