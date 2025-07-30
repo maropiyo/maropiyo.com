@@ -6,59 +6,6 @@
         <description>Recent content in Reminder-Parrots on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/reminder-parrot/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title></title>
-        <link>https://maropiyo.com/reminder-parrot/privacy-policy/</link>
-        <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/reminder-parrot/privacy-policy/</guid>
-        <description>&lt;h1 id=&#34;プライバシーポリシー&#34;&gt;プライバシーポリシー&lt;/h1&gt;
-&lt;p&gt;本プライバシーポリシーは、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）が利用者の個人情報をどのように取り扱うかを説明するものです。本アプリを利用される際には、本プライバシーポリシーをよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
-&lt;h2 id=&#34;収集する情報&#34;&gt;収集する情報&lt;/h2&gt;
-&lt;h3 id=&#34;アカウント情報&#34;&gt;アカウント情報&lt;/h3&gt;
-&lt;p&gt;本アプリでは、匿名アカウントシステムを採用しており、お客様の名前、メールアドレス等の
-個人を特定する情報を収集することはありません。アプリの機能提供のために、匿名のユーザー識別子のみを使用します。&lt;/p&gt;
-&lt;h3 id=&#34;広告配信のための情報&#34;&gt;広告配信のための情報&lt;/h3&gt;
-&lt;p&gt;本アプリでは、広告配信のために、GoogleのAdMob広告サービスを利用しています。AdMobは、お客様が興味を持ちそうな広告を提供するために、お客様のデバイス上で情報を収集する場合があります。これには、お客様のデバイスの広告識別子、インストールされているアプリの情報、およびアプリの使用状況に関する情報が含まれます。AdMobのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://policies.google.com/technologies/ads?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h3 id=&#34;アプリの機能提供のための情報&#34;&gt;アプリの機能提供のための情報&lt;/h3&gt;
-&lt;p&gt;本アプリでは、以下のサービスを利用してアプリの機能を提供しています。&lt;/p&gt;
-&lt;h4 id=&#34;firebasegoogle&#34;&gt;Firebase（Google）&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Firebase Analytics&lt;/strong&gt;: アプリの使用状況を分析し、サービス向上のために利用します&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Firebase Cloud Messaging&lt;/strong&gt;: リマインダー通知の配信に利用します&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Firebaseのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://firebase.google.com/support/privacy?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h4 id=&#34;supabase&#34;&gt;Supabase&lt;/h4&gt;
-&lt;p&gt;リマインダーデータの共有・保存のために利用します。匿名アカウントに紐づくデータのみを管理し、個人を特定する情報は保存されません。Supabaseのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://supabase.com/privacy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h4 id=&#34;revenuecat&#34;&gt;RevenueCat&lt;/h4&gt;
-&lt;p&gt;アプリ内課金機能の提供のために利用します。RevenueCatのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://www.revenuecat.com/privacy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h3 id=&#34;ローカルデータ&#34;&gt;ローカルデータ&lt;/h3&gt;
-&lt;p&gt;本アプリでは、リマインダー情報をお客様のデバイス内に保存します。これらの情報は、アプリの動作に必要な範囲でのみ利用され、お客様の同意なく外部に送信されることはありません。&lt;/p&gt;
-&lt;h2 id=&#34;個人情報の利用目的&#34;&gt;個人情報の利用目的&lt;/h2&gt;
-&lt;p&gt;当方が収集した情報は、以下の目的のために利用されます。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;本アプリの提供・運営&lt;/li&gt;
-&lt;li&gt;リマインダー機能の提供&lt;/li&gt;
-&lt;li&gt;プッシュ通知の配信&lt;/li&gt;
-&lt;li&gt;ユーザーサポートやお問い合わせへの対応&lt;/li&gt;
-&lt;li&gt;利用状況の分析や本アプリの改善・向上&lt;/li&gt;
-&lt;li&gt;利用規約違反等の対応&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;個人情報の第三者提供&#34;&gt;個人情報の第三者提供&lt;/h2&gt;
-&lt;p&gt;本アプリが利用者の個人情報を第三者に提供することはありません。ただし、上記のサービス（AdMob、Firebase、Supabase、RevenueCat）については、それぞれのプライバシーポリシーに従って情報が処理される場合があります。&lt;/p&gt;
-&lt;h2 id=&#34;プライバシーポリシーの変更&#34;&gt;プライバシーポリシーの変更&lt;/h2&gt;
-&lt;p&gt;本プライバシーポリシーは、適宜、見直し、改定することがあります。変更後のプライバシーポリシーは、本ウェブサイトに掲載したときから効力を生じるものとします。&lt;/p&gt;
-&lt;h2 id=&#34;お問い合わせ先&#34;&gt;お問い合わせ先&lt;/h2&gt;
-&lt;p&gt;何かご不明な点がございましたら、以下の宛先までお問い合わせください。&lt;/p&gt;
-&lt;p&gt;メールアドレス：maropiyooo[at]gmail.com ([at]を@に変換)&lt;/p&gt;
-&lt;p&gt;X(旧:Twitter): &lt;a class=&#34;link&#34; href=&#34;https://x.com/maropiyooo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://x.com/maropiyooo&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        
+        <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/reminder-parrot/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

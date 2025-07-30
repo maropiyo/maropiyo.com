@@ -2,6 +2,10 @@
 <html lang="ja" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='はじめに FlutterでBottomNavigationBarとModalBottomSheetを組み合わせて使う際、ModalBottomSheetがBottomNavigationBarの背面(上)に表示されて困っていました。
+この記事では、ModalBottomSheetをBottomNavigationBarの前面に表示する方法を紹介します。
+before after 環境 Flutter 3.19.6 方法 // ModalBottomSheetを表示する showModalBottomSheet&lt;void&gt;( useRootNavigator: true, // この行を追加する context: context, builder: (context) { return PhraseActionBottomSheet( phrase: phraseList[i], ); }, ); 公式ドキュメントによると、
+The useRootNavigator parameter ensures that the root navigator is used to display the BottomSheet when set to true. This is useful in the case that a modal BottomSheet needs to be displayed above all other content but the caller is inside another Navigator.
+useRootNavigator: trueを指定することで、ModalBottomSheetがRootNavigatorを使用して表示されるようになります。これにより、ModalBottomSheetが他のコンテンツの上に表示されるようになります。
 '>
 <title>【Flutter】ModalBottomSheetをBottomNavigationBarの前面に表示する方法</title>
 
@@ -9,12 +13,20 @@
 
 <link rel="stylesheet" href="https://maropiyo.com/scss/style.min.3c9d5d72a16baa74cfd583718ed11aa4d8ce8e29279374f529f2539e58f36ac2.css"><meta property='og:title' content='【Flutter】ModalBottomSheetをBottomNavigationBarの前面に表示する方法'>
 <meta property='og:description' content='はじめに FlutterでBottomNavigationBarとModalBottomSheetを組み合わせて使う際、ModalBottomSheetがBottomNavigationBarの背面(上)に表示されて困っていました。
+この記事では、ModalBottomSheetをBottomNavigationBarの前面に表示する方法を紹介します。
+before after 環境 Flutter 3.19.6 方法 // ModalBottomSheetを表示する showModalBottomSheet&lt;void&gt;( useRootNavigator: true, // この行を追加する context: context, builder: (context) { return PhraseActionBottomSheet( phrase: phraseList[i], ); }, ); 公式ドキュメントによると、
+The useRootNavigator parameter ensures that the root navigator is used to display the BottomSheet when set to true. This is useful in the case that a modal BottomSheet needs to be displayed above all other content but the caller is inside another Navigator.
+useRootNavigator: trueを指定することで、ModalBottomSheetがRootNavigatorを使用して表示されるようになります。これにより、ModalBottomSheetが他のコンテンツの上に表示されるようになります。
 '>
 <meta property='og:url' content='https://maropiyo.com/post/flutter_show_modal_bottom_sheet_in_fromt_of_bottom_navigation_bar/'>
 <meta property='og:site_name' content='まろぴよの部屋'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Flutter' /><meta property='article:tag' content='Dart' /><meta property='article:tag' content='BottomNavigationBar' /><meta property='article:tag' content='BottomSheet' /><meta property='article:tag' content='ModalBottomSheet' /><meta property='article:published_time' content='2024-05-25T01:44:21&#43;09:00'/><meta property='article:modified_time' content='2024-05-25T01:44:21&#43;09:00'/>
 <meta name="twitter:title" content="【Flutter】ModalBottomSheetをBottomNavigationBarの前面に表示する方法">
 <meta name="twitter:description" content="はじめに FlutterでBottomNavigationBarとModalBottomSheetを組み合わせて使う際、ModalBottomSheetがBottomNavigationBarの背面(上)に表示されて困っていました。
+この記事では、ModalBottomSheetをBottomNavigationBarの前面に表示する方法を紹介します。
+before after 環境 Flutter 3.19.6 方法 // ModalBottomSheetを表示する showModalBottomSheet&lt;void&gt;( useRootNavigator: true, // この行を追加する context: context, builder: (context) { return PhraseActionBottomSheet( phrase: phraseList[i], ); }, ); 公式ドキュメントによると、
+The useRootNavigator parameter ensures that the root navigator is used to display the BottomSheet when set to true. This is useful in the case that a modal BottomSheet needs to be displayed above all other content but the caller is inside another Navigator.
+useRootNavigator: trueを指定することで、ModalBottomSheetがRootNavigatorを使用して表示されるようになります。これにより、ModalBottomSheetが他のコンテンツの上に表示されるようになります。
 ">
     <link rel="shortcut icon" href="https://maropiyo.com/favicon.ico" />
 
