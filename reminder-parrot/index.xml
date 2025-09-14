@@ -6,10 +6,10 @@
         <description>Recent content in Reminder-Parrots on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/reminder-parrot/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/reminder-parrot/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>プライバシーポリシー</title>
         <link>https://maropiyo.com/reminder-parrot/privacy-policy/</link>
-        <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://maropiyo.com/reminder-parrot/privacy-policy/</guid>
         <description>&lt;p&gt;本プライバシーポリシーは、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）が利用者の個人情報をどのように取り扱うかを説明するものです。本アプリを利用される際には、本プライバシーポリシーをよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
@@ -56,127 +56,91 @@
 &lt;p&gt;メールアドレス：maropiyooo[at]gmail.com ([at]を@に変換)&lt;/p&gt;
 &lt;p&gt;X(旧:Twitter): &lt;a class=&#34;link&#34; href=&#34;https://x.com/maropiyooo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://x.com/maropiyooo&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;最終更新日&lt;/strong&gt;: 2025年9月14日&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>利用規約</title>
         <link>https://maropiyo.com/reminder-parrot/terms/</link>
-        <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://maropiyo.com/reminder-parrot/terms/</guid>
-        <description>&lt;p&gt;本利用規約（以下、「本規約」といいます。）は、スマホアプリ「リマインコ」（以下、「本アプリ」といいます。）の利用に関する条件を定めるものです。本アプリを利用される際には、本規約をよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
+        <description>&lt;p&gt;本利用規約（以下、「本規約」といいます）は、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）の利用に関する条件を定めるものです。本アプリを利用される際には、本規約をよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
 &lt;h2 id=&#34;第1条適用&#34;&gt;第1条（適用）&lt;/h2&gt;
-&lt;p&gt;本規約は、本アプリの利用に関する一切の関係に適用されます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;本規約は、本アプリの利用に関する一切の関係に適用されます。&lt;/li&gt;
+&lt;li&gt;本規約に同意いただけない場合、本アプリの利用をお控えください。&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;第2条利用登録&#34;&gt;第2条（利用登録）&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリの利用に際して、利用者は匿名アカウントを使用して登録を行うものとします。利用者は、登録に際して提供する情報が真実かつ正確であることを保証するものとします。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;当方は、利用者が以下のいずれかに該当する場合、利用登録を拒否または取消すことができるものとします。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;登録情報に虚偽、誤記、記入漏れがあった場合&lt;/li&gt;
+&lt;li&gt;本アプリの一部機能に関して、利用者は匿名アカウントを使用して登録を行うものとします。&lt;/li&gt;
+&lt;li&gt;未成年者が本アプリを利用する場合は、保護者の同意を得た上で利用するものとします。&lt;/li&gt;
+&lt;li&gt;運営者は、利用者が以下のいずれかに該当する場合、利用登録を拒否または取消すことができるものとします。
+&lt;ul&gt;
 &lt;li&gt;過去に本規約に違反したことがある場合&lt;/li&gt;
-&lt;li&gt;その他、当方が利用登録を適当でないと判断した場合&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;その他、運営者が利用登録を適当でないと判断した場合&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;第3条禁止事項&#34;&gt;第3条（禁止事項）&lt;/h2&gt;
+&lt;h2 id=&#34;第3条個人情報の取扱い&#34;&gt;第3条（個人情報の取扱い）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;本アプリは匿名アカウントでの利用を前提としており、個人を特定する情報の取得は最小限に留めています。&lt;/li&gt;
+&lt;li&gt;取得した情報は、本アプリの提供・運営、お問い合わせへの対応、サービスの改善にのみ使用します。&lt;/li&gt;
+&lt;li&gt;詳細については、&lt;a class=&#34;link&#34; href=&#34;./privacy-policy.md&#34; &gt;プライバシーポリシー&lt;/a&gt;をご確認ください。&lt;/li&gt;
+&lt;li&gt;法令に基づく場合を除き、利用者の同意なく第三者に情報を提供することはありません。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;第4条禁止事項&#34;&gt;第4条（禁止事項）&lt;/h2&gt;
 &lt;p&gt;利用者は、本アプリの利用に際して、以下の行為をしてはならないものとします。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;法令または公序良俗に違反する行為&lt;/p&gt;
+&lt;li&gt;法令または公序良俗に違反する行為&lt;/li&gt;
+&lt;li&gt;犯罪行為に関連する行為&lt;/li&gt;
+&lt;li&gt;他者の権利を侵害する行為&lt;/li&gt;
+&lt;li&gt;本アプリの運営を妨害する行為&lt;/li&gt;
+&lt;li&gt;他の利用者に関する個人情報等を収集または蓄積する行為&lt;/li&gt;
+&lt;li&gt;不正アクセスをし、またはこれを試みる行為&lt;/li&gt;
+&lt;li&gt;他の利用者に成りすます行為&lt;/li&gt;
+&lt;li&gt;本アプリを通じ、以下の情報を送信する行為
+&lt;ul&gt;
+&lt;li&gt;暴力的、わいせつ、差別的な表現を含む情報&lt;/li&gt;
+&lt;li&gt;有害なプログラムを含む情報&lt;/li&gt;
+&lt;li&gt;営利目的の宣伝・勧誘情報&lt;/li&gt;
+&lt;li&gt;その他不適切な情報&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;犯罪行為に関連する行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;当方、本アプリの他の利用者、またはその他の第三者の知的財産権、肖像権、プライバシー、名誉その他の権利または利益を侵害する行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリの運営を妨害する行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;他の利用者に関する個人情報等を収集または蓄積する行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;不正アクセスをし、またはこれを試みる行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;他の利用者に成りすます行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリの他の利用者に対する嫌がらせ、誹謗中傷、脅迫、その他の迷惑行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリを通じ、以下の情報を送信または投稿する行為&lt;/p&gt;
+&lt;li&gt;他の利用者のリマインダー内容を無断で公開する行為&lt;/li&gt;
+&lt;li&gt;その他、運営者が不適切と判断する行為&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;第5条本アプリの提供の停止等&#34;&gt;第5条（本アプリの提供の停止等）&lt;/h2&gt;
+&lt;p&gt;運営者は、以下の場合には、事前通知なく本アプリの提供を停止・中断することができます。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;過度に暴力的または残虐な表現を含む情報&lt;/li&gt;
-&lt;li&gt;コンピュータウイルスその他の有害なコンピュータプログラムを含む情報&lt;/li&gt;
-&lt;li&gt;営業、宣伝、広告、勧誘、その他営利を目的とする情報&lt;/li&gt;
-&lt;li&gt;面識のない異性との出会いを目的とする情報&lt;/li&gt;
-&lt;li&gt;チェーンメール、ジャンクメール、スパムメール等の大量一括送信される情報&lt;/li&gt;
-&lt;li&gt;その他、当方が不適切と判断する情報&lt;/li&gt;
+&lt;li&gt;システムの保守・更新を行う場合&lt;/li&gt;
+&lt;li&gt;不可抗力により提供が困難となった場合&lt;/li&gt;
+&lt;li&gt;その他、やむを得ない事情がある場合&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリの他の利用者に対するリマインダーの内容を無断で公開する行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;その他、当方が不適切と判断する行為&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;第4条本アプリの提供の停止等&#34;&gt;第4条（本アプリの提供の停止等）&lt;/h2&gt;
-&lt;p&gt;当方は、以下のいずれかに該当する場合には、利用者に事前に通知することなく、本アプリの全部または一部の提供を停止または中断することができるものとします。&lt;/p&gt;
+&lt;h2 id=&#34;第6条利用制限および登録抹消&#34;&gt;第6条（利用制限および登録抹消）&lt;/h2&gt;
+&lt;p&gt;運営者は、利用者が本規約に違反した場合、事前通知なく利用制限または登録抹消を行うことができます。&lt;/p&gt;
+&lt;h2 id=&#34;第7条免責事項&#34;&gt;第7条（免責事項）&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリにかかるシステムの保守点検または更新を行う場合&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;地震、落雷、火災、風水害、停電または天災などの不可抗力により、本アプリの提供が困難となった場合&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;コンピュータまたは通信回線等が事故により停止した場合&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;その他、当方が本アプリの提供が困難と判断した場合&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;本アプリは現状有姿で提供され、運営者は本アプリの完全性、正確性、確実性、有用性等について保証しません。&lt;/li&gt;
+&lt;li&gt;本アプリの利用により生じた損害について、運営者に故意または重大な過失がある場合を除き、運営者は責任を負いません。&lt;/li&gt;
+&lt;li&gt;利用者間または利用者と第三者間の紛争について、運営者は一切責任を負いません。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;第5条利用制限および登録抹消&#34;&gt;第5条（利用制限および登録抹消）&lt;/h2&gt;
-&lt;p&gt;当方は、利用者が以下のいずれかに該当する場合には、事前の通知なく、利用者に対して本アプリの利用制限または登録抹消を行うことができるものとします。&lt;/p&gt;
+&lt;h2 id=&#34;第8条サービス内容の変更終了&#34;&gt;第8条（サービス内容の変更・終了）&lt;/h2&gt;
+&lt;p&gt;運営者は、利用者への通知なく、本アプリの内容変更または提供終了をすることができます。継続的なサービス提供を保証するものではありません。&lt;/p&gt;
+&lt;h2 id=&#34;第9条利用規約の変更&#34;&gt;第9条（利用規約の変更）&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;本規約のいずれかの条項に違反した場合&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;登録事項に虚偽の事実があることが判明した場合&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;その他、当方が本アプリの利用を適当でないと判断した場合&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;運営者は、必要に応じて本規約を変更することができます。&lt;/li&gt;
+&lt;li&gt;変更後の規約は、本アプリ内または関連ウェブサイトに掲載した時点から効力を生じます。&lt;/li&gt;
+&lt;li&gt;変更後も本アプリを利用した場合、変更に同意したものとみなします。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;第6条免責事項&#34;&gt;第6条（免責事項）&lt;/h2&gt;
-&lt;p&gt;本アプリの利用に関して、当方は以下の事項について一切の責任を負いません。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリの利用により利用者に生じたあらゆる損害&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリに関するシステムの障害、エラー、バグ等により利用者に生じたあらゆる損害&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;本アプリに関して、利用者と他の利用者または第三者との間に生じたあらゆる紛争&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;第7条サービス内容の変更等&#34;&gt;第7条（サービス内容の変更等）&lt;/h2&gt;
-&lt;p&gt;当方は、利用者に事前に通知することなく、本アプリの内容を変更し、または提供を中止することができるものとします。&lt;/p&gt;
-&lt;h2 id=&#34;第8条利用規約の変更&#34;&gt;第8条（利用規約の変更）&lt;/h2&gt;
-&lt;p&gt;当方は、必要と判断した場合には、利用者に事前に通知することなく、本規約を変更することができるものとします。変更後の規約は、本アプリに掲載した時点から効力を生じるものとします。&lt;/p&gt;
 &lt;h2 id=&#34;お問い合わせ先&#34;&gt;お問い合わせ先&lt;/h2&gt;
-&lt;p&gt;何かご不明な点がございましたら、以下の宛先までお問い合わせください。&lt;/p&gt;
-&lt;p&gt;メールアドレス：maropiyooo[at]gmail.com ([at]を@に変換)&lt;/p&gt;
-&lt;p&gt;X(旧:Twitter): &lt;a class=&#34;link&#34; href=&#34;https://x.com/maropiyooo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;本アプリに関するお問い合わせは以下までお願いします。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;メールアドレス&lt;/strong&gt;: maropiyooo[at]gmail.com ([at]を@に変換)&lt;br&gt;
+&lt;strong&gt;X (旧Twitter)&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://x.com/maropiyooo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://x.com/maropiyooo&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;最終更新日&lt;/strong&gt;: 2025年9月14日&lt;/p&gt;
 </description>
         </item>
         
