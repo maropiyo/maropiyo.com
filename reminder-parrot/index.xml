@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Reminder-Parrots on まろぴよの部屋</title>
-        <link>http://localhost:1313/reminder-parrot/</link>
+        <link>https://maropiyo.com/reminder-parrot/</link>
         <description>Recent content in Reminder-Parrots on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>ja</language><atom:link href="http://localhost:1313/reminder-parrot/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>ja</language><atom:link href="https://maropiyo.com/reminder-parrot/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>プライバシーポリシー | リマインコ</title>
-        <link>http://localhost:1313/reminder-parrot/privacy-policy/</link>
+        <link>https://maropiyo.com/reminder-parrot/privacy-policy/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/reminder-parrot/privacy-policy/</guid>
-        <description>&lt;img src="http://localhost:1313/image/privacy_policy.png" alt="Featured image of post プライバシーポリシー | リマインコ" /&gt;&lt;p&gt;本プライバシーポリシーは、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）が利用者の個人情報をどのように取り扱うかを説明するものです。本アプリを利用される際には、本プライバシーポリシーをよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
+        <guid>https://maropiyo.com/reminder-parrot/privacy-policy/</guid>
+        <description>&lt;img src="https://maropiyo.com/reminder-parrot/privacy-policy/privacy_policy.png" alt="Featured image of post プライバシーポリシー | リマインコ" /&gt;&lt;p&gt;本プライバシーポリシーは、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）が利用者の個人情報をどのように取り扱うかを説明するものです。本アプリを利用される際には、本プライバシーポリシーをよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
 &lt;h2 id=&#34;収集する情報&#34;&gt;収集する情報&lt;/h2&gt;
 &lt;h3 id=&#34;アカウント情報&#34;&gt;アカウント情報&lt;/h3&gt;
 &lt;p&gt;本アプリでは、匿名アカウントを採用しており、お客様の名前、メールアドレス等の
@@ -61,11 +61,11 @@
         </item>
         <item>
         <title>よくある質問 | リマインコ</title>
-        <link>http://localhost:1313/reminder-parrot/faq/faq/</link>
+        <link>https://maropiyo.com/reminder-parrot/faq/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/reminder-parrot/faq/faq/</guid>
-        <description>&lt;img src="http://localhost:1313/image/faq.png" alt="Featured image of post よくある質問 | リマインコ" /&gt;&lt;h3 id=&#34;q-覚えられることばが少ないです&#34;&gt;Q: 覚えられることばが少ないです&lt;/h3&gt;
+        <guid>https://maropiyo.com/reminder-parrot/faq/</guid>
+        <description>&lt;img src="https://maropiyo.com/reminder-parrot/faq/faq.png" alt="Featured image of post よくある質問 | リマインコ" /&gt;&lt;h3 id=&#34;q-覚えられることばが少ないです&#34;&gt;Q: 覚えられることばが少ないです&lt;/h3&gt;
 &lt;p&gt;インコの脳みそは小さいので、たくさんのことを同時におぼえるのはむずかしいです。レベルがあがると、覚えられることばが増えます！&lt;/p&gt;
 &lt;h3 id=&#34;q-覚えられる文字数が少ないです&#34;&gt;Q: 覚えられる文字数が少ないです&lt;/h3&gt;
 &lt;p&gt;インコの脳みそは小さいので、一度に長い言葉を同時におぼえるのはむずかしいです。レベルがあがると、覚えられる文字数が増えます！&lt;/p&gt;
@@ -120,11 +120,11 @@
         </item>
         <item>
         <title>リマインコ</title>
-        <link>http://localhost:1313/reminder-parrot/image/</link>
+        <link>https://maropiyo.com/reminder-parrot/image/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/reminder-parrot/image/</guid>
-        <description>&lt;img src="http://localhost:1313/image/reminder_parrot.png" alt="Featured image of post リマインコ" /&gt;&lt;link href=&#34;https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&amp;display=swap&#34; rel=&#34;stylesheet&#34;&gt;
+        <guid>https://maropiyo.com/reminder-parrot/image/</guid>
+        <description>&lt;img src="https://maropiyo.com/image/reminder_parrot.png" alt="Featured image of post リマインコ" /&gt;&lt;link href=&#34;https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&amp;display=swap&#34; rel=&#34;stylesheet&#34;&gt;
 &lt;div style=&#34;background-color: #FCF7E9;&#34;&gt;
 &lt;br/&gt;
 &lt;hr style=&#34;background-color: #E59F43;&#34;&gt;
@@ -158,17 +158,26 @@
         &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
     &lt;/a&gt;
 &lt;/div&gt;
+&lt;hr style=&#34;background-color: #E59F43;&#34;&gt;
+&lt;!--FAQ| Privacy Policy| Terms--&gt;
+&lt;div style=&#34;text-align: center; margin-bottom: 20px; color: #E59F43;&#34;&gt;
+    &lt;a href=&#34;https://maropiyo.com/reminder-parrot/faq/&#34; style=&#34;margin: 0
+    10px; text-decoration: none; font-family: &#39;M PLUS Rounded 1c&#39;; color: #E59F43; font-weight: bold;&#34;&gt;FAQ&lt;/a&gt; |
+    &lt;a href=&#34;https://maropiyo.com/reminder-parrot/privacy-policy/&#34; style=&#34;margin: 0 10px; text-decoration: none; font-family: &#39;M PLUS Rounded 1c&#39;; color: #E59F43; font-weight: bold;&#34;&gt;プライバシーポリシー&lt;/a&gt; |
+    &lt;a href=&#34;https://maropiyo.com/reminder-parrot/terms/&#34; style=&#34;margin: 0
+    10px; text-decoration: none; font-family: &#39;M PLUS Rounded 1c&#39;; color: #E59F43; font-weight: bold;&#34;&gt;利用規約&lt;/a&gt;
+&lt;/div&gt;
 &lt;br/&gt;
 &lt;/div&gt;
 </description>
         </item>
         <item>
         <title>利用規約 | リマインコ</title>
-        <link>http://localhost:1313/reminder-parrot/terms/</link>
+        <link>https://maropiyo.com/reminder-parrot/terms/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/reminder-parrot/terms/</guid>
-        <description>&lt;img src="http://localhost:1313/image/terms.png" alt="Featured image of post 利用規約 | リマインコ" /&gt;&lt;p&gt;本利用規約（以下、「本規約」といいます）は、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）の利用に関する条件を定めるものです。本アプリを利用される際には、本規約をよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
+        <guid>https://maropiyo.com/reminder-parrot/terms/</guid>
+        <description>&lt;img src="https://maropiyo.com/reminder-parrot/terms/terms.png" alt="Featured image of post 利用規約 | リマインコ" /&gt;&lt;p&gt;本利用規約（以下、「本規約」といいます）は、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）の利用に関する条件を定めるものです。本アプリを利用される際には、本規約をよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
 &lt;h2 id=&#34;第1条適用&#34;&gt;第1条（適用）&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;本規約は、本アプリの利用に関する一切の関係に適用されます。&lt;/li&gt;
