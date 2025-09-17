@@ -276,65 +276,6 @@
         <description></description>
         </item>
         <item>
-        <title>FAQ | リマインコ</title>
-        <link>https://maropiyo.com/reminder-parrot/faq/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/reminder-parrot/faq/</guid>
-        <description>&lt;img src="https://maropiyo.com/image/faq.png" alt="Featured image of post FAQ | リマインコ" /&gt;&lt;h3 id=&#34;q-覚えられることばが少ないです&#34;&gt;Q: 覚えられることばが少ないです&lt;/h3&gt;
-&lt;p&gt;インコの脳みそは小さいので、たくさんのことを同時におぼえるのはむずかしいです。レベルがあがると、覚えられることばが増えます！&lt;/p&gt;
-&lt;h3 id=&#34;q-覚えられる文字数が少ないです&#34;&gt;Q: 覚えられる文字数が少ないです&lt;/h3&gt;
-&lt;p&gt;インコの脳みそは小さいので、一度に長い言葉を同時におぼえるのはむずかしいです。レベルがあがると、覚えられる文字数が増えます！&lt;/p&gt;
-&lt;h3 id=&#34;q-なんで覚えたことばをわすれるのですか&#34;&gt;Q: なんで覚えたことばをわすれるのですか？&lt;/h3&gt;
-&lt;p&gt;インコも人間と同じように時間がたつとわすれちゃいます。レベルがあがると、わすれにくくなります！&lt;/p&gt;
-&lt;h3 id=&#34;q-最大レベルは何ですか&#34;&gt;Q: 最大レベルは何ですか？&lt;/h3&gt;
-&lt;p&gt;最大レベルは25でMaxです！&lt;/p&gt;
-&lt;h3 id=&#34;q-リマインネットを使いたいです&#34;&gt;Q: リマインネットを使いたいです&lt;/h3&gt;
-&lt;p&gt;リマインネットはレベル5から使えるようになります！&lt;/p&gt;
-&lt;h3 id=&#34;q-わすれたことばは見れないのですか&#34;&gt;Q: わすれたことばは見れないのですか？&lt;/h3&gt;
-&lt;p&gt;レベル10になると、わすれたことばを見れるようになります&lt;/p&gt;
-&lt;h3 id=&#34;q-広告を消す方法はありますか&#34;&gt;Q: 広告を消す方法はありますか？&lt;/h3&gt;
-&lt;p&gt;作ろうとおもったのですが、苦戦したのでありません&lt;/p&gt;
-&lt;h3 id=&#34;q-変な広告が表示されます&#34;&gt;Q: 変な広告が表示されます&lt;/h3&gt;
-&lt;p&gt;広告元をブロックするので、広告のスクリーンショットを撮って、 &lt;a class=&#34;link&#34; href=&#34;https://maropiyo.com/page/contact/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;お問い合わせ&lt;/a&gt; の連絡先に送ってください！&lt;/p&gt;
-&lt;h3 id=&#34;q-リマインネットに投稿したリマインダーが消えました&#34;&gt;Q: リマインネットに投稿したリマインダーが消えました&lt;/h3&gt;
-&lt;p&gt;インコが言葉をわすれたか、運営が不適切と判断した場合、削除されることがあります！&lt;/p&gt;
-&lt;h3 id=&#34;q-リマインネットに投稿したリマインダーを削除したいです&#34;&gt;Q: リマインネットに投稿したリマインダーを削除したいです&lt;/h3&gt;
-&lt;p&gt;リマインネットの「じぶんのとうこう」から削除できます！&lt;/p&gt;
-&lt;h3 id=&#34;q-リマインネットに投稿したリマインダーを編集したいです&#34;&gt;Q: リマインネットに投稿したリマインダーを編集したいです&lt;/h3&gt;
-&lt;p&gt;おぼえている言葉を編集したら、自動で更新されます！&lt;/p&gt;
-&lt;h3 id=&#34;q-経験値は何をしたらもらえますか&#34;&gt;Q: 経験値は何をしたらもらえますか？&lt;/h3&gt;
-&lt;p&gt;以下の行動をすると経験値がもらえます！&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;「おしえる」+1&lt;/li&gt;
-&lt;li&gt;「おしえる&amp;amp;とうこう」+2&lt;/li&gt;
-&lt;li&gt;「おぼえる」+1&lt;/li&gt;
-&lt;li&gt;「リマインダーをおくる」+1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;q-もちべは何をしたら減りますか&#34;&gt;Q: もちべは何をしたら減りますか?&lt;/h3&gt;
-&lt;p&gt;以下の行動をするともちべが減ります！&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;「おしえる」-1&lt;/li&gt;
-&lt;li&gt;「おしえる&amp;amp;とうこう」-1&lt;/li&gt;
-&lt;li&gt;「おぼえる」-1&lt;/li&gt;
-&lt;li&gt;「リマインダーをおくる」-1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;q-もちべはどうやって回復しますか&#34;&gt;Q: もちべはどうやって回復しますか?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;もちべは時間とともに回復します！&lt;/li&gt;
-&lt;li&gt;おぼえていることばを完了すると、少し回復します！&lt;/li&gt;
-&lt;li&gt;広告をみて全回復もできます！&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;q-質問があります&#34;&gt;Q: 質問があります&lt;/h3&gt;
-&lt;p&gt;アプリ内の「お問い合わせ」から送ってください！&lt;/p&gt;
-&lt;h3 id=&#34;q-バグを見つけました&#34;&gt;Q: バグを見つけました&lt;/h3&gt;
-&lt;p&gt;バグはアプリ内の「お問い合わせ」から送ってください！&lt;/p&gt;
-&lt;h3 id=&#34;q-機能の要望があります&#34;&gt;Q: 機能の要望があります&lt;/h3&gt;
-&lt;p&gt;機能の要望はアプリ内の「お問い合わせ」から送ってください！&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>Search</title>
         <link>https://maropiyo.com/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -343,66 +284,12 @@
         <description></description>
         </item>
         <item>
-        <title>プライバシーポリシー | リマインコ</title>
-        <link>https://maropiyo.com/reminder-parrot/privacy-policy/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/reminder-parrot/privacy-policy/</guid>
-        <description>&lt;img src="https://maropiyo.com/image/privacy_policy.png" alt="Featured image of post プライバシーポリシー | リマインコ" /&gt;&lt;p&gt;本プライバシーポリシーは、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）が利用者の個人情報をどのように取り扱うかを説明するものです。本アプリを利用される際には、本プライバシーポリシーをよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
-&lt;h2 id=&#34;収集する情報&#34;&gt;収集する情報&lt;/h2&gt;
-&lt;h3 id=&#34;アカウント情報&#34;&gt;アカウント情報&lt;/h3&gt;
-&lt;p&gt;本アプリでは、匿名アカウントを採用しており、お客様の名前、メールアドレス等の
-個人を特定する情報を収集することはありません。アプリの機能提供のために、匿名のユーザー識別子のみを使用します。&lt;/p&gt;
-&lt;h3 id=&#34;広告配信のための情報&#34;&gt;広告配信のための情報&lt;/h3&gt;
-&lt;p&gt;本アプリでは、広告配信のために、GoogleのAdMob広告サービスを利用しています。AdMobは、お客様が興味を持ちそうな広告を提供するために、お客様のデバイス上で情報を収集する場合があります。これには、お客様のデバイスの広告識別子、インストールされているアプリの情報、およびアプリの使用状況に関する情報が含まれます。AdMobのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://policies.google.com/technologies/ads?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h3 id=&#34;アプリの機能提供のための情報&#34;&gt;アプリの機能提供のための情報&lt;/h3&gt;
-&lt;p&gt;本アプリでは、以下のサービスを利用してアプリの機能を提供しています。&lt;/p&gt;
-&lt;h4 id=&#34;firebasegoogle&#34;&gt;Firebase（Google）&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Firebase Analytics&lt;/strong&gt;: アプリの使用状況を分析し、サービス向上のために利用します&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Firebase Cloud Messaging&lt;/strong&gt;: リマインダー通知の配信に利用します&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Firebaseのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://firebase.google.com/support/privacy?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h4 id=&#34;supabase&#34;&gt;Supabase&lt;/h4&gt;
-&lt;p&gt;リマインダーデータの共有・保存のために利用します。匿名アカウントに紐づくデータのみを管理し、個人を特定する情報は保存されません。Supabaseのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://supabase.com/privacy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h3 id=&#34;リマインダーの内容&#34;&gt;リマインダーの内容&lt;/h3&gt;
-&lt;p&gt;本アプリのリマインダー共有機能を利用して投稿された内容は、他のユーザーにも公開されます。投稿内容には個人を特定する情報を含めないようご注意ください。
-また、公開していないリマインダーの内容は、端末内に保存され、外部に送信されることはありません。&lt;/p&gt;
-&lt;h3 id=&#34;お問い合わせ時に送信される情報&#34;&gt;お問い合わせ時に送信される情報&lt;/h3&gt;
-&lt;p&gt;本アプリに関するお問い合わせをいただく際に、メールアドレスやお問い合わせ内容などの情報を提供していただく場合があります。これらの情報は、お問い合わせへの対応のために利用されます。&lt;/p&gt;
-&lt;h2 id=&#34;個人情報の利用目的&#34;&gt;個人情報の利用目的&lt;/h2&gt;
-&lt;p&gt;当方が収集した情報は、以下の目的のために利用されます。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;本アプリの提供・運営&lt;/li&gt;
-&lt;li&gt;リマインダー機能の提供&lt;/li&gt;
-&lt;li&gt;プッシュ通知の配信&lt;/li&gt;
-&lt;li&gt;ユーザーサポートやお問い合わせへの対応&lt;/li&gt;
-&lt;li&gt;利用状況の分析や本アプリの改善・向上&lt;/li&gt;
-&lt;li&gt;利用規約違反等の対応&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;個人情報の第三者提供&#34;&gt;個人情報の第三者提供&lt;/h2&gt;
-&lt;p&gt;本アプリが利用者の個人情報を第三者に提供することはありません。ただし、上記のサービス（AdMob、Firebase、Supabase）については、それぞれのプライバシーポリシーに従って情報が処理される場合があります。&lt;/p&gt;
-&lt;h2 id=&#34;プライバシーポリシーの変更&#34;&gt;プライバシーポリシーの変更&lt;/h2&gt;
-&lt;p&gt;本プライバシーポリシーは、適宜、見直し、改定することがあります。変更後のプライバシーポリシーは、本ウェブサイトに掲載したときから効力を生じるものとします。&lt;/p&gt;
-&lt;h2 id=&#34;お問い合わせ先&#34;&gt;お問い合わせ先&lt;/h2&gt;
-&lt;p&gt;何かご不明な点がございましたら、以下の宛先までお問い合わせください。&lt;/p&gt;
-&lt;p&gt;メールアドレス：maropiyooo[at]gmail.com ([at]を@に変換)&lt;/p&gt;
-&lt;p&gt;X: &lt;a class=&#34;link&#34; href=&#34;https://x.com/maropiyooo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://x.com/maropiyooo&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;最終更新日&lt;/strong&gt;: 2025年9月15日&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>リマインコ</title>
-        <link>https://maropiyo.com/reminder-parrot/image/</link>
+        <link>https://maropiyo.com/reminder-parrot/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://maropiyo.com/reminder-parrot/image/</guid>
-        <description>&lt;img src="https://maropiyo.com/image/reminder_parrot.png" alt="Featured image of post リマインコ" /&gt;&lt;link href=&#34;https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&amp;display=swap&#34; rel=&#34;stylesheet&#34;&gt;
+        <guid>https://maropiyo.com/reminder-parrot/</guid>
+        <description>&lt;img src="https://maropiyo.com/reminder-parrot/image/reminder_parrot.png" alt="Featured image of post リマインコ" /&gt;&lt;link href=&#34;https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&amp;display=swap&#34; rel=&#34;stylesheet&#34;&gt;
 &lt;div style=&#34;background-color: #FCF7E9;&#34;&gt;
 &lt;br/&gt;
 &lt;hr style=&#34;background-color: #E59F43;&#34;&gt;
@@ -532,90 +419,6 @@
     &gt;@maropiyooo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;メールアドレス: maropiyooo[at]gmail.com ([at]を@に変換)&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>利用規約 | リマインコ</title>
-        <link>https://maropiyo.com/reminder-parrot/terms/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/reminder-parrot/terms/</guid>
-        <description>&lt;img src="https://maropiyo.com/image/terms.png" alt="Featured image of post 利用規約 | リマインコ" /&gt;&lt;p&gt;本利用規約（以下、「本規約」といいます）は、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）の利用に関する条件を定めるものです。本アプリを利用される際には、本規約をよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
-&lt;h2 id=&#34;第1条適用&#34;&gt;第1条（適用）&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;本規約は、本アプリの利用に関する一切の関係に適用されます。&lt;/li&gt;
-&lt;li&gt;本規約に同意いただけない場合、本アプリの利用をお控えください。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;第2条利用登録&#34;&gt;第2条（利用登録）&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;本アプリの一部機能に関して、利用者は匿名アカウントを使用して登録を行うものとします。&lt;/li&gt;
-&lt;li&gt;未成年者が本アプリを利用する場合は、保護者の同意を得た上で利用するものとします。&lt;/li&gt;
-&lt;li&gt;運営者は、利用者が以下のいずれかに該当する場合、利用登録を拒否または取消すことができるものとします。
-&lt;ul&gt;
-&lt;li&gt;過去に本規約に違反したことがある場合&lt;/li&gt;
-&lt;li&gt;その他、運営者が利用登録を適当でないと判断した場合&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;第3条個人情報の取扱い&#34;&gt;第3条（個人情報の取扱い）&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;本アプリは匿名アカウントでの利用を前提としており、個人を特定する情報の取得は最小限に留めています。&lt;/li&gt;
-&lt;li&gt;取得した情報は、本アプリの提供・運営、お問い合わせへの対応、サービスの改善にのみ使用します。&lt;/li&gt;
-&lt;li&gt;詳細については、&lt;a class=&#34;link&#34; href=&#34;https://maropiyo.com/reminder-parrot/privacy-policy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;プライバシーポリシー&lt;/a&gt;をご確認ください。&lt;/li&gt;
-&lt;li&gt;法令に基づく場合を除き、利用者の同意なく第三者に情報を提供することはありません。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;第4条禁止事項&#34;&gt;第4条（禁止事項）&lt;/h2&gt;
-&lt;p&gt;利用者は、本アプリの利用に際して、以下の行為をしてはならないものとします。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;法令または公序良俗に違反する行為&lt;/li&gt;
-&lt;li&gt;犯罪行為に関連する行為&lt;/li&gt;
-&lt;li&gt;他者の権利を侵害する行為&lt;/li&gt;
-&lt;li&gt;本アプリの運営を妨害する行為&lt;/li&gt;
-&lt;li&gt;他の利用者に関する個人情報等を収集または蓄積する行為&lt;/li&gt;
-&lt;li&gt;不正アクセスをし、またはこれを試みる行為&lt;/li&gt;
-&lt;li&gt;他の利用者に成りすます行為&lt;/li&gt;
-&lt;li&gt;本アプリを通じ、以下の情報を送信する行為
-&lt;ul&gt;
-&lt;li&gt;暴力的、わいせつ、差別的な表現を含む情報&lt;/li&gt;
-&lt;li&gt;有害なプログラムを含む情報&lt;/li&gt;
-&lt;li&gt;営利目的の宣伝・勧誘情報&lt;/li&gt;
-&lt;li&gt;その他不適切な情報&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;他の利用者のリマインダー内容を無断で公開する行為&lt;/li&gt;
-&lt;li&gt;その他、運営者が不適切と判断する行為&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;第5条本アプリの提供の停止等&#34;&gt;第5条（本アプリの提供の停止等）&lt;/h2&gt;
-&lt;p&gt;運営者は、以下の場合には、事前通知なく本アプリの提供を停止・中断することができます。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;システムの保守・更新を行う場合&lt;/li&gt;
-&lt;li&gt;不可抗力により提供が困難となった場合&lt;/li&gt;
-&lt;li&gt;その他、やむを得ない事情がある場合&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;第6条利用制限および登録抹消&#34;&gt;第6条（利用制限および登録抹消）&lt;/h2&gt;
-&lt;p&gt;運営者は、利用者が本規約に違反した場合、事前通知なく利用制限または登録抹消を行うことができます。&lt;/p&gt;
-&lt;h2 id=&#34;第7条免責事項&#34;&gt;第7条（免責事項）&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;本アプリは現状有姿で提供され、運営者は本アプリの完全性、正確性、確実性、有用性等について保証しません。&lt;/li&gt;
-&lt;li&gt;本アプリの利用により生じた損害について、運営者に故意または重大な過失がある場合を除き、運営者は責任を負いません。&lt;/li&gt;
-&lt;li&gt;利用者間または利用者と第三者間の紛争について、運営者は一切責任を負いません。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;第8条サービス内容の変更終了&#34;&gt;第8条（サービス内容の変更・終了）&lt;/h2&gt;
-&lt;p&gt;運営者は、利用者への通知なく、本アプリの内容変更または提供終了をすることができます。継続的なサービス提供を保証するものではありません。&lt;/p&gt;
-&lt;h2 id=&#34;第9条利用規約の変更&#34;&gt;第9条（利用規約の変更）&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;運営者は、必要に応じて本規約を変更することができます。&lt;/li&gt;
-&lt;li&gt;変更後の規約は、本アプリ内または関連ウェブサイトに掲載した時点から効力を生じます。&lt;/li&gt;
-&lt;li&gt;変更後も本アプリを利用した場合、変更に同意したものとみなします。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;お問い合わせ先&#34;&gt;お問い合わせ先&lt;/h2&gt;
-&lt;p&gt;何かご不明な点がございましたら、以下の宛先までお問い合わせください。&lt;/p&gt;
-&lt;p&gt;メールアドレス：maropiyooo[at]gmail.com ([at]を@に変換)&lt;/p&gt;
-&lt;p&gt;X: &lt;a class=&#34;link&#34; href=&#34;https://x.com/maropiyooo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://x.com/maropiyooo&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;最終更新日&lt;/strong&gt;: 2025年9月15日&lt;/p&gt;
 </description>
         </item>
         
