@@ -6,6 +6,23 @@
         <description>Recent content in Reminder-Parrots on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language><atom:link href="https://maropiyo.com/reminder-parrot/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>アップデート履歴 | リマインコ</title>
+        <link>https://maropiyo.com/reminder-parrot/releases/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyo.com/reminder-parrot/releases/</guid>
+        <description>&lt;img src="https://maropiyo.com/reminder-parrot/releases/release.png" alt="Featured image of post アップデート履歴 | リマインコ" /&gt;&lt;p&gt;こんにちは！ここではリマインコのアップデート履歴をまとめていますっぴ！&lt;/p&gt;
+&lt;!-- ## 1.0.2 (2025-10-03)
+
+- iOSでダークモードの時に、バナー広告とリマインネット広告の背景が黒くなる不具合を修正したっぴ！(ダークモードは非対応でごめんっぴ...)
+- ちょっと横幅小さめの端末でリマインコのレベルが2桁になると、ステータスが改行されてしまう問題を修正したっぴ！(まだ改行されるよって端末があったら教えてほしいっぴ...) --&gt;
+&lt;h2 id=&#34;101-20250926&#34;&gt;1.0.1 (2025/09/26)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;正式リリースしたっぴ！&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>プライバシーポリシー | リマインコ</title>
         <link>https://maropiyo.com/reminder-parrot/privacy-policy/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -154,7 +171,7 @@ GooglePlay: 日本、シンガポール&lt;/p&gt;
         <description>&lt;img src="https://maropiyo.com/image/reminder_parrot.png" alt="Featured image of post リマインコ" /&gt;&lt;div style=&#34;background-color: #FCF7E9;&#34;&gt;
 &lt;br/&gt;
 &lt;hr style=&#34;background-color: #E59F43;&#34;&gt;
-&lt;p style=&#34;text-align: center; font-size: 20px; font-weight: bold;  margin: 10px; color: #E59F43;&#34;&gt;事前登録はこちらから！
+&lt;p style=&#34;text-align: center; font-size: 20px; font-weight: bold;  margin: 10px; color: #E59F43;&#34;&gt;インストールはこちら！
 &lt;/p&gt;
 &lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
     &lt;a href=&#34;https://apps.apple.com/app/id6748996182&#34;&gt;
@@ -173,7 +190,7 @@ GooglePlay: 日本、シンガポール&lt;/p&gt;
 &lt;hr style=&#34;background-color: #E59F43;&#34;&gt;
 &lt;image src=&#34;image/reminder_parrot_4.png&#34; alt=&#34;リマインコ&#34; style=&#34;width: auto; display: inline; margin-left: auto; margin-right: auto;&#34;/&gt;
 &lt;hr style=&#34;background-color: #E59F43;&#34;&gt;
-&lt;p style=&#34;text-align: center; font-size: 20px; font-weight: bold;  margin: 10px; color: #E59F43;&#34;&gt;事前登録はこちらから！&lt;br/&gt;
+&lt;p style=&#34;text-align: center; font-size: 20px; font-weight: bold;  margin: 10px; color: #E59F43;&#34;&gt;インストールはこちら！&lt;br/&gt;
 &lt;/p&gt;
 &lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
     &lt;a href=&#34;https://apps.apple.com/app/id6748996182&#34;&gt;
