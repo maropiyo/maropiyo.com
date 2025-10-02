@@ -315,6 +315,98 @@
         <description></description>
         </item>
         <item>
+        <title>つくったもの！</title>
+        <link>https://maropiyo.com/works/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyo.com/works/</guid>
+        <description>&lt;h2 id=&#34;リマインコ配信中&#34;&gt;リマインコ(配信中)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/reminder_parrot.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;500&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6748996182&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.reminderparrot&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;スライドリ配信中&#34;&gt;スライドリ(配信中)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/slide_bird.png&#34;
+	width=&#34;1025&#34;
+	height=&#34;500&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6739469367&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.SlideBird&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;インコゲーム配信中&#34;&gt;インコゲーム(配信中)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/parrot_game.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;500&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ParrotGame&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;とりジャンプ配信中&#34;&gt;とりジャンプ(配信中)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/tori_jump.png&#34;
+	width=&#34;2544&#34;
+	height=&#34;1242&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ToriJump&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>リマインコ</title>
         <link>https://maropiyo.com/reminder-parrot/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -362,98 +454,6 @@
     10px; text-decoration: none; font-family: &#39;M PLUS Rounded 1c&#39;; color: #E59F43; font-weight: bold;&#34;&gt;利用規約&lt;/a&gt;
 &lt;/div&gt;
 &lt;br/&gt;
-&lt;/div&gt;
-</description>
-        </item>
-        <item>
-        <title>作ったもの</title>
-        <link>https://maropiyo.com/works/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/works/</guid>
-        <description>&lt;h2 id=&#34;リマインコ&#34;&gt;リマインコ&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/reminder_parrot.png&#34;
-	width=&#34;1024&#34;
-	height=&#34;500&#34;
-	
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;204&#34;
-		data-flex-basis=&#34;491px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6748996182&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.reminderparrot&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;スライドリ&#34;&gt;スライドリ&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/slide_bird.png&#34;
-	width=&#34;1025&#34;
-	height=&#34;500&#34;
-	
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;205&#34;
-		data-flex-basis=&#34;492px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6739469367&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.SlideBird&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;インコゲーム&#34;&gt;インコゲーム&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/parrot_game.png&#34;
-	width=&#34;1024&#34;
-	height=&#34;500&#34;
-	
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;204&#34;
-		data-flex-basis=&#34;491px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ParrotGame&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;とりジャンプ&#34;&gt;とりジャンプ&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/works/image/tori_jump.png&#34;
-	width=&#34;2544&#34;
-	height=&#34;1242&#34;
-	
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;204&#34;
-		data-flex-basis=&#34;491px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ToriJump&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
 &lt;/div&gt;
 </description>
         </item>
