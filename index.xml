@@ -464,6 +464,15 @@
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h2 id=&#34;事前登録受付中&#34;&gt;事前登録受付中！&lt;/h2&gt;
+&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6756511176&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.toripple&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
 </description>
         </item>
         <item>
