@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Android on まろぴよの部屋</title>
-        <link>http://localhost:1313/tags/android/</link>
+        <link>http://localhost:1314/tags/android/</link>
         <description>Recent content in Android on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Wed, 25 Jun 2025 12:00:00 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/android/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 25 Jun 2025 12:00:00 +0900</lastBuildDate><atom:link href="http://localhost:1314/tags/android/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【SQLDelight】&#34;no such column&#34; エラーの対処法</title>
-        <link>http://localhost:1313/post/sqldelight-no-such-column-error/</link>
+        <link>http://localhost:1314/post/sqldelight-no-such-column-error/</link>
         <pubDate>Wed, 25 Jun 2025 12:00:00 +0900</pubDate>
         
-        <guid>http://localhost:1313/post/sqldelight-no-such-column-error/</guid>
+        <guid>http://localhost:1314/post/sqldelight-no-such-column-error/</guid>
         <description>&lt;h2 id=&#34;エラー内容&#34;&gt;エラー内容&lt;/h2&gt;
 &lt;p&gt;KMPアプリでSQLDelightを使用していたところ、初回インストール時に以下のエラーが発生しました。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;go&#34;&gt;no such column: Reminder.is_completed in &amp;#34;SELECT Reminder.id, Reminder.text, Reminder.is_completed, Reminder.created_at, 
@@ -41,10 +41,10 @@
         </item>
         <item>
         <title>【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ</title>
-        <link>http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/</link>
+        <link>http://localhost:1314/post/unity-fix-error-not-accepted-licenses-of-api-31/</link>
         <pubDate>Tue, 22 Oct 2024 02:09:15 +0900</pubDate>
         
-        <guid>http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/</guid>
+        <guid>http://localhost:1314/post/unity-fix-error-not-accepted-licenses-of-api-31/</guid>
         <description>&lt;p&gt;Unity6にアップデート後、Androidビルド時に以下のエラーが出た時の解決方法メモです。&lt;/p&gt;
 &lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 &lt;ul&gt;
@@ -57,7 +57,7 @@
   To build this project, accept the SDK license agreements and install the missing components using the Android Studio SDK Manager.
   All licenses can be accepted using the sdkmanager command line tool:
   sdkmanager.bat --licenses
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/image/error_log.png&#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1314/post/unity-fix-error-not-accepted-licenses-of-api-31/image/error_log.png&#34;
 	width=&#34;1762&#34;
 	height=&#34;800&#34;
 	
@@ -73,7 +73,7 @@
 &lt;ol&gt;
 &lt;li&gt;PlayerSettingsのAndroidの設定から、Minimum API LevelとTarget API Levelを31に変更する&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_1.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1314/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_1.png&#34;
 	width=&#34;2452&#34;
 	height=&#34;1440&#34;
 	
@@ -88,7 +88,7 @@
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;その状態でapkビルドするとダイアログが表示されるので、「Update Android SDK」をクリックする&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_2.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1314/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_2.png&#34;
 	width=&#34;744&#34;
 	height=&#34;732&#34;
 	
@@ -103,7 +103,7 @@
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Minimum API LevelとTarget API Levelを元に戻す&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_3.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1314/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_3.png&#34;
 	width=&#34;2452&#34;
 	height=&#34;1440&#34;
 	

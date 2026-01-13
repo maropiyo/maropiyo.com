@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>IOS on まろぴよの部屋</title>
-        <link>http://localhost:1313/tags/ios/</link>
+        <link>http://localhost:1314/tags/ios/</link>
         <description>Recent content in IOS on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Mon, 19 Feb 2024 20:59:44 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 19 Feb 2024 20:59:44 +0900</lastBuildDate><atom:link href="http://localhost:1314/tags/ios/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</title>
-        <link>http://localhost:1313/post/admob-ios-app-stop-bgm/</link>
+        <link>http://localhost:1314/post/admob-ios-app-stop-bgm/</link>
         <pubDate>Mon, 19 Feb 2024 20:59:44 +0900</pubDate>
         
-        <guid>http://localhost:1313/post/admob-ios-app-stop-bgm/</guid>
+        <guid>http://localhost:1314/post/admob-ios-app-stop-bgm/</guid>
         <description>&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Unity 2022.3.13.f1&lt;/li&gt;

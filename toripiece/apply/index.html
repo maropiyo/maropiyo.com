@@ -78,7 +78,7 @@ body {
 }
 
 .header .subtitle {
-  color: var(--orange);
+  color: var(--yellow-dark);
   font-weight: 700;
   font-size: 1rem;
 }
@@ -112,7 +112,7 @@ body {
 .card-icon svg {
   width: 22px;
   height: 22px;
-  fill: var(--orange);
+  fill: var(--yellow-dark);
 }
 
 .card-title {
@@ -145,6 +145,54 @@ body {
   line-height: 1.6;
 }
 
+/* とりぴーすデモ */
+.toripiece-demo {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.toripiece-demo img {
+  width: 160px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.demo-caption {
+  font-size: 0.8rem;
+  color: var(--gray);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.past-works {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-light);
+}
+
+.past-works-label {
+  font-size: 0.75rem;
+  color: var(--gray);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* ゲームアイコン */
+.game-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0 8px;
+}
+
+.game-icons img {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
 /* インフォボックス */
 .info-boxes {
   display: flex;
@@ -171,7 +219,7 @@ body {
 .info-box .value {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--orange);
+  color: var(--yellow-dark);
   margin-top: 4px;
 }
 
@@ -183,9 +231,9 @@ body {
 /* ステップ表示 */
 .steps {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 8px;
+  gap: 0;
   margin-bottom: 24px;
   padding: 16px;
   background: var(--gray-light);
@@ -196,9 +244,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   opacity: 0.4;
   transition: opacity 0.3s;
+  width: 60px;
 }
 
 .step.active {
@@ -224,37 +273,39 @@ body {
 }
 
 .step.active .step-num {
-  background: var(--orange);
+  background: var(--yellow-dark);
 }
 
 .step.completed .step-num {
-  background: var(--green);
+  background: var(--yellow-dark);
 }
 
 .step-text {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--gray-dark);
+  text-align: center;
 }
 
 .step-line {
-  width: 40px;
+  width: 30px;
   height: 3px;
   background: var(--gray);
   border-radius: 2px;
   opacity: 0.3;
+  margin-top: 14px;
   transition: opacity 0.3s, background 0.3s;
 }
 
 .step-line.active {
-  background: var(--green);
+  background: var(--yellow-dark);
   opacity: 1;
 }
 
 /* アップロードエリア */
 .upload-area {
-  background: var(--gray-light);
-  border: 3px dashed var(--gray);
+  background: var(--white);
+  border: 3px dashed var(--orange);
   border-radius: 16px;
   padding: 40px 20px;
   text-align: center;
@@ -264,20 +315,20 @@ body {
 }
 
 .upload-area:hover {
-  border-color: var(--yellow);
-  background: #FFFBEB;
+  border-color: var(--orange);
+  background: #FFF5E6;
 }
 
 .upload-icon {
   width: 64px;
   height: 64px;
-  background: var(--yellow);
+  background: var(--orange);
   border-radius: 50%;
   margin: 0 auto 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow) var(--yellow-dark);
+  box-shadow: var(--shadow) #E07800;
 }
 
 .upload-icon svg {
@@ -411,6 +462,22 @@ body {
   color: var(--gray);
 }
 
+.form-error {
+  color: var(--red);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 8px;
+  display: none;
+}
+
+.form-error.show {
+  display: block;
+}
+
+.form-input.error {
+  border-color: var(--red);
+}
+
 /* 任意項目の折りたたみ */
 .optional-toggle {
   display: flex;
@@ -418,17 +485,19 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 14px;
-  background: var(--gray-light);
+  background: var(--white);
+  border: 2px dashed var(--gray);
   border-radius: 12px;
   cursor: pointer;
   font-weight: 700;
-  color: var(--gray-dark);
+  color: var(--gray);
   margin-bottom: 16px;
-  transition: background 0.2s;
+  transition: all 0.2s;
 }
 
 .optional-toggle:hover {
-  background: #eee;
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
 .toggle-arrow {
@@ -483,13 +552,13 @@ body {
 }
 
 .radio-option input:checked + .radio-btn {
-  background: var(--yellow-light);
-  border-color: var(--yellow);
-  color: var(--orange);
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
 }
 
 .radio-option .radio-btn:hover {
-  border-color: var(--yellow);
+  border-color: var(--orange);
 }
 
 /* 規約要約 */
@@ -540,12 +609,13 @@ body {
   cursor: pointer;
   font-weight: 700;
   font-size: 0.85rem;
-  color: var(--gray);
-  transition: color 0.2s;
+  color: var(--blue);
+  text-decoration: underline;
+  transition: all 0.2s;
 }
 
 .terms-detail-toggle:hover {
-  color: var(--gray-dark);
+  color: #0A8AD6;
 }
 
 .terms-detail-toggle .toggle-arrow {
@@ -789,7 +859,6 @@ body {
 <div class="container">
   <header class="header">
     <h1>あなたの愛鳥がゲームに！<br>鳥の写真大募集！</h1>
-    <p class="subtitle">パズルゲーム「とりぴーす」</p>
   </header>
 
   <div class="card">
@@ -797,14 +866,27 @@ body {
       <div class="card-icon">
         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
       </div>
-      <h2 class="card-title">とりぴーすとは？</h2>
+      <h2 class="card-title">自己紹介</h2>
     </div>
     <p>鳥好きゲーム開発者のまろぴよ（<a href="https://x.com/maropiyooo" target="_blank">@maropiyooo</a>）です！</p>
     <p><strong>あなたの愛鳥がジグソーパズルになる</strong>スマホゲームを開発中。皆さんの愛鳥の写真を大募集しています！</p>
+    <div class="toripiece-demo">
+      <img src="images/toripiece-demo.gif" alt="とりぴーすデモ">
+      <p class="demo-caption">こんな感じのパズルゲーム（開発中の画面）</p>
+    </div>
+    <div class="past-works">
+      <p class="past-works-label">過去の作品</p>
+      <div class="game-icons">
+        <a href="/toripple/" target="_blank"><img src="images/とりっぷる.png" alt="とりっぷる"></a>
+        <a href="/slide-bird/" target="_blank"><img src="images/スライドリ.png" alt="スライドリ"></a>
+        <a href="/parrot-game/" target="_blank"><img src="images/インコゲーム.png" alt="インコゲーム"></a>
+        <a href="/post/release-tori-jump/" target="_blank"><img src="images/とりジャンプ.png" alt="とりジャンプ"></a>
+      </div>
+    </div>
     <div class="info-boxes">
       <div class="info-box">
         <div class="label">リリース予定</div>
-        <div class="value">2025年春</div>
+        <div class="value">2026年春</div>
       </div>
       <div class="info-box">
         <div class="label">目標枚数</div>
@@ -864,8 +946,8 @@ body {
         <div class="upload-icon">
           <svg viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>
         </div>
-        <p class="upload-text">愛鳥の写真をアップロード</p>
-        <p class="upload-hint">JPG/PNG 10MBまで・アカウント登録不要</p>
+        <p class="upload-text">鳥の写真をアップロード</p>
+        <p class="upload-hint">3:4の縦長推奨</p>
       </div>
 
       <div id="upload-preview">
@@ -882,10 +964,11 @@ body {
       <div class="form-group">
         <label class="form-label">写真のタイトル <span class="badge badge-required">必須</span></label>
         <p class="form-hint">ゲーム内でタイトルとして表示されます<br>
-        20文字以内で自由にお願いします！クスッと笑えるタイトル大歓迎！<br>
+        15文字以内で自由にお願いします！クスッと笑えるタイトル大歓迎！<br>
         例）「水浴び中のピーちゃん」「威嚇ポーズ」「仲良しコンビ」<br>
         <small>※絵文字や記号は使用できません</small></p>
-        <input type="text" class="form-input" id="title" name="entry.2044253712" maxlength="20" placeholder="タイトルを入力" required>
+        <input type="text" class="form-input" id="title" name="entry.2044253712" maxlength="15" placeholder="タイトルを入力" required>
+        <p class="form-error" id="title-error"></p>
       </div>
 
       <div class="optional-toggle" id="optional-toggle">
@@ -941,7 +1024,7 @@ body {
         <ul>
           <li>自分で撮影した写真のみ投稿できます</li>
           <li>AI学習や第三者への提供は一切しません</li>
-          <li>いつでも削除できます（<a href="https://x.com/maropiyooo" target="_blank">@maropiyooo</a> へ連絡）</li>
+          <li>削除希望は<a href="https://x.com/maropiyooo" target="_blank">@maropiyooo</a>まで</li>
         </ul>
         <div class="terms-detail-toggle" id="terms-detail-toggle">
           <span>詳細を読む</span>
@@ -963,7 +1046,7 @@ body {
         <ol>
           <li>投稿する写真は自分で撮影したもの（飼い鳥は自分が飼っている/飼っていた鳥）です</li>
           <li>写真はジグソーパズルとして9〜100ピースに分割されます</li>
-          <li>ゲームのプレイ画面がSNS等で共有される可能性があります</li>
+          <li>リリース後、ゲーム画面がSNS等で共有される可能性があります</li>
           <li>ゲームに適した形（縦長3:4へのトリミング等）への加工を許可します</li>
           <li>著作権は投稿者に帰属しますが、ゲーム内での使用を許諾します</li>
         </ol>
@@ -1040,7 +1123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sources: ['local', 'camera'],
     multiple: false,
     maxFileSize: 10000000,
-    clientAllowedFormats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+    clientAllowedFormats: ['jpg', 'jpeg', 'png', 'heic', 'heif'],
     language: 'ja'
   }, function(error, result) {
     if (!error && result && result.event === 'success') {
@@ -1092,9 +1175,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var titleFilled = document.getElementById('title').value.trim() !== '';
     var termsAgreed = document.getElementById('terms-agree').checked;
 
-    if (termsAgreed) {
+    // 順番通りに進む（スキップ不可）
+    if (imageUploaded && titleFilled && termsAgreed) {
       updateSteps(4); // 全て完了
-    } else if (titleFilled) {
+    } else if (imageUploaded && titleFilled) {
       updateSteps(3);
     } else if (imageUploaded) {
       updateSteps(2);
@@ -1105,14 +1189,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function checkFormValidity() {
     var imageUploaded = imageUrlInput.value !== '';
-    var titleFilled = document.getElementById('title').value.trim() !== '';
+    var titleValue = document.getElementById('title').value.trim();
+    var titleFilled = titleValue !== '';
+    var titleValid = validateTitle(titleValue).valid;
     var permissionSelected = document.querySelector('input[name="entry.1659217271"]:checked') !== null;
     var termsAgreed = document.getElementById('terms-agree').checked;
-    submitBtn.disabled = !(imageUploaded && titleFilled && permissionSelected && termsAgreed);
+    submitBtn.disabled = !(imageUploaded && titleFilled && titleValid && permissionSelected && termsAgreed);
     updateStepProgress();
   }
 
-  document.getElementById('title').addEventListener('input', checkFormValidity);
+  var titleInput = document.getElementById('title');
+  var titleError = document.getElementById('title-error');
+
+  // 絵文字・記号チェック（ひらがな、カタカナ、漢字、英数字、スペースのみ許可）
+  function validateTitle(value) {
+    if (value === '') return { valid: true, message: '' };
+    // 許可: ひらがな、カタカナ、漢字、英数字、全角半角スペース、ー（長音）、々、一部の記号（！？）
+    var pattern = /^[ぁ-んァ-ヶー々一-龯a-zA-Z0-9\s　！？!?]+$/;
+    if (!pattern.test(value)) {
+      return { valid: false, message: '絵文字や特殊記号は使用できません' };
+    }
+    return { valid: true, message: '' };
+  }
+
+  titleInput.addEventListener('input', function() {
+    var result = validateTitle(this.value);
+    if (!result.valid) {
+      titleError.textContent = result.message;
+      titleError.classList.add('show');
+      titleInput.classList.add('error');
+    } else {
+      titleError.classList.remove('show');
+      titleInput.classList.remove('error');
+    }
+    checkFormValidity();
+  });
   document.querySelectorAll('input[name="entry.1659217271"]').forEach(function(el) {
     el.addEventListener('change', checkFormValidity);
   });
