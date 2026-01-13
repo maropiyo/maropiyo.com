@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>AdMob on まろぴよの部屋</title>
-        <link>https://maropiyo.com/tags/admob/</link>
+        <link>http://localhost:1313/tags/admob/</link>
         <description>Recent content in AdMob on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Mon, 19 Feb 2024 20:59:44 +0900</lastBuildDate><atom:link href="https://maropiyo.com/tags/admob/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 19 Feb 2024 20:59:44 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/admob/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</title>
-        <link>https://maropiyo.com/post/admob-ios-app-stop-bgm/</link>
+        <link>http://localhost:1313/post/admob-ios-app-stop-bgm/</link>
         <pubDate>Mon, 19 Feb 2024 20:59:44 +0900</pubDate>
         
-        <guid>https://maropiyo.com/post/admob-ios-app-stop-bgm/</guid>
+        <guid>http://localhost:1313/post/admob-ios-app-stop-bgm/</guid>
         <description>&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Unity 2022.3.13.f1&lt;/li&gt;

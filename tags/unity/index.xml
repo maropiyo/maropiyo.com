@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Unity on まろぴよの部屋</title>
-        <link>https://maropiyo.com/tags/unity/</link>
+        <link>http://localhost:1313/tags/unity/</link>
         <description>Recent content in Unity on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Tue, 22 Oct 2024 02:09:15 +0900</lastBuildDate><atom:link href="https://maropiyo.com/tags/unity/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 22 Oct 2024 02:09:15 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/unity/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【Unity】Androidビルド時に「Failed to install the following Android SDK packages as some licences have not been accepted」エラーが出た時の解決メモ</title>
-        <link>https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/</link>
+        <link>http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/</link>
         <pubDate>Tue, 22 Oct 2024 02:09:15 +0900</pubDate>
         
-        <guid>https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/</guid>
+        <guid>http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/</guid>
         <description>&lt;p&gt;Unity6にアップデート後、Androidビルド時に以下のエラーが出た時の解決方法メモです。&lt;/p&gt;
 &lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 &lt;ul&gt;
@@ -24,7 +24,7 @@
   To build this project, accept the SDK license agreements and install the missing components using the Android Studio SDK Manager.
   All licenses can be accepted using the sdkmanager command line tool:
   sdkmanager.bat --licenses
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/error_log.png&#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/image/error_log.png&#34;
 	width=&#34;1762&#34;
 	height=&#34;800&#34;
 	
@@ -40,7 +40,7 @@
 &lt;ol&gt;
 &lt;li&gt;PlayerSettingsのAndroidの設定から、Minimum API LevelとTarget API Levelを31に変更する&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_1.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_1.png&#34;
 	width=&#34;2452&#34;
 	height=&#34;1440&#34;
 	
@@ -55,7 +55,7 @@
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;その状態でapkビルドするとダイアログが表示されるので、「Update Android SDK」をクリックする&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_2.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_2.png&#34;
 	width=&#34;744&#34;
 	height=&#34;732&#34;
 	
@@ -70,7 +70,7 @@
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Minimum API LevelとTarget API Levelを元に戻す&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_3.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-error-not-accepted-licenses-of-api-31/image/fix_3.png&#34;
 	width=&#34;2452&#34;
 	height=&#34;1440&#34;
 	
@@ -95,10 +95,10 @@
         </item>
         <item>
         <title>【Unity】インポートした画像素材がぼやける時の対処法</title>
-        <link>https://maropiyo.com/post/unity-fix-image-blur/</link>
+        <link>http://localhost:1313/post/unity-fix-image-blur/</link>
         <pubDate>Mon, 19 Feb 2024 21:21:42 +0900</pubDate>
         
-        <guid>https://maropiyo.com/post/unity-fix-image-blur/</guid>
+        <guid>http://localhost:1313/post/unity-fix-image-blur/</guid>
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;Unityでインポートした画像が以下のようにぼやけてしまう場合の対処法です。&lt;/p&gt;
 &lt;table&gt;
@@ -110,7 +110,7 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/1.png&#34;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-image-blur/img/1.png&#34;
 	width=&#34;954&#34;
 	height=&#34;366&#34;
 	
@@ -124,7 +124,7 @@
 		data-flex-basis=&#34;625px&#34;
 	
 &gt;&lt;/td&gt;
-          &lt;td&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/2.png&#34;
+          &lt;td&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-image-blur/img/2.png&#34;
 	width=&#34;954&#34;
 	height=&#34;366&#34;
 	
@@ -147,7 +147,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
 &lt;p&gt;対象となる画像のInspecterで以下のように設定します。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://maropiyo.com/post/unity-fix-image-blur/img/3.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/unity-fix-image-blur/img/3.png&#34;
 	width=&#34;628&#34;
 	height=&#34;1388&#34;
 	
@@ -165,10 +165,10 @@
         </item>
         <item>
         <title>【AdMob】iOSアプリでAdMobのフルスクリーン広告表示中にゲームのBGMを止める方法</title>
-        <link>https://maropiyo.com/post/admob-ios-app-stop-bgm/</link>
+        <link>http://localhost:1313/post/admob-ios-app-stop-bgm/</link>
         <pubDate>Mon, 19 Feb 2024 20:59:44 +0900</pubDate>
         
-        <guid>https://maropiyo.com/post/admob-ios-app-stop-bgm/</guid>
+        <guid>http://localhost:1313/post/admob-ios-app-stop-bgm/</guid>
         <description>&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Unity 2022.3.13.f1&lt;/li&gt;
