@@ -103,7 +103,8 @@ body {
   width: 40px;
   height: 40px;
   background: var(--yellow-light);
-  border-radius: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--yellow-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,6 +114,19 @@ body {
   width: 22px;
   height: 22px;
   fill: var(--yellow-dark);
+}
+
+.card-icon-img {
+  background: var(--yellow-light);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--yellow-dark);
+}
+
+.card-icon-img img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 
 .card-title {
@@ -221,6 +235,13 @@ body {
   font-weight: 800;
   color: var(--yellow-dark);
   margin-top: 4px;
+}
+
+.info-box .value.rainbow {
+  background: linear-gradient(90deg, #ff6b6b, #ffa500, #ffd93d, #6bcb77, #4d96ff, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* フォームカード */
@@ -863,8 +884,8 @@ body {
 
   <div class="card">
     <div class="card-header">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      <div class="card-icon card-icon-img">
+        <img src="images/とりっぷる.png" alt="">
       </div>
       <h2 class="card-title">自己紹介</h2>
     </div>
@@ -890,7 +911,7 @@ body {
       </div>
       <div class="info-box">
         <div class="label">目標枚数</div>
-        <div class="value">100枚</div>
+        <div class="value rainbow">100枚</div>
       </div>
     </div>
   </div>
@@ -910,7 +931,7 @@ body {
       <li>ファイルサイズ上限は <strong>10MB</strong></li>
       <li>複数羽が写っている写真も大歓迎です</li>
       <li>鳥の種類に制限はありません</li>
-      <li>1人何枚でも応募OK！（できるだけ多く採用します）</li>
+      <li>1人何枚でも応募<strong>OK</strong>！（できるだけ多く採用します）</li>
       <li>複数枚投稿したい場合は、再度フォームから送信してください</li>
     </ul>
   </div>
