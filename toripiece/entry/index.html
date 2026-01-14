@@ -361,6 +361,16 @@ body {
   opacity: 0.4;
   border-radius: 2px;
   cursor: grab;
+  touch-action: none;
+}
+
+.timeline-spring::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  bottom: -20px;
 }
 
 .timeline-spring:active {
@@ -1788,9 +1798,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // タッチイベント
     spring.addEventListener('touchstart', function(e) {
       startDrag(e.touches[0].clientX);
-      e.preventDefault();
-    });
-    document.addEventListener('touchmove', function(e) { moveDrag(e.touches[0].clientX); });
+    }, { passive: true });
+    document.addEventListener('touchmove', function(e) {
+      if (isDragging && e.touches[0]) {
+        moveDrag(e.touches[0].clientX);
+      }
+    }, { passive: true });
     document.addEventListener('touchend', endDrag);
   })();
 
