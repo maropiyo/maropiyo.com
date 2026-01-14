@@ -972,6 +972,8 @@ body {
         </div>
       </div>
 
+      <input type="file" id="file-input" accept=".jpg,.jpeg,.png,.heic,.heif" style="display:none">
+
       <div id="upload-area" class="upload-area">
         <div class="upload-icon">
           <svg viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>
@@ -984,7 +986,7 @@ body {
         <img id="preview-image" src="" alt="プレビュー">
         <div class="upload-success">
           <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-          <span>アップロード完了</span>
+          <span>写真を選択しました</span>
         </div>
         <button type="button" class="change-btn" id="change-photo-btn">別の写真を選択</button>
       </div>
@@ -1122,9 +1124,9 @@ body {
 
 <iframe name="hidden-iframe" id="hidden-iframe" style="display:none;"></iframe>
 
-<script src="https://upload-widget.cloudinary.com/global/all.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  var fileInput = document.getElementById('file-input');
   var uploadArea = document.getElementById('upload-area');
   var uploadPreview = document.getElementById('upload-preview');
   var previewImage = document.getElementById('preview-image');
@@ -1133,6 +1135,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var submitBtn = document.getElementById('submit-btn');
   var form = document.getElementById('apply-form');
   var submitMessage = document.getElementById('submit-message');
+
+  // 選択されたファイルを保持
+  var selectedFile = null;
 
   // ステップ表示の要素
   var steps = document.querySelectorAll('.step');
@@ -1147,28 +1152,34 @@ document.addEventListener('DOMContentLoaded', function() {
   // 初期状態：ステップ1をアクティブに
   updateSteps(1);
 
-  var widget = cloudinary.createUploadWidget({
-    cloudName: 'dv2o6pv58',
-    uploadPreset: 'toripiece',
-    sources: ['local', 'camera'],
-    multiple: false,
-    maxFileSize: 10000000,
-    clientAllowedFormats: ['jpg', 'jpeg', 'png', 'heic', 'heif'],
-    language: 'ja'
-  }, function(error, result) {
-    if (!error && result && result.event === 'success') {
-      var imageUrl = result.info.secure_url;
-      imageUrlInput.value = imageUrl;
-      previewImage.src = imageUrl;
+  // ファイル選択時の処理
+  fileInput.addEventListener('change', function(e) {
+    var file = e.target.files[0];
+    if (!file) return;
+
+    // ファイルサイズチェック (10MB)
+    if (file.size > 10000000) {
+      alert('ファイルサイズは10MB以下にしてください');
+      return;
+    }
+
+    selectedFile = file;
+    imageUrlInput.value = 'pending'; // 仮の値をセット（バリデーション用）
+
+    // ローカルプレビュー表示
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      previewImage.src = e.target.result;
       uploadArea.style.display = 'none';
       uploadPreview.style.display = 'block';
       checkFormValidity();
       updateStepProgress();
-    }
+    };
+    reader.readAsDataURL(file);
   });
 
-  uploadArea.addEventListener('click', function() { widget.open(); });
-  changePhotoBtn.addEventListener('click', function() { widget.open(); });
+  uploadArea.addEventListener('click', function() { fileInput.click(); });
+  changePhotoBtn.addEventListener('click', function() { fileInput.click(); });
 
   // 任意項目の折りたたみ
   optionalToggle.addEventListener('click', function() {
@@ -1260,19 +1271,55 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('terms-agree').addEventListener('change', checkFormValidity);
 
   form.addEventListener('submit', function(e) {
-    if (imageUrlInput.value === '') {
-      e.preventDefault();
-      alert('写真をアップロードしてください');
+    e.preventDefault();
+
+    if (!selectedFile) {
+      alert('写真を選択してください');
       return;
     }
-    setTimeout(function() {
-      form.style.display = 'none';
-      document.querySelectorAll('.card').forEach(function(el) {
-        if (el.id !== 'submit-message') el.style.display = 'none';
+
+    // ボタンを無効化して送信中表示
+    submitBtn.disabled = true;
+    submitBtn.textContent = '送信中...';
+
+    // Cloudinaryにアップロード
+    var formData = new FormData();
+    formData.append('file', selectedFile);
+    formData.append('upload_preset', 'toripiece');
+
+    fetch('https://api.cloudinary.com/v1_1/dv2o6pv58/image/upload', {
+      method: 'POST',
+      body: formData
+    })
+    .then(function(response) {
+      if (!response.ok) throw new Error('Upload failed');
+      return response.json();
+    })
+    .then(function(data) {
+      // アップロード成功、URLをセット
+      imageUrlInput.value = data.secure_url;
+
+      // Google Formsに送信
+      var googleFormData = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: googleFormData,
+        mode: 'no-cors'
+      }).then(function() {
+        // 完了表示
+        form.style.display = 'none';
+        document.querySelectorAll('.card').forEach(function(el) {
+          if (el.id !== 'submit-message') el.style.display = 'none';
+        });
+        submitMessage.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
-      submitMessage.style.display = 'block';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 500);
+    })
+    .catch(function(error) {
+      alert('アップロードに失敗しました。もう一度お試しください。');
+      submitBtn.disabled = false;
+      submitBtn.textContent = '応募する';
+    });
   });
 });
 </script>
