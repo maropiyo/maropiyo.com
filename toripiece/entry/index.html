@@ -1810,11 +1810,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // シェアボタンの処理
   var shareBtn = document.getElementById('share-btn');
   shareBtn.addEventListener('click', function() {
-    var shareText = 'とりぴーすに応募したよ🐤✨\n\n鳥の写真募集中！\n';
-    var shareUrl = 'https://maropiyo.com/toripiece/entry/';
-    var tweetText = encodeURIComponent(shareText);
-    var tweetUrl = encodeURIComponent(shareUrl);
-    window.open('https://twitter.com/intent/tweet?text=' + tweetText + '&url=' + tweetUrl, '_blank');
+    var shareText = '#とりぴーす の企画に応募したよ！\nhttps://maropiyo.com/toripiece/entry/';
+    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText), '_blank');
   });
 });
 </script>
