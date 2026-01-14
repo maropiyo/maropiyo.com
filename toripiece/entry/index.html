@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>あなたの愛鳥がゲームに！鳥の写真大募集！ | とりぴーす</title>
+<title>鳥のベストショットを募集します！</title>
 <meta name="description" content="スマホパズルゲーム「とりぴーす」であなたの愛鳥をゲームに登場させませんか？鳥の写真を大募集中！">
 <!-- OGP -->
-<meta property="og:title" content="あなたの愛鳥がゲームに！鳥の写真大募集！">
+<meta property="og:title" content="鳥のベストショットを募集します！">
 <meta property="og:description" content="スマホパズルゲーム「とりぴーす」であなたの愛鳥をゲームに登場させませんか？">
 <meta property="og:image" content="https://maropiyo.com/toripiece/entry/images/ogp.jpg">
 <meta property="og:url" content="https://maropiyo.com/toripiece/entry/">
@@ -14,11 +14,11 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@maropiyooo">
-<meta name="twitter:title" content="あなたの愛鳥がゲームに！鳥の写真大募集！">
+<meta name="twitter:title" content="鳥のベストショットを募集します！">
 <meta name="twitter:description" content="スマホパズルゲーム「とりぴーす」であなたの愛鳥をゲームに登場させませんか？">
 <meta name="twitter:image" content="https://maropiyo.com/toripiece/entry/images/ogp.jpg">
 <link rel="icon" href="/favicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
 <style>
 :root {
   --yellow: #FFD93D;
@@ -47,7 +47,11 @@
 
 body {
   font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--yellow-bg);
+  background-color: var(--yellow-bg);
+  background-image:
+    linear-gradient(var(--yellow-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--yellow-light) 1px, transparent 1px);
+  background-size: 40px 40px;
   min-height: 100vh;
   color: var(--gray-dark);
 }
@@ -84,8 +88,9 @@ body {
 }
 
 .header h1 {
+  font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 1.9rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--gray-dark);
   line-height: 1.3;
   margin-bottom: 10px;
@@ -231,25 +236,26 @@ body {
 
 .info-box {
   flex: 1;
-  background: var(--gray-light);
+  background: var(--white);
   padding: 16px;
-  border-radius: 12px;
+  border-radius: 16px;
   text-align: center;
+  box-shadow: 0 4px 0 var(--yellow);
+  border: 2px solid var(--yellow);
 }
 
 .info-box .label {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--gray);
-  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .info-box .value {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 800;
-  color: var(--yellow-dark);
-  margin-top: 4px;
+  color: var(--orange);
+  margin-top: 6px;
 }
 
 .info-box .value.rainbow {
@@ -926,7 +932,7 @@ body {
 
 <div class="container">
   <header class="header">
-    <h1>あなたの愛鳥がゲームに！<br>鳥の写真大募集！</h1>
+    <h1>鳥のベストショットを募集します！</h1>
   </header>
 
   <div class="card">
@@ -957,7 +963,7 @@ body {
         <div class="value">2026年春</div>
       </div>
       <div class="info-box">
-        <div class="label">目標枚数</div>
+        <div class="label">募集枚数</div>
         <div class="value rainbow">100枚</div>
       </div>
     </div>
