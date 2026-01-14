@@ -512,11 +512,29 @@ body {
   display: none;
 }
 
+.example-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 12px;
+}
+
+.example-tags-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+
 .example-tags {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 8px 0 12px;
+  gap: 8px;
+  animation: scroll-left 25s linear infinite;
+  width: max-content;
+}
+
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .example-label {
@@ -535,6 +553,8 @@ body {
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .form-error.show {
@@ -1042,16 +1062,52 @@ body {
         <p class="form-hint">ゲーム内でタイトルとして表示されます<br>
         15文字以内で自由にお願いします！クスッと笑えるタイトル大歓迎！<br>
         <small>※絵文字や記号は使用できません</small></p>
-        <div class="example-tags">
+        <div class="example-area">
           <span class="example-label">例</span>
-          <span class="example-tag">水浴び中のピーちゃん</span>
-          <span class="example-tag">仲良しコンビ</span>
-          <span class="example-tag">寝落ち5秒前</span>
-          <span class="example-tag">謎ポーズ</span>
-          <span class="example-tag">野生を忘れた顔</span>
-          <span class="example-tag">完璧な丸</span>
-          <span class="example-tag">犯行直後</span>
-          <span class="example-tag">キレ散らかし中</span>
+          <div class="example-tags-wrapper">
+            <div class="example-tags">
+              <span class="example-tag">ピーちゃん初めてのお風呂</span>
+              <span class="example-tag">3歳の誕生日</span>
+              <span class="example-tag">朝7時の定位置</span>
+              <span class="example-tag">飼い主のメガネが好き</span>
+              <span class="example-tag">換羽3日目</span>
+              <span class="example-tag">窓辺でひなたぼっこ</span>
+              <span class="example-tag">おやつ待ちの圧</span>
+              <span class="example-tag">仲良し2羽</span>
+              <span class="example-tag">寝落ち5秒前</span>
+              <span class="example-tag">犯行直後</span>
+              <span class="example-tag">お迎え初日</span>
+              <span class="example-tag">初めての放鳥</span>
+              <span class="example-tag">カーテンレールの王様</span>
+              <span class="example-tag">肩が一番落ち着く</span>
+              <span class="example-tag">野菜きらい</span>
+              <span class="example-tag">シードだけは譲れない</span>
+              <span class="example-tag">鏡の中の恋人</span>
+              <span class="example-tag">完璧な丸</span>
+              <span class="example-tag">キレ散らかし中</span>
+              <span class="example-tag">謎ポーズ</span>
+              <span class="example-tag">ピーちゃん初めてのお風呂</span>
+              <span class="example-tag">3歳の誕生日</span>
+              <span class="example-tag">朝7時の定位置</span>
+              <span class="example-tag">飼い主のメガネが好き</span>
+              <span class="example-tag">換羽3日目</span>
+              <span class="example-tag">窓辺でひなたぼっこ</span>
+              <span class="example-tag">おやつ待ちの圧</span>
+              <span class="example-tag">仲良し2羽</span>
+              <span class="example-tag">寝落ち5秒前</span>
+              <span class="example-tag">犯行直後</span>
+              <span class="example-tag">お迎え初日</span>
+              <span class="example-tag">初めての放鳥</span>
+              <span class="example-tag">カーテンレールの王様</span>
+              <span class="example-tag">肩が一番落ち着く</span>
+              <span class="example-tag">野菜きらい</span>
+              <span class="example-tag">シードだけは譲れない</span>
+              <span class="example-tag">鏡の中の恋人</span>
+              <span class="example-tag">完璧な丸</span>
+              <span class="example-tag">キレ散らかし中</span>
+              <span class="example-tag">謎ポーズ</span>
+            </div>
+          </div>
         </div>
         <input type="text" class="form-input" id="title" name="entry.2044253712" maxlength="15" placeholder="タイトルを入力" required>
         <p class="form-error" id="title-error"></p>
