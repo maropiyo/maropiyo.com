@@ -236,33 +236,23 @@ body {
 
 .info-box {
   flex: 1;
-  background: var(--white);
-  padding: 16px;
-  border-radius: 16px;
+  background: var(--yellow-light);
+  padding: 12px;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 0 var(--yellow);
-  border: 2px solid var(--yellow);
 }
 
 .info-box .label {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--gray);
-  letter-spacing: 0.5px;
 }
 
 .info-box .value {
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--orange);
-  margin-top: 6px;
-}
-
-.info-box .value.rainbow {
-  background: linear-gradient(90deg, #ff6b6b, #ffa500, #ffd93d, #6bcb77, #4d96ff, #9b59b6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin-top: 4px;
 }
 
 /* 進捗バー */
@@ -298,6 +288,135 @@ body {
   background: linear-gradient(90deg, var(--yellow), var(--orange));
   border-radius: 10px;
   transition: width 0.5s ease;
+}
+
+/* タイムライン */
+.timeline-area {
+  margin-top: 16px;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray);
+  margin-bottom: 8px;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeline-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gray-dark);
+  white-space: nowrap;
+}
+
+.timeline-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--gray-light);
+  border-radius: 2px;
+  position: relative;
+}
+
+.timeline-progress {
+  height: 100%;
+  background: var(--gray);
+  border-radius: 2px;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gray-dark);
+  font-size: 0.8rem;
+}
+
+.timeline-months {
+  width: 100%;
+}
+
+.timeline-bar-full {
+  height: 4px;
+  background: var(--gray-light);
+  border-radius: 2px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.timeline-spring {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: var(--orange);
+  opacity: 0.4;
+  border-radius: 2px;
+}
+
+.timeline-bar-full .timeline-progress {
+  height: 100%;
+  background: var(--yellow);
+  border-radius: 2px;
+}
+
+.timeline-bar-full .timeline-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--yellow-dark);
+  font-size: 0.8rem;
+}
+
+.timeline-season-label {
+  position: absolute;
+  top: -14px;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.timeline-ticks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-ticks span {
+  font-size: 0.6rem;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.timeline-note {
+  font-size: 0.65rem;
+  color: var(--gray);
+  margin-top: 6px;
+  text-align: right;
+}
+
+.timeline-year {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--gray);
+  margin-top: 4px;
+}
+
+.dev-badge {
+  background: var(--gray);
+  color: var(--white);
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 4px;
 }
 
 /* フォームカード */
@@ -1056,10 +1175,6 @@ body {
     padding: 20px;
   }
 
-  .info-boxes {
-    flex-direction: column;
-  }
-
   .upload-area {
     padding: 30px 16px;
   }
@@ -1102,7 +1217,7 @@ body {
       </div>
       <div class="info-box">
         <div class="label">募集枚数</div>
-        <div class="value rainbow">100枚</div>
+        <div class="value">100枚</div>
       </div>
     </div>
     <div class="progress-area">
@@ -1113,6 +1228,23 @@ body {
       <div class="progress-bar">
         <div class="progress-fill" style="width: 5%;"></div>
       </div>
+    </div>
+    <div class="timeline-area">
+      <div class="timeline-header">
+        2026年春判定バー
+      </div>
+      <div class="timeline-months">
+        <div class="timeline-bar-full">
+          <div class="timeline-spring" style="left: 16.6%; width: 16.6%;"></div>
+          <div class="timeline-progress" style="width: 4%;"></div>
+          <div class="timeline-marker" style="left: 4%;">●</div>
+          <div class="timeline-season-label" style="left: 25%;">2026年春</div>
+        </div>
+        <div class="timeline-ticks">
+          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+        </div>
+      </div>
+      <div class="timeline-note">※2026年春の定義はこのバーを正とします</div>
     </div>
   </div>
 
@@ -1547,10 +1679,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   document.getElementById('terms-agree').addEventListener('change', checkFormValidity);
 
-  // シェア用に保持
-  var submittedTitle = '';
-  var submittedFile = null;
-
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -1558,10 +1686,6 @@ document.addEventListener('DOMContentLoaded', function() {
       alert('写真を選択してください');
       return;
     }
-
-    // シェア用に保持
-    submittedTitle = document.getElementById('title').value.trim();
-    submittedFile = selectedFile;
 
     // ボタンを無効化して送信中表示
     submitBtn.disabled = true;
@@ -1610,42 +1734,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // シェアボタンの処理
   var shareBtn = document.getElementById('share-btn');
   shareBtn.addEventListener('click', function() {
-    var shareText = 'この写真を「' + submittedTitle + '」で応募したよ🐤✨\n\nとりぴーす 鳥の写真募集中！';
+    var shareText = 'とりぴーすに応募したよ🐤✨\n鳥の写真募集中！';
     var shareUrl = 'https://maropiyo.com/toripiece/entry/';
-
-    // Web Share APIが使える場合（主にモバイル）
-    if (navigator.share && navigator.canShare) {
-      // ファイルシェアが可能かチェック
-      var shareData = {
-        text: shareText + '\n' + shareUrl
-      };
-
-      // ファイルがある場合はシェアデータに追加してチェック
-      if (submittedFile) {
-        var fileToShare = new File([submittedFile], submittedFile.name, { type: submittedFile.type });
-        var shareDataWithFile = {
-          text: shareText + '\n' + shareUrl,
-          files: [fileToShare]
-        };
-
-        if (navigator.canShare(shareDataWithFile)) {
-          navigator.share(shareDataWithFile).catch(function(err) {
-            console.log('Share failed:', err);
-          });
-          return;
-        }
-      }
-
-      // ファイルシェアが無理ならテキストのみ
-      navigator.share(shareData).catch(function(err) {
-        console.log('Share failed:', err);
-      });
-    } else {
-      // Web Share APIが使えない場合はTwitter intentにフォールバック
-      var tweetText = encodeURIComponent(shareText);
-      var tweetUrl = encodeURIComponent(shareUrl);
-      window.open('https://twitter.com/intent/tweet?text=' + tweetText + '&url=' + tweetUrl, '_blank');
-    }
+    var tweetText = encodeURIComponent(shareText);
+    var tweetUrl = encodeURIComponent(shareUrl);
+    window.open('https://twitter.com/intent/tweet?text=' + tweetText + '&url=' + tweetUrl, '_blank');
   });
 });
 </script>
