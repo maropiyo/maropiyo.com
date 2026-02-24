@@ -1,487 +1,1368 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=' インストールはこちら！ インストールはこちら！ '>
-<title>リマインコ</title>
-
-<link rel='canonical' href='https://maropiyo.com/reminder-parrot/'>
-
-<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.c2c736d445f0693db136da14c40162b0f9b05eafd62cd3a33e1d96cbae1e06ff.css"><meta property='og:title' content='リマインコ'>
-<meta property='og:description' content=' インストールはこちら！ インストールはこちら！ '>
-<meta property='og:url' content='https://maropiyo.com/reminder-parrot/'>
-<meta property='og:site_name' content='まろぴよの部屋'>
-<meta property='og:type' content='article'><meta property='article:section' content='' /><meta property='og:image' content='https://maropiyo.com/reminder-parrot/image/reminder_parrot.png' />
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>リマインコ - みんなで続けるリマインダーアプリ</title>
+<meta name="description" content="ひとりじゃ続かなかった、でもみんなとなら。インコを育てながら楽しく続けられるリマインダーアプリ。">
+<meta property="og:title" content="リマインコ - みんなで続けるリマインダーアプリ">
+<meta property="og:description" content="ひとりじゃ続かなかった、でもみんなとなら。インコを育てながら楽しく続けられるリマインダーアプリ。">
+<meta property="og:image" content="https://maropiyo.com/reminder-parrot/image/reminder_parrot.png">
+<meta property="og:url" content="https://maropiyo.com/reminder-parrot/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@maropiyooo">
 <meta name="twitter:title" content="リマインコ">
-<meta name="twitter:description" content=" インストールはこちら！ インストールはこちら！ "><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://maropiyo.com/reminder-parrot/image/reminder_parrot.png' />
-    <link rel="shortcut icon" href="https://maropiyo.com/favicon.ico" />
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+<meta name="twitter:description" content="ひとりじゃ続かなかった、でもみんなとなら。みんなで続けるリマインダーアプリ。">
+<meta name="twitter:image" content="https://maropiyo.com/reminder-parrot/image/reminder_parrot.png">
+<link rel="icon" href="https://maropiyo.com/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+ 
 
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
+ 
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'M PLUS Rounded 1c',sans-serif;
+  color:#5D4037;
+  background:#FFF8E1;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
 
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
+ 
+:root{
+  --yellow:#FFD54F;
+  --orange:#FF9800;
+  --accent:#E59F43;
+  --brown:#5D4037;
+  --brown-light:#8D6E63;
+  --cream:#FFF8E1;
+  --peach:#FFF3E0;
+  --white:#FFFFFF;
+  --shadow:0 8px 40px rgba(120,80,20,.08);
+  --shadow-hover:0 16px 56px rgba(120,80,20,.14);
+}
 
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="https://maropiyo.com/">
-                
-                    
-                    
-                    
-                        
-                        <img src="https://maropiyo.com/img/icon_hu_f8ae2c3d4ec130b2.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="https://maropiyo.com/">まろぴよの部屋</a></h1>
-            <h2 class="site-description">とあるインコ好きの個人サイト</h2>
-        </div>
-    </header><ol class="social-menu">
-            
-                <li>
-                    <a 
-                        href='https://apps.apple.com/us/developer/manato-takeishi/id1731628288'
-                        target="_blank"
-                        title="AppStore"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z" /><path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" /></svg>
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://github.com/maropiyo'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
+ 
+@keyframes heroCharDrop{
+  0%{opacity:0;transform:translateY(-120px) rotate(-20deg) scale(.5)}
+  60%{opacity:1;transform:translateY(16px) rotate(4deg) scale(1.08)}
+  80%{transform:translateY(-6px) rotate(-2deg) scale(.98)}
+  100%{transform:translateY(0) rotate(0) scale(1)}
+}
+@keyframes heroTitleReveal{
+  0%{opacity:0;transform:translateY(30px);letter-spacing:.3em}
+  100%{opacity:1;transform:translateY(0);letter-spacing:.04em}
+}
+@keyframes heroSubReveal{
+  0%{opacity:0;transform:translateY(20px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-14px)}
+}
+@keyframes floatSlow{
+  0%,100%{transform:translateY(0) rotate(0deg)}
+  33%{transform:translateY(-8px) rotate(2deg)}
+  66%{transform:translateY(4px) rotate(-1deg)}
+}
+@keyframes wiggle{
+  0%,100%{transform:rotate(0)}
+  20%{transform:rotate(-8deg)}
+  40%{transform:rotate(8deg)}
+  60%{transform:rotate(-4deg)}
+  80%{transform:rotate(4deg)}
+}
+@keyframes bounce{
+  0%,100%{transform:translateY(0)}
+  40%{transform:translateY(-20px)}
+  60%{transform:translateY(-10px)}
+}
+@keyframes starBurst{
+  0%{opacity:1;transform:translate(0,0) scale(0)}
+  20%{opacity:1;transform:translate(calc(var(--bx)*.3),calc(var(--by)*.3)) scale(1.3)}
+  100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(0)}
+}
+@keyframes dotFloat{
+  0%,100%{transform:translateY(0) scale(1);opacity:.6}
+  50%{transform:translateY(-20px) scale(1.3);opacity:.3}
+}
+@keyframes scrollArrow{
+  0%,100%{opacity:.4;transform:translateY(0)}
+  50%{opacity:1;transform:translateY(8px)}
+}
+@keyframes phoneFloat{
+  0%,100%{transform:translateY(0) rotate(-1deg)}
+  50%{transform:translateY(-12px) rotate(1deg)}
+}
+@keyframes maskReveal{
+  0%{clip-path:inset(0 0 100% 0)}
+  100%{clip-path:inset(0 0 0 0)}
+}
+@keyframes slideFromLeft{
+  0%{opacity:0;transform:translateX(-60px)}
+  100%{opacity:1;transform:translateX(0)}
+}
+@keyframes slideFromRight{
+  0%{opacity:0;transform:translateX(60px)}
+  100%{opacity:1;transform:translateX(0)}
+}
+@keyframes scaleIn{
+  0%{opacity:0;transform:scale(.7)}
+  100%{opacity:1;transform:scale(1)}
+}
+@keyframes gradientShift{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes ripple{
+  0%{box-shadow:0 0 0 0 rgba(255,213,79,.4)}
+  100%{box-shadow:0 0 0 30px rgba(255,213,79,0)}
+}
+@keyframes peekLeft{
+  0%{transform:translateX(-100%) rotate(15deg)}
+  60%{transform:translateX(10%) rotate(-5deg)}
+  80%{transform:translateX(-5%) rotate(3deg)}
+  100%{transform:translateX(0) rotate(0)}
+}
+@keyframes peekRight{
+  0%{transform:translateX(100%) rotate(-15deg)}
+  60%{transform:translateX(-10%) rotate(5deg)}
+  80%{transform:translateX(5%) rotate(-3deg)}
+  100%{transform:translateX(0) rotate(0)}
+}
+@keyframes peekBottom{
+  0%{transform:translateY(100%) scale(.8)}
+  60%{transform:translateY(-8%) scale(1.05)}
+  80%{transform:translateY(4%)}
+  100%{transform:translateY(0) scale(1)}
+}
+@keyframes hop{
+  0%,100%{transform:translateY(0) rotate(0)}
+  10%{transform:translateY(-30px) rotate(-5deg)}
+  20%{transform:translateY(0) rotate(0) scaleY(.9) scaleX(1.1)}
+  30%{transform:translateY(-18px) rotate(5deg)}
+  40%{transform:translateY(0) scaleY(.95) scaleX(1.05)}
+  50%{transform:translateY(-8px)}
+  60%{transform:translateY(0)}
+}
+@keyframes squish{
+  0%,100%{transform:scaleX(1) scaleY(1)}
+  30%{transform:scaleX(1.15) scaleY(.85)}
+  50%{transform:scaleX(.9) scaleY(1.1)}
+  70%{transform:scaleX(1.05) scaleY(.95)}
+}
+@keyframes spin{
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(360deg)}
+}
+@keyframes swing{
+  0%,100%{transform:rotate(0) translateY(0)}
+  25%{transform:rotate(12deg) translateY(-4px)}
+  75%{transform:rotate(-12deg) translateY(-4px)}
+}
+@keyframes bellSwing{
+  0%,100%{transform:rotate(0)}
+  15%{transform:rotate(18deg)}
+  30%{transform:rotate(-15deg)}
+  45%{transform:rotate(12deg)}
+  60%{transform:rotate(-8deg)}
+  75%{transform:rotate(4deg)}
+  90%{transform:rotate(-2deg)}
+}
+@keyframes headBang{
+  0%,100%{transform:rotate(0)}
+  25%{transform:rotate(-15deg)}
+  50%{transform:rotate(0)}
+  75%{transform:rotate(15deg)}
+}
+@keyframes zoomPast{
+  0%{transform:translateX(-200px) scale(.3);opacity:0}
+  20%{opacity:1}
+  50%{transform:translateX(0) scale(1.1)}
+  100%{transform:translateX(200px) scale(.3);opacity:0}
+}
+
+ 
+.deco-icons{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.deco-icons i{
+  position:absolute;
+  color:var(--yellow);
+  opacity:.2;
+  font-style:normal;
+}
+.deco-icons i:nth-child(1){font-size:14px;top:12%;left:10%;animation:dotFloat 4s ease-in-out infinite}
+.deco-icons i:nth-child(2){font-size:18px;top:28%;right:12%;animation:dotFloat 5s ease-in-out infinite .8s}
+.deco-icons i:nth-child(3){font-size:10px;top:55%;left:6%;animation:dotFloat 3.5s ease-in-out infinite 1.5s}
+.deco-icons i:nth-child(4){font-size:16px;top:72%;right:8%;animation:dotFloat 4.5s ease-in-out infinite .4s}
+.deco-icons i:nth-child(5){font-size:12px;top:40%;left:88%;animation:dotFloat 3.8s ease-in-out infinite 2s}
+.deco-icons i:nth-child(6){font-size:20px;top:18%;left:72%;animation:dotFloat 5.5s ease-in-out infinite 1s;color:var(--orange);opacity:.12}
+.deco-icons i:nth-child(7){font-size:11px;top:82%;left:42%;animation:dotFloat 3s ease-in-out infinite 1.2s}
+.deco-icons i:nth-child(8){font-size:15px;top:8%;left:52%;animation:dotFloat 4.2s ease-in-out infinite .6s}
+
+ 
+.wave-divider{
+  display:block;
+  width:100%;
+  height:auto;
+  margin-top:-1px;
+}
+.wave-divider-flip{
+  transform:scaleY(-1);
+  margin-bottom:-1px;
+}
+
+ 
+.hero{
+  position:relative;
+  min-height:100vh;
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:60px 24px 40px;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%,rgba(255,213,79,.18),transparent),
+    linear-gradient(180deg,#FFF8E1 0%,#FFFDE7 100%);
+  overflow:hidden;
+}
+.hero-character{
+  width:180px;height:180px;
+  margin-bottom:16px;
+  animation:heroCharDrop 1s cubic-bezier(.34,1.56,.64,1) both;animation-iteration-count:1;
+  cursor:pointer;
+  filter:drop-shadow(0 12px 24px rgba(200,150,50,.2));
+  transition:filter .3s;
+  position:relative;z-index:2;
+}
+.hero-character:hover{filter:drop-shadow(0 16px 32px rgba(200,150,50,.3));animation:wiggle .5s ease-in-out}
+.hero-character:active{transform:scale(.92)}
+
+.hero h1{
+  font-size:clamp(2rem,6vw,3.2rem);
+  font-weight:900;
+  color:var(--brown);
+  animation:heroTitleReveal .8s cubic-bezier(.22,1,.36,1) .4s both;
+  position:relative;z-index:2;
+  line-height:1.3;
+}
+.hero h1 span{
+  display:block;
+  background:linear-gradient(135deg,var(--orange),#F57C00);
+  background-size:200% 200%;
+  animation:gradientShift 4s ease infinite;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-sub{
+  font-size:clamp(.82rem,2.5vw,.95rem);
+  font-weight:700;
+  color:var(--brown-light);
+  margin-top:12px;
+  line-height:2;
+  animation:heroSubReveal .7s ease .8s both;
+  position:relative;z-index:2;
+}
+.hero-stores{
+  display:flex;gap:12px;
+  justify-content:center;align-items:center;
+  flex-wrap:wrap;
+  margin-top:28px;
+  animation:heroSubReveal .7s ease 1.1s both;
+  position:relative;z-index:2;
+}
+.hero-stores a{
+  display:block;
+  transition:transform .35s cubic-bezier(.34,1.56,.64,1);
+}
+.hero-stores a:hover{transform:translateY(-4px) scale(1.06)}
+.store-badge-apple{height:54px}
+.store-badge-google{height:68px}
+
+.hero-scroll{
+  margin-top:40px;
+  animation:heroSubReveal .7s ease 1.4s both;
+  position:relative;z-index:2;
+}
+.hero-scroll span{
+  display:block;
+  font-size:.7rem;
+  font-weight:700;
+  color:var(--accent);
+  letter-spacing:.15em;
+  margin-bottom:8px;
+}
+.hero-scroll-arrow{
+  display:block;
+  width:2px;height:28px;
+  background:linear-gradient(180deg,var(--accent),transparent);
+  margin:0 auto;
+  animation:scrollArrow 1.5s ease-in-out infinite;
+}
+
+ 
+.hero-deco{position:absolute;pointer-events:none;z-index:1;opacity:.12}
+.hero-deco--1{width:130px;top:8%;left:4%;animation:floatSlow 7s ease-in-out infinite}
+.hero-deco--2{width:90px;bottom:10%;right:5%;animation:swing 3s ease-in-out infinite}
+.hero-deco--3{width:70px;top:18%;right:10%;animation:floatSlow 6s ease-in-out infinite 4s}
+
+ 
+.gallery-section{
+  position:relative;
+  background:var(--white);
+  padding:80px 0 60px;
+  overflow:hidden;
+}
+.gallery-heading{
+  text-align:center;
+  margin-bottom:40px;
+  padding:0 24px;
+}
+.gallery-heading h2{
+  font-size:clamp(1rem,3vw,1.3rem);
+  font-weight:900;
+  color:var(--brown);
+}
+.gallery-heading h2 em{
+  font-style:normal;
+  color:var(--accent);
+}
+.gallery-track{
+  display:flex;
+  gap:18px;
+  padding:0 32px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.gallery-track::-webkit-scrollbar{display:none}
+.gallery-item{
+  flex:0 0 auto;
+  width:200px;
+  border-radius:22px;
+  overflow:hidden;
+  scroll-snap-align:center;
+  box-shadow:0 6px 28px rgba(120,80,20,.1);
+  transition:transform .5s cubic-bezier(.34,1.56,.64,1),box-shadow .4s;
+  cursor:pointer;
+}
+.gallery-item:hover{
+  transform:translateY(-10px) scale(1.04);
+  box-shadow:var(--shadow-hover);
+}
+.gallery-item img{width:100%;display:block}
+
+ 
+.story{
+  position:relative;
+  padding:48px 24px;
+  overflow:hidden;
+}
+ 
+.story-next{
+  position:absolute;
+  bottom:20px;right:20px;
+  width:40px;height:40px;
+  border:none;
+  background:var(--yellow);
+  color:var(--brown);
+  font-size:14px;
+  border-radius:50%;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 3px 12px rgba(200,150,50,.2);
+  transition:transform .3s,box-shadow .3s;
+  z-index:5;
+  animation:scrollArrow 1.5s ease-in-out infinite;
+}
+.story-next:hover{
+  transform:scale(1.1);
+  box-shadow:0 6px 20px rgba(200,150,50,.3);
+}
+
+.story--cream{background:var(--cream)}
+.story--white{background:var(--white)}
+.story--peach{background:var(--peach)}
+
+.story-inner{
+  max-width:480px;
+  margin:0 auto;
+  text-align:center;
+  position:relative;z-index:2;
+}
+
+ 
+.story-step{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--yellow);
+  color:var(--brown);
+  font-size:.72rem;
+  font-weight:900;
+  padding:6px 18px;
+  border-radius:30px;
+  margin-bottom:20px;
+  letter-spacing:.08em;
+  box-shadow:0 2px 12px rgba(255,213,79,.3);
+}
+.story-step .fa-solid{font-size:.7rem}
+.story-step:not(:has(.fa-solid))::before{
+  content:'';
+  display:block;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--orange);
+}
+
+ 
+.story-mascot{
+  display:block;
+  width:140px;height:140px;
+  margin:0 auto 20px;
+  filter:drop-shadow(0 12px 28px rgba(200,150,50,.2));
+  cursor:pointer;
+  transition:filter .2s;
+}
+.story-mascot:hover{filter:drop-shadow(0 16px 36px rgba(200,150,50,.3))}
+.story-mascot:active{transform:scale(.88)!important}
+.story-mascot.anim-float{animation:float 3s ease-in-out infinite}
+.story-mascot.anim-bounce{animation:bounce 2.5s ease-in-out infinite}
+.story-mascot.anim-wiggle{animation:wiggle 2s ease-in-out infinite}
+.story-mascot.anim-hop{animation:hop 2s ease-in-out infinite}
+.story-mascot.anim-squish{animation:squish 2s ease-in-out infinite}
+.story-mascot.anim-swing{animation:swing 2s ease-in-out infinite}
+.story-mascot.anim-headbang{animation:headBang 1.2s ease-in-out infinite}
+.story-mascot.anim-bell{animation:bellSwing 2.5s ease-in-out infinite;transform-origin:50% 8%}
+
+ 
+.peek-mascot{
+  position:absolute;
+  z-index:3;
+  pointer-events:none;
+  width:90px;height:90px;
+  filter:drop-shadow(0 4px 12px rgba(200,150,50,.15));
+}
+.peek-mascot--left{
+  left:-10px;
+  bottom:20%;
+}
+.peek-mascot--right{
+  right:-10px;
+  top:20%;
+}
+.peek-mascot--bottom{
+  bottom:-30px;
+  left:50%;
+  margin-left:-45px;
+}
+.peek-mascot--left.is-visible{animation:peekLeft .8s cubic-bezier(.34,1.56,.64,1) both}
+.peek-mascot--right.is-visible{animation:peekRight .8s cubic-bezier(.34,1.56,.64,1) both}
+.peek-mascot--bottom.is-visible{animation:peekBottom .8s cubic-bezier(.34,1.56,.64,1) both}
+
+ 
+.run-mascot{
+  display:block;
+  width:70px;height:70px;
+  margin:0 auto;
+  filter:drop-shadow(0 4px 12px rgba(200,150,50,.15));
+}
+.run-mascot.is-visible{animation:zoomPast 1.5s ease-in-out both}
+
+ 
+.story-phone{
+  width:220px;
+  margin:28px auto 0;
+  border-radius:26px;
+  overflow:hidden;
+  box-shadow:0 12px 48px rgba(120,80,20,.12);
+  animation:phoneFloat 4s ease-in-out infinite;
+  position:relative;
+}
+.story-phone img{width:100%;display:block}
+
+ 
+.story-phones{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  margin:28px auto 0;
+}
+.story-phones .story-phone{
+  width:160px;
+  margin:0;
+  flex:0 0 auto;
+}
+.story-phones .story-phone:nth-child(2){animation-delay:.5s}
+.story-phones .story-phone:nth-child(3){animation-delay:1s}
+
+ 
+.story-phones--duo .story-phone{width:200px}
+
+ 
+.story h2{
+  font-size:clamp(1.2rem,4vw,1.6rem);
+  font-weight:900;
+  color:var(--brown);
+  line-height:1.7;
+  margin-bottom:14px;
+}
+.story h2 em{
+  font-style:normal;
+  background:linear-gradient(transparent 60%,rgba(255,213,79,.35) 60%);
+}
+.story-text{
+  font-size:.86rem;
+  color:var(--brown-light);
+  font-weight:500;
+  line-height:2.1;
+}
+
+ 
+.rv{opacity:0;transition:opacity .9s,transform .9s cubic-bezier(.22,1,.36,1)}
+.rv--up{transform:translateY(40px)}
+.rv--left{transform:translateX(-50px)}
+.rv--right{transform:translateX(50px)}
+.rv--scale{transform:scale(.85)}
+.rv--pop{transform:scale(.7) rotate(-6deg);transition:opacity .6s,transform .7s cubic-bezier(.34,1.56,.64,1)}
+.rv.is-visible{opacity:1;transform:none}
+.rv-d1{transition-delay:.1s}
+.rv-d2{transition-delay:.2s}
+.rv-d3{transition-delay:.3s}
+.rv-d4{transition-delay:.4s}
+.rv-d5{transition-delay:.5s}
+.rv-d6{transition-delay:.6s}
+
+ 
+.highlights{
+  position:relative;
+  background:var(--cream);
+  padding:80px 24px;
+  overflow:hidden;
+}
+.highlights-inner{max-width:560px;margin:0 auto}
+.highlights h2{
+  text-align:center;
+  font-size:clamp(1.1rem,3.5vw,1.4rem);
+  font-weight:900;
+  color:var(--brown);
+  margin-bottom:12px;
+}
+.highlights h2 em{font-style:normal;color:var(--accent)}
+.highlights-sub{
+  text-align:center;
+  font-size:.82rem;
+  color:var(--brown-light);
+  font-weight:500;
+  margin-bottom:44px;
+}
+.highlights-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.hl-card{
+  background:var(--white);
+  border-radius:20px;
+  padding:28px 18px;
+  text-align:center;
+  position:relative;
+  box-shadow:0 4px 20px rgba(120,80,20,.05);
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1),box-shadow .4s;
+  overflow:hidden;
+}
+.hl-card::after{
+  content:'';
+  position:absolute;bottom:0;left:0;right:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--yellow),var(--orange));
+  transform:scaleX(0);
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+  transform-origin:center;
+}
+.hl-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.hl-card:hover::after{transform:scaleX(1)}
+.hl-card .hl-emoji{font-size:1.8rem;margin-bottom:10px;display:block;transition:transform .3s;color:var(--orange)}
+.hl-card:hover .hl-emoji{animation:bounce .6s ease-in-out}
+.hl-card h3{font-size:.82rem;font-weight:900;color:var(--brown);margin-bottom:6px}
+.hl-card p{font-size:.72rem;color:var(--brown-light);font-weight:500;line-height:1.8}
+
+ 
+.cta-section{
+  position:relative;
+  background:var(--white);
+  padding:80px 24px;
+  text-align:center;
+  overflow:hidden;
+}
+.cta-inner{
+  max-width:480px;
+  margin:0 auto;
+  position:relative;z-index:2;
+}
+.cta-mascot{
+  width:120px;height:120px;
+  margin:0 auto 18px;
+  filter:drop-shadow(0 8px 20px rgba(200,150,50,.2));
+  animation:bounce 2.5s ease-in-out infinite;
+  cursor:pointer;
+}
+.cta-mascot:hover{animation:wiggle .5s ease-in-out}
+.cta-section h2{
+  font-size:clamp(1.1rem,3.5vw,1.4rem);
+  font-weight:900;
+  color:var(--brown);
+  margin-bottom:8px;
+}
+.cta-section h2 em{font-style:normal;color:var(--accent)}
+.cta-desc{
+  font-size:.84rem;
+  color:var(--brown-light);
+  font-weight:500;
+  margin-bottom:28px;
+  line-height:1.8;
+}
+.cta-stores{
+  display:flex;gap:12px;
+  justify-content:center;align-items:center;
+  flex-wrap:wrap;
+  margin-bottom:32px;
+}
+.cta-stores a{
+  display:block;
+  transition:transform .35s cubic-bezier(.34,1.56,.64,1);
+}
+.cta-stores a:hover{transform:translateY(-4px) scale(1.06)}
+
+.cta-links{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.cta-links a{
+  color:var(--brown-light);
+  text-decoration:none;
+  font-size:.76rem;
+  font-weight:700;
+  transition:color .3s;
+  position:relative;
+}
+.cta-links a::after{
+  content:'';
+  position:absolute;
+  bottom:-2px;left:0;right:0;
+  height:2px;
+  background:var(--yellow);
+  transform:scaleX(0);
+  transition:transform .3s;
+  transform-origin:center;
+}
+.cta-links a:hover{color:var(--accent)}
+.cta-links a:hover::after{transform:scaleX(1)}
+
+ 
+.cta-bg-circle{
+  position:absolute;
+  width:400px;height:400px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(255,213,79,.1),transparent 70%);
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+
+ 
+.lightbox{
+  position:fixed;
+  inset:0;
+  z-index:10000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(40,25,10,.7);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .3s ease;
+  cursor:pointer;
+  padding:24px;
+}
+.lightbox.is-open{
+  opacity:1;
+  pointer-events:auto;
+}
+.lightbox-img{
+  max-width:min(380px,90vw);
+  max-height:85vh;
+  border-radius:28px;
+  box-shadow:0 24px 80px rgba(0,0,0,.3);
+  transform:scale(.85);
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+  user-select:none;
+  -webkit-user-select:none;
+}
+.lightbox.is-open .lightbox-img{
+  transform:scale(1);
+}
+.lightbox-close{
+  position:absolute;
+  top:20px;right:20px;
+  width:40px;height:40px;
+  border:none;
+  background:rgba(255,255,255,.15);
+  color:#fff;
+  font-size:18px;
+  border-radius:50%;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:background .2s,transform .2s;
+}
+.lightbox-close:hover{
+  background:rgba(255,255,255,.3);
+  transform:scale(1.1);
+}
+.lightbox-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:44px;height:44px;
+  border:none;
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  font-size:16px;
+  border-radius:50%;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:background .2s,transform .2s;
+}
+.lightbox-nav:hover{
+  background:rgba(255,255,255,.25);
+  transform:translateY(-50%) scale(1.1);
+}
+.lightbox-prev{left:16px}
+.lightbox-next{right:16px}
+
+ 
+.footer{
+  background:var(--cream);
+  padding:24px;
+  text-align:center;
+}
+.footer-links{
+  display:flex;justify-content:center;gap:20px;margin-bottom:10px;flex-wrap:wrap;
+}
+.footer-links a{
+  color:var(--brown-light);
+  text-decoration:none;
+  font-size:.75rem;
+  font-weight:700;
+  transition:color .2s;
+}
+.footer-links a:hover{color:var(--accent)}
+.footer small{color:var(--brown-light);font-size:.68rem;font-weight:500;opacity:.7}
+
+ 
+@media(min-width:961px){
+   
+  .hero{padding:80px 48px 60px}
+  .hero-character{width:180px;height:180px;margin-bottom:24px}
+  .hero-sub{margin-top:16px;font-size:1rem}
+  .hero-stores{margin-top:36px}
+  .hero-deco{opacity:.08}
+  .hero-deco--1{width:140px;top:12%;left:10%}
+  .hero-deco--2{width:100px;bottom:14%;right:8%}
+  .hero-deco--3{width:80px;top:18%;right:15%}
+
+   
+  .gallery-section{padding:100px 0 80px}
+  .gallery-track{gap:24px;padding:0 calc((100vw - 1100px)/2);justify-content:center}
+  .gallery-item{width:210px}
+
+  .story-next{display:none}
+   
+  .story{padding:56px 48px}
+  .story-inner{
+    max-width:630px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:32px;
+    text-align:center;
+  }
+  .story-body{flex:1;min-width:0}
+  .story-mascot{
+    width:72px;height:72px;
+    margin:0 auto 14px;
+  }
+  .story h2{font-size:1.6rem}
+  .story-text{font-size:.9rem}
+   
+  .story-phones{
+    flex:1;
+    margin:0;
+    gap:14px;
+    justify-content:center;
+    align-items:center;
+  }
+  .story-phones .story-phone{
+    width:220px;
+    margin:0;
+    flex:0 0 auto;
+  }
+  .story-phones--duo .story-phone{
+    width:140px;
+  }
+   
+  .story:nth-of-type(even) .story-inner{
+    flex-direction:row-reverse;
+  }
+
+   
+  .highlights{padding:100px 48px}
+  .highlights-inner{max-width:920px}
+  .highlights-grid{grid-template-columns:repeat(4,1fr);gap:20px}
+  .hl-card{padding:36px 22px}
+  .hl-card h3{font-size:.88rem}
+  .hl-card p{font-size:.76rem}
+  .hl-card .hl-emoji{font-size:2.2rem}
+
+   
+  .cta-section{padding:100px 48px}
+  .cta-inner{max-width:560px}
+  .cta-mascot{width:140px;height:140px}
+  .story-mascot{width:120px;height:120px}
+  .peek-mascot{width:110px;height:110px}
+
+   
+  .deco-icons i:nth-child(1){left:16%}
+  .deco-icons i:nth-child(2){right:18%}
+  .deco-icons i:nth-child(3){left:12%}
+  .deco-icons i:nth-child(4){right:15%}
+  .deco-icons i:nth-child(6){left:78%}
+}
+
+ 
+@media(min-width:1400px){
+  .hero-character{width:200px;height:200px}
+  .story-inner{max-width:735px;gap:40px}
+  .story-phones .story-phone{width:260px;border-radius:32px}
+  .story-phones--duo .story-phone{width:170px}
+  .highlights-inner{max-width:1000px}
+  .gallery-item{width:230px}
+}
+
+ 
+@media(min-width:641px) and (max-width:960px){
+  .hero{padding:60px 32px 40px}
+  .hero-character{width:140px;height:140px}
+  .story{padding:48px 32px}
+  .story-inner{max-width:520px}
+  .story-phones .story-phone{width:220px}
+  .highlights{padding:72px 32px}
+  .highlights-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .highlights-inner{max-width:520px}
+  .gallery-item{width:195px}
+}
+
+ 
+@media(max-width:640px){
+  .hero{padding:40px 20px 32px}
+  .hero-character{width:140px;height:140px}
+  .hero-deco{display:none}
+  .story{padding:40px 20px;min-height:100svh;display:flex;align-items:center;justify-content:center}
+  .story-mascot{width:110px;height:110px}
+  .peek-mascot{display:none}
+  .story-phones{gap:8px;flex-wrap:wrap}
+  .story-phones .story-phone{width:190px}
+  .story-phones--duo .story-phone{width:170px}
+  .highlights{padding:60px 16px}
+  .cta-section{padding:60px 20px}
+}
+@media(max-width:380px){
+  .hero-character{width:110px;height:110px}
+  .hero h1{font-size:1.6rem}
+  .story-phones .story-phone{width:170px}
+  .highlights-grid{gap:10px}
+  .hl-card{padding:22px 14px}
+}
+</style>
+</head>
+<body>
 
 
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://play.google.com/store/apps/developer?id=maropiyo'
-                        target="_blank"
-                        title="GooglePlay"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-google-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3.71v16.58a.7 .7 0 0 0 1.05 .606l14.622 -8.42a.55 .55 0 0 0 0 -.953l-14.622 -8.419a.7 .7 0 0 0 -1.05 .607z" /><path d="M15 9l-10.5 11.5" /><path d="M4.5 3.5l10.5 11.5" /></svg>
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://x.com/maropiyooo'
-                        target="_blank"
-                        title="X"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://www.youtube.com/@maropiyooo'
-                        target="_blank"
-                        title="Youtube"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='https://maropiyo.com/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>Home</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='https://maropiyo.com/page/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='https://maropiyo.com/works/' >
-                
-                
-                
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-puzzle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1" /></svg>
-                
-                <span>Works</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='https://maropiyo.com/page/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='https://maropiyo.com/page/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-
-        <div class="menu-bottom-section">            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                    <span>ダークモード</span>
-                </li>
-            
-        </div>
-    </ol>
-</aside>
-
-    
-
-            <main class="main full-width">
-    <article class="has-image main-article no-padding">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="https://maropiyo.com/reminder-parrot/">
-                <img src="https://maropiyo.com/reminder-parrot/image/reminder_parrot.png"
-                        
-                        width="1024" 
-                        height="500" 
-                        loading="lazy"
-                        alt="Featured image of post リマインコ" />
-                
-            </a>
-        </div>
-    
-
-    
-</header>
-
-    <section class="article-content no-padding">
-    
-    
-    <div style="background-color: #FCF7E9;">
-<br/>
-<hr style="background-color: #E59F43;">
-<p style="text-align: center; font-size: 20px; font-weight: bold;  margin: 10px; color: #E59F43;">インストールはこちら！
-</p>
-<div style="display: flex; align-items: center; justify-content: center;">
+<section class="hero">
+  <div class="deco-icons" aria-hidden="true">
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+  </div>
+  <img src="https://maropiyo.com/reminder-parrot/image/reminko.png" alt="リマインコ" class="hero-character" id="hero-char">
+  <h1>
+    <span>リマインコ</span>
+  </h1>
+  <p class="hero-sub">
+    ひとりじゃ続かなかった、でもみんなとなら。<br>
+    インコを育てながら楽しく続けられるリマインダーアプリ。
+  </p>
+  <div class="hero-stores">
     <a href="https://apps.apple.com/app/id6748996182">
-        <img src="image/Download_on_the_App_Store_Badge.svg" alt="AppStore" style="height: 50px; margin-right: 10px;">
+      <img src="https://maropiyo.com/reminder-parrot/image/Download_on_the_App_Store_Badge.svg" alt="App Store からダウンロード" class="store-badge-apple">
     </a>
     <a href="https://play.google.com/store/apps/details?id=com.maropiyo.reminderparrot">
-        <img src="image/google-play-badge.png" alt="Google Play" style="height: 65px;">
+      <img src="https://maropiyo.com/reminder-parrot/image/google-play-badge.png" alt="Google Play で手に入れよう" class="store-badge-google">
     </a>
-</div>
-<hr style="background-color: #E59F43;">
-<image src="image/reminder_parrot_1.png" alt="リマインコ" style="width: auto; display: block; margin-left: auto; margin-right: auto;"/>
-<hr style="background-color: #E59F43;">
-<image src="image/reminder_parrot_2.png" alt="リマインコ" style="width: auto; display: block; margin-left: auto; margin-right: auto;"/>
-<hr style="background-color: #E59F43;">
-<image src="image/reminder_parrot_3.png" alt="リマインコ" style="width: auto; display: block; margin-left: auto; margin-right: auto;"/>
-<hr style="background-color: #E59F43;">
-<image src="image/reminder_parrot_4.png" alt="リマインコ" style="width: auto; display: inline; margin-left: auto; margin-right: auto;"/>
-<hr style="background-color: #E59F43;">
-<p style="text-align: center; font-size: 20px; font-weight: bold;  margin: 10px; color: #E59F43;">インストールはこちら！<br/>
-</p>
-<div style="display: flex; align-items: center; justify-content: center;">
-    <a href="https://apps.apple.com/app/id6748996182">
-        <img src="image/Download_on_the_App_Store_Badge.svg" alt="AppStore" style="height: 50px; margin-right: 10px;">
-    </a>
-    <a href="https://play.google.com/store/apps/details?id=com.maropiyo.reminderparrot">
-        <img src="image/google-play-badge.png" alt="Google Play" style="height: 65px;">
-    </a>
-</div>
-<hr style="background-color: #E59F43;">
-<!--FAQ| Privacy Policy| Terms-->
-<div style="text-align: center; margin-bottom: 20px; color: #E59F43;">
-    <a href="https://maropiyo.com/reminder-parrot/faq/" style="margin: 0
-    10px; text-decoration: none; font-family: 'M PLUS Rounded 1c'; color: #E59F43; font-weight: bold;">FAQ</a> |
-    <a href="https://maropiyo.com/reminder-parrot/privacy-policy/" style="margin: 0 10px; text-decoration: none; font-family: 'M PLUS Rounded 1c'; color: #E59F43; font-weight: bold;">プライバシーポリシー</a> |
-    <a href="https://maropiyo.com/reminder-parrot/terms/" style="margin: 0
-    10px; text-decoration: none; font-family: 'M PLUS Rounded 1c'; color: #E59F43; font-weight: bold;">利用規約</a>
-</div>
-<br/>
-</div>
-
+  </div>
+  <div class="hero-scroll">
+    <span>SCROLL</span>
+    <i class="hero-scroll-arrow"></i>
+  </div>
 </section>
 
 
-    <footer class="article-footer no-padding">
-    
+<section class="story story--cream" id="s1">
+  <div class="deco-icons" aria-hidden="true">
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+  </div>
+  <div class="story-inner">
+    <div class="story-body">
+      <img src="https://maropiyo.com/reminder-parrot/image/reminko_raising_hand.png" alt="" class="story-mascot anim-hop rv rv--scale">
+      <div class="story-step rv rv--up rv-d1">STEP 1</div>
+      <h2 class="rv rv--up rv-d2">あとで思い出したい<br><em>ことばを教えるだけ</em></h2>
+      <p class="story-text rv rv--up rv-d3">
+        余計な設定は一切なし、ことばを入力するだけ。<br>
+        覚えているうちにサッと入力。<br>
+        ことばを教えたら、あとはおまかせ。
+      </p>
+    </div>
+    <div class="story-phones rv rv--up rv-d4">
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_2.png" alt="ことばを教える画面"></div>
+    </div>
+  </div>
+  <button class="story-next" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
+</section>
 
-    </footer>
+
+<section class="story story--white" id="s2">
+
+  <div class="deco-icons" aria-hidden="true">
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+  </div>
+  <div class="story-inner">
+    <div class="story-body">
+      <img src="https://maropiyo.com/reminder-parrot/image/reminko.png" alt="" class="story-mascot anim-bell rv rv--scale">
+      <div class="story-step rv rv--up rv-d1">STEP 2</div>
+      <h2 class="rv rv--up rv-d2">あとはだれかが<br><em>リマインドしてくれる</em></h2>
+      <p class="story-text rv rv--up rv-d3">
+        みんなのインコが思い出させてくれる。<br>
+        機械的じゃないからこそ温かい。<br>
+        投稿しなければ自分だけのTODOアプリにも。
+      </p>
+    </div>
+    <div class="story-phones rv rv--up rv-d4">
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_3.png" alt="リマインド通知の画面"></div>
+    </div>
+  </div>
+  <button class="story-next" onclick="document.getElementById('s3').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
+</section>
 
 
-    
-        <link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
-            ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
-                defer
-                >
-            </script><script>
-    window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.querySelector(`.article-content`), {
-            delimiters: [
-                { left: "$$", right: "$$", display: true },
-                { left: "$", right: "$", display: false },
-                { left: "\\(", right: "\\)", display: false },
-                { left: "\\[", right: "\\]", display: true }
-            ]
-        });})
-</script>
-    
-</article>
+<section class="story story--cream" id="s3">
+  <div class="deco-icons" aria-hidden="true">
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+  </div>
+  <div class="story-inner">
+    <div class="story-body">
+      <img src="https://maropiyo.com/reminder-parrot/image/reminko.png" alt="" class="story-mascot anim-wiggle rv rv--scale">
+      <div class="story-step rv rv--up rv-d1"><i class="fa-solid fa-clock-rotate-left"></i> MEMORY</div>
+      <h2 class="rv rv--up rv-d2">忘れちゃっても<br><em>だいじょうぶ</em></h2>
+      <p class="story-text rv rv--up rv-d3">
+        インコだって忘れちゃう。でもそれがいい。<br>
+        タスクが溜まらない、完了しに開く手間もない。<br>
+        忘れちゃったことばはいつでも確認できる。
+      </p>
+    </div>
+    <div class="story-phones rv rv--up rv-d4">
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_forgotten.png" alt="忘れちゃったことば画面"></div>
+    </div>
+  </div>
+  <button class="story-next" onclick="document.getElementById('s4').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
+</section>
 
-    
 
-    
+<section class="story story--white" id="s4">
+  <div class="deco-icons" aria-hidden="true">
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+  </div>
+  <div class="story-inner">
+    <div class="story-body">
+      <img src="https://maropiyo.com/reminder-parrot/image/reminko_jump.png" alt="" class="story-mascot anim-headbang rv rv--scale">
+      <div class="story-step rv rv--up rv-d1"><i class="fa-solid fa-up-long"></i> LEVEL UP!</div>
+      <h2 class="rv rv--up rv-d2">ゲーム感覚で<br><em>楽しく続けられる</em></h2>
+      <p class="story-text rv rv--up rv-d3">
+        リマインコと一緒にレベルアップ。<br>
+        続けるほど覚えることばも記憶時間も成長。<br>
+        育てるほどに愛着が湧いてくる。
+      </p>
+    </div>
+    <div class="story-phones rv rv--up rv-d4">
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_4.png" alt="レベルアップ画面"></div>
+    </div>
+  </div>
+  <button class="story-next" onclick="document.getElementById('s5').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
+</section>
 
-     
-    
 
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy;
-        
-            2023 -
-        
-        2026 まろぴよの部屋
-    </section>
+<section class="story story--cream" id="s5">
 
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
-    </section>
+  <div class="deco-icons" aria-hidden="true">
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+  </div>
+  <div class="story-inner">
+    <div class="story-body">
+      <img src="https://maropiyo.com/reminder-parrot/image/reminko_raising_hand.png" alt="" class="story-mascot anim-swing rv rv--scale">
+      <div class="story-step rv rv--up rv-d1"><i class="fa-solid fa-user-group"></i> GROUP</div>
+      <h2 class="rv rv--up rv-d2">リマイングループで<br><em>毎日継続</em></h2>
+      <p class="story-text rv rv--up rv-d3">
+        ひとりじゃ続かないことも、仲間となら続く。<br>
+        友達や家族を誘ったり、仲間を募集できる。<br>
+        同じ目標のグループで、毎日がちょっと楽しく。
+      </p>
+    </div>
+    <div class="story-phones story-phones--duo rv rv--up rv-d4">
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_group_explore.png" alt="募集中のグループ"></div>
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_group_detail.png" alt="グループ詳細"></div>
+    </div>
+  </div>
+  <button class="story-next" onclick="document.getElementById('s6').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
+</section>
+
+
+<section class="story story--white" id="s6">
+  <div class="deco-icons" aria-hidden="true">
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+  </div>
+  <div class="story-inner">
+    <div class="story-body">
+      <img src="https://maropiyo.com/reminder-parrot/image/reminko.png" alt="" class="story-mascot anim-float rv rv--scale">
+      <div class="story-step rv rv--up rv-d1"><i class="fa-solid fa-globe"></i> SOCIAL</div>
+      <h2 class="rv rv--up rv-d2">リマインネットで<br><em>思い出す</em></h2>
+      <p class="story-text rv rv--up rv-d3">
+        みんなの投稿を見て思い出せるかも。<br>
+        「洗剤買わなきゃ」「傘忘れてた」――<br>
+        誰かの投稿があなたを助けてくれる。
+      </p>
+    </div>
+    <div class="story-phones rv rv--up rv-d4">
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_6.png" alt="リマインネット画面"></div>
+    </div>
+  </div>
+  <button class="story-next" onclick="document.getElementById('s7').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
+</section>
+
+
+<section class="story story--cream" id="s7">
+
+  <div class="deco-icons" aria-hidden="true">
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+  </div>
+  <div class="story-inner">
+    <div class="story-body">
+      <img src="https://maropiyo.com/reminder-parrot/image/reminko_jump.png" alt="" class="story-mascot anim-hop rv rv--scale">
+      <div class="story-step rv rv--up rv-d1"><i class="fa-solid fa-crown"></i> RANKING</div>
+      <h2 class="rv rv--up rv-d2">リマインランキングに<br><em>のれるかな</em></h2>
+      <p class="story-text rv rv--up rv-d3">
+        4種類のランキングでモチベを維持。<br>
+        継続日数やレベルで上位を目指そう。<br>
+        みんなの頑張りが見えるから続けられる。
+      </p>
+    </div>
+    <div class="story-phones story-phones--duo rv rv--up rv-d4">
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_rank_level.png" alt="リマインレベル"></div>
+      <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_rank_streak.png" alt="継続日数"></div>
+    </div>
+  </div>
+  <button class="story-next" onclick="document.getElementById('s8').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
+</section>
+
+
+<section class="highlights" id="s8" style="background:var(--white);position:relative">
+  <div class="highlights-inner">
+    <h2 class="rv rv--up">こんな人に<em>おすすめ</em></h2>
+    <p class="highlights-sub rv rv--up rv-d1">リマインコが役に立つ場面</p>
+    <div class="highlights-grid">
+      <div class="hl-card rv rv--pop rv-d1">
+        <span class="hl-emoji"><i class="fa-solid fa-face-dizzy"></i></span>
+        <h3>忘れっぽい</h3>
+        <p>傘、小テスト、美容室…<br>みんなが教えてくれる</p>
+      </div>
+      <div class="hl-card rv rv--pop rv-d2">
+        <span class="hl-emoji"><i class="fa-solid fa-repeat"></i></span>
+        <h3>三日坊主でも大丈夫</h3>
+        <p>1人じゃ続かなかった<br>これなら続けられる</p>
+      </div>
+      <div class="hl-card rv rv--pop rv-d3">
+        <span class="hl-emoji"><i class="fa-solid fa-people-group"></i></span>
+        <h3>仲間が欲しい</h3>
+        <p>同じ目標の仲間と<br>一緒だから続けられる</p>
+      </div>
+      <div class="hl-card rv rv--pop rv-d4">
+        <span class="hl-emoji"><i class="fa-solid fa-lock"></i></span>
+        <h3>匿名で安心</h3>
+        <p>アカウント登録不要<br>子供から大人まで安心</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-section" id="download" style="background:var(--cream)">
+  <div class="cta-bg-circle" aria-hidden="true"></div>
+  <div class="cta-inner">
+    <img src="https://maropiyo.com/reminder-parrot/image/reminko_jump.png" alt="リマインコ" class="cta-mascot rv rv--scale">
+    <h2 class="rv rv--up rv-d1"><em>リマインコ</em>と一緒にはじめよう</h2>
+    <p class="cta-desc rv rv--up rv-d2">無料でダウンロード、広告もなし。<br>アカウント登録なしですぐに使えます。</p>
+    <div class="cta-stores rv rv--up rv-d3">
+      <a href="https://apps.apple.com/app/id6748996182">
+        <img src="https://maropiyo.com/reminder-parrot/image/Download_on_the_App_Store_Badge.svg" alt="App Store からダウンロード" class="store-badge-apple">
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.maropiyo.reminderparrot">
+        <img src="https://maropiyo.com/reminder-parrot/image/google-play-badge.png" alt="Google Play で手に入れよう" class="store-badge-google">
+      </a>
+    </div>
+    <div class="cta-links rv rv--up rv-d4">
+      <a href="https://maropiyo.com/reminder-parrot/faq/">FAQ</a>
+      <a href="https://maropiyo.com/reminder-parrot/privacy-policy/">プライバシーポリシー</a>
+      <a href="https://maropiyo.com/reminder-parrot/terms/">利用規約</a>
+      <a href="https://maropiyo.com/reminder-parrot/releases/">リリースノート</a>
+    </div>
+  </div>
+</section>
+
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="閉じる"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox-nav lightbox-prev" aria-label="前へ"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="lightbox-nav lightbox-next" aria-label="次へ"><i class="fa-solid fa-chevron-right"></i></button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>
+
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="https://x.com/maropiyooo" target="_blank">X (@maropiyooo)</a>
+    <a href="https://maropiyo.com/">まろぴよの部屋</a>
+  </div>
+  <small>&copy; 2023 - 2026 まろぴよの部屋</small>
 </footer>
 
 
+<script>
+
+(function(){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}
+    });
+  },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+})();
+
+
+(function(){
+  var t=document.getElementById('gallery-track');
+  if(t)t.scrollLeft=(t.scrollWidth-t.clientWidth)/2;
+})();
+
+
+(function(){
+  var el=document.getElementById('hero-char');
+  el.addEventListener('animationend',function handler(){
+    el.style.animation='none';
+    el.removeEventListener('animationend',handler);
+  });
+})();
+
+
+(function(){
+  var el=document.getElementById('hero-char');
+  var imgs=['/reminder-parrot/image/reminko.png','/reminder-parrot/image/reminko_raising_hand.png','/reminder-parrot/image/reminko_jump.png'];
+  var idx=Math.floor(Math.random()*imgs.length);
+  el.src=imgs[idx];
+  el.addEventListener('click',function(e){
+    idx=(idx+1)%imgs.length;
+    el.style.animation='none';
+    el.offsetHeight;
+    el.src=imgs[idx];
+    el.style.animation='heroCharDrop .7s cubic-bezier(.34,1.56,.64,1) both';
+    el.addEventListener('animationend',function handler(){
+      el.style.animation='none';
+      el.removeEventListener('animationend',handler);
+    });
     
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="https://maropiyo.com/ts/main.js" defer></script>
+    var colors=['#FFD54F','#FF9800','#FFA726','#FFCC02','#FFE082'];
+    for(var i=0;i<8;i++){
+      var s=document.createElement('i');
+      s.className='fa-solid fa-star';
+      var size=8+Math.random()*12;
+      var col=colors[Math.floor(Math.random()*colors.length)];
+      var angle=Math.PI*2*(i/8)+Math.random()*.4;
+      var dist=60+Math.random()*50;
+      var bx=Math.cos(angle)*dist;
+      var by=Math.sin(angle)*dist;
+      s.style.cssText='position:fixed;pointer-events:none;z-index:9999;font-size:'+size+'px;color:'+col+';--bx:'+bx+'px;--by:'+by+'px;';
+      s.style.left=e.clientX+'px';
+      s.style.top=e.clientY+'px';
+      s.style.animation='starBurst .6s ease-out forwards';
+      s.style.animationDelay=(i*.03)+'s';
+      document.body.appendChild(s);
+      setTimeout(function(){s.remove()},800);
+    }
+  });
+})();
 
 
-    </body>
+(function(){
+  var mascots=document.querySelectorAll('.story-mascot,.cta-mascot');
+  var colors=['#FFD54F','#FF9800','#FFA726','#FFCC02','#FFE082'];
+  mascots.forEach(function(m){
+    m.addEventListener('click',function(e){
+      
+      m.style.animation='none';
+      m.offsetHeight;
+      m.style.animation='squish .5s ease-in-out';
+      
+      for(var i=0;i<8;i++){
+        var s=document.createElement('i');
+        s.className='fa-solid fa-star';
+        var size=6+Math.random()*12;
+        var col=colors[Math.floor(Math.random()*colors.length)];
+        var angle=Math.PI*2*(i/8)+Math.random()*.4;
+        var dist=60+Math.random()*50;
+        var bx=Math.cos(angle)*dist;
+        var by=Math.sin(angle)*dist;
+        s.style.cssText='position:fixed;pointer-events:none;z-index:9999;font-size:'+size+'px;color:'+col+';--bx:'+bx+'px;--by:'+by+'px;';
+        s.style.left=e.clientX+'px';
+        s.style.top=e.clientY+'px';
+        s.style.animation='starBurst .6s ease-out forwards';
+        s.style.animationDelay=(i*.03)+'s';
+        document.body.appendChild(s);
+        setTimeout(function(){s.remove()},800);
+      }
+    });
+  });
+})();
+
+
+(function(){
+  var box=document.getElementById('lightbox');
+  var img=document.getElementById('lightbox-img');
+  var imgs=[];
+  var idx=0;
+
+  
+  document.querySelectorAll('.story-phone img').forEach(function(el){
+    imgs.push(el.src);
+    el.style.cursor='zoom-in';
+    el.addEventListener('click',function(){
+      idx=imgs.indexOf(el.src);
+      open(el.src,el.alt);
+    });
+  });
+
+  function open(src,alt){
+    img.src=src;
+    img.alt=alt||'';
+    box.classList.add('is-open');
+    document.body.style.overflow='hidden';
+  }
+  function close(){
+    box.classList.remove('is-open');
+    document.body.style.overflow='';
+  }
+  function prev(){
+    idx=(idx-1+imgs.length)%imgs.length;
+    img.src=imgs[idx];
+    img.style.animation='none';img.offsetHeight;
+    img.style.animation='scaleIn .3s ease both';
+  }
+  function next(){
+    idx=(idx+1)%imgs.length;
+    img.src=imgs[idx];
+    img.style.animation='none';img.offsetHeight;
+    img.style.animation='scaleIn .3s ease both';
+  }
+
+  box.addEventListener('click',function(e){
+    if(e.target===box)close();
+  });
+  box.querySelector('.lightbox-close').addEventListener('click',close);
+  box.querySelector('.lightbox-prev').addEventListener('click',function(e){e.stopPropagation();prev()});
+  box.querySelector('.lightbox-next').addEventListener('click',function(e){e.stopPropagation();next()});
+
+  
+  document.addEventListener('keydown',function(e){
+    if(!box.classList.contains('is-open'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowLeft')prev();
+    if(e.key==='ArrowRight')next();
+  });
+
+  
+  var touchX=0;
+  img.addEventListener('touchstart',function(e){touchX=e.touches[0].clientX},{passive:true});
+  img.addEventListener('touchend',function(e){
+    var dx=e.changedTouches[0].clientX-touchX;
+    if(dx>50)prev();
+    if(dx<-50)next();
+  });
+})();
+
+
+(function(){
+  if(window.innerWidth<961)return;
+  var hero=document.querySelector('.hero');
+  var char=document.getElementById('hero-char');
+  var decos=document.querySelectorAll('.hero-deco');
+  hero.addEventListener('mousemove',function(e){
+    var rect=hero.getBoundingClientRect();
+    var x=(e.clientX-rect.left)/rect.width-.5;
+    var y=(e.clientY-rect.top)/rect.height-.5;
+    char.style.transform='translate('+x*20+'px,'+y*12+'px)';
+    decos.forEach(function(d,i){
+      var f=(i+1)*8;
+      d.style.transform='translate('+x*f+'px,'+y*f+'px)';
+    });
+  });
+  hero.addEventListener('mouseleave',function(){
+    char.style.transform='';
+    decos.forEach(function(d){d.style.transform=''});
+  });
+})();
+</script>
+
+</body>
 </html>

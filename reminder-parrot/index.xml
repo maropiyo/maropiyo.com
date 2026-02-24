@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Reminder-Parrots on まろぴよの部屋</title>
+        <title>リマインコ - みんなで続けるリマインダーアプリ on まろぴよの部屋</title>
         <link>https://maropiyo.com/reminder-parrot/</link>
-        <description>Recent content in Reminder-Parrots on まろぴよの部屋</description>
+        <description>Recent content in リマインコ - みんなで続けるリマインダーアプリ on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language><atom:link href="https://maropiyo.com/reminder-parrot/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>アップデート履歴 | リマインコ</title>
@@ -12,15 +12,15 @@
         
         <guid>https://maropiyo.com/reminder-parrot/releases/</guid>
         <description>&lt;img src="https://maropiyo.com/reminder-parrot/releases/release.png" alt="Featured image of post アップデート履歴 | リマインコ" /&gt;&lt;p&gt;リマインコのアップデート履歴はここで全部みれるっぴ！&lt;/p&gt;
-&lt;h2 id=&#34;103-裏声を出すのが難しいっぴ-20251004&#34;&gt;1.0.3 裏声を出すのが難しいっぴ (2025/10/04)&lt;/h2&gt;
-&lt;p&gt;カラオケで高い曲を歌うとき、裏声を出すのが難しいっぴ&lt;/p&gt;
-&lt;p&gt;アップデート内容は以下の通りっぴ！&lt;/p&gt;
+&lt;h2 id=&#34;104-20251110&#34;&gt;1.0.4 (2025/11/10)&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;リマインドボタンを2連タップするとクラッシュする不具合を修正したっぴ！そもそも2連タップできないように修正したっぴ！&lt;/li&gt;
+&lt;li&gt;アプリに復帰したときの挙動を改善したっぴ！&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;102-寒くなってきたっぴ-20251002&#34;&gt;1.0.2 寒くなってきたっぴ (2025/10/02)&lt;/h2&gt;
-&lt;p&gt;最近急に寒くなってきたっぴ、風邪ひかないように気をつけるっぴ！&lt;/p&gt;
-&lt;p&gt;アップデート内容は以下の通りっぴ！&lt;/p&gt;
+&lt;h2 id=&#34;103-20251004&#34;&gt;1.0.3 (2025/10/04)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;リマインドボタンを2連タップするとクラッシュする不具合を修正したっぴ！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;102-20251002&#34;&gt;1.0.2 (2025/10/02)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;大きい文字とか小さい端末だと、文字が改行されちゃってUIが崩れちゃっていた部分を改善したっぴ！&lt;/li&gt;
 &lt;li&gt;設定画面のバージョンをタップすると、リマインコのアップデート履歴が見れるようにしたっぴ！&lt;/li&gt;
@@ -29,8 +29,10 @@
 &lt;li&gt;(iOS)通知が来たとき、アイコンにバッジがつくようにしたっぴ！&lt;/li&gt;
 &lt;li&gt;その他UIの細かな不具合を修正したっぴ！&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;101-リリースっぴ-20250926&#34;&gt;1.0.1 リリースっぴ！ (2025/09/26)&lt;/h2&gt;
-&lt;p&gt;リリースしたっぴ！たくさん言葉を覚えるっぴー！&lt;/p&gt;
+&lt;h2 id=&#34;101-20250926&#34;&gt;1.0.1 (2025/09/26)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;リリース&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

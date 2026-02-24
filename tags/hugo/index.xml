@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hugo on まろぴよの部屋</title>
-        <link>http://localhost:1314/tags/hugo/</link>
+        <link>http://localhost:1313/tags/hugo/</link>
         <description>Recent content in Hugo on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Tue, 28 May 2024 01:45:35 +0900</lastBuildDate><atom:link href="http://localhost:1314/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2024 01:45:35 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【Hugo】長いURLをはみ出さないように改行する方法</title>
-        <link>http://localhost:1314/post/hugo_long_url_word_break/</link>
+        <link>http://localhost:1313/post/hugo_long_url_word_break/</link>
         <pubDate>Tue, 28 May 2024 01:45:35 +0900</pubDate>
         
-        <guid>http://localhost:1314/post/hugo_long_url_word_break/</guid>
+        <guid>http://localhost:1313/post/hugo_long_url_word_break/</guid>
         <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;スマホでHugoで作成したサイトを見たときに、長いURLがはみ出していることに気づきました。&lt;/p&gt;
 &lt;p&gt;この記事では、以下のようにURLをはみ出さないよう改行する方法を紹介します。&lt;/p&gt;

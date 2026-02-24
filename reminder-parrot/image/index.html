@@ -1,296 +1,357 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=' インストールはこちら！ インストールはこちら！ '>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>リマインコ</title>
-
-<link rel='canonical' href='https://maropiyo.com/reminder-parrot/image/'>
-
-<link rel="stylesheet" href="https://maropiyo.com/scss/style.min.c2c736d445f0693db136da14c40162b0f9b05eafd62cd3a33e1d96cbae1e06ff.css"><meta property='og:title' content='リマインコ'>
-<meta property='og:description' content=' インストールはこちら！ インストールはこちら！ '>
-<meta property='og:url' content='https://maropiyo.com/reminder-parrot/image/'>
-<meta property='og:site_name' content='まろぴよの部屋'>
-<meta property='og:type' content='article'><meta property='article:section' content='Reminder-Parrot' /><meta property='og:image' content='https://maropiyo.com/image/reminder_parrot.png' />
+<meta name="description" content="リマインコ">
+<meta property="og:title" content="リマインコ">
+<meta property="og:description" content="リマインコ">
+<meta property="og:image" content="https://maropiyo.com/reminder-parrot/image/reminder_parrot.png">
+<meta property="og:url" content="https://maropiyo.com/reminder-parrot/image/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@maropiyooo">
 <meta name="twitter:title" content="リマインコ">
-<meta name="twitter:description" content=" インストールはこちら！ インストールはこちら！ "><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://maropiyo.com/image/reminder_parrot.png' />
-    <link rel="shortcut icon" href="https://maropiyo.com/favicon.ico" />
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+<meta name="twitter:description" content="リマインコ">
+<meta name="twitter:image" content="https://maropiyo.com/reminder-parrot/image/reminder_parrot.png">
+<link rel="icon" href="https://maropiyo.com/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+ 
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'M PLUS Rounded 1c',sans-serif;
+  color:#5D4037;
+  background:var(--cream);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
 
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
+ 
+:root{
+  --yellow:#FFD54F;
+  --orange:#FF9800;
+  --accent:#E59F43;
+  --brown:#5D4037;
+  --brown-light:#8D6E63;
+  --cream:#FFF8E1;
+  --peach:#FFF3E0;
+  --white:#FFFFFF;
+  --shadow:0 8px 40px rgba(120,80,20,.08);
+  --shadow-hover:0 16px 56px rgba(120,80,20,.14);
+}
 
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
+ 
+@keyframes fadeInUp{
+  0%{opacity:0;transform:translateY(24px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+@keyframes squish{
+  0%,100%{transform:scaleX(1) scaleY(1)}
+  30%{transform:scaleX(1.15) scaleY(.85)}
+  50%{transform:scaleX(.9) scaleY(1.1)}
+  70%{transform:scaleX(1.05) scaleY(.95)}
+}
+@keyframes starBurst{
+  0%{opacity:1;transform:translate(0,0) scale(0)}
+  20%{opacity:1;transform:translate(calc(var(--bx)*.3),calc(var(--by)*.3)) scale(1.3)}
+  100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(0)}
+}
 
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="https://maropiyo.com/">
-                
-                    
-                    
-                    
-                        
-                        <img src="https://maropiyo.com/img/icon_hu_f8ae2c3d4ec130b2.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="https://maropiyo.com/">まろぴよの部屋</a></h1>
-            <h2 class="site-description">とあるインコ好きの個人サイト</h2>
-        </div>
-    </header><ol class="social-menu">
-            
-                <li>
-                    <a 
-                        href='https://apps.apple.com/us/developer/manato-takeishi/id1731628288'
-                        target="_blank"
-                        title="AppStore"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z" /><path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" /></svg>
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://github.com/maropiyo'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
+ 
+.page-header{
+  background:var(--cream);
+  padding:32px 24px 24px;
+  text-align:center;
+  position:relative;
+  animation:fadeInUp .6s ease-out both;
+}
+.page-mascot{
+  width:80px;height:80px;
+  object-fit:contain;
+  filter:drop-shadow(0 6px 16px rgba(200,150,50,.18));
+  animation:float 3s ease-in-out infinite;
+  cursor:pointer;
+  margin-bottom:14px;
+}
+.page-title{
+  font-size:clamp(1.2rem,4vw,1.6rem);
+  font-weight:900;
+  color:var(--brown);
+  line-height:1.4;
+}
+.page-title-accent{
+  display:block;
+  width:40px;height:4px;
+  background:linear-gradient(90deg,var(--yellow),var(--orange));
+  border-radius:2px;
+  margin:12px auto 0;
+}
+
+ 
+.page-content{
+  max-width:720px;
+  margin:0 auto;
+  padding:0 20px 60px;
+  animation:fadeInUp .6s ease-out .15s both;
+}
+.content-card{
+  background:var(--white);
+  border-radius:24px;
+  padding:40px 36px;
+  box-shadow:var(--shadow);
+}
+
+ 
+.content-card h2{
+  font-size:1.15rem;
+  font-weight:900;
+  color:var(--brown);
+  margin:36px 0 16px;
+  padding:10px 0 10px 16px;
+  border-left:4px solid var(--yellow);
+  line-height:1.5;
+}
+.content-card h2:first-child{margin-top:0}
+
+.content-card h3{
+  font-size:.98rem;
+  font-weight:800;
+  color:var(--brown);
+  margin:24px 0 10px;
+  line-height:1.5;
+}
+
+ 
+.content-card p{
+  font-size:.88rem;
+  color:var(--brown-light);
+  font-weight:500;
+  line-height:1.9;
+  margin-bottom:14px;
+}
+
+ 
+.content-card a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:700;
+  border-bottom:2px solid transparent;
+  transition:border-color .3s,color .3s;
+}
+.content-card a:hover{
+  color:var(--orange);
+  border-bottom-color:var(--yellow);
+}
+
+ 
+.content-card ul,
+.content-card ol{
+  margin:8px 0 16px 8px;
+  padding-left:20px;
+}
+.content-card ul{list-style:none;padding-left:8px}
+.content-card ul li{
+  position:relative;
+  padding-left:18px;
+  margin-bottom:8px;
+  font-size:.86rem;
+  color:var(--brown-light);
+  font-weight:500;
+  line-height:1.8;
+}
+.content-card ul li::before{
+  content:'';
+  position:absolute;
+  left:0;top:10px;
+  width:8px;height:8px;
+  background:var(--yellow);
+  border-radius:50%;
+}
+.content-card ol li{
+  margin-bottom:8px;
+  font-size:.86rem;
+  color:var(--brown-light);
+  font-weight:500;
+  line-height:1.8;
+}
+.content-card ol li::marker{
+  color:var(--accent);
+  font-weight:800;
+}
+
+ 
+.content-card ul ul,
+.content-card ol ul{
+  margin:6px 0 6px 0;
+}
+.content-card ul ul li::before{
+  background:var(--orange);
+  width:6px;height:6px;
+  top:11px;
+}
+
+ 
+.content-card .table-wrap{
+  overflow-x:auto;
+  margin:12px 0 20px;
+  border-radius:14px;
+  border:2px solid var(--cream);
+}
+.content-card table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.82rem;
+  font-weight:500;
+}
+.content-card thead th{
+  background:var(--yellow);
+  color:var(--brown);
+  font-weight:800;
+  padding:10px 14px;
+  text-align:left;
+  white-space:nowrap;
+}
+.content-card tbody td{
+  padding:10px 14px;
+  color:var(--brown-light);
+  border-bottom:1px solid var(--cream);
+}
+.content-card tbody tr:last-child td{border-bottom:none}
+.content-card tbody tr:hover{background:rgba(255,213,79,.06)}
+
+ 
+.content-card hr{
+  border:none;
+  height:3px;
+  background:linear-gradient(90deg,transparent,var(--yellow),var(--orange),var(--yellow),transparent);
+  border-radius:2px;
+  margin:32px 0;
+}
+
+ 
+.content-card strong{
+  color:var(--brown);
+  font-weight:800;
+}
+
+ 
+.content-card blockquote{
+  margin:16px 0;
+  padding:14px 20px;
+  background:var(--cream);
+  border-left:4px solid var(--yellow);
+  border-radius:0 12px 12px 0;
+}
+.content-card blockquote p{
+  margin-bottom:0;
+  color:var(--brown);
+}
+
+ 
+.content-card code{
+  background:var(--cream);
+  padding:2px 8px;
+  border-radius:6px;
+  font-size:.82rem;
+  font-weight:700;
+  color:var(--accent);
+}
+
+ 
+.page-nav{
+  max-width:720px;
+  margin:0 auto;
+  padding:0 20px 40px;
+  animation:fadeInUp .6s ease-out .25s both;
+}
+.page-nav-inner{
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.page-nav a{
+  color:var(--brown-light);
+  text-decoration:none;
+  font-size:.78rem;
+  font-weight:700;
+  padding:8px 16px;
+  border-radius:20px;
+  background:var(--white);
+  box-shadow:0 2px 12px rgba(120,80,20,.06);
+  transition:all .3s;
+}
+.page-nav a:hover{
+  color:var(--accent);
+  box-shadow:0 4px 20px rgba(120,80,20,.12);
+  transform:translateY(-2px);
+}
+.page-nav a.is-current{
+  background:var(--yellow);
+  color:var(--brown);
+  box-shadow:0 4px 16px rgba(255,213,79,.3);
+}
+
+ 
+.footer{
+  background:var(--cream);
+  padding:24px;
+  text-align:center;
+}
+.footer-links{
+  display:flex;justify-content:center;gap:20px;margin-bottom:10px;flex-wrap:wrap;
+}
+.footer-links a{
+  color:var(--brown-light);
+  text-decoration:none;
+  font-size:.75rem;
+  font-weight:700;
+  transition:color .2s;
+}
+.footer-links a:hover{color:var(--accent)}
+.footer small{color:var(--brown-light);font-size:.68rem;font-weight:500;opacity:.7}
+
+ 
+@media(min-width:961px){
+  .page-header{padding:48px 48px 32px}
+  .page-mascot{width:96px;height:96px}
+  .content-card{padding:52px 56px}
+}
+
+ 
+@media(max-width:640px){
+  .page-header{padding:24px 16px 18px}
+  .page-mascot{width:64px;height:64px}
+  .content-card{
+    padding:28px 20px;
+    border-radius:18px;
+  }
+  .content-card h2{font-size:1.05rem}
+  .content-card h3{font-size:.92rem}
+  .page-nav a{font-size:.72rem;padding:6px 12px}
+}
+</style>
+</head>
+<body>
 
 
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://play.google.com/store/apps/developer?id=maropiyo'
-                        target="_blank"
-                        title="GooglePlay"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-google-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3.71v16.58a.7 .7 0 0 0 1.05 .606l14.622 -8.42a.55 .55 0 0 0 0 -.953l-14.622 -8.419a.7 .7 0 0 0 -1.05 .607z" /><path d="M15 9l-10.5 11.5" /><path d="M4.5 3.5l10.5 11.5" /></svg>
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://x.com/maropiyooo'
-                        target="_blank"
-                        title="X"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://www.youtube.com/@maropiyooo'
-                        target="_blank"
-                        title="Youtube"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='https://maropiyo.com/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>Home</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='https://maropiyo.com/page/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='https://maropiyo.com/works/' >
-                
-                
-                
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-puzzle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1" /></svg>
-                
-                <span>Works</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='https://maropiyo.com/page/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='https://maropiyo.com/page/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-
-        <div class="menu-bottom-section">            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                    <span>ダークモード</span>
-                </li>
-            
-        </div>
-    </ol>
-</aside>
-
-    
-
-            <main class="main full-width">
-    <article class="has-image main-article no-padding">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="https://maropiyo.com/reminder-parrot/image/">
-                
-                    <img src="https://maropiyo.com/image/reminder_parrot.png" loading="lazy" alt="Featured image of post リマインコ" />
-                
-            </a>
-        </div>
-    
-
-    
+<header class="page-header">
+  <img src="https://maropiyo.com/reminder-parrot/image/reminko.png" alt="リマインコ" class="page-mascot" id="page-mascot">
+  <h1 class="page-title">リマインコ</h1>
+  <span class="page-title-accent" aria-hidden="true"></span>
 </header>
 
-    <section class="article-content no-padding">
-    
-    
+
+<main class="page-content">
+  <div class="content-card">
     <div style="background-color: #FCF7E9;">
 <br/>
 <hr style="background-color: #E59F43;">
@@ -335,149 +396,67 @@
 <br/>
 </div>
 
-</section>
+  </div>
+</main>
 
 
-    <footer class="article-footer no-padding">
+<nav class="page-nav">
+  <div class="page-nav-inner">
     
+    <a href="https://maropiyo.com/reminder-parrot/">トップページ</a>
+    <a href="https://maropiyo.com/reminder-parrot/faq/">FAQ</a>
+    <a href="https://maropiyo.com/reminder-parrot/privacy-policy/">プライバシーポリシー</a>
+    <a href="https://maropiyo.com/reminder-parrot/terms/">利用規約</a>
+    <a href="https://maropiyo.com/reminder-parrot/releases/">リリースノート</a>
+  </div>
+</nav>
 
-    </footer>
 
-
-    
-        <link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
-            ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
-                defer
-                >
-            </script><script>
-    window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.querySelector(`.article-content`), {
-            delimiters: [
-                { left: "$$", right: "$$", display: true },
-                { left: "$", right: "$", display: false },
-                { left: "\\(", right: "\\)", display: false },
-                { left: "\\[", right: "\\]", display: true }
-            ]
-        });})
-</script>
-    
-</article>
-
-    
-
-    
-
-     
-    
-
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy;
-        
-            2023 -
-        
-        2026 まろぴよの部屋
-    </section>
-
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
-    </section>
+<footer class="footer">
+  <small>&copy; 2023 - 2026 まろぴよの部屋</small>
 </footer>
 
 
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<script>
 
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="https://maropiyo.com/ts/main.js" defer></script>
+(function(){
+  var tables=document.querySelectorAll('.content-card table');
+  tables.forEach(function(t){
+    var wrap=document.createElement('div');
+    wrap.className='table-wrap';
+    t.parentNode.insertBefore(wrap,t);
+    wrap.appendChild(t);
+  });
+})();
 
 
-    </body>
+(function(){
+  var m=document.getElementById('page-mascot');
+  var colors=['#FFD54F','#FF9800','#FFA726','#FFCC02','#FFE082'];
+  m.addEventListener('click',function(e){
+    m.style.animation='none';
+    m.offsetHeight;
+    m.style.animation='squish .5s ease-in-out';
+    setTimeout(function(){m.style.animation='float 3s ease-in-out infinite'},500);
+    for(var i=0;i<8;i++){
+      var s=document.createElement('i');
+      s.className='fa-solid fa-star';
+      var size=6+Math.random()*12;
+      var col=colors[Math.floor(Math.random()*colors.length)];
+      var angle=Math.PI*2*(i/8)+Math.random()*.4;
+      var dist=50+Math.random()*40;
+      var bx=Math.cos(angle)*dist;
+      var by=Math.sin(angle)*dist;
+      s.style.cssText='position:fixed;pointer-events:none;z-index:9999;font-size:'+size+'px;color:'+col+';--bx:'+bx+'px;--by:'+by+'px;';
+      s.style.left=e.clientX+'px';
+      s.style.top=e.clientY+'px';
+      s.style.animation='starBurst .6s ease-out forwards';
+      s.style.animationDelay=(i*.03)+'s';
+      document.body.appendChild(s);
+      setTimeout(function(){s.remove()},800);
+    }
+  });
+})();
+</script>
+</body>
 </html>
