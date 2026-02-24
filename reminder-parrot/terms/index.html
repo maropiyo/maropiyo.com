@@ -137,6 +137,48 @@ body{
 }
 
  
+.content-card details{
+  margin:10px 0;
+  border-radius:14px;
+  background:var(--cream);
+  overflow:hidden;
+  transition:background .3s;
+}
+.content-card details[open]{
+  background:var(--white);
+  box-shadow:0 2px 12px rgba(120,80,20,.06);
+}
+.content-card details summary{
+  font-size:.95rem;
+  font-weight:800;
+  color:var(--brown);
+  padding:14px 18px;
+  cursor:pointer;
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  transition:color .3s;
+}
+.content-card details summary::-webkit-details-marker{display:none}
+.content-card details summary::before{
+  content:'\f105';
+  font-family:'Font Awesome 6 Free';
+  font-weight:900;
+  font-size:.8rem;
+  color:var(--accent);
+  transition:transform .3s;
+  flex-shrink:0;
+}
+.content-card details[open] summary::before{
+  transform:rotate(90deg);
+}
+.content-card details summary:hover{color:var(--accent)}
+.content-card details .faq-answer{
+  padding:0 18px 16px;
+}
+
+ 
 .content-card p{
   font-size:.88rem;
   color:var(--brown-light);
@@ -480,6 +522,29 @@ body{
 
 
 <script>
+
+(function(){
+  var h3s=document.querySelectorAll('.content-card h3');
+  h3s.forEach(function(h3){
+    if(h3.textContent.indexOf('Q:')<0) return;
+    var details=document.createElement('details');
+    var summary=document.createElement('summary');
+    summary.textContent=h3.textContent.replace(/^Q:\s*/,'');
+    details.appendChild(summary);
+    var answer=document.createElement('div');
+    answer.className='faq-answer';
+    var next=h3.nextElementSibling;
+    while(next && next.tagName!=='H2' && next.tagName!=='H3'){
+      var cur=next;
+      next=next.nextElementSibling;
+      answer.appendChild(cur);
+    }
+    details.appendChild(answer);
+    h3.parentNode.insertBefore(details,h3);
+    h3.remove();
+  });
+})();
+
 
 (function(){
   var tables=document.querySelectorAll('.content-card table');

@@ -159,6 +159,48 @@ body{
 }
 
  
+.content-card details{
+  margin:10px 0;
+  border-radius:14px;
+  background:var(--cream);
+  overflow:hidden;
+  transition:background .3s;
+}
+.content-card details[open]{
+  background:var(--white);
+  box-shadow:0 2px 12px rgba(120,80,20,.06);
+}
+.content-card details summary{
+  font-size:.95rem;
+  font-weight:800;
+  color:var(--brown);
+  padding:14px 18px;
+  cursor:pointer;
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  transition:color .3s;
+}
+.content-card details summary::-webkit-details-marker{display:none}
+.content-card details summary::before{
+  content:'\f105';
+  font-family:'Font Awesome 6 Free';
+  font-weight:900;
+  font-size:.8rem;
+  color:var(--accent);
+  transition:transform .3s;
+  flex-shrink:0;
+}
+.content-card details[open] summary::before{
+  transform:rotate(90deg);
+}
+.content-card details summary:hover{color:var(--accent)}
+.content-card details .faq-answer{
+  padding:0 18px 16px;
+}
+
+ 
 .content-card p{
   font-size:.88rem;
   color:var(--brown-light);
@@ -507,15 +549,6 @@ body{
 </table>
 <h3 id="q-インコアップグレードってなに">Q: インコアップグレードってなに？</h3>
 <p>アップグレードするとベース獲得経験値と参加できるグループの最大数が増えるよ！最大20段階まであるよ！レベル50ごとに無料でアップグレードできるよ。150円の課金ならレベル条件なしでいつでもアップグレードできるよ！</p>
-<h2 id="リマインネット">リマインネット</h2>
-<h3 id="q-リマインネットってなに">Q: リマインネットってなに？</h3>
-<p>みんなのインコが覚えていることばが大集合！他のインコにリマインドを送ったり、気になることばを自分のインコにも教えたりできるよ！</p>
-<h3 id="q-リマインネットに投稿したリマインダーが消えました">Q: リマインネットに投稿したリマインダーが消えました</h3>
-<p>インコがことばをわすれると、リマインネットの投稿も一緒に消える仕組みだよ。もう一度教えれば再投稿できるよ！</p>
-<h3 id="q-リマインネットに投稿したリマインダーを削除したいです">Q: リマインネットに投稿したリマインダーを削除したいです</h3>
-<p>リマインネットの「じぶんのとうこう」から削除できるよ！</p>
-<h3 id="q-不適切な投稿を見つけました">Q: 不適切な投稿を見つけました</h3>
-<p>投稿の右上にある通報ボタンから報告してね！運営が確認して対処するよ！</p>
 <h2 id="リマイングループ">リマイングループ</h2>
 <h3 id="q-リマイングループってなに">Q: リマイングループってなに？</h3>
 <p>友達や家族、知らない人と最大5人でグループを作って、毎日の習慣を一緒にがんばれる機能だよ！みんなで完了を報告して、連続記録を伸ばそう！</p>
@@ -528,6 +561,16 @@ body{
 <h3 id="q-グループからキックされました">Q: グループからキックされました</h3>
 <p>グループのオーナーは、2日以上アクティブでないメンバーを外すことができる仕組みだよ。他のグループにはいつでも参加できるよ！</p>
 <h3 id="q-グループのオーナーをとられました">Q: グループのオーナーをとられました</h3>
+<p>オーナーが2日以上アクティブでない場合、他のメンバーがオーナー権限を引き継ぐことができる仕組みだよ！</p>
+<h2 id="リマインネット">リマインネット</h2>
+<h3 id="q-リマインネットってなに">Q: リマインネットってなに？</h3>
+<p>みんなのインコが覚えていることばが大集合！他のインコにリマインドを送ったり、気になることばを自分のインコにも教えたりできるよ！</p>
+<h3 id="q-リマインネットに投稿したリマインダーが消えました">Q: リマインネットに投稿したリマインダーが消えました</h3>
+<p>インコがことばをわすれると、リマインネットの投稿も一緒に消える仕組みだよ。もう一度教えれば再投稿できるよ！</p>
+<h3 id="q-リマインネットに投稿したリマインダーを削除したいです">Q: リマインネットに投稿したリマインダーを削除したいです</h3>
+<p>リマインネットの「じぶんのとうこう」から削除できるよ！</p>
+<h3 id="q-不適切な投稿を見つけました">Q: 不適切な投稿を見つけました</h3>
+<p>投稿の右上にある通報ボタンから報告してね！運営が確認して対処するよ！</p>
 <p>オーナーが2日以上アクティブでない場合、他のメンバーがオーナー権限を引き継ぐことができる仕組みだよ！</p>
 <h2 id="通知">通知</h2>
 <h3 id="q-通知が届きません">Q: 通知が届きません</h3>
@@ -562,6 +605,29 @@ body{
 
 
 <script>
+
+(function(){
+  var h3s=document.querySelectorAll('.content-card h3');
+  h3s.forEach(function(h3){
+    if(h3.textContent.indexOf('Q:')<0) return;
+    var details=document.createElement('details');
+    var summary=document.createElement('summary');
+    summary.textContent=h3.textContent.replace(/^Q:\s*/,'');
+    details.appendChild(summary);
+    var answer=document.createElement('div');
+    answer.className='faq-answer';
+    var next=h3.nextElementSibling;
+    while(next && next.tagName!=='H2' && next.tagName!=='H3'){
+      var cur=next;
+      next=next.nextElementSibling;
+      answer.appendChild(cur);
+    }
+    details.appendChild(answer);
+    h3.parentNode.insertBefore(details,h3);
+    h3.remove();
+  });
+})();
+
 
 (function(){
   var tables=document.querySelectorAll('.content-card table');
