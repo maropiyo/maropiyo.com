@@ -545,6 +545,8 @@
         <guid>https://maropiyo.com/reminder-parrot/privacy-policy/</guid>
         <description>&lt;img src="https://maropiyo.com/reminder-parrot/privacy-policy/privacy_policy.png" alt="Featured image of post プライバシーポリシー | リマインコ" /&gt;&lt;p&gt;本プライバシーポリシーは、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）が利用者の情報をどのように取り扱うかを説明するものです。本アプリを利用される際には、本プライバシーポリシーをよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
 &lt;h2 id=&#34;子供の安全性について&#34;&gt;子供の安全性について&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; リマインコは匿名で使えるよ。名前やアイコンは自動生成だし、チャット機能もないから、子供でも安心して使えるよ！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;本アプリは子供の安全性を重視し、以下の対策を実施しています。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;匿名アカウントのみで利用可能とし、個人を特定する情報を収集しません。&lt;/li&gt;
@@ -558,6 +560,8 @@
     &gt;利用規約&lt;/a&gt;第2条に定めています。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;収集する情報&#34;&gt;収集する情報&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; 個人情報は集めていないよ。匿名のIDだけ使っているよ。アプリを動かすためにFirebase・Supabase・RevenueCatを使っているけど、あなたが誰かはわからないよ！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;アカウント情報&#34;&gt;アカウント情報&lt;/h3&gt;
 &lt;p&gt;本アプリは匿名でのみ利用可能であり、個人を特定する情報を収集することはありません。アプリの機能提供のために、匿名のユーザー識別子のみを使用します。ニックネームとアイコンはシステムがランダムに自動生成するものであり、利用者の個人情報には該当しません。&lt;/p&gt;
 &lt;h3 id=&#34;アプリの機能提供のための情報&#34;&gt;アプリの機能提供のための情報&lt;/h3&gt;
@@ -584,6 +588,8 @@
 &lt;p&gt;アプリ内課金（インコアップグレード）の処理に利用します。購入履歴の管理のために匿名のユーザー識別子を使用し、個人を特定する情報は収集しません。RevenueCatのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://www.revenuecat.com/privacy/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
 &lt;h3 id=&#34;ユーザーが作成するコンテンツ&#34;&gt;ユーザーが作成するコンテンツ&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; リマインネットやグループに投稿した内容はみんなに見えるよ。名前や住所など個人情報は絶対に書かないでね！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;リマインネット（リマインダー共有機能）を利用して投稿された内容や、リマイングループのグループ名は、他のユーザーに公開されます。
 個人情報や個人を特定できる情報を含めないようご注意ください。&lt;/p&gt;
 &lt;p&gt;投稿内容やグループ名に以下を含めないでください。&lt;/p&gt;
@@ -601,6 +607,8 @@
 &lt;h3 id=&#34;お問い合わせ時に送信される情報&#34;&gt;お問い合わせ時に送信される情報&lt;/h3&gt;
 &lt;p&gt;本アプリに関するお問い合わせをいただく際に、メールアドレスやお問い合わせ内容などの情報を提供していただく場合があります。これらの情報は、お問い合わせへの対応のために利用されます。&lt;/p&gt;
 &lt;h2 id=&#34;個人情報の利用目的&#34;&gt;個人情報の利用目的&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; 集めた情報はアプリを動かすためだけに使うよ。それ以外には使わないよ！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;当方が収集した情報は、以下の目的のために利用されます。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;本アプリの提供・運営&lt;/li&gt;
@@ -614,10 +622,16 @@
 &lt;li&gt;利用規約違反等の対応（通報の確認・モデレーションを含む）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;個人情報の第三者提供&#34;&gt;個人情報の第三者提供&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; あなたの情報を他の人や会社に渡すことはないよ！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;本アプリが利用者の個人情報を第三者に提供することはありません。ただし、上記のサービス（Firebase、Supabase、RevenueCat）については、それぞれのプライバシーポリシーに従って情報が処理される場合があります。&lt;/p&gt;
 &lt;h2 id=&#34;通報モデレーションについて&#34;&gt;通報・モデレーションについて&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; おかしな投稿を見つけたら通報してね。運営がちゃんと確認して対応するよ！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;本アプリには、不適切なコンテンツに対する通報機能があります。通報内容は運営者が確認し、利用規約に違反する場合は該当コンテンツの削除や利用制限等の措置を講じます。&lt;/p&gt;
 &lt;h2 id=&#34;プライバシーポリシーの変更&#34;&gt;プライバシーポリシーの変更&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; このポリシーは変わることがあるよ。変わったらこのページに載せるよ！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;本プライバシーポリシーは、適宜、見直し、改定することがあります。変更後のプライバシーポリシーは、本ウェブサイトに掲載したときから効力を生じるものとします。&lt;/p&gt;
 &lt;h2 id=&#34;お問い合わせ先&#34;&gt;お問い合わせ先&lt;/h2&gt;
 &lt;p&gt;何かご不明な点がございましたら、以下の宛先までお問い合わせください。&lt;/p&gt;
@@ -826,11 +840,15 @@
         <guid>https://maropiyo.com/reminder-parrot/terms/</guid>
         <description>&lt;img src="https://maropiyo.com/reminder-parrot/terms/terms.png" alt="Featured image of post 利用規約 | リマインコ" /&gt;&lt;p&gt;本利用規約（以下、「本規約」といいます）は、スマホアプリ「リマインコ」（以下、「本アプリ」といいます）の利用に関する条件を定めるものです。本アプリを利用される際には、本規約をよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
 &lt;h2 id=&#34;第1条適用&#34;&gt;第1条（適用）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; このルールはリマインコを使うすべての人に適用されるよ。使う前に読んでね！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;本規約は、本アプリの利用に関する一切の関係に適用されます。&lt;/li&gt;
 &lt;li&gt;本規約に同意いただけない場合、本アプリの利用をお控えください。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第2条利用登録&#34;&gt;第2条（利用登録）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; アカウントは匿名で自動作成されるよ。名前やアイコンはランダムで決まるよ。未成年は保護者の同意が必要だよ！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;本アプリの一部機能に関して、利用者は匿名アカウントを使用して登録を行うものとします。&lt;/li&gt;
 &lt;li&gt;ニックネームとアイコンはシステムがランダムに自動生成するものであり、利用者が任意に設定することはできません。&lt;/li&gt;
@@ -843,6 +861,8 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第3条個人情報の取扱い&#34;&gt;第3条（個人情報の取扱い）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; 個人情報は集めていないよ。匿名で使えるから安心してね！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;本アプリは匿名アカウントでの利用を前提としており、個人を特定する情報の取得は行いません。&lt;/li&gt;
 &lt;li&gt;取得した情報は、本アプリの提供・運営、お問い合わせへの対応、サービスの改善にのみ使用します。&lt;/li&gt;
@@ -851,6 +871,8 @@
 &lt;li&gt;法令に基づく場合を除き、利用者の同意なく第三者に情報を提供することはありません。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第4条禁止事項&#34;&gt;第4条（禁止事項）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; みんなが安心して使えるように、暴力的・差別的な投稿や個人情報の公開、なりすましなどはやめてね！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;利用者は、本アプリの利用に際して、以下の行為をしてはならないものとします。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;法令または公序良俗に違反する行為&lt;/li&gt;
@@ -873,12 +895,16 @@
 &lt;li&gt;その他、運営者が不適切と判断する行為&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第5条リマイングループ&#34;&gt;第5条（リマイングループ）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; グループでもルールは同じ！グループを作った人は、中身の管理もお願いね。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;リマイングループ機能の利用にあたり、利用者はグループ内の他の利用者に対しても本規約の禁止事項を遵守するものとします。&lt;/li&gt;
 &lt;li&gt;グループの作成者は、グループ内のコンテンツについて一定の管理責任を負うものとします。&lt;/li&gt;
 &lt;li&gt;運営者は、利用規約に違反するグループについて、削除等の措置を講じることができるものとします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第6条アプリ内課金&#34;&gt;第6条（アプリ内課金）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; インコアップグレードは課金でもできるよ。支払いはApp StoreかGoogle Play経由。返金は各ストアのルールに従うよ。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;本アプリは、一部の機能（インコアップグレード）について有料のアプリ内課金を提供します。&lt;/li&gt;
 &lt;li&gt;課金はApple App StoreまたはGoogle Playストアの決済システムを通じて処理されます。&lt;/li&gt;
@@ -886,12 +912,16 @@
 &lt;li&gt;運営者は、課金対象の機能やその内容を変更することがあります。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第7条通報モデレーション&#34;&gt;第7条（通報・モデレーション）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; 困った投稿を見つけたら通報してね。運営が確認して対応するよ！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;利用者は、本規約に違反するコンテンツを発見した場合、アプリ内の通報機能を通じて運営者に報告することができます。&lt;/li&gt;
 &lt;li&gt;運営者は、通報内容を確認し、必要に応じて該当コンテンツの削除や利用制限等の措置を講じます。&lt;/li&gt;
 &lt;li&gt;運営者による措置の判断は最終的なものとし、利用者はこれに異議を申し立てないものとします。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第8条本アプリの提供の停止等&#34;&gt;第8条（本アプリの提供の停止等）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; メンテナンスなどでアプリが一時的に使えなくなることがあるよ。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;運営者は、以下の場合には、事前通知なく本アプリの提供を停止・中断することができます。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;システムの保守・更新を行う場合&lt;/li&gt;
@@ -899,8 +929,12 @@
 &lt;li&gt;その他、やむを得ない事情がある場合&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第9条利用制限および登録抹消&#34;&gt;第9条（利用制限および登録抹消）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; ルール違反をすると、アカウントが制限されたり消されたりすることがあるよ。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;運営者は、利用者が本規約に違反した場合、事前通知なく利用制限または登録抹消を行うことができます。&lt;/p&gt;
 &lt;h2 id=&#34;第10条免責事項&#34;&gt;第10条（免責事項）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; アプリは「そのままの状態」で提供しているよ。トラブルが起きても運営が全部責任を取ることはできないよ。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;本アプリは現状有姿で提供され、運営者は本アプリの完全性、正確性、確実性、有用性等について保証しません。&lt;/li&gt;
 &lt;li&gt;本アプリの利用により生じた損害について、運営者に故意または重大な過失がある場合を除き、運営者は責任を負いません。&lt;/li&gt;
@@ -908,8 +942,12 @@
 &lt;li&gt;アプリ内課金に関するトラブルについて、各ストアのポリシーに基づく対応を除き、運営者は責任を負いません。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;第11条サービス内容の変更終了&#34;&gt;第11条（サービス内容の変更・終了）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; アプリの機能が変わったり、サービスが終了することがあるよ。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;運営者は、利用者への通知なく、本アプリの内容変更または提供終了をすることができます。継続的なサービス提供を保証するものではありません。&lt;/p&gt;
 &lt;h2 id=&#34;第12条利用規約の変更&#34;&gt;第12条（利用規約の変更）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;ポイント&lt;/strong&gt; この規約は変わることがあるよ。変わったあとも使い続けたら、新しい規約に同意したことになるよ。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;運営者は、必要に応じて本規約を変更することができます。&lt;/li&gt;
 &lt;li&gt;変更後の規約は、本アプリ内または関連ウェブサイトに掲載した時点から効力を生じます。&lt;/li&gt;
