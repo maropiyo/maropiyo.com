@@ -242,7 +242,7 @@ body{
   transition:filter .3s;
   position:relative;z-index:2;
 }
-.hero-character:hover{filter:drop-shadow(0 16px 32px rgba(200,150,50,.3));animation:wiggle .5s ease-in-out}
+.hero-character.drop-done:hover{filter:drop-shadow(0 16px 32px rgba(200,150,50,.3));animation:wiggle .5s ease-in-out}
 .hero-character:active{transform:scale(.92)}
 
 .hero h1{
@@ -1201,6 +1201,7 @@ body{
   var el=document.getElementById('hero-char');
   el.addEventListener('animationend',function handler(){
     el.style.animation='none';
+    el.classList.add('drop-done');
     el.removeEventListener('animationend',handler);
   });
 })();
