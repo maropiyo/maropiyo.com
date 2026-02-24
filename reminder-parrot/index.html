@@ -623,6 +623,13 @@ body{
 .hl-card:hover .hl-emoji{animation:bounce .6s ease-in-out}
 .hl-card h3{font-size:.82rem;font-weight:900;color:var(--brown);margin-bottom:6px}
 .hl-card p{font-size:.72rem;color:var(--brown-light);font-weight:500;line-height:1.8}
+.hl-card .hl-peek{
+  position:absolute;bottom:0;left:50%;transform:translate(-50%,100%);
+  width:60%;max-width:120px;pointer-events:none;
+  transition:transform .5s cubic-bezier(.34,1.56,.64,1);z-index:2;
+}
+.hl-card.peeking .hl-peek{transform:translate(-50%,40%)}
+.hl-card.peeking{transform:translateY(-6px)}
 
  
 .cta-section{
@@ -825,7 +832,7 @@ body{
    
   .story{padding:56px 48px}
   .story-inner{
-    max-width:630px;
+    max-width:646px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -973,9 +980,9 @@ body{
       <div class="story-step rv rv--up rv-d1">STEP 1</div>
       <h2 class="rv rv--up rv-d2">あとで思い出したい<br><em>ことばを教えるだけ</em></h2>
       <p class="story-text rv rv--up rv-d3">
-        余計な設定は一切なし、ことばを入力するだけ。<br>
+        余計な設定なし、ことばを入力するだけ。<br>
         覚えているうちにサッと入力。<br>
-        ことばを教えたら、あとはおまかせ。
+        ことばを教えたら、もう忘れていい。
       </p>
     </div>
     <div class="story-phones rv rv--up rv-d4">
@@ -1000,7 +1007,7 @@ body{
       <p class="story-text rv rv--up rv-d3">
         みんなのインコが思い出させてくれる。<br>
         機械的じゃないからこそ温かい。<br>
-        投稿しなければ自分だけのTODOアプリにも。
+        投稿しなければプライベートなTODOアプリ。
       </p>
     </div>
     <div class="story-phones rv rv--up rv-d4">
@@ -1023,8 +1030,8 @@ body{
       <h2 class="rv rv--up rv-d2">忘れちゃっても<br><em>だいじょうぶ</em></h2>
       <p class="story-text rv rv--up rv-d3">
         インコだって忘れちゃう。でもそれがいい。<br>
-        タスクが溜まらない、完了しに開く手間もない。<br>
-        忘れちゃったことばはいつでも確認できる。
+        整理のために完了も削除もしなくていい。<br>
+        大事なことなら、忘れちゃったことばから。
       </p>
     </div>
     <div class="story-phones rv rv--up rv-d4">
@@ -1048,7 +1055,7 @@ body{
       <p class="story-text rv rv--up rv-d3">
         リマインコと一緒にレベルアップ。<br>
         続けるほど覚えることばも記憶時間も成長。<br>
-        育てるほどに愛着が湧いてくる。
+        あなたが育てるリマインダーアプリ。
       </p>
     </div>
     <div class="story-phones rv rv--up rv-d4">
@@ -1072,8 +1079,8 @@ body{
       <h2 class="rv rv--up rv-d2">リマイングループで<br><em>毎日継続</em></h2>
       <p class="story-text rv rv--up rv-d3">
         ひとりじゃ続かないことも、仲間となら続く。<br>
-        友達や家族を誘ったり、仲間を募集できる。<br>
-        同じ目標のグループで、毎日がちょっと楽しく。
+        募集も参加もアプリ内でかんたん。<br>
+        2日サボると…仲間に追い出されるかも？
       </p>
     </div>
     <div class="story-phones story-phones--duo rv rv--up rv-d4">
@@ -1140,27 +1147,31 @@ body{
     <h2 class="rv rv--up">こんな人に<em>おすすめ</em></h2>
     <div class="highlights-grid">
       <div class="hl-card rv rv--pop rv-d1">
+        <img src="https://maropiyo.com/reminder-parrot/image/reminko_raising_hand.png" alt="" class="hl-peek">
         <span class="hl-emoji"><i class="fa-solid fa-face-dizzy"></i></span>
         <h3>忘れっぽい</h3>
-        <p>傘、小テスト、美容室…<br>みんなが教えてくれる</p>
+        <p>傘、小テスト、課題提出…<br>周りが教えてくれてた</p>
       </div>
       <div class="hl-card rv rv--pop rv-d2">
-        <span class="hl-emoji"><i class="fa-solid fa-repeat"></i></span>
-        <h3>三日坊主</h3>
-        <p>1人じゃ続かなかった<br>これなら続けられる</p>
-      </div>
-      <div class="hl-card rv rv--pop rv-d3">
+        <img src="https://maropiyo.com/reminder-parrot/image/reminko_raising_hand.png" alt="" class="hl-peek">
         <span class="hl-emoji"><i class="fa-solid fa-people-group"></i></span>
         <h3>仲間が欲しい</h3>
-        <p>同じ目標の仲間と<br>一緒だから続けられる</p>
+        <p>1人じゃ続かないけど<br>これなら続けられるかも</p>
+      </div>
+      <div class="hl-card rv rv--pop rv-d3">
+        <img src="https://maropiyo.com/reminder-parrot/image/reminko_raising_hand.png" alt="" class="hl-peek">
+        <span class="hl-emoji"><i class="fa-solid fa-gamepad"></i></span>
+        <h3>ゲーム好き</h3>
+        <p>レベル上げやランキング<br>ゲーム感覚で続けられる</p>
       </div>
       <div class="hl-card rv rv--pop rv-d4">
+        <img src="https://maropiyo.com/reminder-parrot/image/reminko_raising_hand.png" alt="" class="hl-peek">
         <span class="hl-emoji"><i class="fa-solid fa-lock"></i></span>
         <h3>匿名で安心</h3>
-        <p>アカウント登録不要<br>子供から大人まで安心</p>
+        <p>アカウント登録不要<br>気軽にはじめられる</p>
       </div>
     </div>
-    <p style="text-align:center;font-size:.78rem;color:var(--brown-light);font-weight:700;margin-top:20px;opacity:.7" class="rv rv--up rv-d5">これはすべて開発者の特徴です。</p>
+    <p style="text-align:center;font-size:.78rem;color:var(--brown-light);font-weight:700;margin-top:20px;opacity:.7" class="rv rv--up rv-d5">※これはすべて開発者の特徴です(あとインコ好き)</p>
   </div>
 </section>
 
@@ -1198,10 +1209,6 @@ body{
 
 
 <footer class="footer">
-  <div class="footer-links">
-    <a href="https://x.com/maropiyooo" target="_blank">X (@maropiyooo)</a>
-    <a href="https://maropiyo.com/">まろぴよの部屋</a>
-  </div>
   <small>&copy; 2023 - 2026 まろぴよの部屋</small>
 </footer>
 
@@ -1387,6 +1394,29 @@ body{
   hero.addEventListener('mouseleave',function(){
     char.style.transform='';
     decos.forEach(function(d){d.style.transform=''});
+  });
+})();
+
+ 
+(function(){
+  var imgs=['/reminder-parrot/image/reminko.png','/reminder-parrot/image/reminko_jump.png','/reminder-parrot/image/reminko_raising_hand.png'];
+  var cards=document.querySelectorAll('.hl-card');
+  cards.forEach(function(card){
+    card.addEventListener('click',function(){
+      if(card.classList.contains('peeking')){
+        card.classList.remove('peeking');
+      } else {
+        cards.forEach(function(c){c.classList.remove('peeking')});
+        var peek=card.querySelector('.hl-peek');
+        peek.src=imgs[Math.floor(Math.random()*imgs.length)];
+        card.classList.add('peeking');
+      }
+    });
+  });
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.hl-card')){
+      cards.forEach(function(c){c.classList.remove('peeking')});
+    }
   });
 })();
 </script>
