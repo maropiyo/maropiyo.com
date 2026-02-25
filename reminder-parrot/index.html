@@ -959,6 +959,9 @@ body{
     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
   </div>
   <img src="https://maropiyo.com/reminder-parrot/image/reminko.png" alt="リマインコ" class="hero-character" id="hero-char">
+  <div id="fly-count" style="display:none;margin-bottom:8px;opacity:.35;font-size:.55rem;font-weight:700;color:var(--brown-light)">
+<div style="line-height:1"><i class="fa-solid fa-caret-up" style="opacity:.5;font-size:.7rem"></i></div>ぶっとびカウンター: <span style="letter-spacing:1px" id="fly-count-num">000000</span>
+  </div>
   <h1>
     <span>リマインコ</span>
   </h1>
@@ -1267,15 +1270,25 @@ body{
     velocity*=damping;
     angle+=velocity;
     if(angle>180)angle-=360;else if(angle<-180)angle+=360;
-    if(Math.abs(angle)<0.3&&Math.abs(velocity)<0.3){angle=0;velocity=0;running=false;el.style.transform='';return;}
+    if(Math.abs(angle)<0.1&&Math.abs(velocity)<0.05){angle=0;velocity=0;running=false;el.style.transform='';return;}
     el.style.transform='rotate('+angle+'deg)';
     requestAnimationFrame(tick);
   }
   var flyRaf=0;
   var returnTimer1=0;
   var returnTimer2=0;
+  var flyCountWrap=document.getElementById('fly-count');
+  var flyCountNum=document.getElementById('fly-count-num');
+  var flyApi='https://himhcigolmzehbvstjgv.supabase.co/functions/v1/fly-counter';
+  function showCount(n){flyCountNum.textContent=String(n).padStart(6,'0');flyCountWrap.style.display='';}
+  fetch(flyApi).then(function(r){return r.json()}).then(function(d){
+    if(d.count>0) showCount(d.count);
+  }).catch(function(){});
   function flyAway(){
     flying=true;running=false;
+    fetch(flyApi,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
+      showCount(d.count);
+    }).catch(function(){});
     cancelAnimationFrame(flyRaf);
     clearTimeout(returnTimer1);
     clearTimeout(returnTimer2);
