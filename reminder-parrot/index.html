@@ -959,7 +959,7 @@ body{
     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
   </div>
   <img src="https://maropiyo.com/reminder-parrot/image/reminko.png" alt="リマインコ" class="hero-character" id="hero-char">
-  <div id="fly-count" style="display:none;margin-bottom:10px;font-size:.65rem;font-weight:800;color:var(--brown);opacity:0">
+  <div id="fly-count" style="visibility:hidden;margin-bottom:10px;font-size:.65rem;font-weight:800;color:var(--brown);opacity:0">
 <div style="line-height:1"><i class="fa-solid fa-caret-up" style="opacity:.6;font-size:.8rem"></i></div>ぶっとびカウンター: <span style="letter-spacing:2px;font-size:.75rem;color:var(--orange)" id="fly-count-num">000000</span>
   </div>
   <h1>
@@ -1282,7 +1282,7 @@ body{
   var flyCountWrap=document.getElementById('fly-count');
   var flyCountNum=document.getElementById('fly-count-num');
   var flyApi='https://himhcigolmzehbvstjgv.supabase.co/functions/v1/fly-counter';
-  function showCount(n){flyCountNum.textContent=String(n).padStart(6,'0');flyCountWrap.style.display='';flyCountWrap.style.animation='heroSubReveal .7s ease both';flyCountWrap.style.opacity='.5';}
+  function showCount(n){flyCountNum.textContent=String(n).padStart(6,'0');flyCountWrap.style.visibility='';flyCountWrap.style.animation='heroSubReveal .7s ease 1.8s both';flyCountWrap.style.opacity='.5';}
   fetch(flyApi).then(function(r){return r.json()}).then(function(d){
     if(d.count>0) showCount(d.count);
   }).catch(function(){});
