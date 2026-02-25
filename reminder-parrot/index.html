@@ -1260,14 +1260,18 @@ body{
   var push=3;
   var running=false;
   var flying=false;
+  var visible=true;
+  var io2=new IntersectionObserver(function(entries){visible=entries[0].isIntersecting;if(visible&&!running&&!flying){running=true;tick();}});
+  io2.observe(el);
   function tick(){
-    if(flying) return;
+    if(flying||!visible){running=false;return;}
     if(Math.abs(velocity)>=40){flyAway();return;}
     var rad=angle*Math.PI/180;
     velocity-=gravity*Math.sin(rad);
     velocity*=damping;
     angle+=velocity;
-    if(Math.abs(angle%360)<0.1&&Math.abs(velocity)<0.05){angle=0;velocity=0;running=false;el.style.transform='';return;}
+    if(angle>180)angle-=360;else if(angle<-180)angle+=360;
+    if(Math.abs(angle)<0.3&&Math.abs(velocity)<0.3){angle=0;velocity=0;running=false;el.style.transform='';return;}
     el.style.transform='rotate('+angle+'deg)';
     requestAnimationFrame(tick);
   }
