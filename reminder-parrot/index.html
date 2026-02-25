@@ -122,6 +122,17 @@ body{
   0%,100%{opacity:.4;transform:translateY(0)}
   50%{opacity:1;transform:translateY(8px)}
 }
+@keyframes tapStar{
+  0%{opacity:1;transform:translate(var(--sx),var(--sy)) scale(0) rotate(0deg)}
+  50%{opacity:1;transform:translate(calc(var(--sx) + var(--dx)),calc(var(--sy) + var(--dy))) scale(1) rotate(90deg)}
+  100%{opacity:0;transform:translate(calc(var(--sx) + var(--dx)*1.5),calc(var(--sy) + var(--dy)*1.5)) scale(0) rotate(180deg)}
+}
+.tap-star{position:fixed;left:0;top:0;pointer-events:none;z-index:9999;width:10px;height:10px;opacity:0;will-change:transform,opacity;}
+.tap-star::before{content:'★';display:block;font-size:10px;text-shadow:0 0 2px rgba(255,152,0,.3);}
+.tap-star.c0::before{color:#FFD54F}
+.tap-star.c1::before{color:#FF9800}
+.tap-star.c2::before{color:#E59F43}
+.tap-star.pop{animation:tapStar .5s ease-out forwards}
 @keyframes phoneFloat{
   0%,100%{transform:translateY(0) rotate(-1deg)}
   50%{transform:translateY(-12px) rotate(1deg)}
@@ -1315,8 +1326,24 @@ body{
 
   var stars=[];
   var maxStars=24;
+  var starPool=[];var starCount=6;var starIdx=0;
+  for(var i=0;i<starCount;i++){var s=document.createElement('div');s.className='tap-star';document.body.appendChild(s);starPool.push(s);}
+  function spawnStars(x,y){
+    for(var i=0;i<starCount;i++){
+      var s=starPool[(starIdx+i)%starCount];
+      s.classList.remove('pop');s.className='tap-star c'+Math.floor(Math.random()*3);
+      var a=Math.PI*2*(i/starCount)+Math.random()*.5;
+      var d=30+Math.random()*20;
+      s.style.setProperty('--sx',x+'px');s.style.setProperty('--sy',y+'px');
+      s.style.setProperty('--dx',Math.cos(a)*d+'px');s.style.setProperty('--dy',Math.sin(a)*d+'px');
+      s.offsetWidth;
+      s.classList.add('pop');
+    }
+    starIdx=(starIdx+starCount)%starCount;
+  }
   el.addEventListener('click',function(e){
     if(flying) return;
+    spawnStars(e.clientX,e.clientY);
     var dir=velocity>=0?1:-1;
     if(Math.abs(velocity)<0.3) dir=(Math.random()<0.5?1:-1);
     velocity+=dir*push;
