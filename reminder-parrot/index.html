@@ -1251,14 +1251,28 @@ body{
   var flyCountWrap=document.getElementById('fly-count');
   var flyCountNum=document.getElementById('fly-count-num');
   var flyApi='https://himhcigolmzehbvstjgv.supabase.co/functions/v1/fly-counter';
-  function showCount(n){flyCountNum.textContent=String(n).padStart(6,'0');flyCountWrap.style.visibility='';flyCountWrap.style.animation='heroSubReveal .7s ease 1.8s both';flyCountWrap.style.opacity='.5';}
+  function isKiriban(n){return true; }
+  function showMarquee(n){
+    var old=document.getElementById('kiriban-marquee');if(old)old.remove();
+    var m=document.createElement('marquee');
+    m.id='kiriban-marquee';
+    m.textContent='★☆★ '+n+'回目のぶっとび達成おめでとう！！ ★☆★';
+    m.setAttribute('scrollamount','6');
+    m.setAttribute('loop','1');
+    m.setAttribute('behavior','scroll');
+    m.style.cssText='position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(90deg,#ff6b6b,#ffd93d,#6bcb77,#4d96ff,#ff6b6b);color:#fff;font-weight:900;font-size:14px;padding:8px 0;font-family:"M PLUS Rounded 1c",sans-serif;letter-spacing:.1em;text-shadow:1px 1px 0 rgba(0,0,0,.3);';
+    document.body.appendChild(m);
+    var dur=((m.scrollWidth+window.innerWidth)/6)*16.7*6;
+    setTimeout(function(){m.style.transition='opacity .5s';m.style.opacity='0';setTimeout(function(){m.remove()},600)},dur);
+  }
+  function showCount(n,fromFly){flyCountNum.textContent=String(n).padStart(6,'0');flyCountWrap.style.visibility='';flyCountWrap.style.animation='heroSubReveal .7s ease 1.8s both';flyCountWrap.style.opacity='.5';if(fromFly&&isKiriban(n))showMarquee(n);}
   fetch(flyApi).then(function(r){return r.json()}).then(function(d){
     if(d.count>0) showCount(d.count);
   }).catch(function(){});
   function flyAway(){
     flying=true;running=false;
     fetch(flyApi,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
-      showCount(d.count);
+      showCount(d.count,true);
     }).catch(function(){});
     cancelAnimationFrame(tickRaf);
     cancelAnimationFrame(flyRaf);
