@@ -1251,7 +1251,7 @@ body{
   var flyCountWrap=document.getElementById('fly-count');
   var flyCountNum=document.getElementById('fly-count-num');
   var flyApi='https://himhcigolmzehbvstjgv.supabase.co/functions/v1/fly-counter';
-  function isKiriban(n){return true; }
+  function isKiriban(n){return n>0&&n%100===0;}
   function showMarquee(n){
     var old=document.getElementById('kiriban-marquee');if(old)old.remove();
     var m=document.createElement('marquee');
