@@ -275,7 +275,7 @@ body{
 }
 .hero-character{
   width:180px;height:180px;
-  margin-bottom:16px;
+  margin-bottom:0;
   cursor:pointer;
   position:relative;z-index:2;
   -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
@@ -404,29 +404,6 @@ body{
   position:relative;
   padding:48px 24px;
   overflow:hidden;
-}
- 
-.story-next{
-  position:absolute;
-  bottom:20px;right:20px;
-  width:40px;height:40px;
-  border:none;
-  background:var(--yellow);
-  color:var(--brown);
-  font-size:14px;
-  border-radius:50%;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 3px 12px rgba(200,150,50,.2);
-  transition:transform .3s,box-shadow .3s;
-  z-index:5;
-  animation:scrollArrow 1.5s ease-in-out infinite;
-}
-.story-next:hover{
-  transform:scale(1.1);
-  box-shadow:0 6px 20px rgba(200,150,50,.3);
 }
 
 .story--cream{background:var(--cream)}
@@ -840,7 +817,6 @@ body{
   .gallery-track{gap:24px;padding:0 calc((100vw - 1100px)/2);justify-content:center}
   .gallery-item{width:210px}
 
-  .story-next{display:none}
    
   .story{padding:56px 48px}
   .story-inner{
@@ -959,7 +935,7 @@ body{
     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
   </div>
   <img src="https://maropiyo.com/reminder-parrot/image/reminko.png" alt="リマインコ" class="hero-character" id="hero-char">
-  <div id="fly-count" style="visibility:hidden;margin-bottom:10px;font-size:.65rem;font-weight:800;color:var(--brown);opacity:0">
+  <div id="fly-count" style="visibility:hidden;margin-top:2px;margin-bottom:24px;font-size:.65rem;font-weight:800;color:var(--brown);opacity:0">
 <div style="line-height:1"><i class="fa-solid fa-caret-up" style="opacity:.6;font-size:.8rem"></i></div>ぶっとびカウンター: <span style="letter-spacing:2px;font-size:.75rem;color:var(--orange)" id="fly-count-num">000000</span>
   </div>
   <h1>
@@ -1004,7 +980,6 @@ body{
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_2.png" alt="ことばを教える画面"></div>
     </div>
   </div>
-  <button class="story-next" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
 </section>
 
 
@@ -1029,7 +1004,6 @@ body{
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_3.png" alt="リマインド通知の画面"></div>
     </div>
   </div>
-  <button class="story-next" onclick="document.getElementById('s3').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
 </section>
 
 
@@ -1053,7 +1027,6 @@ body{
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_forgotten.png" alt="忘れちゃったことば画面"></div>
     </div>
   </div>
-  <button class="story-next" onclick="document.getElementById('s4').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
 </section>
 
 
@@ -1077,7 +1050,6 @@ body{
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_4.png" alt="レベルアップ画面"></div>
     </div>
   </div>
-  <button class="story-next" onclick="document.getElementById('s5').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
 </section>
 
 
@@ -1103,7 +1075,6 @@ body{
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_group_detail.png" alt="グループ詳細"></div>
     </div>
   </div>
-  <button class="story-next" onclick="document.getElementById('s6').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
 </section>
 
 
@@ -1127,7 +1098,6 @@ body{
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_6.png" alt="リマインネット画面"></div>
     </div>
   </div>
-  <button class="story-next" onclick="document.getElementById('s7').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
 </section>
 
 
@@ -1153,7 +1123,6 @@ body{
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_rank_streak.png" alt="継続日数"></div>
     </div>
   </div>
-  <button class="story-next" onclick="document.getElementById('s8').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-chevron-down"></i></button>
 </section>
 
 
