@@ -19,7 +19,7 @@
 <meta name="twitter:title" content="リマインコ - みんなで続けるリマインダー&習慣化TODOアプリ">
 <meta name="twitter:description" content="みんなでリマインドし合える無料の習慣化TODOアプリ。ゲーム感覚で楽しく習慣化。">
 <meta name="twitter:image" content="https://maropiyo.com/reminder-parrot/image/ogp.png">
-<link rel="icon" href="https://maropiyo.com/favicon.ico">
+<link rel="icon" href="https://maropiyo.com/reminder-parrot/image/app-icon.png" type="image/png">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -201,6 +201,19 @@ body{
   75%{transform:rotate(4deg)}
   90%{transform:rotate(-2deg)}
 }
+@keyframes bellSwingWild{
+  0%,100%{transform:rotate(0)}
+  10%{transform:rotate(45deg)}
+  20%{transform:rotate(-40deg)}
+  30%{transform:rotate(35deg)}
+  40%{transform:rotate(-28deg)}
+  50%{transform:rotate(20deg)}
+  60%{transform:rotate(-14deg)}
+  70%{transform:rotate(9deg)}
+  75%{transform:rotate(-5deg)}
+  85%{transform:rotate(3deg)}
+  92%{transform:rotate(-1deg)}
+}
 @keyframes headBang{
   0%,100%{transform:rotate(0)}
   25%{transform:rotate(-15deg)}
@@ -262,14 +275,14 @@ body{
 .hero-character{
   width:180px;height:180px;
   margin-bottom:16px;
-  animation:heroCharDrop 1s cubic-bezier(.34,1.56,.64,1) both;animation-iteration-count:1;
   cursor:pointer;
   filter:drop-shadow(0 12px 24px rgba(200,150,50,.2));
   transition:filter .3s;
   position:relative;z-index:2;
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
 }
-.hero-character.drop-done:hover{filter:drop-shadow(0 16px 32px rgba(200,150,50,.3));animation:wiggle .5s ease-in-out}
-.hero-character:active{transform:scale(.92)}
+.hero-character.drop-done:hover{filter:drop-shadow(0 16px 32px rgba(200,150,50,.3))}
+.hero-character.drop-done{transform-origin:50% 20%}
 
 .hero h1{
   font-size:clamp(2rem,6vw,3.2rem);
@@ -1194,7 +1207,7 @@ body{
       <a href="https://maropiyo.com/reminder-parrot/faq/">FAQ</a>
       <a href="https://maropiyo.com/reminder-parrot/privacy-policy/">プライバシーポリシー</a>
       <a href="https://maropiyo.com/reminder-parrot/terms/">利用規約</a>
-      <a href="https://maropiyo.com/reminder-parrot/releases/">リリースノート</a>
+      <a href="https://maropiyo.com/reminder-parrot/releases/">アップデート履歴</a>
     </div>
   </div>
 </section>
@@ -1232,30 +1245,72 @@ body{
 
 
 (function(){
-  var el=document.getElementById('hero-char');
-  el.addEventListener('animationend',function handler(){
-    el.style.animation='none';
-    el.classList.add('drop-done');
-    el.removeEventListener('animationend',handler);
-  });
+  document.getElementById('hero-char').classList.add('drop-done');
 })();
 
 
 (function(){
   var el=document.getElementById('hero-char');
-  var imgs=['/reminder-parrot/image/reminko.png','/reminder-parrot/image/reminko_raising_hand.png','/reminder-parrot/image/reminko_jump.png'];
-  var idx=Math.floor(Math.random()*imgs.length);
-  el.src=imgs[idx];
+  var angle=0,velocity=0;
+  var gravity=0.12;
+  var damping=0.993;
+  var push=3;
+  var running=false;
+  var flying=false;
+  function tick(){
+    if(flying) return;
+    if(Math.abs(velocity)>=40){flyAway();return;}
+    var rad=angle*Math.PI/180;
+    velocity-=gravity*Math.sin(rad);
+    velocity*=damping;
+    angle+=velocity;
+    if(Math.abs(angle%360)<0.1&&Math.abs(velocity)<0.05){angle=0;velocity=0;running=false;el.style.transform='';return;}
+    el.style.transform='rotate('+angle+'deg)';
+    requestAnimationFrame(tick);
+  }
+  function flyAway(){
+    flying=true;running=false;
+    var rad=angle*Math.PI/180;
+    var dir=velocity>=0?1:-1;
+    var dx=-Math.cos(rad)*dir;
+    var dy=Math.sin(rad)*dir;
+    var h=el.offsetHeight;
+    var pivotDist=h*0.3;
+    var armOff=h*0.2;
+    var px=Math.sin(rad)*(pivotDist+armOff);
+    var py=(Math.cos(rad)-1)*pivotDist+Math.cos(rad)*armOff;
+    var rot=angle,rv=velocity;
+    var speed=Math.abs(velocity)*0.8;
+    el.style.transformOrigin='50% 50%';
+    function flyTick(){
+      px+=dx*speed;py+=dy*speed;
+      rot+=rv;
+      el.style.transform='translate('+px+'px,'+py+'px) rotate('+rot+'deg)';
+      if(Math.abs(px)>window.innerWidth||Math.abs(py)>window.innerHeight){
+        el.style.transition='none';
+        el.style.transform='translateY(-50vh)';
+        setTimeout(function(){
+          el.style.transition='transform .35s cubic-bezier(.34,1.56,.64,1)';
+          el.style.transform='translateY(0) rotate(0)';
+          setTimeout(function(){
+            el.style.transition='';el.style.transform='';el.style.transformOrigin='';
+            angle=0;velocity=2;flying=false;running=true;tick();
+          },400);
+        },100);
+        return;
+      }
+      requestAnimationFrame(flyTick);
+    }
+    flyTick();
+  }
+  velocity=2;running=true;tick();
+
   el.addEventListener('click',function(e){
-    idx=(idx+1)%imgs.length;
-    el.style.animation='none';
-    el.offsetHeight;
-    el.src=imgs[idx];
-    el.style.animation='heroCharDrop .7s cubic-bezier(.34,1.56,.64,1) both';
-    el.addEventListener('animationend',function handler(){
-      el.style.animation='none';
-      el.removeEventListener('animationend',handler);
-    });
+    if(flying) return;
+    var dir=velocity>=0?1:-1;
+    if(Math.abs(velocity)<0.3) dir=(Math.random()<0.5?1:-1);
+    velocity+=dir*push;
+    if(!running){running=true;tick();}
     
     var colors=['#FFD54F','#FF9800','#FFA726','#FFCC02','#FFE082'];
     for(var i=0;i<8;i++){
@@ -1263,10 +1318,10 @@ body{
       s.className='fa-solid fa-star';
       var size=8+Math.random()*12;
       var col=colors[Math.floor(Math.random()*colors.length)];
-      var angle=Math.PI*2*(i/8)+Math.random()*.4;
+      var a2=Math.PI*2*(i/8)+Math.random()*.4;
       var dist=60+Math.random()*50;
-      var bx=Math.cos(angle)*dist;
-      var by=Math.sin(angle)*dist;
+      var bx=Math.cos(a2)*dist;
+      var by=Math.sin(a2)*dist;
       s.style.cssText='position:fixed;pointer-events:none;z-index:9999;font-size:'+size+'px;color:'+col+';--bx:'+bx+'px;--by:'+by+'px;';
       s.style.left=e.clientX+'px';
       s.style.top=e.clientY+'px';
