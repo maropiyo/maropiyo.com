@@ -1338,27 +1338,6 @@ body{
     if(Math.abs(velocity)<0.3) dir=(Math.random()<0.5?1:-1);
     velocity+=dir*push;
     if(!running) startTick();
-    
-    if(stars.length>=maxStars) return;
-    var colors=['#FFD54F','#FF9800','#FFA726','#FFCC02','#FFE082'];
-    for(var i=0;i<8;i++){
-      var s=document.createElement('i');
-      s.className='fa-solid fa-star';
-      var size=8+Math.random()*12;
-      var col=colors[Math.floor(Math.random()*colors.length)];
-      var a2=Math.PI*2*(i/8)+Math.random()*.4;
-      var dist=60+Math.random()*50;
-      var bx=Math.cos(a2)*dist;
-      var by=Math.sin(a2)*dist;
-      s.style.cssText='position:fixed;pointer-events:none;z-index:9999;font-size:'+size+'px;color:'+col+';--bx:'+bx+'px;--by:'+by+'px;';
-      s.style.left=e.clientX+'px';
-      s.style.top=e.clientY+'px';
-      s.style.animation='starBurst .6s ease-out forwards';
-      s.style.animationDelay=(i*.03)+'s';
-      document.body.appendChild(s);
-      stars.push(s);
-      setTimeout(function(){s.remove();stars.splice(stars.indexOf(s),1)},800);
-    }
   });
 })();
 
