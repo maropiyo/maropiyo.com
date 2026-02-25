@@ -1271,38 +1271,44 @@ body{
     el.style.transform='rotate('+angle+'deg)';
     requestAnimationFrame(tick);
   }
+  var flyRaf=0;
+  var returnTimer1=0;
+  var returnTimer2=0;
   function flyAway(){
     flying=true;running=false;
+    cancelAnimationFrame(flyRaf);
+    clearTimeout(returnTimer1);
+    clearTimeout(returnTimer2);
     var rad=angle*Math.PI/180;
     var dir=velocity>=0?1:-1;
-    var dx=-Math.cos(rad)*dir;
-    var dy=Math.sin(rad)*dir;
+    var fdx=-Math.cos(rad)*dir;
+    var fdy=Math.sin(rad)*dir;
     var h=el.offsetHeight;
     var pivotDist=h*0.3;
     var armOff=h*0.2;
-    var px=Math.sin(rad)*(pivotDist+armOff);
-    var py=(Math.cos(rad)-1)*pivotDist+Math.cos(rad)*armOff;
-    var rot=angle,rv=velocity;
-    var speed=Math.abs(velocity)*0.8;
+    var fpx=Math.sin(rad)*(pivotDist+armOff);
+    var fpy=(Math.cos(rad)-1)*pivotDist+Math.cos(rad)*armOff;
+    var frot=angle,frv=velocity;
+    var fspeed=Math.abs(velocity)*0.8;
     el.style.transformOrigin='50% 50%';
     function flyTick(){
-      px+=dx*speed;py+=dy*speed;
-      rot+=rv;
-      el.style.transform='translate('+px+'px,'+py+'px) rotate('+rot+'deg)';
-      if(Math.abs(px)>window.innerWidth||Math.abs(py)>window.innerHeight){
+      fpx+=fdx*fspeed;fpy+=fdy*fspeed;
+      frot+=frv;
+      el.style.transform='translate('+fpx+'px,'+fpy+'px) rotate('+frot+'deg)';
+      if(Math.abs(fpx)>window.innerWidth||Math.abs(fpy)>window.innerHeight){
         el.style.transition='none';
         el.style.transform='translateY(-50vh)';
-        setTimeout(function(){
+        returnTimer1=setTimeout(function(){
           el.style.transition='transform .35s cubic-bezier(.34,1.56,.64,1)';
           el.style.transform='translateY(0) rotate(0)';
-          setTimeout(function(){
+          returnTimer2=setTimeout(function(){
             el.style.transition='';el.style.transform='';el.style.transformOrigin='';
             angle=0;velocity=2;flying=false;running=true;tick();
           },400);
         },100);
         return;
       }
-      requestAnimationFrame(flyTick);
+      flyRaf=requestAnimationFrame(flyTick);
     }
     flyTick();
   }
