@@ -1308,6 +1308,8 @@ body{
   }
   velocity=2;running=true;tick();
 
+  var stars=[];
+  var maxStars=24;
   el.addEventListener('click',function(e){
     if(flying) return;
     var dir=velocity>=0?1:-1;
@@ -1315,6 +1317,7 @@ body{
     velocity+=dir*push;
     if(!running){running=true;tick();}
     
+    if(stars.length>=maxStars) return;
     var colors=['#FFD54F','#FF9800','#FFA726','#FFCC02','#FFE082'];
     for(var i=0;i<8;i++){
       var s=document.createElement('i');
@@ -1331,7 +1334,8 @@ body{
       s.style.animation='starBurst .6s ease-out forwards';
       s.style.animationDelay=(i*.03)+'s';
       document.body.appendChild(s);
-      setTimeout(function(){s.remove()},800);
+      stars.push(s);
+      setTimeout(function(){s.remove();stars.splice(stars.indexOf(s),1)},800);
     }
   });
 })();
