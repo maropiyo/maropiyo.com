@@ -320,6 +320,42 @@ body.dark .copyright{color:#8D6E63}
 body.dark .visitor-counter{color:#bba88a}
 body.dark .visitor-counter-num{background:#3a3a3a;border-color:#5D4037;color:#FFD54F}
 body.dark .back-link{color:#bba88a}
+ 
+.pull-cord{
+  position:fixed;
+  top:0;
+  right:24px;
+  z-index:9999;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  cursor:pointer;
+}
+.pull-cord-line{
+  width:2px;
+  height:70px;
+  background:#8D6E63;
+}
+.pull-cord-star{
+  font-size:22px;
+  color:#E59F43;
+  -webkit-text-stroke:1.5px #8D6E63;
+  margin-top:-12px;
+  position:relative;
+  z-index:1;
+  transition:transform .15s ease;
+}
+.pull-cord.pulling .pull-cord-line{
+  animation:cordStretch .4s ease;
+}
+@keyframes cordStretch{
+  0%{height:70px}
+  40%{height:100px}
+  100%{height:70px}
+}
+body.dark .pull-cord-line{background:#bba88a}
+body.dark .pull-cord-star{color:#FFD54F;-webkit-text-stroke:1.5px #5D4037}
+
 body.dark .omikuji-btn{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
 body.dark .omikuji-result{color:#FFD54F}
 body.dark .recruit-banner{background:#3a3a3a;border-color:#8D6E63;color:#e0d6c8}
@@ -333,7 +369,14 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
 
 </head>
 <body>
-<script>if(localStorage.getItem('dark')==='1')document.body.classList.add('dark');</script>
+<script>
+if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
+</script>
+
+<div class="pull-cord" id="pull-cord">
+  <div class="pull-cord-line"></div>
+  <div class="pull-cord-star" id="pull-cord-star"><i id="cord-icon" class="fa-solid fa-star"></i></div>
+</div>
 
 <marquee class="top-marquee" scrollamount="3">
   ★ ようこそ！まろぴよの部屋へ！ ★ リマインコ配信中 ★ とりっぷる配信中 ★ スライドリ配信中 ★ インコゲーム配信中 ★ とりジャンプ配信中 ★
@@ -520,6 +563,21 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
     document.title=txt.substring(i)+txt.substring(0,i);
     i=(i+1)%txt.length;
   },300);
+})();
+</script>
+<script>
+(function(){
+  var cord=document.getElementById('pull-cord');
+  var icon=document.getElementById('cord-icon');
+  cord.addEventListener('click',function(){
+    cord.classList.remove('pulling');
+    void cord.offsetHeight;
+    cord.classList.add('pulling');
+    document.body.classList.toggle('dark');
+    var isDark=document.body.classList.contains('dark');
+    localStorage.setItem('dark',isDark?'1':'0');
+    var icon=document.getElementById('cord-icon');
+  });
 })();
 </script>
 </body>
