@@ -530,6 +530,19 @@ if(dk==='1'||(dk===null&&(h>=0&&h<7))){document.body.classList.add('dark')}
     cord.classList.remove('pulling');
     void cord.offsetHeight;
     cord.classList.add('pulling');
+    try{
+      var c=new(window.AudioContext||window.webkitAudioContext)();
+      if(c.state==='suspended')c.resume();
+      var t=c.currentTime;
+      var buf=c.createBuffer(1,Math.floor(c.sampleRate*.015),c.sampleRate);
+      var d=buf.getChannelData(0);
+      for(var i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*(1-i/d.length);
+      var n=c.createBufferSource();n.buffer=buf;
+      var f=c.createBiquadFilter();f.type='highpass';f.frequency.value=3000;
+      var g=c.createGain();g.gain.value=.25;
+      n.connect(f);f.connect(g);g.connect(c.destination);
+      n.start(t);
+    }catch(e){}
     document.body.classList.toggle('dark');
     var isDark=document.body.classList.contains('dark');
     localStorage.setItem('dark',isDark?'1':'0');
