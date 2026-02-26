@@ -1,73 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Parrot-Games on まろぴよの部屋</title>
+        <title>まろぴよの部屋</title>
         <link>https://maropiyo.com/parrot-game/</link>
-        <description>Recent content in Parrot-Games on まろぴよの部屋</description>
+        <description>Recent content on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sun, 18 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/parrot-game/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title></title>
-        <link>https://maropiyo.com/parrot-game/privacy-policy/</link>
-        <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/parrot-game/privacy-policy/</guid>
-        <description>&lt;h1 id=&#34;プライバシーポリシー&#34;&gt;プライバシーポリシー&lt;/h1&gt;
-&lt;p&gt;本プライバシーポリシーは、スマホアプリ「インコゲーム(ParrotGame)」（以下、「本アプリ」といいます）が利用者の個人情報をどのように取り扱うかを説明するものです。本アプリを利用される際には、本プライバシーポリシーをよくお読みいただき、同意の上ご利用ください。&lt;/p&gt;
-&lt;h2 id=&#34;収集する情報&#34;&gt;収集する情報&lt;/h2&gt;
-&lt;h3 id=&#34;広告配信のための情報&#34;&gt;広告配信のための情報&lt;/h3&gt;
-&lt;p&gt;本アプリでは、広告配信のために、GoogleのAdMob広告サービスを利用しています。AdMobは、お客様が興味を持ちそうな広告を提供するために、お客様のデバイス上で情報を収集する場合があります。これには、お客様のデバイスの広告識別子、インストールされているアプリの情報、およびアプリの使用状況に関する情報が含まれます。AdMobのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://policies.google.com/technologies/ads?hl=ja&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h3 id=&#34;ゲームの機能提供のための情報&#34;&gt;ゲームの機能提供のための情報&lt;/h3&gt;
-&lt;p&gt;本アプリでは、ゲームの機能提供のために、MicrosoftのPlayFabサービスを利用しています。PlayFabは、ゲーム内の機能を提供するために、お客様のデバイス上で情報を収集する場合があります。これには、お客様のデバイスの識別子、ゲーム内の進行状況、およびその他の関連情報が含まれます。PlayFabのプライバシーポリシーについては、&lt;a class=&#34;link&#34; href=&#34;https://privacy.microsoft.com/en-us/privacystatement&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;をご参照ください。&lt;/p&gt;
-&lt;h2 id=&#34;個人情報の利用目的&#34;&gt;個人情報の利用目的&lt;/h2&gt;
-&lt;p&gt;当方が収集した情報は、以下の目的のために利用されます。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;本アプリの提供・運営&lt;/li&gt;
-&lt;li&gt;ユーザーサポートやお問い合わせへの対応&lt;/li&gt;
-&lt;li&gt;本アプリに関する重要なお知らせ等の情報提供&lt;/li&gt;
-&lt;li&gt;利用状況の分析や本アプリの改善・向上&lt;/li&gt;
-&lt;li&gt;利用規約違反等の対応&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;個人情報の第三者提供&#34;&gt;個人情報の第三者提供&lt;/h2&gt;
-&lt;p&gt;本アプリが利用者の個人情報を第三者に提供することはありません。&lt;/p&gt;
-&lt;h2 id=&#34;プライバシーポリシーの変更&#34;&gt;プライバシーポリシーの変更&lt;/h2&gt;
-&lt;p&gt;本プライバシーポリシーは、適宜、見直し、改定することがあります。変更後のプライバシーポリシーは、本ウェブサイトに掲載したときから効力を生じるものとします。&lt;/p&gt;
-&lt;h2 id=&#34;お問い合わせ先&#34;&gt;お問い合わせ先&lt;/h2&gt;
-&lt;p&gt;何かご不明な点がございましたら、以下の宛先までお問い合わせください。&lt;/p&gt;
-&lt;p&gt;メールアドレス：maropiyooo[at]gmail.com ([at]を@に変換)&lt;/p&gt;
-&lt;p&gt;X(旧:Twitter): &lt;a class=&#34;link&#34; href=&#34;https://x.com/maropiyooo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://x.com/maropiyooo&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://maropiyo.com/parrot-game/image/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/parrot-game/image/</guid>
-        <description>&lt;img src="https://maropiyo.com/image/parrot_game.png" alt="Featured image of post " /&gt;&lt;h2 id=&#34;紹介動画&#34;&gt;紹介動画&lt;/h2&gt;
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-    &lt;iframe
-        src=&#34;https://www.youtube.com/embed/aru3mgWOkmw?si=LZbLJwcTqw4E8mIJ&#34;
-        style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
-        title=&#34;YouTube video player&#34;
-        frameborder=&#34;0&#34;
-        allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
-&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
-    &lt;a href=&#34;https://apps.apple.com/app/id6478064439&#34;&gt;
-        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
-    &lt;/a&gt;
-    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ParrotGame&#34;&gt;
-        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;
-</description>
-        </item>
-        
+        <lastBuildDate>Sun, 18 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://maropiyo.com/parrot-game/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
