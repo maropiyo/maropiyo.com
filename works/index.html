@@ -380,7 +380,8 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
 </head>
 <body>
 <script>
-if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
+var dk=localStorage.getItem('dark'),h=new Date().getHours();
+if(dk==='1'||(dk===null&&(h>=0&&h<7))){document.body.classList.add('dark')}
 </script>
 
 <div class="pull-cord" id="pull-cord">
@@ -582,6 +583,25 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
 </script>
 <script>
 (function(){
+  var pi=document.getElementById('profile-icon');
+  if(pi&&pi.dataset.sleep&&document.body.classList.contains('dark')){
+    pi.src=pi.dataset.sleep;
+  }
+  var cl=document.getElementById('site-clock');
+  var dt=document.getElementById('site-date');
+  if(cl){
+    var days=['日','月','火','水','木','金','土'];
+    function tick(){
+      var d=new Date();
+      cl.textContent=('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)+':'+('0'+d.getSeconds()).slice(-2);
+      if(dt)dt.textContent=d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate()+'('+days[d.getDay()]+')';
+    }
+    tick();setInterval(tick,1000);
+  }
+})();
+</script>
+<script>
+(function(){
   var txt='★ まろぴよの部屋 ';
   var i=0;
   setInterval(function(){
@@ -601,7 +621,10 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
     document.body.classList.toggle('dark');
     var isDark=document.body.classList.contains('dark');
     localStorage.setItem('dark',isDark?'1':'0');
-    var icon=document.getElementById('cord-icon');
+    var pi=document.getElementById('profile-icon');
+    if(pi&&pi.dataset.sleep&&pi.dataset.awake){
+      pi.src=isDark?pi.dataset.sleep:pi.dataset.awake;
+    }
   });
 })();
 </script>

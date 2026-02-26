@@ -383,6 +383,8 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
 .profile-icon{width:100px;height:100px;border-radius:50%;border:3px solid #FFD54F;box-shadow:0 3px 12px rgba(120,80,20,.1);cursor:pointer;transition:transform .4s ease}
 .profile-icon.spin{animation:iconSpin .6s ease}
 @keyframes iconSpin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.profile-icon.nudge{animation:iconNudge .5s ease}
+@keyframes iconNudge{0%{transform:rotate(0)}30%{transform:rotate(-5deg)}60%{transform:rotate(3deg)}100%{transform:rotate(0)}}
 .profile-name{font-size:1.1rem;font-weight:900;margin:12px 0 4px}
 .profile-bio{font-size:.8rem;color:#8D6E63;line-height:1.7}
 .app-list{display:flex;flex-direction:column;gap:8px}
@@ -518,7 +520,8 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
 </head>
 <body>
 <script>
-if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
+var dk=localStorage.getItem('dark'),h=new Date().getHours();
+if(dk==='1'||(dk===null&&(h>=0&&h<7))){document.body.classList.add('dark')}
 </script>
 
 <div class="pull-cord" id="pull-cord">
@@ -549,7 +552,8 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
   <div class="profile">
     
     
-    <img src="https://maropiyo.com/img/icon.png" alt="まろぴよ" class="profile-icon" id="profile-icon" onclick="this.classList.remove('spin');void this.offsetHeight;this.classList.add('spin');playPiyo()">
+    
+    <img src="https://maropiyo.com/img/icon.png" data-sleep="/img/icon_sleep.png" data-awake="/img/icon.png" alt="まろぴよ" class="profile-icon" id="profile-icon" onclick="this.classList.remove('spin','nudge');void this.offsetHeight;if(document.body.classList.contains('dark')){this.classList.add('nudge');playSleep()}else{this.classList.add('spin');playPiyo()}">
     
     <div class="profile-name">まろぴよ</div>
     <p class="profile-bio">
@@ -561,6 +565,10 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
   
   <div class="visitor-counter">
     あなたは <span class="visitor-counter-num" id="visitor-count">------</span> 人目の訪問者です
+  </div>
+
+  <div class="visitor-counter" style="margin-top:2px">
+    いまは <span class="visitor-counter-num" id="site-date">----/--/--</span> の <span class="visitor-counter-num" id="site-clock">--:--:--</span> です
   </div>
 
   <hr class="retro-hr">
@@ -801,6 +809,18 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
       o.connect(g);g.connect(c.destination);
       o.start(t);o.stop(t+.15);
     };
+    window.playSleep=function(){
+      var c=ctx(),t=c.currentTime;
+      var o=c.createOscillator(),g=c.createGain();
+      o.type='sine';
+      o.frequency.setValueAtTime(900,t);
+      o.frequency.exponentialRampToValueAtTime(1200,t+.06);
+      o.frequency.exponentialRampToValueAtTime(600,t+.2);
+      g.gain.setValueAtTime(.1,t);
+      g.gain.exponentialRampToValueAtTime(.01,t+.2);
+      o.connect(g);g.connect(c.destination);
+      o.start(t);o.stop(t+.2);
+    };
     window.playDoko=function(){
       var c=ctx(),t=c.currentTime;
       note(c,200+Math.random()*60,t,.06,.2,'triangle');
@@ -981,6 +1001,25 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
 </script>
 <script>
 (function(){
+  var pi=document.getElementById('profile-icon');
+  if(pi&&pi.dataset.sleep&&document.body.classList.contains('dark')){
+    pi.src=pi.dataset.sleep;
+  }
+  var cl=document.getElementById('site-clock');
+  var dt=document.getElementById('site-date');
+  if(cl){
+    var days=['日','月','火','水','木','金','土'];
+    function tick(){
+      var d=new Date();
+      cl.textContent=('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)+':'+('0'+d.getSeconds()).slice(-2);
+      if(dt)dt.textContent=d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate()+'('+days[d.getDay()]+')';
+    }
+    tick();setInterval(tick,1000);
+  }
+})();
+</script>
+<script>
+(function(){
   var txt='★ まろぴよの部屋 ';
   var i=0;
   setInterval(function(){
@@ -1000,7 +1039,10 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
     document.body.classList.toggle('dark');
     var isDark=document.body.classList.contains('dark');
     localStorage.setItem('dark',isDark?'1':'0');
-    var icon=document.getElementById('cord-icon');
+    var pi=document.getElementById('profile-icon');
+    if(pi&&pi.dataset.sleep&&pi.dataset.awake){
+      pi.src=isDark?pi.dataset.sleep:pi.dataset.awake;
+    }
   });
 })();
 </script>
