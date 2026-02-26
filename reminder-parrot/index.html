@@ -1449,27 +1449,6 @@ body{
 })();
 
 
-(function(){
-  if(window.innerWidth<961)return;
-  var hero=document.querySelector('.hero');
-  var char=document.getElementById('hero-char');
-  var decos=document.querySelectorAll('.hero-deco');
-  hero.addEventListener('mousemove',function(e){
-    var rect=hero.getBoundingClientRect();
-    var x=(e.clientX-rect.left)/rect.width-.5;
-    var y=(e.clientY-rect.top)/rect.height-.5;
-    char.style.transform='translate('+x*20+'px,'+y*12+'px)';
-    decos.forEach(function(d,i){
-      var f=(i+1)*8;
-      d.style.transform='translate('+x*f+'px,'+y*f+'px)';
-    });
-  });
-  hero.addEventListener('mouseleave',function(){
-    char.style.transform='';
-    decos.forEach(function(d){d.style.transform=''});
-  });
-})();
-
  
 (function(){
   var imgs=['/reminder-parrot/image/reminko.png','/reminder-parrot/image/reminko_jump.png','/reminder-parrot/image/reminko_raising_hand.png'];
