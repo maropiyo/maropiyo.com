@@ -181,56 +181,11 @@
 &lt;p&gt;人生初リリースです！ぜひ遊んでもらえると嬉しいです！&lt;/p&gt;
 &lt;p&gt;追記(2024/05/11): AppStoreでもリリースしました！&lt;/p&gt;
 &lt;h2 id=&#34;スクリーンショット&#34;&gt;スクリーンショット&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_1.png&#34;
-	width=&#34;1242&#34;
-	height=&#34;2208&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ToriJumpScreenshot1&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_2.png&#34;
-	width=&#34;1242&#34;
-	height=&#34;2208&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ToriJumpScreenshot2&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;img src=&#34;https://maropiyo.com/post/release-tori-jump/image/screenshot_3.png&#34;
-	width=&#34;1242&#34;
-	height=&#34;2208&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ToriJumpScreenshot3&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;56&#34;
-		data-flex-basis=&#34;135px&#34;
-	
-&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div style=&#34;display:flex;gap:8px;overflow-x:auto&#34;&gt;
+    &lt;img src=&#34;image/screenshot_1.png&#34; alt=&#34;&#34; style=&#34;height:300px;border-radius:8px&#34;&gt;
+    &lt;img src=&#34;image/screenshot_2.png&#34; alt=&#34;&#34; style=&#34;height:300px;border-radius:8px&#34;&gt;
+    &lt;img src=&#34;image/screenshot_3.png&#34; alt=&#34;&#34; style=&#34;height:300px;border-radius:8px&#34;&gt;
+&lt;/div&gt;
 &lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
 &lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
     &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
@@ -337,22 +292,6 @@
     &lt;/a&gt;
 &lt;/div&gt;
 </description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>https://maropiyo.com/page/archives/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/page/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Search</title>
-        <link>https://maropiyo.com/page/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://maropiyo.com/page/search/</guid>
-        <description></description>
         </item>
         <item>
         <title>アップデート履歴 | リマインコ</title>
@@ -500,6 +439,29 @@
 </description>
         </item>
         <item>
+        <title>とりジャンプ</title>
+        <link>https://maropiyo.com/tori-jump/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyo.com/tori-jump/</guid>
+        <description>&lt;img src="https://maropiyo.com/tori-jump/image/tori_jump.png" alt="Featured image of post とりジャンプ" /&gt;&lt;h2 id=&#34;スクリーンショット&#34;&gt;スクリーンショット&lt;/h2&gt;
+&lt;div style=&#34;display:flex;gap:8px;overflow-x:auto&#34;&gt;
+    &lt;img src=&#34;image/screenshot_1.png&#34; alt=&#34;&#34; style=&#34;height:300px;border-radius:8px&#34;&gt;
+    &lt;img src=&#34;image/screenshot_2.png&#34; alt=&#34;&#34; style=&#34;height:300px;border-radius:8px&#34;&gt;
+    &lt;img src=&#34;image/screenshot_3.png&#34; alt=&#34;&#34; style=&#34;height:300px;border-radius:8px&#34;&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
+&lt;div style=&#34;display: flex; align-items: center; &#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6502396905&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.ToriJump&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>とりっぷる</title>
         <link>https://maropiyo.com/toripple/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -641,6 +603,14 @@
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;最終更新日&lt;/strong&gt;: 2026年2月23日&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>ブログ</title>
+        <link>https://maropiyo.com/page/archives/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyo.com/page/archives/</guid>
+        <description></description>
         </item>
         <item>
         <title>よくある質問 | リマインコ</title>
@@ -808,6 +778,14 @@
 &lt;h3 id=&#34;q-バグを見つけました&#34;&gt;Q: バグを見つけました！&lt;/h3&gt;
 &lt;p&gt;アプリ内の「問い合わせ」やメール、Xなどで教えてね！Xだと反応がしやすいよ！&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>検索</title>
+        <link>https://maropiyo.com/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyo.com/page/search/</guid>
+        <description></description>
         </item>
         <item>
         <title>自己紹介</title>

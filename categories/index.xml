@@ -8,11 +8,11 @@
         <language>ja</language>
         <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0900</lastBuildDate><atom:link href="https://maropiyo.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>リリース</title>
-        <link>https://maropiyo.com/categories/release/</link>
+        <link>https://maropiyo.com/categories/%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</link>
         <pubDate>Fri, 26 Dec 2025 00:00:00 +0900</pubDate>
         
-        <guid>https://maropiyo.com/categories/release/</guid>
-        <description>&lt;img src="https://maropiyo.com/categories/release/sekisei_rutino.png" alt="Featured image of post リリース" /&gt;</description>
+        <guid>https://maropiyo.com/categories/%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9/</guid>
+        <description></description>
         </item>
         <item>
         <title>ブログ</title>
@@ -21,6 +21,14 @@
         
         <guid>https://maropiyo.com/categories/blog/</guid>
         <description>&lt;img src="https://maropiyo.com/categories/blog/sekisei_lightblue.png" alt="Featured image of post ブログ" /&gt;</description>
+        </item>
+        <item>
+        <title>リリース</title>
+        <link>https://maropiyo.com/categories/release/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://maropiyo.com/categories/release/</guid>
+        <description>&lt;img src="https://maropiyo.com/categories/release/sekisei_rutino.png" alt="Featured image of post リリース" /&gt;</description>
         </item>
         <item>
         <title>開発</title>
