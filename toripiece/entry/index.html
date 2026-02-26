@@ -18,22 +18,24 @@
 <meta name="twitter:description" content="スマホパズルゲーム「とりぴーす」であなたの愛鳥をゲームに登場させてみませんか？">
 <meta name="twitter:image" content="https://maropiyo.com/toripiece/entry/images/ogp.jpg">
 <link rel="icon" href="/favicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Nunito:wght@600;700;800&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 :root {
-  --yellow: #FFD93D;
-  --yellow-dark: #F5C400;
-  --yellow-light: #FFF3CD;
-  --yellow-bg: #FFFBEB;
-  --orange: #FF9500;
-  --orange-dark: #E68600;
-  --green: #58CC02;
-  --green-dark: #4CAD02;
-  --blue: #1CB0F6;
-  --red: #FF4B4B;
-  --gray-light: #F7F7F7;
-  --gray: #AFAFAF;
-  --gray-dark: #4B4B4B;
+  --yellow: #FFD54F;
+  --yellow-dark: #E59F43;
+  --yellow-light: #FFF8E1;
+  --yellow-bg: #FFF8E1;
+  --orange: #E59F43;
+  --orange-dark: #D08A30;
+  --green: #66BB6A;
+  --green-dark: #4CAF50;
+  --blue: #E59F43;
+  --red: #E57373;
+  --gray-light: #F5F0E8;
+  --gray: #8D6E63;
+  --gray-dark: #5D4037;
   --white: #FFFFFF;
   --shadow: 0 4px 0;
 }
@@ -46,12 +48,11 @@
 }
 
 body {
-  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--yellow-bg);
   background-image:
-    linear-gradient(var(--yellow-light) 1px, transparent 1px),
-    linear-gradient(90deg, var(--yellow-light) 1px, transparent 1px);
-  background-size: 40px 40px;
+    radial-gradient(circle, #F0E0C8 1px, transparent 1px);
+  background-size: 24px 24px;
   min-height: 100vh;
   color: var(--gray-dark);
 }
@@ -71,26 +72,26 @@ body {
 .mascot {
   width: 100px;
   height: 100px;
-  background: var(--yellow);
+  background: var(--yellow-light);
   border-radius: 50%;
   margin: 0 auto 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow) var(--yellow-dark);
-  border: 4px solid var(--white);
+  box-shadow: none;
+  border: 3px solid var(--yellow);
 }
 
 .mascot svg {
   width: 60px;
   height: 60px;
-  fill: var(--white);
+  fill: var(--orange);
 }
 
 .header h1 {
-  font-family: 'Mochiy Pop One', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 400;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
   color: var(--orange);
   line-height: 1.3;
   margin-bottom: 10px;
@@ -106,10 +107,11 @@ body {
 /* カード */
 .card {
   background: var(--white);
-  border-radius: 16px;
+  border: 2px solid var(--yellow);
+  border-radius: 8px;
   padding: 24px;
   margin-bottom: 16px;
-  box-shadow: var(--shadow) rgba(0,0,0,0.1);
+  box-shadow: none;
 }
 
 .card-header {
@@ -124,7 +126,7 @@ body {
   height: 40px;
   background: var(--yellow-light);
   border-radius: 50%;
-  border: 2px solid var(--yellow-dark);
+  border: 2px solid var(--yellow);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,14 +135,14 @@ body {
 .card-icon svg {
   width: 22px;
   height: 22px;
-  fill: var(--yellow-dark);
+  fill: var(--orange);
 }
 
 .card-icon-img {
   background: var(--yellow-light);
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid var(--yellow-dark);
+  border: 2px solid var(--yellow);
 }
 
 .card-icon-img img {
@@ -158,20 +160,20 @@ body {
 .card p {
   line-height: 1.7;
   margin-bottom: 12px;
-  font-weight: 600;
-  color: #666;
+  font-weight: 700;
+  color: #8D6E63;
 }
 
 .card a {
-  color: var(--blue);
+  color: var(--orange);
   text-decoration: none;
   font-weight: 700;
 }
 
 .card ul {
   padding-left: 20px;
-  font-weight: 600;
-  color: #666;
+  font-weight: 700;
+  color: #8D6E63;
 }
 
 .card ul li {
@@ -187,8 +189,8 @@ body {
 
 .toripiece-demo img {
   width: 160px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(120,80,20,.1);
 }
 
 .demo-caption {
@@ -224,7 +226,7 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(120,80,20,.1);
 }
 
 /* インフォボックス */
@@ -236,9 +238,10 @@ body {
 
 .info-box {
   flex: 1;
-  background: var(--yellow-light);
+  background: var(--white);
+  border: 2px solid var(--yellow);
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: center;
 }
 
@@ -277,10 +280,11 @@ body {
 
 .progress-bar {
   height: 16px;
-  background: var(--gray-light);
-  border-radius: 10px;
+  background: var(--yellow-light);
+  border: 1px solid var(--yellow);
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: none;
 }
 
 .progress-fill {
@@ -449,8 +453,9 @@ body {
   gap: 0;
   margin-bottom: 24px;
   padding: 16px;
-  background: var(--gray-light);
-  border-radius: 12px;
+  background: var(--yellow-light);
+  border-radius: 8px;
+  border: 1px solid var(--yellow);
 }
 
 .step {
@@ -527,8 +532,8 @@ body {
 /* アップロードエリア */
 .upload-area {
   background: var(--white);
-  border: 3px dashed var(--orange);
-  border-radius: 16px;
+  border: 3px dashed var(--yellow);
+  border-radius: 8px;
   padding: 40px 20px;
   text-align: center;
   cursor: pointer;
@@ -538,7 +543,7 @@ body {
 
 .upload-area:hover {
   border-color: var(--orange);
-  background: #FFF5E6;
+  background: var(--yellow-light);
 }
 
 .upload-icon {
@@ -550,7 +555,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow) #E07800;
+  box-shadow: none;
 }
 
 .upload-icon svg {
@@ -577,15 +582,16 @@ body {
   text-align: center;
   margin-bottom: 24px;
   padding: 20px;
-  background: var(--gray-light);
-  border-radius: 16px;
+  background: var(--yellow-light);
+  border: 1px solid var(--yellow);
+  border-radius: 8px;
 }
 
 #upload-preview img {
   max-width: 100%;
   max-height: 250px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(120,80,20,.1);
 }
 
 .upload-success {
@@ -607,9 +613,9 @@ body {
 .change-btn {
   background: var(--white);
   color: var(--gray-dark);
-  border: 2px solid var(--gray-light);
+  border: 2px solid var(--yellow);
   padding: 10px 20px;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 12px;
   font-family: inherit;
@@ -619,7 +625,7 @@ body {
 }
 
 .change-btn:hover {
-  border-color: var(--gray);
+  border-color: var(--orange);
 }
 
 /* フォーム要素 */
@@ -645,13 +651,14 @@ body {
 }
 
 .badge-required {
-  background: var(--red);
+  background: var(--orange);
   color: var(--white);
 }
 
 .badge-optional {
-  background: var(--gray-light);
+  background: var(--yellow-light);
   color: var(--gray);
+  border: 1px solid var(--yellow);
 }
 
 .form-hint {
@@ -665,11 +672,11 @@ body {
 .form-input {
   width: 100%;
   padding: 14px 16px;
-  border: 2px solid var(--gray-light);
-  border-radius: 12px;
+  border: 2px solid var(--yellow);
+  border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--gray-dark);
   background: var(--white);
   transition: border-color 0.2s;
@@ -677,7 +684,7 @@ body {
 
 .form-input:focus {
   outline: none;
-  border-color: var(--yellow);
+  border-color: var(--orange);
 }
 
 .form-input::placeholder {
@@ -727,12 +734,13 @@ body {
 }
 
 .example-tag {
-  background: var(--gray-light);
+  background: var(--white);
+  border: 1px solid var(--yellow);
   color: var(--gray-dark);
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -754,12 +762,12 @@ body {
 
 .omakase-btn {
   padding: 12px 16px;
-  background: var(--gray-light);
-  border: 2px solid var(--gray);
-  border-radius: 12px;
+  background: var(--white);
+  border: 2px solid var(--yellow);
+  border-radius: 8px;
   font-family: inherit;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 900;
   color: var(--gray-dark);
   cursor: pointer;
   white-space: nowrap;
@@ -768,16 +776,16 @@ body {
 
 .omakase-btn:hover {
   background: var(--yellow-light);
-  border-color: var(--yellow-dark);
+  border-color: var(--orange);
 }
 
 .omakase-display {
   flex: 1;
   padding: 14px 16px;
   background: var(--yellow-light);
-  border: 2px solid var(--yellow-dark);
-  border-radius: 12px;
-  font-weight: 700;
+  border: 2px solid var(--yellow);
+  border-radius: 8px;
+  font-weight: 900;
   color: var(--gray-dark);
 }
 
@@ -793,8 +801,8 @@ body {
   gap: 8px;
   padding: 14px;
   background: var(--white);
-  border: 2px dashed var(--gray);
-  border-radius: 12px;
+  border: 2px dashed var(--yellow);
+  border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
   color: var(--gray);
@@ -881,8 +889,9 @@ body {
 
 /* 規約要約 */
 .terms-summary {
-  background: var(--gray-light);
-  border-radius: 12px;
+  background: var(--yellow-light);
+  border: 1px solid var(--yellow);
+  border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
 }
@@ -897,8 +906,8 @@ body {
   padding: 6px 0;
   padding-left: 24px;
   position: relative;
-  font-weight: 600;
-  color: #666;
+  font-weight: 700;
+  color: #8D6E63;
   line-height: 1.5;
 }
 
@@ -911,7 +920,7 @@ body {
 }
 
 .terms-summary a {
-  color: var(--blue);
+  color: var(--orange);
   text-decoration: none;
   font-weight: 700;
 }
@@ -923,17 +932,18 @@ body {
   gap: 6px;
   padding: 10px;
   background: var(--white);
+  border: 1px solid var(--yellow);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
   font-size: 0.85rem;
-  color: #666;
+  color: #8D6E63;
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .terms-detail-toggle:hover {
-  color: #555;
+  color: var(--orange);
 }
 
 .terms-detail-toggle .toggle-arrow {
@@ -950,16 +960,17 @@ body {
 /* 規約詳細 */
 .terms-box {
   display: none;
-  background: var(--gray-light);
-  border-radius: 12px;
+  background: var(--yellow-light);
+  border: 1px solid var(--yellow);
+  border-radius: 8px;
   padding: 16px;
   max-height: 300px;
   overflow-y: auto;
   margin-bottom: 16px;
   font-size: 0.85rem;
   line-height: 1.8;
-  font-weight: 600;
-  color: #666;
+  font-weight: 700;
+  color: #8D6E63;
 }
 
 .terms-box.open {
@@ -986,7 +997,7 @@ body {
 }
 
 .terms-box a {
-  color: var(--blue);
+  color: var(--orange);
   text-decoration: none;
   font-weight: 700;
 }
@@ -1008,8 +1019,8 @@ body {
 .checkbox-wrap .checkbox-custom {
   width: 28px;
   height: 28px;
-  background: var(--gray-light);
-  border: 2px solid var(--gray);
+  background: var(--white);
+  border: 2px solid var(--yellow);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -1040,32 +1051,34 @@ body {
   width: 100%;
   padding: 16px;
   font-size: 1.1rem;
-  font-weight: 800;
+  font-weight: 900;
   font-family: inherit;
   background: var(--orange);
   color: var(--white);
-  border: none;
-  border-radius: 16px;
+  border: 2px solid var(--orange-dark);
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.15s;
-  box-shadow: var(--shadow) var(--orange-dark);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  box-shadow: none;
+  text-transform: none;
+  letter-spacing: 0;
   margin-top: 8px;
 }
 
 .submit-btn:hover:not(:disabled) {
-  filter: brightness(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(120,80,20,.12);
 }
 
 .submit-btn:active:not(:disabled) {
-  box-shadow: 0 2px 0 var(--orange-dark);
-  transform: translateY(2px);
+  transform: scale(0.95);
+  box-shadow: none;
 }
 
 .submit-btn:disabled {
-  background: var(--gray);
-  box-shadow: var(--shadow) #8a8a8a;
+  background: #BCAAA4;
+  border-color: #A1887F;
+  box-shadow: none;
   cursor: not-allowed;
 }
 
@@ -1085,7 +1098,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow) var(--orange-dark);
+  box-shadow: none;
+  border: 3px solid var(--yellow);
 }
 
 .success-icon svg {
@@ -1118,22 +1132,21 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 14px 24px;
-  border-radius: 14px;
-  font-weight: 800;
+  border-radius: 8px;
+  font-weight: 900;
   font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
-  border: none;
+  border: 2px solid #5D4037;
   font-family: inherit;
-  background: #000;
+  background: #5D4037;
   color: var(--white);
-  box-shadow: 0 4px 0 #333;
+  box-shadow: none;
   transition: all 0.15s;
 }
 
 .share-btn:active {
-  box-shadow: 0 2px 0 #333;
-  transform: translateY(2px);
+  transform: scale(0.95);
 }
 
 .share-btn svg {
@@ -1143,22 +1156,21 @@ body {
 }
 
 .reload-btn {
-  background: var(--yellow);
-  color: var(--white);
-  border: none;
+  background: var(--white);
+  color: var(--gray-dark);
+  border: 2px solid var(--yellow);
   padding: 14px 28px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
-  font-weight: 800;
+  font-weight: 900;
   cursor: pointer;
-  box-shadow: var(--shadow) var(--yellow-dark);
+  box-shadow: none;
   transition: all 0.15s;
 }
 
 .reload-btn:active {
-  box-shadow: 0 2px 0 var(--yellow-dark);
-  transform: translateY(2px);
+  transform: scale(0.95);
 }
 
 /* フッター */
@@ -1179,17 +1191,142 @@ body {
 
 .footer p {
   margin-bottom: 8px;
-  color: var(--gray);
+  color: #8D6E63;
 }
+
+/* pull cord */
+.pull-cord{
+  position:fixed;
+  top:0;
+  right:24px;
+  z-index:9999;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+}
+.pull-cord-line{
+  width:2px;
+  height:70px;
+  background:#8D6E63;
+}
+.pull-cord-star{
+  font-size:22px;
+  color:#E59F43;
+  -webkit-text-stroke:1.5px #8D6E63;
+  margin-top:-12px;
+  position:relative;
+  z-index:1;
+  transition:transform .15s ease;
+}
+.pull-cord.pulling .pull-cord-line{
+  animation:cordStretch .4s ease;
+}
+@keyframes cordStretch{
+  0%{height:70px}
+  40%{height:100px}
+  100%{height:70px}
+}
+
+/* dark mode */
+body.dark{
+  background:#2a2a2a;
+  background-image:none;
+  color:#e0d6c8;
+}
+body.dark .header h1{color:#FFD54F}
+body.dark .header .subtitle{color:#bba88a}
+body.dark .card{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
+body.dark .card-title{color:#e0d6c8}
+body.dark .card p{color:#bba88a}
+body.dark .card a{color:#FFD54F}
+body.dark .card ul{color:#bba88a}
+body.dark .card-icon{background:#3a3a3a;border-color:#5D4037}
+body.dark .card-icon svg{fill:#FFD54F}
+body.dark .card-icon-img{border-color:#5D4037}
+body.dark .info-box{background:#3a3a3a;border-color:#5D4037}
+body.dark .info-box .label{color:#bba88a}
+body.dark .info-box .value{color:#FFD54F}
+body.dark .progress-bar{background:#3a3a3a;border-color:#5D4037}
+body.dark .progress-fill{background:linear-gradient(90deg,#5D4037,#E59F43)}
+body.dark .progress-label{color:#bba88a}
+body.dark .progress-count strong{color:#FFD54F}
+body.dark .timeline-season-label{color:#FFD54F}
+body.dark .timeline-bar-full{background:#3a3a3a}
+body.dark .timeline-bar-full .timeline-progress{background:#5D4037}
+body.dark .timeline-bar-full .timeline-marker{color:#FFD54F}
+body.dark .timeline-spring{background:#E59F43}
+body.dark .timeline-ticks span{color:#bba88a}
+body.dark .timeline-note{color:#bba88a}
+body.dark .steps{background:#3a3a3a;border-color:#5D4037}
+body.dark .step-text{color:#bba88a}
+body.dark .step-num{background:#5D4037}
+body.dark .step.active .step-num{background:#E59F43}
+body.dark .step.completed .step-num{background:#E59F43}
+body.dark .step-line{background:#5D4037}
+body.dark .step-line.active{background:#E59F43}
+body.dark .upload-area{background:#3a3a3a;border-color:#5D4037}
+body.dark .upload-text{color:#e0d6c8}
+body.dark .upload-hint{color:#bba88a}
+body.dark .upload-icon{background:#5D4037}
+body.dark #upload-preview{background:#3a3a3a;border-color:#5D4037}
+body.dark .upload-success{color:#66BB6A}
+body.dark .upload-success svg{fill:#66BB6A}
+body.dark .change-btn{background:#3a3a3a;color:#e0d6c8;border-color:#5D4037}
+body.dark .form-label{color:#e0d6c8}
+body.dark .form-hint{color:#bba88a}
+body.dark .form-input{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
+body.dark .form-input::placeholder{color:#8D6E63}
+body.dark .form-input:focus{border-color:#E59F43}
+body.dark .badge-required{background:#E59F43}
+body.dark .badge-optional{background:#3a3a3a;border-color:#5D4037;color:#bba88a}
+body.dark .example-label{background:#5D4037;color:#FFD54F}
+body.dark .example-tag{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
+body.dark .omakase-btn{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
+body.dark .omakase-display{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
+body.dark .optional-toggle{background:#3a3a3a;border-color:#5D4037;color:#bba88a}
+body.dark .toggle-arrow{fill:#bba88a}
+body.dark .radio-option .radio-btn{color:#e0d6c8}
+body.dark .radio-option .radio-btn::before{border-color:#5D4037;background:#3a3a3a}
+body.dark .radio-option input:checked+.radio-btn::before{border-color:#E59F43;background:#E59F43}
+body.dark .terms-summary{background:#3a3a3a;border-color:#5D4037}
+body.dark .terms-summary li{color:#bba88a}
+body.dark .terms-summary li::before{color:#66BB6A}
+body.dark .terms-summary a{color:#FFD54F}
+body.dark .terms-detail-toggle{background:#3a3a3a;border-color:#5D4037;color:#bba88a}
+body.dark .terms-box{background:#3a3a3a;border-color:#5D4037;color:#bba88a}
+body.dark .terms-box h4{color:#e0d6c8}
+body.dark .terms-box a{color:#FFD54F}
+body.dark .checkbox-wrap{color:#e0d6c8}
+body.dark .checkbox-wrap .checkbox-custom{background:#3a3a3a;border-color:#5D4037}
+body.dark .checkbox-wrap input:checked+.checkbox-custom{background:#E59F43;border-color:#E59F43}
+body.dark .submit-btn{background:#E59F43;border-color:#D08A30}
+body.dark .submit-btn:disabled{background:#5D4037;border-color:#4E342E;color:#8D6E63}
+body.dark .success-icon{background:#5D4037;border-color:#5D4037}
+body.dark #submit-message h3{color:#e0d6c8}
+body.dark #submit-message p{color:#bba88a}
+body.dark .share-btn{background:#3a3a3a;border-color:#5D4037}
+body.dark .reload-btn{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
+body.dark .footer a{color:#FFD54F}
+body.dark .footer p{color:#8D6E63}
+body.dark .pull-cord-line{background:#bba88a}
+body.dark .pull-cord-star{color:#FFD54F;-webkit-text-stroke:1.5px #5D4037}
+body.dark .past-works-label{color:#bba88a}
+body.dark .demo-caption{color:#bba88a}
+body.dark .dev-badge{background:#5D4037;color:#FFD54F}
+body.dark .game-icons img{box-shadow:0 2px 8px rgba(0,0,0,.3)}
+body.dark .toripiece-demo img{box-shadow:0 4px 12px rgba(0,0,0,.3)}
 
 /* レスポンシブ */
 @media (max-width: 500px) {
   .header h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .card {
-    padding: 20px;
+    padding: 16px;
   }
 
   .upload-area {
@@ -1199,6 +1336,15 @@ body {
 </style>
 </head>
 <body>
+<script>
+var dk=localStorage.getItem('dark'),h=new Date().getHours();
+if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
+</script>
+
+<div class="pull-cord" id="pull-cord">
+  <div class="pull-cord-line"></div>
+  <div class="pull-cord-star" id="pull-cord-star"><i id="cord-icon" class="fa-solid fa-star"></i></div>
+</div>
 
 <div class="container">
   <header class="header">
@@ -1516,7 +1662,8 @@ body {
   </div>
 
   <footer class="footer">
-    <p>© 2023 - 2026 まろぴよの部屋</p>
+    <p><a href="/">まろぴよの部屋</a></p>
+    <p>© 2023 - 2026 まろぴよ</p>
   </footer>
 </div>
 
@@ -1814,6 +1961,32 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText), '_blank');
   });
 });
+</script>
+<script>
+(function(){
+  var cord=document.getElementById('pull-cord');
+  cord.addEventListener('click',function(){
+    cord.classList.remove('pulling');
+    void cord.offsetHeight;
+    cord.classList.add('pulling');
+    try{
+      var c=new(window.AudioContext||window.webkitAudioContext)();
+      if(c.state==='suspended')c.resume();
+      var t=c.currentTime;
+      var buf=c.createBuffer(1,Math.floor(c.sampleRate*.015),c.sampleRate);
+      var d=buf.getChannelData(0);
+      for(var i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*(1-i/d.length);
+      var n=c.createBufferSource();n.buffer=buf;
+      var f=c.createBiquadFilter();f.type='highpass';f.frequency.value=3000;
+      var g=c.createGain();g.gain.value=.25;
+      n.connect(f);f.connect(g);g.connect(c.destination);
+      n.start(t);
+    }catch(e){}
+    document.body.classList.toggle('dark');
+    var isDark=document.body.classList.contains('dark');
+    localStorage.setItem('dark',isDark?'1':'0');
+  });
+})();
 </script>
 
 </body>
