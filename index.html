@@ -450,6 +450,63 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
   min-width:60px;
   text-align:center;
 }
+.slot{text-align:center;margin:12px 0 0}
+.slot-reels{display:flex;justify-content:center;gap:6px;margin:8px 0}
+.slot-reel{
+  width:64px;height:64px;
+  border:2px solid #FFD54F;
+  border-radius:8px;
+  background:#fff;
+  overflow:hidden;
+  position:relative;
+}
+.slot-reel img{
+  width:100%;height:100%;
+  object-fit:contain;
+  position:absolute;top:0;left:0;
+}
+.slot-reel.spinning img{
+  animation:slotSpin .08s steps(1) infinite;
+}
+@keyframes slotSpin{
+  0%{opacity:1}50%{opacity:0}100%{opacity:1}
+}
+.slot-btn{
+  display:inline-block;
+  background:#fff;
+  border:2px solid #FFD54F;
+  border-radius:8px;
+  padding:4px 16px;
+  font-family:'M PLUS Rounded 1c',sans-serif;
+  font-size:.8rem;
+  font-weight:900;
+  color:#5D4037;
+  cursor:pointer;
+  transition:transform .15s,box-shadow .15s;
+}
+.slot-btn:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(120,80,20,.12)}
+.slot-btn:active{transform:scale(.95)}
+.slot-result{
+  margin-top:4px;
+  font-size:.7rem;
+  font-weight:700;
+  color:#E59F43;
+  min-height:1.5em;
+}
+.slot-reel.match{animation:slotMatch .3s ease 2;border-color:#FF9800}
+@keyframes slotMatch{
+  0%,100%{transform:scale(1)}50%{transform:scale(1.1)}
+}
+.slot-stats{
+  margin-top:8px;
+  font-size:.65rem;
+  font-weight:700;
+  color:#8D6E63;
+}
+.slot-stats-num{
+  color:#E59F43;
+  font-weight:900;
+}
 </style>
 
 </head>
@@ -486,7 +543,7 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
   <div class="profile">
     
     
-    <img src="https://maropiyo.com/img/icon.png" alt="まろぴよ" class="profile-icon" id="profile-icon" onclick="this.classList.remove('spin');void this.offsetHeight;this.classList.add('spin')">
+    <img src="https://maropiyo.com/img/icon.png" alt="まろぴよ" class="profile-icon" id="profile-icon" onclick="this.classList.remove('spin');void this.offsetHeight;this.classList.add('spin');playPiyo()">
     
     <div class="profile-name">まろぴよ</div>
     <p class="profile-bio">
@@ -500,11 +557,10 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
     あなたは <span class="visitor-counter-num" id="visitor-count">------</span> 人目の訪問者です
   </div>
 
+  <hr class="retro-hr">
+
   
-  <div class="omikuji">
-    <button class="omikuji-btn" id="omikuji-btn">★ 今日のおみくじ ★</button>
-    <div class="omikuji-result" id="omikuji-result"></div>
-  </div>
+  <div class="section-title"><span class="sparkle">★</span> おしらせ <span class="sparkle">★</span></div>
 
   <a href="https://maropiyo.com/toripiece/entry/" class="recruit-banner" style="position:relative">
     <span class="badge-new" style="position:absolute;top:-6px;right:-6px;background:#FF9800">開発中</span>
@@ -598,6 +654,34 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
   <hr class="retro-hr">
 
   
+  <div class="section-title"><span class="sparkle">★</span> おみくじコーナー <span class="sparkle">★</span></div>
+
+  <div class="omikuji">
+    <button class="omikuji-btn" id="omikuji-btn">★ ひく ★</button>
+    <div class="omikuji-result" id="omikuji-result"></div>
+  </div>
+
+  <hr class="retro-hr">
+
+  
+  <div class="section-title"><span class="sparkle">★</span> とりっぷるスロット <span class="sparkle">★</span></div>
+
+  <div class="slot">
+    <div class="slot-reels">
+      <div class="slot-reel" id="slot-r0"><img src="https://maropiyo.com/image/slot/sekisei_blue.png" alt=""></div>
+      <div class="slot-reel" id="slot-r1"><img src="https://maropiyo.com/image/slot/okame_lutino.png" alt=""></div>
+      <div class="slot-reel" id="slot-r2"><img src="https://maropiyo.com/image/slot/buncho_white.png" alt=""></div>
+    </div>
+    <button class="slot-btn" id="slot-btn">★ まわす ★</button>
+    <div class="slot-result" id="slot-result"></div>
+    <div class="slot-stats">
+      みんなの回転数 <span class="slot-stats-num" id="slot-spins">-</span> 回 ／ とりっぷる <span class="slot-stats-num" id="slot-wins">-</span> 回
+    </div>
+  </div>
+
+  <hr class="retro-hr">
+
+  
   <div class="section-title"><span class="sparkle">★</span> 相互リンク <span class="sparkle">★</span></div>
   <div style="text-align:center;font-size:.75rem;color:#8D6E63;font-weight:700;padding:12px 0">
     相互リンク募集中！<br>
@@ -667,15 +751,170 @@ if(localStorage.getItem('dark')==='1'){document.body.classList.add('dark')}
       var iv=setInterval(function(){
         var r=fortunes[Math.floor(Math.random()*fortunes.length)];
         res.textContent=r.rank;
+        playDoko();
         count++;
         if(count>8){
           clearInterval(iv);
           var f=fortunes[Math.floor(Math.random()*fortunes.length)];
           res.textContent='【'+f.rank+'】'+f.msg;
+          playPon(f.rank);
           btn.textContent='★ もう一回 ★';
           btn.style.pointerEvents='';
         }
       },80);
+    });
+  })();
+  </script>
+  <script>
+  (function(){
+    var _ctx;
+    function ctx(){
+      if(!_ctx)_ctx=new(window.AudioContext||window.webkitAudioContext)();
+      if(_ctx.state==='suspended')_ctx.resume();
+      return _ctx;
+    }
+    function note(c,freq,start,dur,vol,type){
+      var o=c.createOscillator();
+      var g=c.createGain();
+      o.type=type||'sine';
+      o.frequency.setValueAtTime(freq,start);
+      g.gain.setValueAtTime(vol||.2,start);
+      g.gain.exponentialRampToValueAtTime(.01,start+dur);
+      o.connect(g);g.connect(c.destination);
+      o.start(start);o.stop(start+dur);
+    }
+    window.playPiyo=function(){
+      var c=ctx(),t=c.currentTime;
+      var o=c.createOscillator(),g=c.createGain();
+      o.type='sine';
+      o.frequency.setValueAtTime(1800,t);
+      o.frequency.exponentialRampToValueAtTime(2400,t+.06);
+      o.frequency.exponentialRampToValueAtTime(1200,t+.15);
+      g.gain.setValueAtTime(.18,t);
+      g.gain.exponentialRampToValueAtTime(.01,t+.15);
+      o.connect(g);g.connect(c.destination);
+      o.start(t);o.stop(t+.15);
+    };
+    window.playDoko=function(){
+      var c=ctx(),t=c.currentTime;
+      note(c,200+Math.random()*60,t,.06,.2,'triangle');
+    };
+    var _slotCount=0;
+    window.slotResetCount=function(){_slotCount=0;};
+    window.playTick=function(){
+      var c=ctx(),t=c.currentTime;
+      var freq=150+_slotCount*3+Math.random()*30;
+      note(c,freq,t,.04,.15,'triangle');
+      note(c,freq*1.5,t,.03,.05);
+      _slotCount++;
+    };
+    window.playStop=function(){
+      var c=ctx(),t=c.currentTime;
+      note(c,500,t,.06,.2,'triangle');note(c,700,t+.04,.1,.15);
+    };
+    window.playPon=function(rank){
+      var c=ctx(),t=c.currentTime;
+      if(rank==='超大吉'){
+        note(c,800,t,.12);note(c,1000,t+.1,.12);note(c,1200,t+.2,.12);note(c,1600,t+.3,.3,.25);
+      }else if(rank==='大吉'){
+        note(c,800,t,.1);note(c,1100,t+.1,.1);note(c,1400,t+.2,.25,.22);
+      }else if(rank==='吉'||rank==='中吉'){
+        note(c,700,t,.1);note(c,900,t+.12,.2,.2);
+      }else if(rank==='小吉'||rank==='末吉'){
+        note(c,600,t,.2,.15);
+      }else if(rank==='凶'){
+        note(c,400,t,.15,.15);note(c,300,t+.15,.2,.12);
+      }else if(rank==='大凶'){
+        note(c,400,t,.1,.15);note(c,300,t+.1,.1,.12);note(c,200,t+.2,.3,.1);
+      }else if(rank==='インコ吉'||rank==='鳥吉'){
+        note(c,1800,t,.06,.18);note(c,2400,t+.08,.06,.18);note(c,1800,t+.16,.06,.15);note(c,2400,t+.24,.1,.2);
+      }else{
+        note(c,700,t,.2,.18);
+      }
+    };
+  })();
+  </script>
+  <script>
+  (function(){
+    var birds=[
+      'sekisei_blue','okame_lutino','buncho_white','kozakura_normal',
+      'botan_blue','mameruriha_green','okina_blue','sazanami_lightblue','shirohara_normal'
+    ];
+    var reels=[
+      document.getElementById('slot-r0'),
+      document.getElementById('slot-r1'),
+      document.getElementById('slot-r2')
+    ];
+    var btn=document.getElementById('slot-btn');
+    var res=document.getElementById('slot-result');
+    var elSpins=document.getElementById('slot-spins');
+    var elWins=document.getElementById('slot-wins');
+    var slotApi='https://himhcigolmzehbvstjgv.supabase.co/functions/v1/slot-counter';
+    var spinning=false;
+
+    function updateStats(d){
+      if(d.spins!=null)elSpins.textContent=d.spins;
+      if(d.wins!=null)elWins.textContent=d.wins;
+    }
+
+    fetch(slotApi).then(function(r){return r.json()}).then(updateStats).catch(function(){});
+
+    function randBird(){return birds[Math.floor(Math.random()*birds.length)];}
+
+    function setReel(i,bird){
+      reels[i].querySelector('img').src='https://maropiyo.com/image/slot/'+bird+'.png';
+    }
+
+    btn.addEventListener('click',function(){
+      if(spinning)return;
+      spinning=true;
+      btn.style.pointerEvents='none';
+      res.textContent='';
+      reels.forEach(function(r){r.classList.remove('match')});
+      slotResetCount();
+
+      fetch(slotApi,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'spin'})})
+        .then(function(r){return r.json()}).then(updateStats).catch(function(){});
+
+      var results=[randBird(),randBird(),randBird()];
+      var intervals=[];
+      var stopped=0;
+
+      reels.forEach(function(r,i){
+        r.classList.add('spinning');
+        var iv=setInterval(function(){
+          setReel(i,randBird());
+          playTick();
+        },100);
+        intervals.push(iv);
+
+        setTimeout(function(){
+          clearInterval(intervals[i]);
+          r.classList.remove('spinning');
+          setReel(i,results[i]);
+          playStop();
+          stopped++;
+
+          if(stopped===3){
+            var isWin=results[0]===results[1]&&results[1]===results[2];
+            if(isWin){
+              reels.forEach(function(r){r.classList.add('match')});
+              playPon('超大吉');
+              res.textContent='🎉 とりっぷる！！！ 🎉';
+              fetch(slotApi,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'win'})})
+                .then(function(r){return r.json()}).then(updateStats).catch(function(){});
+            }else if(results[0]===results[1]||results[1]===results[2]||results[0]===results[2]){
+              playPon('吉');
+              res.textContent='おしい！2つ揃った！';
+            }else{
+              playPon('小吉');
+              res.textContent='ハズレ…もう一回！';
+            }
+            btn.style.pointerEvents='';
+            spinning=false;
+          }
+        },(i+1)*500+300);
+      });
     });
   })();
   </script>
