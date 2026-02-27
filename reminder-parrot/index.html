@@ -1279,9 +1279,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
     setTimeout(function(){m.style.transition='opacity .5s';m.style.opacity='0';setTimeout(function(){m.remove()},600)},dur);
   }
   function showCount(n,fromFly){flyCountNum.textContent=String(n).padStart(6,'0');flyCountWrap.style.visibility='';flyCountWrap.style.animation='heroSubReveal .7s ease 1.8s both';flyCountWrap.style.opacity='.5';if(fromFly&&isKiriban(n))showMarquee(n);}
-  fetch(flyApi).then(function(r){return r.json()}).then(function(d){
-    if(d.count>0) showCount(d.count);
-  }).catch(function(){});
+  var hasFlewOnce=false;
   function flyAway(){
     flying=true;running=false;
     fetch(flyApi,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
