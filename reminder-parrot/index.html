@@ -1248,7 +1248,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   function startTick(){if(running)return;running=true;tickRaf=requestAnimationFrame(tick);}
   function tick(){
     if(flying||!visible){running=false;return;}
-    if(Math.abs(velocity)>=30){flyAway();return;}
+    if(Math.abs(velocity)>=35){flyAway();return;}
     var rad=angle*Math.PI/180;
     velocity-=gravity*Math.sin(rad);
     velocity*=damping;
