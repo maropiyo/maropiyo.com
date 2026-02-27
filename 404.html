@@ -409,24 +409,79 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
   <hr class="retro-hr">
 
   
-    <div class="not-found-card">
-        <h1 class="article-title">404 Not Found</h1>
-        <h2 class="article-subtitle">指定されたページは存在しません。</h2>
-    </div>
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy;
-        
-            2023 -
-        
-        2026 まろぴよの部屋
-    </section>
 
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
-    </section>
-</footer>
+<style>
+.not-found{
+  text-align:center;
+  padding:40px 0 20px;
+}
+.not-found-icon{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  border:3px solid #FFD54F;
+  box-shadow:0 3px 12px rgba(120,80,20,.1);
+  margin:0 auto 16px;
+  animation:notFoundTilt 3s ease-in-out infinite;
+}
+@keyframes notFoundTilt{
+  0%,100%{transform:rotate(0deg)}
+  25%{transform:rotate(-15deg)}
+  75%{transform:rotate(15deg)}
+}
+.not-found-num{
+  font-size:4rem;
+  font-weight:900;
+  color:#E59F43;
+  letter-spacing:.05em;
+  line-height:1;
+  margin-bottom:8px;
+}
+.not-found-msg{
+  font-size:.95rem;
+  font-weight:900;
+  color:#5D4037;
+  margin-bottom:4px;
+}
+.not-found-sub{
+  font-size:.8rem;
+  font-weight:700;
+  color:#8D6E63;
+  margin-bottom:24px;
+  line-height:1.7;
+}
+.not-found-home{
+  display:inline-block;
+  background:#fff;
+  border:2px solid #FFD54F;
+  border-radius:8px;
+  padding:10px 24px;
+  font-family:'M PLUS Rounded 1c',sans-serif;
+  font-size:.85rem;
+  font-weight:900;
+  color:#5D4037;
+  text-decoration:none;
+  transition:transform .15s,box-shadow .15s;
+}
+.not-found-home:hover{
+  transform:translateY(-2px);
+  box-shadow:0 4px 16px rgba(120,80,20,.12);
+  text-decoration:none;
+}
+body.dark .not-found-num{color:#FFD54F}
+body.dark .not-found-msg{color:#e0d6c8}
+body.dark .not-found-sub{color:#bba88a}
+body.dark .not-found-home{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
+body.dark .not-found-icon{border-color:#5D4037;box-shadow:0 3px 12px rgba(0,0,0,.3)}
+</style>
 
+<div class="not-found">
+  <img src="https://maropiyo.com/img/icon.png" alt="まろぴよ" class="not-found-icon">
+  <div class="not-found-num">404</div>
+  <p class="not-found-msg">ここには何もないみたい...</p>
+  <p class="not-found-sub">迷子になっちゃった！</p>
+  <a href="https://maropiyo.com/" class="not-found-home">部屋にもどる</a>
+</div>
 
 
   <hr class="retro-hr">
