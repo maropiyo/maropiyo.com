@@ -1016,9 +1016,8 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
       <div class="story-step rv rv--up rv-d1">STEP 1</div>
       <h2 class="rv rv--up rv-d2">あとで思い出したい<br><em>ことばを教えるだけ</em></h2>
       <p class="story-text rv rv--up rv-d3">
-        余計な設定なし、ことばを入力するだけ。<br>
-        覚えているうちにサッと入力。<br>
-        教えたらもう忘れていい。
+        リマインダーなのに、時間を設定しない。<br>
+        ことばを教えるだけ、それだけでいい。
       </p>
       <div class="example-words-wrap rv rv--up rv-d4">
         <div class="example-words">
@@ -1046,9 +1045,8 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
       <div class="story-step rv rv--up rv-d1">STEP 2</div>
       <h2 class="rv rv--up rv-d2">あとはだれかが<br><em>リマインドしてくれる</em></h2>
       <p class="story-text rv rv--up rv-d3">
-        みんなのインコが思い出させてくれる。<br>
-        タイマーじゃない、だれかの気持ち。<br>
-        投稿しなければプライベートなTODOアプリ。
+        だれかのおせっかいで、ぴょこっと届く。<br>
+        そのゆるさが、ちょうどいい。
       </p>
     </div>
     <div class="story-phones rv rv--up rv-d4">
@@ -1069,9 +1067,9 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
       <div class="story-step rv rv--up rv-d1"><i class="fa-solid fa-clock-rotate-left"></i> MEMORY</div>
       <h2 class="rv rv--up rv-d2">忘れちゃっても<br><em>だいじょうぶ</em></h2>
       <p class="story-text rv rv--up rv-d3">
-        インコだって忘れちゃう。でもそれがいい。<br>
-        整理のために完了も削除もしなくていい。<br>
-        大事なことなら、忘れちゃったことばから。
+        終わったことを消す作業、いらない。<br>
+        インコが勝手に忘れてくれる。<br>
+        忘れちゃったことばはいつでも見返せるよ。
       </p>
     </div>
     <div class="story-phones rv rv--up rv-d4">
@@ -1093,7 +1091,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
       <h2 class="rv rv--up rv-d2">ゲーム感覚で<br><em>楽しく続けられる</em></h2>
       <p class="story-text rv rv--up rv-d3">
         リマインコと一緒にレベルアップ。<br>
-        続けるほど覚えることばも記憶時間も成長。<br>
+        続けるほどインコの記憶時間が伸びる。<br>
         あなたが育てるリマインダーアプリ。
       </p>
     </div>
@@ -1116,8 +1114,9 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
       <div class="story-step rv rv--up rv-d1"><i class="fa-solid fa-user-group"></i> GROUP</div>
       <h2 class="rv rv--up rv-d2">リマイングループで<br><em>毎日継続</em></h2>
       <p class="story-text rv rv--up rv-d3">
-        ひとりじゃ続かないことも、誰かとなら続く。<br>
-        募集も参加もアプリ内でかんたん。
+        ひとりで続けられる人、そんなにいない。<br>
+        だれかがいるだけで、ちょっとがんばれる。<br>
+        募集も参加もアプリ内でかんたんだよ。
       </p>
       <div class="example-words-wrap rv rv--up rv-d4">
         <div class="example-words">
@@ -1145,9 +1144,9 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
       <div class="story-step rv rv--up rv-d1"><i class="fa-solid fa-globe"></i> SOCIAL</div>
       <h2 class="rv rv--up rv-d2">リマインネットで<br><em>思い出す</em></h2>
       <p class="story-text rv rv--up rv-d3">
-        みんなの投稿を見て思い出せるかも。<br>
-        「洗剤買わなきゃ」「傘忘れてた」――<br>
-        誰かの投稿があなたを助けてくれる。
+        自分が忘れてることには気づけない。<br>
+        だれかの投稿で「あ」ってなる。<br>
+        それがリマインネット。
       </p>
     </div>
     <div class="story-phones rv rv--up rv-d4">
@@ -1255,6 +1254,51 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 
 <script>
 
+var _audioCtx;
+function getAudioCtx(){if(!_audioCtx)_audioCtx=new(window.AudioContext||window.webkitAudioContext)();return _audioCtx;}
+function playBell(){
+  var ctx=getAudioCtx();
+  var t=ctx.currentTime;
+  
+  var freqs=[2600,3900];
+  for(var i=0;i<freqs.length;i++){
+    var osc=ctx.createOscillator();
+    var gain=ctx.createGain();
+    osc.type='sine';
+    osc.frequency.setValueAtTime(freqs[i],t);
+    gain.gain.setValueAtTime(i===0?0.12:0.06,t);
+    gain.gain.setValueAtTime(i===0?0.12:0.06,t+0.01);
+    gain.gain.exponentialRampToValueAtTime(0.001,t+0.6);
+    osc.connect(gain);gain.connect(ctx.destination);
+    osc.start(t);osc.stop(t+0.6);
+  }
+  
+  var osc2=ctx.createOscillator();
+  var gain2=ctx.createGain();
+  osc2.type='sine';
+  osc2.frequency.setValueAtTime(2600,t+0.08);
+  gain2.gain.setValueAtTime(0.001,t);
+  gain2.gain.setValueAtTime(0.1,t+0.08);
+  gain2.gain.exponentialRampToValueAtTime(0.001,t+0.5);
+  osc2.connect(gain2);gain2.connect(ctx.destination);
+  osc2.start(t);osc2.stop(t+0.5);
+}
+function playWhoosh(){
+  var ctx=getAudioCtx();
+  var t=ctx.currentTime;
+  
+  var osc=ctx.createOscillator();
+  var gain=ctx.createGain();
+  osc.type='sine';
+  osc.frequency.setValueAtTime(2000,t);
+  osc.frequency.exponentialRampToValueAtTime(200,t+0.5);
+  gain.gain.setValueAtTime(0.15,t);
+  gain.gain.exponentialRampToValueAtTime(0.001,t+0.5);
+  osc.connect(gain);gain.connect(ctx.destination);
+  osc.start(t);osc.stop(t+0.5);
+}
+
+
 (function(){
   var io=new IntersectionObserver(function(entries){
     entries.forEach(function(e){
@@ -1306,7 +1350,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   var returnTimer2=0;
   var flyCountWrap=document.getElementById('fly-count');
   var flyCountNum=document.getElementById('fly-count-num');
-  var flyApi='https://himhcigolmzehbvstjgv.supabase.co/functions/v1/fly-counter';
+  var flyApi=atob('aHR0cHM6Ly9oaW1oY2lnb2xtemVoYnZzdGpndi5zdXBhYmFzZS5jby9mdW5jdGlvbnMvdjEvZmx5LWNvdW50ZXI=');
   function isKiriban(n){return n>0&&n%100===0;}
   function showMarquee(n){
     var old=document.getElementById('kiriban-marquee');if(old)old.remove();
@@ -1324,7 +1368,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   function showCount(n,fromFly){flyCountNum.textContent=String(n).padStart(6,'0');flyCountWrap.style.visibility='';flyCountWrap.style.animation='heroSubReveal .7s ease 1.8s both';flyCountWrap.style.opacity='.5';if(fromFly&&isKiriban(n))showMarquee(n);}
   var hasFlewOnce=false;
   function flyAway(){
-    flying=true;running=false;
+    flying=true;running=false;playWhoosh();
     fetch(flyApi,{method:'POST'}).then(function(r){return r.json()}).then(function(d){
       showCount(d.count,true);
     }).catch(function(){});
@@ -1386,6 +1430,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   }
   el.addEventListener('click',function(e){
     if(flying) return;
+    playBell();
     spawnStars(e.clientX,e.clientY);
     var dir=velocity>=0?1:-1;
     if(Math.abs(velocity)<0.3) dir=(Math.random()<0.5?1:-1);
