@@ -558,6 +558,38 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 }
 
  
+@keyframes marquee{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+.example-words-wrap{
+  overflow:hidden;
+  margin-top:18px;
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.example-words{
+  display:flex;
+  gap:12px;
+  width:max-content;
+  animation:marquee 20s linear infinite;
+}
+.example-words:hover{animation-play-state:paused}
+.example-words span{
+  display:inline-block;
+  background:var(--white);
+  border:1.5px solid var(--yellow);
+  color:var(--brown);
+  font-size:.76rem;
+  font-weight:700;
+  padding:6px 14px;
+  border-radius:30px;
+  white-space:nowrap;
+  box-shadow:0 2px 8px rgba(255,213,79,.15);
+  flex-shrink:0;
+}
+
+ 
 .rv{opacity:0;transition:opacity .9s,transform .9s cubic-bezier(.22,1,.36,1)}
 .rv--up{transform:translateY(40px)}
 .rv--left{transform:translateX(-50px)}
@@ -988,8 +1020,14 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
         覚えているうちにサッと入力。<br>
         教えたらもう忘れていい。
       </p>
+      <div class="example-words-wrap rv rv--up rv-d4">
+        <div class="example-words">
+          <span>牛乳</span><span>免許更新</span><span>傘</span><span>ゴミ出し</span><span>お礼のLINE</span><span>トイレットペーパー</span><span>歯医者</span><span>図書館の本</span><span>充電器</span><span>母の日</span><span>洗剤</span><span>振込</span><span>弁当</span><span>健康診断</span><span>クリーニング</span><span>卵</span><span>美容院</span><span>提出物</span><span>電池</span><span>誕生日プレゼント</span><span>水道代</span><span>ハンカチ</span><span>パスポート</span><span>ティッシュ</span><span>書類</span><span>保険証</span><span>レポート</span>
+          <span>牛乳</span><span>免許更新</span><span>傘</span><span>ゴミ出し</span><span>お礼のLINE</span><span>トイレットペーパー</span><span>歯医者</span><span>図書館の本</span><span>充電器</span><span>母の日</span><span>洗剤</span><span>振込</span><span>弁当</span><span>健康診断</span><span>クリーニング</span><span>卵</span><span>美容院</span><span>提出物</span><span>電池</span><span>誕生日プレゼント</span><span>水道代</span><span>ハンカチ</span><span>パスポート</span><span>ティッシュ</span><span>書類</span><span>保険証</span><span>レポート</span>
+        </div>
+      </div>
     </div>
-    <div class="story-phones rv rv--up rv-d4">
+    <div class="story-phones rv rv--up rv-d5">
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_2.png" alt="ことばを教える画面"></div>
     </div>
   </div>
@@ -1079,11 +1117,16 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
       <h2 class="rv rv--up rv-d2">リマイングループで<br><em>毎日継続</em></h2>
       <p class="story-text rv rv--up rv-d3">
         ひとりじゃ続かないことも、誰かとなら続く。<br>
-        募集も参加もアプリ内でかんたん。<br>
-        オーナーは奪える。サボりは追い出せる。
+        募集も参加もアプリ内でかんたん。
       </p>
+      <div class="example-words-wrap rv rv--up rv-d4">
+        <div class="example-words">
+          <span>筋トレ</span><span>イラスト1枚</span><span>早起き</span><span>ブログ書く</span><span>ランニング</span><span>ピアノ10分</span><span>英語10分</span><span>毎日投稿</span><span>読書</span><span>DTM</span><span>ストレッチ</span><span>自炊する</span><span>禁酒</span><span>デッサン</span><span>瞑想5分</span><span>コード書く</span><span>日記書く</span><span>ギター練習</span><span>散歩する</span><span>作曲</span><span>家計簿つける</span><span>写真1枚</span><span>禁煙</span><span>小説書く</span>
+          <span>筋トレ</span><span>イラスト1枚</span><span>早起き</span><span>ブログ書く</span><span>ランニング</span><span>ピアノ10分</span><span>英語10分</span><span>毎日投稿</span><span>読書</span><span>DTM</span><span>ストレッチ</span><span>自炊する</span><span>禁酒</span><span>デッサン</span><span>瞑想5分</span><span>コード書く</span><span>日記書く</span><span>ギター練習</span><span>散歩する</span><span>作曲</span><span>家計簿つける</span><span>写真1枚</span><span>禁煙</span><span>小説書く</span>
+        </div>
+      </div>
     </div>
-    <div class="story-phones story-phones--duo rv rv--up rv-d4">
+    <div class="story-phones story-phones--duo rv rv--up rv-d5">
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_group_explore.png" alt="募集中のグループ"></div>
       <div class="story-phone"><img src="https://maropiyo.com/reminder-parrot/image/ss_group_detail.png" alt="グループ詳細"></div>
     </div>
