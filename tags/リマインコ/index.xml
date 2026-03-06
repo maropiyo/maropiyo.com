@@ -6,7 +6,53 @@
         <description>Recent content in リマインコ on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Fri, 26 Sep 2025 19:19:43 +0900</lastBuildDate><atom:link href="https://maropiyo.com/tags/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%82%B3/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 05 Mar 2026 18:00:00 +0900</lastBuildDate><atom:link href="https://maropiyo.com/tags/%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%82%B3/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>リマインコv2.0.0をリリースしました！</title>
+        <link>https://maropiyo.com/post/update-reminder-parrot-v2/</link>
+        <pubDate>Thu, 05 Mar 2026 18:00:00 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/update-reminder-parrot-v2/</guid>
+        <description>&lt;img src="https://maropiyo.com/post/update-reminder-parrot-v2/image/reminder_parrot.png" alt="Featured image of post リマインコv2.0.0をリリースしました！" /&gt;&lt;p&gt;リマインコの超大型アップデート v2.0.0 をリリースしました！&lt;/p&gt;
+&lt;p&gt;新機能もりもりです！&lt;/p&gt;
+&lt;h2 id=&#34;新機能&#34;&gt;新機能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;リマイングループ&lt;/strong&gt;: 友達や家族、知らない人と一緒にがんばれる習慣づくり機能が登場！&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;リマインランキング&lt;/strong&gt;: レベル・リマインド回数・たすけた回数・連続記録の4種ランキング！&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;インコアップグレード&lt;/strong&gt;: レベル条件で無料アップグレード！&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;おもいだした！&lt;/strong&gt;: リマインネットの投稿で思い出したとき、投稿者に感謝の通知を送れるように！&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;アイコン変更&lt;/strong&gt;: 名前を変更するたびにアイコンもランダムで変わるように！&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通知音&lt;/strong&gt;: リマインコのオリジナル通知音を追加！設定からON/OFFできるよ！&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;リマインドの練習&lt;/strong&gt;: 送る通知内容が確認できるように！&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通報機能&lt;/strong&gt;: 不適切な投稿を見つけたら通報できるように！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;改善&#34;&gt;改善&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;広告を完全削除！もう広告は出ません！&lt;/li&gt;
+&lt;li&gt;レベル上限を25から999まで開放！&lt;/li&gt;
+&lt;li&gt;文字数制限を一律10文字に変更&lt;/li&gt;
+&lt;li&gt;「覚える」ボタンを「おもいだした！」に変更&lt;/li&gt;
+&lt;li&gt;UI全体のデザインを刷新！&lt;/li&gt;
+&lt;li&gt;もちべ（スタミナ）機能を廃止してシンプルに！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;バグ修正&#34;&gt;バグ修正&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ネットワークエラー表示の改善&lt;/li&gt;
+&lt;li&gt;その他たくさんの安定性向上！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;みんなで楽しく続けられるリマインダーアプリに進化しました！ぜひアップデートしてみてください！&lt;/p&gt;
+&lt;h2 id=&#34;ダウンロード&#34;&gt;ダウンロード&lt;/h2&gt;
+&lt;div style=&#34;display: flex; align-items: center; justify-content: center;&#34;&gt;
+    &lt;a href=&#34;https://apps.apple.com/app/id6748996182&#34;&gt;
+        &lt;img src=&#34;image/Download_on_the_App_Store_Badge.svg&#34; alt=&#34;AppStore&#34; style=&#34;height: 50px; margin-right: 10px;&#34;&gt;
+    &lt;/a&gt;
+    &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.maropiyo.reminderparrot&#34;&gt;
+        &lt;img src=&#34;image/google-play-badge.png&#34; alt=&#34;Google Play&#34; style=&#34;height: 65px;&#34;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>リマインコをリリースしました！</title>
         <link>https://maropiyo.com/post/release-reminder-parrot/</link>
         <pubDate>Fri, 26 Sep 2025 19:19:43 +0900</pubDate>
