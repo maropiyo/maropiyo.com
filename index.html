@@ -117,7 +117,7 @@ a:hover{text-decoration:underline}
   font-size:1.3rem;
   font-weight:900;
   color:#5D4037;
-  margin:8px 0 4px;
+  margin:8px 0 12px;
 }
 .page-date{
   text-align:center;
@@ -170,6 +170,7 @@ a:hover{text-decoration:underline}
 .content-card ul,.content-card ol{margin:8px 0 8px 20px}
 .content-card li{margin:4px 0}
 .content-card a{color:#E59F43;text-decoration:underline}
+.content-card a.app-card{text-decoration:none}
 .content-card img{max-width:100%;height:auto;border-radius:6px;margin:8px 0}
 .content-card table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.8rem}
 .content-card th{background:#FFD54F;color:#5D4037;font-weight:700;padding:6px 8px;text-align:left}
@@ -181,6 +182,14 @@ a:hover{text-decoration:underline}
 .content-card pre code{background:none;padding:0}
 
  
+.app-list{display:flex;flex-direction:column;gap:8px}
+.app-card{display:flex;align-items:center;gap:12px;padding:12px;background:#fff;border:2px solid #FFD54F;border-radius:8px;transition:transform .15s,box-shadow .15s;position:relative;color:#5D4037}
+.app-card:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(120,80,20,.12);text-decoration:none}
+.app-card-icon{width:48px;height:48px;border-radius:12px;flex-shrink:0}
+.app-card-info{flex:1}
+.app-card-name{font-size:.85rem;font-weight:900;color:#5D4037}
+.app-card-type{font-size:.5rem;font-weight:700;color:#fff;background:#8D6E63;padding:1px 4px;border-radius:3px;margin-left:4px;vertical-align:middle}
+.app-card-desc{font-size:.7rem;color:#8D6E63;margin-top:2px}
 .article-list{display:flex;flex-direction:column;gap:8px}
 .article-card{
   display:flex;
