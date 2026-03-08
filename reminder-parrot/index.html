@@ -1701,6 +1701,8 @@ function playWhoosh(){
     .then(function(groups){
       if(!groups||!groups.length){
         section.style.display='none';
+        document.getElementById('download').style.background='var(--cream)';
+        document.querySelector('.footer').style.background='var(--cream)';
         return;
       }
       var html='';
@@ -1735,6 +1737,8 @@ function playWhoosh(){
     })
     .catch(function(){
       section.style.display='none';
+      document.getElementById('download').style.background='var(--cream)';
+      document.querySelector('.footer').style.background='var(--cream)';
     });
 
   function escHtml(s){
