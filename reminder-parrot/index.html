@@ -874,82 +874,6 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 }
 
  
-.lightbox{
-  position:fixed;
-  inset:0;
-  z-index:10000;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:rgba(40,25,10,.7);
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
-  opacity:0;
-  pointer-events:none;
-  transition:opacity .3s ease;
-  cursor:pointer;
-  padding:24px;
-}
-.lightbox.is-open{
-  opacity:1;
-  pointer-events:auto;
-}
-.lightbox-img{
-  max-width:min(380px,90vw);
-  max-height:85vh;
-  border-radius:28px;
-  box-shadow:0 24px 80px rgba(0,0,0,.3);
-  transform:scale(.85);
-  transition:transform .4s cubic-bezier(.34,1.56,.64,1);
-  user-select:none;
-  -webkit-user-select:none;
-}
-.lightbox.is-open .lightbox-img{
-  transform:scale(1);
-}
-.lightbox-close{
-  position:absolute;
-  top:20px;right:20px;
-  width:40px;height:40px;
-  border:none;
-  background:rgba(255,255,255,.15);
-  color:#fff;
-  font-size:18px;
-  border-radius:50%;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition:background .2s,transform .2s;
-}
-.lightbox-close:hover{
-  background:rgba(255,255,255,.3);
-  transform:scale(1.1);
-}
-.lightbox-nav{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  width:44px;height:44px;
-  border:none;
-  background:rgba(255,255,255,.12);
-  color:#fff;
-  font-size:16px;
-  border-radius:50%;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition:background .2s,transform .2s;
-}
-.lightbox-nav:hover{
-  background:rgba(255,255,255,.25);
-  transform:translateY(-50%) scale(1.1);
-}
-.lightbox-prev{left:16px}
-.lightbox-next{right:16px}
-
- 
 .footer{
   background:var(--white);
   padding:24px;
@@ -1271,13 +1195,6 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 </section>
 
 
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" aria-label="閉じる"><i class="fa-solid fa-xmark"></i></button>
-  <button class="lightbox-nav lightbox-prev" aria-label="前へ"><i class="fa-solid fa-chevron-left"></i></button>
-  <button class="lightbox-nav lightbox-next" aria-label="次へ"><i class="fa-solid fa-chevron-right"></i></button>
-  <img class="lightbox-img" id="lightbox-img" src="" alt="">
-</div>
-
 
 <footer class="footer">
   <small>&copy; 2023 - 2026 まろぴよの部屋</small>
@@ -1501,72 +1418,6 @@ function playWhoosh(){
     });
   });
 })();
-
-
-(function(){
-  var box=document.getElementById('lightbox');
-  var img=document.getElementById('lightbox-img');
-  var imgs=[];
-  var idx=0;
-
-  
-  document.querySelectorAll('.story-phone img').forEach(function(el){
-    imgs.push(el.src);
-    el.style.cursor='zoom-in';
-    el.addEventListener('click',function(){
-      idx=imgs.indexOf(el.src);
-      open(el.src,el.alt);
-    });
-  });
-
-  function open(src,alt){
-    img.src=src;
-    img.alt=alt||'';
-    box.classList.add('is-open');
-    document.body.style.overflow='hidden';
-  }
-  function close(){
-    box.classList.remove('is-open');
-    document.body.style.overflow='';
-  }
-  function prev(){
-    idx=(idx-1+imgs.length)%imgs.length;
-    img.src=imgs[idx];
-    img.style.animation='none';img.offsetHeight;
-    img.style.animation='scaleIn .3s ease both';
-  }
-  function next(){
-    idx=(idx+1)%imgs.length;
-    img.src=imgs[idx];
-    img.style.animation='none';img.offsetHeight;
-    img.style.animation='scaleIn .3s ease both';
-  }
-
-  box.addEventListener('click',function(e){
-    if(e.target===box)close();
-  });
-  box.querySelector('.lightbox-close').addEventListener('click',close);
-  box.querySelector('.lightbox-prev').addEventListener('click',function(e){e.stopPropagation();prev()});
-  box.querySelector('.lightbox-next').addEventListener('click',function(e){e.stopPropagation();next()});
-
-  
-  document.addEventListener('keydown',function(e){
-    if(!box.classList.contains('is-open'))return;
-    if(e.key==='Escape')close();
-    if(e.key==='ArrowLeft')prev();
-    if(e.key==='ArrowRight')next();
-  });
-
-  
-  var touchX=0;
-  img.addEventListener('touchstart',function(e){touchX=e.touches[0].clientX},{passive:true});
-  img.addEventListener('touchend',function(e){
-    var dx=e.changedTouches[0].clientX-touchX;
-    if(dx>50)prev();
-    if(dx<-50)next();
-  });
-})();
-
 
  
 (function(){
