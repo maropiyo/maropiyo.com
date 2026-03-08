@@ -665,6 +665,114 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 .hl-card.peeking{transform:translateY(-6px)}
 
  
+.recruiting-section{
+  background:var(--cream);
+  padding:60px 24px;
+  text-align:center;
+}
+.recruiting-inner{
+  max-width:560px;
+  margin:0 auto;
+}
+.recruiting-section h2{
+  font-size:clamp(1.1rem,3.5vw,1.4rem);
+  font-weight:900;
+  color:var(--brown);
+  margin-bottom:6px;
+}
+.recruiting-section h2 em{font-style:normal;color:var(--accent)}
+.recruiting-sub{
+  font-size:.78rem;
+  color:var(--brown-light);
+  font-weight:500;
+  margin-bottom:24px;
+}
+.recruiting-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.group-card{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:var(--white);
+  border-radius:16px;
+  padding:14px 18px;
+  box-shadow:0 4px 20px rgba(120,80,20,.06);
+  text-align:left;
+}
+.group-card-body{
+  flex:1;
+  min-width:0;
+}
+.group-card-task{
+  font-size:.88rem;
+  font-weight:700;
+  color:var(--brown);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.group-card-meta{
+  font-size:.7rem;
+  color:var(--brown-light);
+  font-weight:500;
+  margin-top:2px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.group-card-streak{
+  color:var(--accent);
+  font-weight:700;
+}
+.group-card-members{
+  display:flex;
+  gap:4px;
+  flex-shrink:0;
+}
+.group-member-icon{
+  width:32px;height:32px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.group-member-icon img{
+  width:70%;height:70%;
+  object-fit:contain;
+}
+.group-empty-slot{
+  width:32px;height:32px;
+  border-radius:50%;
+  border:2px dashed #D7CCC8;
+  background:transparent;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.group-empty-slot::after{
+  content:'+';
+  font-size:.7rem;
+  color:#BCAAA4;
+  font-weight:700;
+}
+.recruiting-empty{
+  font-size:.82rem;
+  color:var(--brown-light);
+  font-weight:500;
+  padding:24px 0;
+}
+.recruiting-loading{
+  font-size:.82rem;
+  color:var(--brown-light);
+  font-weight:500;
+  padding:24px 0;
+}
+
+ 
 .cta-section{
   position:relative;
   background:var(--white);
@@ -827,7 +935,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 
  
 .footer{
-  background:var(--cream);
+  background:var(--white);
   padding:24px;
   text-align:center;
 }
@@ -907,6 +1015,10 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   .hl-card h3{font-size:.88rem}
   .hl-card p{font-size:.76rem}
   .hl-card .hl-emoji{font-size:2.2rem}
+
+   
+  .recruiting-section{padding:80px 48px}
+  .recruiting-inner{max-width:600px}
 
    
   .cta-section{padding:100px 48px}
@@ -1211,7 +1323,18 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 </section>
 
 
-<section class="cta-section" id="download" style="background:var(--cream)">
+<section class="recruiting-section" id="groups">
+  <div class="recruiting-inner">
+    <h2 class="rv rv--up"><em>現在募集中</em>のグループ</h2>
+    <p class="recruiting-sub rv rv--up rv-d1">アプリを入れたらすぐに参加できるよ！</p>
+    <div class="recruiting-list" id="recruiting-list">
+      <div class="recruiting-loading">読み込み中...</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-section" id="download" style="background:var(--white)">
   <div class="cta-bg-circle" aria-hidden="true"></div>
   <div class="cta-inner">
     <img src="https://maropiyo.com/reminder-parrot/image/reminko_jump.png" alt="リマインコ" class="cta-mascot rv rv--scale">
@@ -1553,6 +1676,72 @@ function playWhoosh(){
       cards.forEach(function(c){c.classList.remove('peeking')});
     }
   });
+})();
+
+
+(function(){
+  var FACE_MAP={
+    'default':'reminko_face.png',
+    'full':'reminko.png',
+    'raising_hand':'reminko_raising_hand.png',
+    'jump':'reminko_jump.png',
+    'melty':'reminko_melty.png'
+  };
+  var BG_MAP={
+    'default':'#FFD900','pink':'#FFB3B4','peach':'#FBD098','lemon':'#FFE388',
+    'green':'#C1E8A7','mint':'#B8EADE','sky':'#BDE4F5','periwinkle':'#C7D8FF',
+    'lavender':'#DDC5F9','rose_pink':'#FFC6F4','cream':'#FFF5E0','gray':'#DADADA'
+  };
+  var api=atob('aHR0cHM6Ly9oaW1oY2lnb2xtemVoYnZzdGpndi5zdXBhYmFzZS5jby9mdW5jdGlvbnMvdjEvZ2V0LXJlY3J1aXRpbmctZ3JvdXBz');
+  var list=document.getElementById('recruiting-list');
+  var section=document.getElementById('groups');
+
+  fetch(api)
+    .then(function(r){return r.json()})
+    .then(function(groups){
+      if(!groups||!groups.length){
+        section.style.display='none';
+        return;
+      }
+      var html='';
+      for(var i=0;i<groups.length;i++){
+        var g=groups[i];
+        var membersHtml='';
+        for(var j=0;j<g.members.length;j++){
+          var m=g.members[j];
+          var face=FACE_MAP[m.face_type]||FACE_MAP['default'];
+          var bg=BG_MAP[m.background_type]||BG_MAP['default'];
+          membersHtml+='<div class="group-member-icon" style="background:'+bg+'">'
+            +'<img src="https://maropiyo.com/reminder-parrot/image/'+face+'" alt="">'
+            +'</div>';
+        }
+        var empty=g.max_members-g.member_count;
+        for(var k=0;k<empty;k++){
+          membersHtml+='<div class="group-empty-slot"></div>';
+        }
+        var streak=g.group_streak>0?'<span class="group-card-streak"><i class="fa-solid fa-fire"></i> '+g.group_streak+'日連続</span>':'';
+        html+='<div class="group-card">'
+          +'<div class="group-card-body">'
+          +'<div class="group-card-task">'+escHtml(g.task_text)+'</div>'
+          +'<div class="group-card-meta">'
+          +'<span>'+g.member_count+'/'+g.max_members+'人</span>'
+          +streak
+          +'</div>'
+          +'</div>'
+          +'<div class="group-card-members">'+membersHtml+'</div>'
+          +'</div>';
+      }
+      list.innerHTML=html;
+    })
+    .catch(function(){
+      section.style.display='none';
+    });
+
+  function escHtml(s){
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
 })();
 </script>
 
