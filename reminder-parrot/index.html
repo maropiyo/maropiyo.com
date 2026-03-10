@@ -675,7 +675,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   margin:0 auto;
 }
 .recruiting-section h2{
-  font-size:clamp(1.1rem,3.5vw,1.4rem);
+  font-size:clamp(1.2rem,4vw,1.6rem);
   font-weight:900;
   color:var(--brown);
   margin-bottom:6px;
@@ -696,12 +696,14 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   display:flex;
   align-items:center;
   gap:14px;
-  background:var(--white);
-  border-radius:16px;
-  padding:14px 18px;
-  box-shadow:0 4px 20px rgba(120,80,20,.06);
+  background:#fff;
+  border-radius:40px;
+  padding:14px 22px;
+  box-shadow:8px 8px 20px rgba(0,0,0,.12), -4px -4px 12px rgba(255,255,255,.8);
   text-align:left;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s;
 }
+.group-card:hover{transform:translateY(-3px);box-shadow:10px 10px 28px rgba(0,0,0,.16), -4px -4px 12px rgba(255,255,255,.9)}
 .group-card-body{
   flex:1;
   min-width:0;
@@ -738,6 +740,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   display:flex;
   align-items:center;
   justify-content:center;
+  box-shadow:3px 3px 8px rgba(0,0,0,.07), -2px -2px 6px rgba(255,255,255,.8);
   overflow:hidden;
 }
 .group-member-icon img{
@@ -747,8 +750,9 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 .group-empty-slot{
   width:32px;height:32px;
   border-radius:50%;
-  border:2px dashed #D7CCC8;
-  background:transparent;
+  border:none;
+  background:#F0EBE5;
+  box-shadow:inset 3px 3px 6px rgba(0,0,0,.08), inset -3px -3px 6px rgba(255,255,255,.9);
   display:flex;
   align-items:center;
   justify-content:center;
@@ -787,6 +791,225 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   font-weight:500;
   padding:24px 0;
 }
+
+ 
+.ranking-section{
+  background:var(--white);
+  padding:60px 24px;
+  text-align:center;
+}
+.ranking-inner{
+  max-width:560px;
+  margin:0 auto;
+}
+.ranking-section h2{
+  font-size:clamp(1.2rem,4vw,1.6rem);
+  font-weight:900;
+  color:var(--brown);
+  margin-bottom:8px;
+}
+.ranking-section h2 em{font-style:normal;color:var(--accent)}
+.ranking-sub{
+  font-size:.78rem;
+  color:var(--brown-light);
+  font-weight:500;
+  margin-bottom:24px;
+}
+.ranking-tabs{
+  display:inline-flex;
+  justify-content:center;
+  gap:0;
+  margin-bottom:24px;
+  background:#F0EBE5;
+  border-radius:50px;
+  padding:4px;
+  box-shadow:inset 3px 3px 6px rgba(0,0,0,.08), inset -3px -3px 6px rgba(255,255,255,.9);
+  position:relative;
+}
+.ranking-tabs-slider{
+  position:absolute;
+  top:4px;bottom:4px;
+  left:4px;
+  border-radius:50px;
+  background:#fff;
+  box-shadow:3px 3px 8px rgba(0,0,0,.08), -2px -2px 6px rgba(255,255,255,.8);
+  transition:transform .3s ease-out, width .3s ease-out;
+  z-index:0;
+}
+.ranking-tab{
+  background:none;
+  border:none;
+  border-radius:50px;
+  padding:8px 22px;
+  font-size:.78rem;
+  font-weight:700;
+  color:var(--brown-light);
+  cursor:pointer;
+  font-family:inherit;
+  transition:color .25s;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  position:relative;
+  z-index:1;
+}
+.ranking-tab:hover{color:var(--brown)}
+.ranking-tab.is-active{color:var(--brown)}
+@keyframes rankFadeIn{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.ranking-list.is-switching{opacity:0;transform:translateY(-8px);transition:opacity .15s,transform .15s}
+.ranking-list .rank-card{animation:rankFadeIn .3s ease both}
+.ranking-list .rank-card:nth-child(2){animation-delay:.06s}
+.ranking-list .rank-card:nth-child(3){animation-delay:.12s}
+.ranking-list .rank-card:nth-child(4){animation-delay:.18s}
+.ranking-list .rank-card:nth-child(5){animation-delay:.24s}
+
+ 
+.rank-podium{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  gap:12px;
+  margin-bottom:16px;
+}
+.rank-podium-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+}
+.rank-podium-item--1{order:2}
+.rank-podium-item--2{order:1}
+.rank-podium-item--3{order:3}
+.rank-podium-medal{
+  font-size:1.2rem;
+}
+.rank-podium-item--1 .rank-podium-medal{font-size:1.5rem}
+.rank-podium-icon{
+  width:48px;height:48px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  box-shadow:0 4px 16px rgba(120,80,20,.1);
+  position:relative;
+}
+.rank-podium-item--1 .rank-podium-icon{
+  width:64px;height:64px;
+  box-shadow:0 6px 24px rgba(255,213,79,.35);
+}
+.rank-podium-icon img{
+  width:70%;height:70%;
+  object-fit:contain;
+}
+.rank-podium-name{
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--brown);
+  word-break:break-word;
+}
+.rank-podium-item--1 .rank-podium-name{font-size:.74rem}
+.rank-podium-value{
+  font-size:.7rem;
+  font-weight:700;
+  color:var(--accent);
+}
+.rank-podium-item--1 .rank-podium-value{font-size:.78rem}
+.rank-podium-bar{
+  width:56px;
+  border-radius:10px 10px 0 0;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding-top:6px;
+}
+.rank-podium-item--1 .rank-podium-bar{
+  height:60px;
+  background:linear-gradient(180deg,#FFD54F,#FFE082);
+  width:64px;
+}
+.rank-podium-item--2 .rank-podium-bar{
+  height:42px;
+  background:linear-gradient(180deg,#E0E0E0,#F5F5F5);
+}
+.rank-podium-item--3 .rank-podium-bar{
+  height:30px;
+  background:linear-gradient(180deg,#EFCBA4,#F5DFC5);
+}
+
+ 
+.ranking-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.rank-card{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:#fff;
+  border-radius:40px;
+  padding:14px 22px;
+  text-align:left;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s;
+  box-shadow:8px 8px 20px rgba(0,0,0,.12), -4px -4px 12px rgba(255,255,255,.8);
+}
+.rank-card:hover{transform:translateY(-3px);box-shadow:10px 10px 28px rgba(0,0,0,.16), -4px -4px 12px rgba(255,255,255,.9)}
+.rank-card--1{}
+.rank-num{
+  font-size:.72rem;
+  font-weight:900;
+  color:var(--brown-light);
+  min-width:28px;
+  height:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#F5F0EA;
+  flex-shrink:0;
+  box-shadow:inset 2px 2px 4px rgba(0,0,0,.06), inset -2px -2px 4px rgba(255,255,255,.7);
+}
+.rank-card--1 .rank-num{background:#FFE082;color:#8D6E00;box-shadow:inset 2px 2px 4px rgba(0,0,0,.08), inset -2px -2px 4px rgba(255,255,255,.6)}
+.rank-card--2 .rank-num{background:#E0E0E0;color:#616161;box-shadow:inset 2px 2px 4px rgba(0,0,0,.08), inset -2px -2px 4px rgba(255,255,255,.6)}
+.rank-card--3 .rank-num{background:#EFCBA4;color:#6D4C41;box-shadow:inset 2px 2px 4px rgba(0,0,0,.08), inset -2px -2px 4px rgba(255,255,255,.6)}
+.rank-icon{
+  width:40px;height:40px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  flex-shrink:0;
+  box-shadow:3px 3px 8px rgba(0,0,0,.07), -2px -2px 6px rgba(255,255,255,.8);
+}
+.rank-card--1 .rank-icon{}
+.rank-icon img{
+  width:70%;height:70%;
+  object-fit:contain;
+}
+.rank-name{
+  flex:1;
+  min-width:0;
+  font-size:.84rem;
+  font-weight:700;
+  color:var(--brown);
+}
+.rank-card--1 .rank-name{}
+.rank-value{
+  font-size:.76rem;
+  font-weight:800;
+  flex-shrink:0;
+  padding:5px 14px;
+  border-radius:50px;
+  color:var(--accent);
+  background:#F5F0EA;
+  box-shadow:inset 2px 2px 4px rgba(0,0,0,.05), inset -2px -2px 4px rgba(255,255,255,.7);
+}
+.rank-card--1 .rank-value{}
 
  
 .cta-section{
@@ -892,7 +1115,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 
  
 .footer{
-  background:var(--white);
+  background:var(--cream);
   padding:24px;
   text-align:center;
 }
@@ -976,6 +1199,10 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
    
   .recruiting-section{padding:80px 48px}
   .recruiting-inner{max-width:600px}
+
+   
+  .ranking-section{padding:80px 48px}
+  .ranking-inner{max-width:600px}
 
    
   .cta-section{padding:100px 48px}
@@ -1184,15 +1411,29 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
     </div>
   </div>
 </section>
+
+
+<section class="ranking-section" id="ranking">
+  <div class="ranking-inner">
+    <h2 class="rv rv--up"><em>ランキング</em>もあるよ！</h2>
+    <p class="ranking-sub rv rv--up rv-d1">現在のトッププレイヤー</p>
+    <div class="ranking-tabs" id="ranking-tabs">
+      <div class="ranking-tabs-slider" id="ranking-slider"></div>
+      <button class="ranking-tab is-active" data-type="streak"><i class="fa-solid fa-fire"></i> 継続日数</button>
+      <button class="ranking-tab" data-type="level"><i class="fa-solid fa-star"></i> レベル</button>
+    </div>
+    <div class="ranking-list" id="ranking-list">
+      <div class="recruiting-loading">読み込み中...</div>
+    </div>
   </div>
 </section>
 
 
-<section class="cta-section" id="download" style="background:var(--white)">
+<section class="cta-section" id="download" style="background:var(--cream)">
   <div class="cta-bg-circle" aria-hidden="true"></div>
   <div class="cta-inner">
     <img src="https://maropiyo.com/reminder-parrot/image/reminko_jump.png" alt="リマインコ" class="cta-mascot rv rv--scale">
-    <h2 class="rv rv--up rv-d1"><em>リマインコ</em>と一緒にはじめよう</h2>
+    <h2 class="rv rv--up rv-d1"><em>みんな</em>と一緒にはじめよう</h2>
     <p class="cta-desc rv rv--up rv-d2">無料でダウンロード、広告もなし<br>アカウント登録なしですぐに使えます</p>
     <div class="cta-stores rv rv--up rv-d3">
       <a href="https://apps.apple.com/app/id6748996182">
@@ -1485,8 +1726,9 @@ function playWhoosh(){
     .then(function(groups){
       if(!groups||!groups.length){
         section.style.display='none';
-        document.getElementById('download').style.background='var(--cream)';
-        document.querySelector('.footer').style.background='var(--cream)';
+        document.querySelector('.ranking-section').style.background='var(--cream)';
+        document.getElementById('download').style.background='var(--white)';
+        document.querySelector('.footer').style.background='var(--white)';
         return;
       }
       var html='';
@@ -1534,8 +1776,9 @@ function playWhoosh(){
     })
     .catch(function(){
       section.style.display='none';
-      document.getElementById('download').style.background='var(--cream)';
-      document.querySelector('.footer').style.background='var(--cream)';
+      document.querySelector('.ranking-section').style.background='var(--cream)';
+      document.getElementById('download').style.background='var(--white)';
+      document.querySelector('.footer').style.background='var(--white)';
     });
 
   function escHtml(s){
@@ -1543,6 +1786,93 @@ function playWhoosh(){
     d.appendChild(document.createTextNode(s));
     return d.innerHTML;
   }
+})();
+
+
+(function(){
+  var FACE_MAP={
+    'default':'reminko_face.png','full':'reminko.png',
+    'raising_hand':'reminko_raising_hand.png','jump':'reminko_jump.png','melty':'reminko_melty.png'
+  };
+  var BG_MAP={
+    'default':'#FFD900','pink':'#FFB3B4','peach':'#FBD098','lemon':'#FFE388',
+    'green':'#C1E8A7','mint':'#B8EADE','sky':'#BDE4F5','periwinkle':'#C7D8FF',
+    'lavender':'#DDC5F9','rose_pink':'#FFC6F4','cream':'#FFF5E0','gray':'#DADADA'
+  };
+  var api=atob('aHR0cHM6Ly9oaW1oY2lnb2xtemVoYnZzdGpndi5zdXBhYmFzZS5jby9mdW5jdGlvbnMvdjEvZ2V0LXJhbmtpbmc=');
+  var list=document.getElementById('ranking-list');
+  var section=document.getElementById('ranking');
+  var allData=null;
+  var currentType='streak';
+
+  function escHtml(s){
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+
+  function render(type){
+    if(!allData)return;
+    var items=allData.filter(function(r){return r.ranking_type===type});
+    if(!items.length){list.innerHTML='<div class="recruiting-loading">データなし</div>';return;}
+    var html='';
+    var top=items.slice(0,5);
+    for(var i=0;i<top.length;i++){
+      var r=top[i];
+      var face=FACE_MAP[r.face_type]||FACE_MAP['default'];
+      var bg=BG_MAP[r.background_type]||BG_MAP['default'];
+      var val=type==='level'?'Lv.'+r.user_level:r.value+'日';
+      html+='<div class="rank-card rank-card--'+(i+1)+'">'
+        +'<div class="rank-num">'+(i+1)+'</div>'
+        +'<div class="rank-icon" style="background:'+bg+'"><img src="https://maropiyo.com/reminder-parrot/image/'+face+'" alt=""></div>'
+        +'<div class="rank-name">'+escHtml(r.user_name)+'</div>'
+        +'<div class="rank-value">'+val+'</div>'
+        +'</div>';
+    }
+    list.innerHTML=html;
+  }
+
+  
+  var slider=document.getElementById('ranking-slider');
+  var tabs=document.querySelectorAll('.ranking-tab');
+  function moveSlider(activeTab){
+    var container=document.getElementById('ranking-tabs');
+    var cRect=container.getBoundingClientRect();
+    var tRect=activeTab.getBoundingClientRect();
+    slider.style.width=tRect.width+'px';
+    slider.style.transform='translateX('+(tRect.left-cRect.left-4)+'px)';
+  }
+  tabs.forEach(function(tab){
+    tab.addEventListener('click',function(){
+      if(tab.classList.contains('is-active'))return;
+      tabs.forEach(function(t){t.classList.remove('is-active')});
+      tab.classList.add('is-active');
+      moveSlider(tab);
+      currentType=tab.dataset.type;
+      list.classList.add('is-switching');
+      setTimeout(function(){
+        render(currentType);
+        list.classList.remove('is-switching');
+      },150);
+    });
+  });
+  
+  var initTab=document.querySelector('.ranking-tab.is-active');
+  if(initTab){slider.style.transition='none';moveSlider(initTab);setTimeout(function(){slider.style.transition=''},50)}
+
+  fetch(api)
+    .then(function(r){return r.json()})
+    .then(function(data){
+      if(!data||!data.length){
+        section.style.display='none';
+        return;
+      }
+      allData=data;
+      render(currentType);
+    })
+    .catch(function(){
+      section.style.display='none';
+    });
 })();
 </script>
 
