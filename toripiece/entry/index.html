@@ -1386,10 +1386,10 @@ if(dk==='1'||(dk===null&&(h>=22||h<6))){document.body.classList.add('dark')}
     <div class="progress-area">
       <div class="progress-label">
         <span>現在の応募数(手動更新です)</span>
-        <span class="progress-count"><strong>21</strong> / 100枚</span>
+        <span class="progress-count"><strong>25</strong> / 100枚</span>
       </div>
       <div class="progress-bar">
-        <div class="progress-fill" style="width: 21%;"></div>
+        <div class="progress-fill" style="width: 25%;"></div>
       </div>
     </div>
     <div class="timeline-area">
@@ -1449,11 +1449,6 @@ if(dk==='1'||(dk===null&&(h>=22||h<6))){document.body.classList.add('dark')}
         <div class="step-line"></div>
         <div class="step" data-step="2">
           <div class="step-num"><span>2</span></div>
-          <div class="step-text">タイトル</div>
-        </div>
-        <div class="step-line"></div>
-        <div class="step" data-step="3">
-          <div class="step-num"><span>3</span></div>
           <div class="step-text">確認</div>
         </div>
       </div>
@@ -1479,68 +1474,7 @@ if(dk==='1'||(dk===null&&(h>=22||h<6))){document.body.classList.add('dark')}
 
       <input type="hidden" id="image-url" name="entry.48404110" value="">
 
-      <div class="form-group">
-        <label class="form-label">写真のタイトル <span class="badge badge-required">必須</span></label>
-        <p class="form-hint">ゲーム内でタイトルとして表示されます<br>
-        15文字以内で自由にお願いします！クスッと笑えるタイトル大歓迎！<br>
-        <small>※絵文字や記号は使用できません</small></p>
-        <div class="example-area">
-          <span class="example-label">例</span>
-          <div class="example-tags-wrapper">
-            <div class="example-tags">
-              <span class="example-tag">ピーちゃん初めてのお風呂</span>
-              <span class="example-tag">3歳の誕生日</span>
-              <span class="example-tag">朝7時の定位置</span>
-              <span class="example-tag">飼い主のメガネが好き</span>
-              <span class="example-tag">換羽3日目</span>
-              <span class="example-tag">窓辺でひなたぼっこ</span>
-              <span class="example-tag">おやつ待ちの圧</span>
-              <span class="example-tag">仲良し2羽</span>
-              <span class="example-tag">寝落ち5秒前</span>
-              <span class="example-tag">犯行直後</span>
-              <span class="example-tag">お迎え初日</span>
-              <span class="example-tag">初めての放鳥</span>
-              <span class="example-tag">カーテンレールの王様</span>
-              <span class="example-tag">肩が一番落ち着く</span>
-              <span class="example-tag">野菜きらい</span>
-              <span class="example-tag">シードだけは譲れない</span>
-              <span class="example-tag">鏡の中の恋人</span>
-              <span class="example-tag">完璧な丸</span>
-              <span class="example-tag">キレ散らかし中</span>
-              <span class="example-tag">謎ポーズ</span>
-              <span class="example-tag">ピーちゃん初めてのお風呂</span>
-              <span class="example-tag">3歳の誕生日</span>
-              <span class="example-tag">朝7時の定位置</span>
-              <span class="example-tag">飼い主のメガネが好き</span>
-              <span class="example-tag">換羽3日目</span>
-              <span class="example-tag">窓辺でひなたぼっこ</span>
-              <span class="example-tag">おやつ待ちの圧</span>
-              <span class="example-tag">仲良し2羽</span>
-              <span class="example-tag">寝落ち5秒前</span>
-              <span class="example-tag">犯行直後</span>
-              <span class="example-tag">お迎え初日</span>
-              <span class="example-tag">初めての放鳥</span>
-              <span class="example-tag">カーテンレールの王様</span>
-              <span class="example-tag">肩が一番落ち着く</span>
-              <span class="example-tag">野菜きらい</span>
-              <span class="example-tag">シードだけは譲れない</span>
-              <span class="example-tag">鏡の中の恋人</span>
-              <span class="example-tag">完璧な丸</span>
-              <span class="example-tag">キレ散らかし中</span>
-              <span class="example-tag">謎ポーズ</span>
-            </div>
-          </div>
-        </div>
-        <div id="title-input-area" class="title-input-area">
-          <input type="text" class="form-input" id="title" name="entry.2044253712" maxlength="15" placeholder="タイトルを入力">
-          <button type="button" id="omakase-btn" class="omakase-btn">おまかせ</button>
-        </div>
-        <div id="omakase-selected" class="title-input-area" style="display:none;">
-          <div class="omakase-display">開発者におまかせ</div>
-          <button type="button" id="omakase-cancel" class="omakase-btn">自分で決める</button>
-        </div>
-        <p class="form-error" id="title-error"></p>
-      </div>
+      <input type="hidden" id="title" name="entry.2044253712" value="おまかせ">
 
       <div class="optional-toggle" id="optional-toggle">
         <span>任意項目を入力する</span>
@@ -1630,7 +1564,6 @@ if(dk==='1'||(dk===null&&(h>=22||h<6))){document.body.classList.add('dark')}
           <li>画質が不十分</li>
           <li>既に似た写真が採用されている</li>
           <li>AI加工やモザイク加工がされている</li>
-          <li>タイトルが不適切（暴言、差別的表現など）</li>
         </ul>
       </div>
 
@@ -1758,14 +1691,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function updateStepProgress() {
     var imageUploaded = imageUrlInput.value !== '';
-    var titleFilled = document.getElementById('title').value.trim() !== '';
     var termsAgreed = document.getElementById('terms-agree').checked;
 
     // 順番通りに進む（スキップ不可）
-    if (imageUploaded && titleFilled && termsAgreed) {
-      updateSteps(4); // 全て完了
-    } else if (imageUploaded && titleFilled) {
-      updateSteps(3);
+    if (imageUploaded && termsAgreed) {
+      updateSteps(3); // 全て完了
     } else if (imageUploaded) {
       updateSteps(2);
     } else {
@@ -1775,68 +1705,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function checkFormValidity() {
     var imageUploaded = imageUrlInput.value !== '';
-    var titleValue = document.getElementById('title').value.trim();
-    var titleFilled = titleValue !== '';
-    var titleValid = validateTitle(titleValue).valid;
     var permissionSelected = document.querySelector('input[name="entry.1659217271"]:checked') !== null;
     var termsAgreed = document.getElementById('terms-agree').checked;
-    submitBtn.disabled = !(imageUploaded && titleFilled && titleValid && permissionSelected && termsAgreed);
+    submitBtn.disabled = !(imageUploaded && permissionSelected && termsAgreed);
     updateStepProgress();
   }
 
-  var titleInput = document.getElementById('title');
-  var titleError = document.getElementById('title-error');
-
-  // 絵文字・記号チェック（ひらがな、カタカナ、漢字、英数字、スペースのみ許可）
-  function validateTitle(value) {
-    if (value === '') return { valid: true, message: '' };
-    // 許可: ひらがな、カタカナ、漢字、英数字、全角半角スペース、ー（長音）、々、一部の記号（！？）
-    var pattern = /^[ぁ-んァ-ヶー々一-龯a-zA-Z0-9\s　！？!?]+$/;
-    if (!pattern.test(value)) {
-      return { valid: false, message: '絵文字や特殊記号は使用できません' };
-    }
-    return { valid: true, message: '' };
-  }
-
-  titleInput.addEventListener('input', function() {
-    var result = validateTitle(this.value);
-    if (!result.valid) {
-      titleError.textContent = result.message;
-      titleError.classList.add('show');
-      titleInput.classList.add('error');
-    } else {
-      titleError.classList.remove('show');
-      titleInput.classList.remove('error');
-    }
-    checkFormValidity();
-  });
-
-  // お任せするボタン
-  var omakaseBtn = document.getElementById('omakase-btn');
-  var omakaseSelected = document.getElementById('omakase-selected');
-  var omakaseCancel = document.getElementById('omakase-cancel');
-  var titleInputArea = document.getElementById('title-input-area');
-  var isOmakase = false;
-
-  omakaseBtn.addEventListener('click', function() {
-    isOmakase = true;
-    titleInput.value = 'おまかせ';
-    titleInputArea.style.display = 'none';
-    omakaseSelected.style.display = 'flex';
-    titleError.classList.remove('show');
-    titleInput.classList.remove('error');
-    checkFormValidity();
-    updateStepProgress();
-  });
-
-  omakaseCancel.addEventListener('click', function() {
-    isOmakase = false;
-    titleInput.value = '';
-    titleInputArea.style.display = 'flex';
-    omakaseSelected.style.display = 'none';
-    checkFormValidity();
-    updateStepProgress();
-  });
   document.querySelectorAll('input[name="entry.1659217271"]').forEach(function(el) {
     el.addEventListener('change', checkFormValidity);
   });
