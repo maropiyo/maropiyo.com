@@ -728,7 +728,6 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
 }
 .group-card-members{
   display:flex;
-  gap:4px;
   flex-shrink:0;
 }
 .group-member-icon{
@@ -739,7 +738,9 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   justify-content:center;
   box-shadow:3px 3px 8px rgba(0,0,0,.07), -2px -2px 6px rgba(255,255,255,.8);
   overflow:hidden;
+  margin-left:-8px;
 }
+.group-member-icon:first-child{margin-left:0}
 .group-member-icon img{
   width:70%;height:70%;
   object-fit:contain;
@@ -753,6 +754,7 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:auto}
   display:flex;
   align-items:center;
   justify-content:center;
+  margin-left:-8px;
 }
 .group-empty-slot::after{
   content:'+';
