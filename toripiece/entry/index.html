@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>＼鳥のベストショット募集中！／</title>
-<meta name="description" content="スマホパズルゲーム「とりぴーす」であなたの愛鳥をゲームに登場させてみませんか？鳥の写真を大募集中！">
+<title>とりぴーすリクエストフォーム</title>
+<meta name="description" content="パズルゲーム「とりぴーす」にあなたの愛鳥を登場させよう！鳥の写真をリクエスト受付中！">
 <!-- OGP -->
-<meta property="og:title" content="＼鳥のベストショット募集中！／">
-<meta property="og:description" content="スマホパズルゲーム「とりぴーす」であなたの愛鳥をゲームに登場させてみませんか？">
+<meta property="og:title" content="とりぴーすリクエストフォーム">
+<meta property="og:description" content="パズルゲーム「とりぴーす」にあなたの愛鳥を登場させよう！">
 <meta property="og:image" content="https://maropiyo.com/toripiece/entry/images/ogp.jpg">
 <meta property="og:url" content="https://maropiyo.com/toripiece/entry/">
 <meta property="og:type" content="website">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@maropiyooo">
-<meta name="twitter:title" content="＼鳥のベストショット募集中！／">
-<meta name="twitter:description" content="スマホパズルゲーム「とりぴーす」であなたの愛鳥をゲームに登場させてみませんか？">
+<meta name="twitter:title" content="とりぴーすリクエストフォーム">
+<meta name="twitter:description" content="パズルゲーム「とりぴーす」にあなたの愛鳥を登場させよう！">
 <meta name="twitter:image" content="https://maropiyo.com/toripiece/entry/images/ogp.jpg">
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -98,10 +98,23 @@ body {
   white-space: nowrap;
 }
 
-.header .subtitle {
-  color: var(--yellow-dark);
-  font-weight: 700;
-  font-size: 1rem;
+.play-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 24px;
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid var(--orange-dark);
+  transition: all 0.15s;
+}
+
+.play-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(120,80,20,.12);
 }
 
 /* カード */
@@ -1237,7 +1250,7 @@ body.dark{
   color:#e0d6c8;
 }
 body.dark .header h1{color:#FFD54F}
-body.dark .header .subtitle{color:#bba88a}
+body.dark .play-link{background:#E59F43;border-color:#D08A30}
 body.dark .card{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
 body.dark .card-title{color:#e0d6c8}
 body.dark .card p{color:#bba88a}
@@ -1348,88 +1361,9 @@ if(dk==='1'||(dk===null&&(h>=22||h<6))){document.body.classList.add('dark')}
 
 <div class="container">
   <header class="header">
-    <h1>＼鳥のベストショット募集中！／</h1>
+    <h1>とりぴーすリクエストフォーム</h1>
+    <a class="play-link" href="https://toripiece.maropiyo.com/" target="_blank">とりぴーすをあそぶ →</a>
   </header>
-
-  <div class="card">
-    <div class="card-header">
-      <div class="card-icon card-icon-img">
-        <img src="images/toripple.png" alt="">
-      </div>
-      <h2 class="card-title">自己紹介</h2>
-    </div>
-    <p>鳥好きゲーム開発者のまろぴよ（<a href="https://x.com/maropiyooo" target="_blank">@maropiyooo</a>）です！</p>
-    <p><strong>あなたの愛鳥がジグソーパズルになる</strong>スマホゲーム「とりぴーす」を開発中。皆さんの愛鳥のベストショットを大募集しています！</p>
-    <div class="toripiece-demo">
-      <img src="images/toripiece-demo.gif" alt="とりぴーすデモ">
-      <p class="demo-caption">こんな感じのパズルゲーム（開発中の画面）</p>
-    </div>
-    <div class="past-works">
-      <p class="past-works-label">過去の作品</p>
-      <div class="game-icons">
-        <a href="/toripple/" target="_blank"><img src="images/toripple.png" alt="とりっぷる"></a>
-        <a href="/slide-bird/" target="_blank"><img src="images/slide-bird.png" alt="スライドリ"></a>
-        <a href="/parrot-game/" target="_blank"><img src="images/parrot-game.png" alt="インコゲーム"></a>
-        <a href="/post/release-tori-jump/" target="_blank"><img src="images/tori-jump.png" alt="とりジャンプ"></a>
-      </div>
-    </div>
-    <div class="info-boxes">
-      <div class="info-box">
-        <div class="label">リリース予定</div>
-        <div class="value">2026年春</div>
-      </div>
-      <div class="info-box">
-        <div class="label">募集枚数</div>
-        <div class="value">100枚</div>
-      </div>
-    </div>
-    <div class="progress-area">
-      <div class="progress-label">
-        <span>現在の応募数(手動更新です)</span>
-        <span class="progress-count"><strong>25</strong> / 100枚</span>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-fill" style="width: 25%;"></div>
-      </div>
-    </div>
-    <div class="timeline-area">
-      <div class="timeline-header">
-        2026年春判定バー
-      </div>
-      <div class="timeline-months">
-        <div id="timeline-bar-full" class="timeline-bar-full">
-          <div id="timeline-spring" class="timeline-spring" style="left: 16.6%; width: 16.6%;"></div>
-          <div id="timeline-progress" class="timeline-progress"></div>
-          <div id="timeline-marker" class="timeline-marker">●</div>
-          <div id="timeline-season-label" class="timeline-season-label" style="left: 25%;">2026年春</div>
-        </div>
-        <div class="timeline-ticks">
-          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
-        </div>
-      </div>
-      <div class="timeline-note">※2026年春の定義はこのバーを正とします</div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-      </div>
-      <h2 class="card-title">募集する写真</h2>
-    </div>
-    <ul>
-      <li>自分で撮影した鳥の写真（飼っている鳥、飼っていた鳥、野鳥）</li>
-      <li>鳥が明確に写っている写真</li>
-      <li>人物や個人を特定できる情報が写っていない写真</li>
-      <li>アスペクト比は <strong>3:4（縦長）</strong> でお願いします<br><small>※他の比率でも調整しますが、鳥が見切れる場合は不採用となります</small></li>
-      <li>ファイルサイズ上限は <strong>10MB</strong></li>
-      <li>複数羽が写っている写真も大歓迎です</li>
-      <li>鳥の種類に制限はありません</li>
-      <li>1人何枚でも応募<strong>OK</strong>！（できるだけ多く採用します）</li>
-      <li>複数枚投稿したい場合は、1枚ずつここから応募してください</li>
-    </ul>
-  </div>
 
   <form id="apply-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScgZArOIloCITc3f6OInSD4aLWD_5lKZC1EV_7WeSnvQ9jegg/formResponse" method="POST" target="hidden-iframe">
 
@@ -1438,7 +1372,7 @@ if(dk==='1'||(dk===null&&(h>=22||h<6))){document.body.classList.add('dark')}
         <div class="card-icon">
           <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
         </div>
-        <h2 class="card-title">応募フォーム</h2>
+        <h2 class="card-title">リクエストフォーム</h2>
       </div>
 
       <div class="steps">
@@ -1522,7 +1456,7 @@ if(dk==='1'||(dk===null&&(h>=22||h<6))){document.body.classList.add('dark')}
         <div class="card-icon">
           <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
         </div>
-        <h2 class="card-title">応募規約</h2>
+        <h2 class="card-title">リクエスト規約</h2>
       </div>
 
       <div class="terms-summary">
@@ -1576,22 +1510,16 @@ if(dk==='1'||(dk===null&&(h>=22||h<6))){document.body.classList.add('dark')}
       </label>
     </div>
 
-    <button type="submit" id="submit-btn" class="submit-btn" disabled>応募する</button>
+    <button type="submit" id="submit-btn" class="submit-btn" disabled>リクエストする</button>
   </form>
 
   <div id="submit-message" class="card">
     <div class="success-icon">
       <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
     </div>
-    <h3>応募完了！</h3>
-    <p>ご応募ありがとうございます！<br>複数枚投稿したい場合は再度応募してください</p>
-    <div class="share-buttons">
-      <button type="button" id="share-btn" class="share-btn">
-        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        Xでシェア
-      </button>
-    </div>
-    <button type="button" class="reload-btn" onclick="location.reload()">もう1枚応募する</button>
+    <h3>リクエスト完了！</h3>
+    <p>ありがとうございます！<br>開発者が無事であれば1〜3日ほどでゲームに反映されます<br>複数枚送りたい場合はもう一度リクエストしてください</p>
+    <button type="button" class="reload-btn" onclick="location.reload()">もう1枚リクエストする</button>
   </div>
 
   <footer class="footer">
@@ -1764,76 +1692,10 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(function(error) {
       alert('アップロードに失敗しました。もう一度お試しください。');
       submitBtn.disabled = false;
-      submitBtn.textContent = '応募する';
+      submitBtn.textContent = 'リクエストする';
     });
   });
 
-  // 春判定バーの現在位置を自動計算
-  var currentProgress = (function() {
-    var now = new Date();
-    var start = new Date(now.getFullYear(), 0, 1);
-    var end = new Date(now.getFullYear() + 1, 0, 1);
-    var percent = ((now - start) / (end - start)) * 100;
-    return Math.round(percent * 10) / 10;
-  })();
-
-  document.getElementById('timeline-progress').style.width = currentProgress + '%';
-  document.getElementById('timeline-marker').style.left = currentProgress + '%';
-
-  // 春判定バーのドラッグ機能（裏機能）
-  (function() {
-    var spring = document.getElementById('timeline-spring');
-    var bar = document.getElementById('timeline-bar-full');
-    var label = document.getElementById('timeline-season-label');
-    var isDragging = false;
-    var offsetX = 0;
-
-    function startDrag(clientX) {
-      isDragging = true;
-      var rect = spring.getBoundingClientRect();
-      offsetX = clientX - rect.left;
-    }
-
-    function moveDrag(clientX) {
-      if (!isDragging) return;
-      var barRect = bar.getBoundingClientRect();
-      var width = parseFloat(spring.style.width);
-      var newLeft = ((clientX - offsetX - barRect.left) / barRect.width) * 100;
-      newLeft = Math.max(currentProgress, Math.min(100 - width, newLeft));
-      spring.style.left = newLeft + '%';
-      label.style.left = (newLeft + width / 2) + '%';
-    }
-
-    function endDrag() {
-      isDragging = false;
-    }
-
-    // マウスイベント
-    spring.addEventListener('mousedown', function(e) {
-      startDrag(e.clientX);
-      e.preventDefault();
-    });
-    document.addEventListener('mousemove', function(e) { moveDrag(e.clientX); });
-    document.addEventListener('mouseup', endDrag);
-
-    // タッチイベント
-    spring.addEventListener('touchstart', function(e) {
-      startDrag(e.touches[0].clientX);
-    }, { passive: true });
-    document.addEventListener('touchmove', function(e) {
-      if (isDragging && e.touches[0]) {
-        moveDrag(e.touches[0].clientX);
-      }
-    }, { passive: true });
-    document.addEventListener('touchend', endDrag);
-  })();
-
-  // シェアボタンの処理
-  var shareBtn = document.getElementById('share-btn');
-  shareBtn.addEventListener('click', function() {
-    var shareText = '#とりぴーす の企画に応募したよ！\nhttps://maropiyo.com/toripiece/entry/';
-    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText), '_blank');
-  });
 });
 </script>
 <script>

@@ -42,6 +42,17 @@ a:hover{text-decoration:underline}
   font-size:13px;
   padding:6px 0;
   letter-spacing:.05em;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.top-marquee span{
+  display:inline-block;
+  padding-left:100%;
+  animation:marquee-scroll 20s linear infinite;
+}
+@keyframes marquee-scroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-100%)}
 }
 .container{
   max-width:560px;
@@ -420,7 +431,8 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
 .app-list{display:flex;flex-direction:column;gap:8px}
 .app-card{display:flex;align-items:center;gap:12px;padding:12px;background:#fff;border:2px solid #FFD54F;border-radius:8px;transition:transform .15s,box-shadow .15s;position:relative;color:#5D4037}
 .app-card:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(120,80,20,.12);text-decoration:none}
-.app-card-icon{width:48px;height:48px;border-radius:12px;flex-shrink:0}
+.app-card-icon{width:48px;height:48px;border-radius:12px;flex-shrink:0;object-fit:cover}
+.app-card-icon-placeholder{width:48px;height:48px;border-radius:12px;flex-shrink:0;background:linear-gradient(135deg,#FFD54F,#FF9800);display:flex;align-items:center;justify-content:center;font-size:24px}
 .app-card-info{flex:1}
 .app-card-name{font-size:.85rem;font-weight:900;color:#5D4037}
 .app-card-type{font-size:.5rem;font-weight:700;color:#fff;background:#8D6E63;padding:1px 4px;border-radius:3px;margin-left:4px;vertical-align:middle}
@@ -435,29 +447,6 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
   font-size:.7rem;
   color:#8D6E63;
   font-weight:700;
-}
-.omikuji{text-align:center;margin:12px 0 0}
-.omikuji-btn{
-  display:inline-block;
-  background:#fff;
-  border:2px solid #FFD54F;
-  border-radius:8px;
-  padding:4px 16px;
-  font-family:'M PLUS Rounded 1c',sans-serif;
-  font-size:.8rem;
-  font-weight:900;
-  color:#5D4037;
-  cursor:pointer;
-  transition:transform .15s,box-shadow .15s;
-}
-.omikuji-btn:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(120,80,20,.12)}
-.omikuji-btn:active{transform:scale(.95)}
-.omikuji-result{
-  margin-top:4px;
-  font-size:.7rem;
-  font-weight:700;
-  color:#E59F43;
-  min-height:1.5em;
 }
 .recruit-banner{
   display:block;
@@ -489,7 +478,9 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
   text-align:center;
 }
 .slot{text-align:center;margin:12px 0 0}
-.slot-reels{display:flex;justify-content:center;gap:6px;margin:8px 0}
+.slot-body{position:relative;margin:8px 0}
+.slot-reels{display:flex;justify-content:center;gap:6px}
+.slot-lever{position:absolute;left:calc(50% + 110px);top:50%;transform:translateY(-50%)}
 .slot-reel{
   width:64px;height:64px;
   border:2px solid #FFD54F;
@@ -509,21 +500,28 @@ body.dark .pagination .active{background:#5D4037;color:#FFD54F}
 @keyframes slotSpin{
   0%{opacity:1}50%{opacity:0}100%{opacity:1}
 }
-.slot-btn{
-  display:inline-block;
-  background:#fff;
-  border:2px solid #FFD54F;
-  border-radius:8px;
-  padding:4px 16px;
-  font-family:'M PLUS Rounded 1c',sans-serif;
-  font-size:.8rem;
-  font-weight:900;
-  color:#5D4037;
-  cursor:pointer;
-  transition:transform .15s,box-shadow .15s;
+.slot-lever{
+  display:flex;flex-direction:column;align-items:center;cursor:pointer;
+  user-select:none;-webkit-tap-highlight-color:transparent;
 }
-.slot-btn:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(120,80,20,.12)}
-.slot-btn:active{transform:scale(.95)}
+.slot-lever-arm{
+  width:6px;height:40px;background:#8D6E63;border-radius:3px;
+  transform-origin:bottom center;transition:transform .15s ease;
+}
+.slot-lever-knob{
+  width:22px;height:22px;background:linear-gradient(135deg,#FF9800,#E65100);
+  border-radius:50%;border:2px solid #BF360C;
+  box-shadow:0 2px 4px rgba(0,0,0,.2);
+  margin-bottom:-2px;transition:transform .15s ease;
+}
+.slot-lever-base{
+  width:16px;height:6px;background:#5D4037;border-radius:0 0 4px 4px;
+}
+.slot-lever.pulled .slot-lever-arm{transform:scaleY(.45)}
+.slot-lever.pulled .slot-lever-knob{transform:translateY(22px)}
+.slot-lever-hint{
+  font-size:.55rem;font-weight:700;color:#8D6E63;margin-top:2px;
+}
 .slot-result{
   margin-top:4px;
   font-size:.7rem;
@@ -560,9 +558,9 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
   <div class="pull-cord-star" id="pull-cord-star"><i id="cord-icon" class="fa-solid fa-star"></i></div>
 </div>
 
-<marquee class="top-marquee" scrollamount="3">
-  ★ ようこそ！まろぴよの部屋へ！ ★ リマインコ配信中 ★ とりっぷる配信中 ★ スライドリ配信中 ★ インコゲーム配信中 ★ とりジャンプ配信中 ★
-</marquee>
+<div class="top-marquee">
+  <span>★ ようこそ！まろぴよの部屋へ！ ★ リマインコ配信中 ★ とりっぷる配信中 ★ スライドリ配信中 ★ インコゲーム配信中 ★ とりジャンプ配信中 ★ とりぴーす配信中 ★</span>
+</div>
 
 <div class="container">
 
@@ -607,10 +605,15 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
   
   <div class="section-title"><span class="sparkle">★</span> おしらせ <span class="sparkle">★</span></div>
 
-  <a href="https://maropiyo.com/toripiece/entry/" class="recruit-banner" style="position:relative">
-    <span class="badge-new" style="position:absolute;top:-6px;right:-6px;background:#FF9800">開発中</span>
-    次のゲームに登場する鳥の写真募集中！
-    <div class="recruit-banner-sub">あなたのインコ・鳥の写真がゲームに登場するかも？</div>
+  <a href="https://toripiece.maropiyo.com/" class="recruit-banner" style="position:relative" target="_blank">
+    <span class="badge-new" style="position:absolute;top:-6px;right:-6px;background:#FF9800">NEW!</span>
+    新作「とりぴーす」リリースしました！
+    <div class="recruit-banner-sub">あなたの鳥の写真がジグソーパズルになるブラウザゲーム</div>
+  </a>
+
+  <a href="https://maropiyo.com/reminder-parrot/" class="recruit-banner" style="position:relative">
+    リマインコ v2.1.0 アップデート！
+    <div class="recruit-banner-sub">ウィジェット機能追加・アプリアイコン長押しでことばを教えられるように</div>
   </a>
 
   <hr class="retro-hr">
@@ -619,13 +622,13 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
   <div class="section-title"><span class="sparkle">★</span> つくったもの(最新順) <span class="sparkle">★</span></div>
 
   <div class="app-list">
-    <a href="https://maropiyo.com/reminder-parrot/" class="app-card">
-      <img src="https://maropiyo.com/reminder-parrot/image/app-icon.png" alt="" class="app-card-icon">
+    <a href="https://toripiece.maropiyo.com/" class="app-card" target="_blank">
+      <img src="https://maropiyo.com/toripiece/entry/images/toripiece_icon.gif" alt="" class="app-card-icon">
       <div class="app-card-info">
-        <div class="app-card-name">リマインコ <span class="app-card-type">アプリ</span></div>
-        <div class="app-card-desc">みんなで続けるリマインダーアプリ</div>
+        <div class="app-card-name">とりぴーす <span class="app-card-type">ゲーム</span></div>
+        <div class="app-card-desc">鳥の写真がジグソーパズルになるブラウザゲーム</div>
       </div>
-      <span class="badge-new" style="position:absolute;top:-6px;right:-6px">UPDATE!</span>
+      <span class="badge-new" style="position:absolute;top:-6px;right:-6px">NEW!</span>
     </a>
 
     <a href="https://maropiyo.com/toripple/" class="app-card">
@@ -634,7 +637,7 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
         <div class="app-card-name">とりっぷる <span class="app-card-type">ゲーム</span></div>
         <div class="app-card-desc">タップで同じ鳥を3つ集めるゲーム</div>
       </div>
-      <span class="badge-new" style="position:absolute;top:-6px;right:-6px">NEW!</span>
+      <span class="badge-new" style="position:absolute;top:-6px;right:-6px;background:#FF9800">ぷるぷる</span>
     </a>
 
     <a href="https://maropiyo.com/slide-bird/" class="app-card">
@@ -643,7 +646,7 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
         <div class="app-card-name">スライドリ <span class="app-card-type">ゲーム</span></div>
         <div class="app-card-desc">鳥をスライドして1列を揃えるゲーム</div>
       </div>
-      <span class="badge-new" style="position:absolute;top:-6px;right:-6px;background:#FF9800">たのしい</span>
+      <span class="badge-new" style="position:absolute;top:-6px;right:-6px;background:#FF9800">一番人気</span>
     </a>
 
     <a href="https://maropiyo.com/parrot-game/" class="app-card">
@@ -663,16 +666,15 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
       </div>
       <span class="badge-new" style="position:absolute;top:-6px;right:-6px;background:#8D6E63">初作品</span>
     </a>
-  </div>
 
-  <hr class="retro-hr">
-
-  
-  <div class="section-title"><span class="sparkle">★</span> おみくじコーナー <span class="sparkle">★</span></div>
-
-  <div class="omikuji">
-    <button class="omikuji-btn" id="omikuji-btn">★ ひく ★</button>
-    <div class="omikuji-result" id="omikuji-result"></div>
+    <a href="https://maropiyo.com/reminder-parrot/" class="app-card">
+      <img src="https://maropiyo.com/reminder-parrot/image/app-icon.png" alt="" class="app-card-icon">
+      <div class="app-card-info">
+        <div class="app-card-name">リマインコ <span class="app-card-type">アプリ</span></div>
+        <div class="app-card-desc">みんなで続けるリマインダーアプリ</div>
+      </div>
+      <span class="badge-new" style="position:absolute;top:-6px;right:-6px;background:#8D6E63">一部に人気</span>
+    </a>
   </div>
 
   <hr class="retro-hr">
@@ -681,12 +683,19 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
   <div class="section-title"><span class="sparkle">★</span> とりっぷるスロットリ <span class="sparkle">★</span></div>
 
   <div class="slot">
-    <div class="slot-reels">
-      <div class="slot-reel" id="slot-r0"><img src="https://maropiyo.com/image/slot/sekisei_blue.png" alt=""></div>
-      <div class="slot-reel" id="slot-r1"><img src="https://maropiyo.com/image/slot/okame_lutino.png" alt=""></div>
-      <div class="slot-reel" id="slot-r2"><img src="https://maropiyo.com/image/slot/buncho_white.png" alt=""></div>
+    <div class="slot-body">
+      <div class="slot-reels">
+        <div class="slot-reel" id="slot-r0"><img src="https://maropiyo.com/image/slot/sekisei_blue.png" alt=""></div>
+        <div class="slot-reel" id="slot-r1"><img src="https://maropiyo.com/image/slot/okame_lutino.png" alt=""></div>
+        <div class="slot-reel" id="slot-r2"><img src="https://maropiyo.com/image/slot/buncho_white.png" alt=""></div>
+      </div>
+      <div class="slot-lever" id="slot-lever">
+        <div class="slot-lever-knob"></div>
+        <div class="slot-lever-arm"></div>
+        <div class="slot-lever-base"></div>
+        <div class="slot-lever-hint">ひく</div>
+      </div>
     </div>
-    <button class="slot-btn" id="slot-btn">★ まわす ★</button>
     <div class="slot-result" id="slot-result"></div>
     <div class="slot-stats">
       みんなの回転数 <span class="slot-stats-num" id="slot-spins">-</span> 回 ／ とりっぷる <span class="slot-stats-num" id="slot-wins">-</span> 回
@@ -752,59 +761,6 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
           fetch(api).then(function(r){return r.json()}).then(function(d){if(d.count!=null)el.textContent=d.count});
         });
     }
-  })();
-  </script>
-  <script>
-  (function(){
-    var fortunes=[
-      {rank:'大吉',msg:'とりっぷるで最速タイムが出る日！'},
-      {rank:'大吉',msg:'スライドリでとりふれっしゅが止まらない！'},
-      {rank:'大吉',msg:'インコゲームでダブルオカメ達成！！'},
-      {rank:'大吉',msg:'とりジャンプで自己ベスト更新の予感！'},
-      {rank:'大吉',msg:'リマインコで全員達成の日！'},
-      {rank:'吉',msg:'とりっぷるでいいタイムが出そう。'},
-      {rank:'吉',msg:'スライドリでコンボが止まらない！'},
-      {rank:'吉',msg:'インコゲームでオカメインコを作れるかも！'},
-      {rank:'吉',msg:'リマインコのリマインドをちゃんと達成できる日。'},
-      {rank:'中吉',msg:'とりっぷるでまあまあのタイム。悪くない。'},
-      {rank:'中吉',msg:'スライドリをのんびり楽しめる日。'},
-      {rank:'中吉',msg:'インコゲームでコツコツ合体させよう。'},
-      {rank:'中吉',msg:'リマインコを開く習慣が身につきそう。'},
-      {rank:'小吉',msg:'とりっぷるであと少しでタイム更新だったのに…'},
-      {rank:'小吉',msg:'スライドリであと1手が足りない…明日こそ。'},
-      {rank:'小吉',msg:'インコゲームでオカメまであと一歩。'},
-      {rank:'末吉',msg:'とりジャンプで序盤落ちしても気にしない。'},
-      {rank:'末吉',msg:'リマインコに登録だけでもしておこう。'},
-      {rank:'凶',msg:'とりっぷるでタイムが全然縮まらない…でもリトライ！'},
-      {rank:'凶',msg:'スライドリで3マスのトリが止まらない日。'},
-      {rank:'凶',msg:'とりジャンプで最初の足場を踏み外す。'},
-      {rank:'大凶',msg:'スライドリで3マスのトリしか出ない！'},
-      {rank:'大凶',msg:'リマインコのリマインドを全スルー。明日から本気出す。'},
-      {rank:'鳥吉',msg:'空を見上げると鳥が飛んでるかも。'},
-      {rank:'鳥吉',msg:'鳥カフェに行くといいことある。'},
-      {rank:'超大吉',msg:'全ゲームでハイスコア更新！奇跡の日！！'}
-    ];
-    var btn=document.getElementById('omikuji-btn');
-    var res=document.getElementById('omikuji-result');
-    btn.addEventListener('click',function(){
-      btn.style.pointerEvents='none';
-      res.textContent='...';
-      var count=0;
-      var iv=setInterval(function(){
-        var r=fortunes[Math.floor(Math.random()*fortunes.length)];
-        res.textContent=r.rank;
-        playDoko();
-        count++;
-        if(count>8){
-          clearInterval(iv);
-          var f=fortunes[Math.floor(Math.random()*fortunes.length)];
-          res.textContent='【'+f.rank+'】'+f.msg;
-          playPon(f.rank);
-          btn.textContent='★ もう一回 ★';
-          btn.style.pointerEvents='';
-        }
-      },80);
-    });
   })();
   </script>
   <script>
@@ -899,7 +855,7 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
       document.getElementById('slot-r1'),
       document.getElementById('slot-r2')
     ];
-    var btn=document.getElementById('slot-btn');
+    var lever=document.getElementById('slot-lever');
     var res=document.getElementById('slot-result');
     var elSpins=document.getElementById('slot-spins');
     var elWins=document.getElementById('slot-wins');
@@ -919,13 +875,16 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
       reels[i].querySelector('img').src='https://maropiyo.com/image/slot/'+bird+'.png';
     }
 
-    btn.addEventListener('click',function(){
+    lever.addEventListener('click',function(){
       if(spinning)return;
       spinning=true;
-      btn.style.pointerEvents='none';
+      lever.classList.add('pulled');
+      lever.style.pointerEvents='none';
       res.textContent='';
       reels.forEach(function(r){r.classList.remove('match')});
       slotResetCount();
+
+      setTimeout(function(){lever.classList.remove('pulled')},300);
 
       fetch(slotApi,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'spin'})})
         .then(function(r){return r.json()}).then(updateStats).catch(function(){});
@@ -964,7 +923,7 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
               playPon('小吉');
               res.textContent='ハズレ…もう一回！';
             }
-            btn.style.pointerEvents='';
+            lever.style.pointerEvents='';
             spinning=false;
           }
         },(i+1)*500+300);

@@ -41,6 +41,17 @@ a:hover{text-decoration:underline}
   font-size:13px;
   padding:6px 0;
   letter-spacing:.05em;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.top-marquee span{
+  display:inline-block;
+  padding-left:100%;
+  animation:marquee-scroll 20s linear infinite;
+}
+@keyframes marquee-scroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-100%)}
 }
 .container{
   max-width:560px;
@@ -475,9 +486,9 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
   <div class="pull-cord-star" id="pull-cord-star"><i id="cord-icon" class="fa-solid fa-star"></i></div>
 </div>
 
-<marquee class="top-marquee" scrollamount="3">
-  ★ ようこそ！まろぴよの部屋へ！ ★ リマインコ配信中 ★ とりっぷる配信中 ★ スライドリ配信中 ★ インコゲーム配信中 ★ とりジャンプ配信中 ★
-</marquee>
+<div class="top-marquee">
+  <span>★ ようこそ！まろぴよの部屋へ！ ★ リマインコ配信中 ★ とりっぷる配信中 ★ スライドリ配信中 ★ インコゲーム配信中 ★ とりジャンプ配信中 ★ とりぴーす配信中 ★</span>
+</div>
 
 <div class="container">
 
