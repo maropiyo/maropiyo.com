@@ -764,13 +764,6 @@
         
         <guid>https://maropiyo.com/works/</guid>
         <description>&lt;div class=&#34;app-list&#34;&gt;
-  &lt;a href=&#34;https://toripiece.maropiyo.com/&#34; class=&#34;app-card&#34; target=&#34;_blank&#34;&gt;
-    &lt;img src=&#34;https://maropiyo.com/toripiece/entry/images/toripiece_icon.gif&#34; alt=&#34;&#34; class=&#34;app-card-icon&#34;&gt;
-    &lt;div class=&#34;app-card-info&#34;&gt;
-      &lt;div class=&#34;app-card-name&#34;&gt;とりぴーす &lt;span class=&#34;app-card-type&#34;&gt;ゲーム&lt;/span&gt;&lt;/div&gt;
-      &lt;div class=&#34;app-card-desc&#34;&gt;鳥の写真がジグソーパズルになるブラウザゲーム&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/a&gt;
   &lt;a href=&#34;https://maropiyo.com/toripple/&#34; class=&#34;app-card&#34;&gt;
     &lt;img src=&#34;https://maropiyo.com/toripple/image/toripple_icon.png&#34; alt=&#34;&#34; class=&#34;app-card-icon&#34;&gt;
     &lt;div class=&#34;app-card-info&#34;&gt;
@@ -804,6 +797,13 @@
     &lt;div class=&#34;app-card-info&#34;&gt;
       &lt;div class=&#34;app-card-name&#34;&gt;リマインコ &lt;span class=&#34;app-card-type&#34;&gt;アプリ&lt;/span&gt;&lt;/div&gt;
       &lt;div class=&#34;app-card-desc&#34;&gt;みんなで続けるリマインダーアプリ&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a href=&#34;https://toripiece.maropiyo.com/&#34; class=&#34;app-card&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;https://maropiyo.com/toripiece/entry/images/toripiece_icon.gif&#34; alt=&#34;&#34; class=&#34;app-card-icon&#34;&gt;
+    &lt;div class=&#34;app-card-info&#34;&gt;
+      &lt;div class=&#34;app-card-name&#34;&gt;とりぴーす &lt;span class=&#34;app-card-type&#34;&gt;ゲーム&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&#34;app-card-desc&#34;&gt;愛鳥ジグソーパズル&lt;/div&gt;
     &lt;/div&gt;
   &lt;/a&gt;
 &lt;/div&gt;
