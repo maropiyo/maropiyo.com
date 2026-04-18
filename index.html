@@ -45,14 +45,14 @@ a:hover{text-decoration:underline}
   overflow:hidden;
   white-space:nowrap;
 }
-.top-marquee span{
-  display:inline-block;
-  padding-left:100%;
-  animation:marquee-scroll 20s linear infinite;
+.top-marquee-track{
+  display:inline-flex;
+  animation:marquee-scroll 30s linear infinite;
 }
+.top-marquee-track span{flex-shrink:0}
 @keyframes marquee-scroll{
   0%{transform:translateX(0)}
-  100%{transform:translateX(-100%)}
+  100%{transform:translateX(-50%)}
 }
 .container{
   max-width:560px;
@@ -560,7 +560,10 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
 </div>
 
 <div class="top-marquee">
-  <span>★ ようこそ！まろぴよの部屋へ！ ★ リマインコ配信中 ★ とりっぷる配信中 ★ スライドリ配信中 ★ インコゲーム配信中 ★ とりジャンプ配信中 ★ とりぴーす配信中 ★</span>
+  <div class="top-marquee-track">
+    <span>★ ようこそ！まろぴよの部屋へ！ ★ 新作ゲーム「ヨミトリ」WEB版先行配信中！「ヨミトリ」アプリ版事前登録受付中！ ★ ようこそ！まろぴよの部屋へ！ ★ 新作ゲーム「ヨミトリ」WEB版先行配信中！「ヨミトリ」アプリ版事前登録受付中！ ★&nbsp;</span>
+    <span>★ ようこそ！まろぴよの部屋へ！ ★ 新作ゲーム「ヨミトリ」WEB版先行配信中！「ヨミトリ」アプリ版事前登録受付中！ ★ ようこそ！まろぴよの部屋へ！ ★ 新作ゲーム「ヨミトリ」WEB版先行配信中！「ヨミトリ」アプリ版事前登録受付中！ ★&nbsp;</span>
+  </div>
 </div>
 
 <div class="container">
