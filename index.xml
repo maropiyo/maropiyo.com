@@ -6,7 +6,17 @@
         <description>Recent content on まろぴよの部屋</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0900</lastBuildDate><atom:link href="https://maropiyo.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0900</lastBuildDate><atom:link href="https://maropiyo.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>とりぴーすのサービスを終了しました</title>
+        <link>https://maropiyo.com/post/end-toripiece/</link>
+        <pubDate>Mon, 27 Apr 2026 00:00:00 +0900</pubDate>
+        
+        <guid>https://maropiyo.com/post/end-toripiece/</guid>
+        <description>&lt;p&gt;ブラウザゲーム「とりぴーす」のサービスを2026年4月27日をもって終了しました。&lt;/p&gt;
+&lt;p&gt;これまで遊んでくださったみなさま、ありがとうございました！&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>ヨミトリってどんなゲーム？</title>
         <link>https://maropiyo.com/post/what-is-yomitori/</link>
         <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
@@ -102,7 +112,9 @@
         <pubDate>Sat, 14 Mar 2026 00:00:00 +0900</pubDate>
         
         <guid>https://maropiyo.com/post/release-toripiece/</guid>
-        <description>&lt;p&gt;ブラウザゲーム「とりぴーす」をリリースしました！&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+&lt;p&gt;※ 「とりぴーす」は2026年4月27日をもってサービスを終了しました。これまで遊んでくださったみなさま、ありがとうございました！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;ブラウザゲーム「とりぴーす」をリリースしました！&lt;/p&gt;
 &lt;p&gt;みんなから送ってもらった鳥の写真がジグソーパズルになるゲームです！&lt;/p&gt;
 &lt;p&gt;スマホでもPCでもブラウザからすぐ遊べます！&lt;/p&gt;
 &lt;h2 id=&#34;あそぶ&#34;&gt;あそぶ&lt;/h2&gt;
@@ -894,13 +906,6 @@
     &lt;div class=&#34;app-card-info&#34;&gt;
       &lt;div class=&#34;app-card-name&#34;&gt;リマインコ &lt;span class=&#34;app-card-type&#34;&gt;アプリ&lt;/span&gt;&lt;/div&gt;
       &lt;div class=&#34;app-card-desc&#34;&gt;みんなで続けるリマインダーアプリ&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/a&gt;
-  &lt;a href=&#34;https://toripiece.maropiyo.com/&#34; class=&#34;app-card&#34; target=&#34;_blank&#34;&gt;
-    &lt;img src=&#34;https://maropiyo.com/toripiece/entry/images/toripiece_icon.gif&#34; alt=&#34;&#34; class=&#34;app-card-icon&#34;&gt;
-    &lt;div class=&#34;app-card-info&#34;&gt;
-      &lt;div class=&#34;app-card-name&#34;&gt;とりぴーす &lt;span class=&#34;app-card-type&#34;&gt;ゲーム&lt;/span&gt;&lt;/div&gt;
-      &lt;div class=&#34;app-card-desc&#34;&gt;愛鳥ジグソーパズル&lt;/div&gt;
     &lt;/div&gt;
   &lt;/a&gt;
 &lt;/div&gt;
