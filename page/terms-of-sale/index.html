@@ -36,25 +36,6 @@ body{
 a{color:#E59F43;text-decoration:none}
 a:hover{text-decoration:underline}
 
-.top-marquee{
-  background:linear-gradient(90deg,#FFD54F,#FF9800,#FFD54F);
-  color:#5D4037;
-  font-weight:700;
-  font-size:13px;
-  padding:6px 0;
-  letter-spacing:.05em;
-  overflow:hidden;
-  white-space:nowrap;
-}
-.top-marquee-track{
-  display:inline-flex;
-  animation:marquee-scroll 30s linear infinite;
-}
-.top-marquee-track span{flex-shrink:0}
-@keyframes marquee-scroll{
-  0%{transform:translateX(0)}
-  100%{transform:translateX(-50%)}
-}
 .container{
   max-width:560px;
   margin:0 auto;
@@ -317,16 +298,6 @@ a:hover{text-decoration:underline}
   padding:24px 0;
   margin-top:16px;
 }
-.link-free{
-  display:inline-block;
-  font-size:.65rem;
-  font-weight:700;
-  color:#8D6E63;
-  border:1px dashed #8D6E63;
-  padding:4px 12px;
-  border-radius:4px;
-  margin-bottom:8px;
-}
 .copyright{
   font-size:.6rem;
   color:#8D6E63;
@@ -348,7 +319,6 @@ a:hover{text-decoration:underline}
  
 body.dark{background:#2a2a2a;background-image:none;color:#e0d6c8}
 body.dark a{color:#FFD54F}
-body.dark .top-marquee{background:linear-gradient(90deg,#5D4037,#8D6E63,#5D4037);color:#FFD54F}
 body.dark .container{color:#e0d6c8}
 body.dark .section-title{background:#5D4037;color:#FFD54F;border-color:#8D6E63}
 body.dark .retro-hr{background:repeating-linear-gradient(90deg,#5D4037 0,#5D4037 8px,transparent 8px,transparent 16px)}
@@ -360,7 +330,6 @@ body.dark .app-card-desc,body.dark .article-card-date{color:#bba88a}
 body.dark .content-card{background:#3a3a3a;border-color:#5D4037;color:#e0d6c8}
 body.dark .content-card h2{color:#FFD54F}
 body.dark .content-card p{color:#e0d6c8}
-body.dark .footer .link-free{color:#bba88a;border-color:#5D4037}
 body.dark .copyright{color:#8D6E63}
 body.dark .visitor-counter{color:#bba88a}
 body.dark .visitor-counter-num{background:#3a3a3a;border-color:#5D4037;color:#FFD54F}
@@ -433,13 +402,6 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
   <div class="pull-cord-star" id="pull-cord-star"><i id="cord-icon" class="fa-solid fa-star"></i></div>
 </div>
 
-<div class="top-marquee">
-  <div class="top-marquee-track">
-    <span>★ ようこそ！まろぴよの部屋へ！ ★ 新作ゲーム「ヨミトリ」アプリ版リリース！ ★ ようこそ！まろぴよの部屋へ！ ★ 新作ゲーム「ヨミトリ」アプリ版リリース！ ★&nbsp;</span>
-    <span>★ ようこそ！まろぴよの部屋へ！ ★ 新作ゲーム「ヨミトリ」アプリ版リリース！ ★ ようこそ！まろぴよの部屋へ！ ★ 新作ゲーム「ヨミトリ」アプリ版リリース！ ★&nbsp;</span>
-  </div>
-</div>
-
 <div class="container">
 
   <div class="site-header">
@@ -495,7 +457,6 @@ if(dk==='1'||(dk===null&&(h>=22||h<7))){document.body.classList.add('dark')}
   <hr class="retro-hr">
 
   <div class="footer">
-    <div class="link-free">リンクフリーです！</div>
     <div class="copyright">&copy; 2026 まろぴよ</div>
   </div>
 
