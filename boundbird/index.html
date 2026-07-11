@@ -31,6 +31,10 @@
   "offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},
   "image":"https://maropiyo.com/boundbird/image/ogp.png",
   "url":"https://maropiyo.com/boundbird/",
+  "installUrl":[
+    "https://apps.apple.com/app/id6787343747",
+    "https://play.google.com/store/apps/details?id=com.maropiyo.boundbird"
+  ],
   "author":{"@type":"Person","name":"maropiyo","url":"https://maropiyo.com"}
 }
 </script>
@@ -74,13 +78,10 @@ h1{line-height:0}
   display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap;
 }
  
+.store img{transition:transform .16s ease}
+.store:hover img{transform:translateY(-3px)}
 .badge-apple{height:64px;width:auto}
 .badge-google{height:83px;width:auto;margin:-10px 0}
-.note{
-  margin-top:16px;
-  font-size:12.5px;font-weight:700;
-  color:rgba(92,74,10,.5);
-}
 footer{
   position:fixed;left:0;right:0;bottom:12px;
   display:flex;flex-direction:column;align-items:center;gap:7px;
@@ -97,10 +98,13 @@ footer span{color:rgba(92,74,10,.4);font-weight:500}
   <h1><img class="logo" src="image/logo.png" alt="バウンドリ - BOUND BIRD" width="1000" height="400"></h1>
 
   <div class="badges">
-    <img class="badge-apple" src="image/Download_on_the_App_Store_Badge.svg" alt="App Store からダウンロード">
-    <img class="badge-google" src="image/google-play-badge.png" alt="Google Play で手に入れよう">
+    <a class="store" href="https://apps.apple.com/app/id6787343747" target="_blank" rel="noopener">
+      <img class="badge-apple" src="image/Download_on_the_App_Store_Badge.svg" alt="App Store からダウンロード">
+    </a>
+    <a class="store" href="https://play.google.com/store/apps/details?id=com.maropiyo.boundbird" target="_blank" rel="noopener">
+      <img class="badge-google" src="image/google-play-badge.png" alt="Google Play で手に入れよう">
+    </a>
   </div>
-  <p class="note">近日リリース予定</p>
 </div>
 
 <footer>
