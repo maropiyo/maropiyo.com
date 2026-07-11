@@ -63,23 +63,12 @@ h1{line-height:0}
 .logo{
   width:clamp(300px,72vw,470px);
   height:auto;
-  animation:bounce 1.6s cubic-bezier(.3,0,.4,1) infinite;
-  transform-origin:50% 100%;
 }
-@keyframes bounce{
-  0%,100%{transform:translateY(0) scale(1.015,.985)}
-  14%{transform:translateY(-2px) scale(1,1)}
-  50%{transform:translateY(-14px) scale(1,1)}
-  86%{transform:translateY(-2px) scale(1,1)}
-}
-@media (prefers-reduced-motion:reduce){.logo{animation:none}}
 .badges{
   margin-top:52px;
   display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap;
 }
  
-.store img{transition:transform .16s ease}
-.store:hover img{transform:translateY(-3px)}
 .badge-apple{height:64px;width:auto}
 .badge-google{height:83px;width:auto;margin:-10px 0}
 footer{
