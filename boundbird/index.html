@@ -3,6 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+ 
+(function(){
+  var ua=navigator.userAgent;
+  if(/bot|crawler|spider|preview/i.test(ua))return;
+  if(/Android/i.test(ua)){
+    location.replace("https://play.google.com/store/apps/details?id=com.maropiyo.boundbird");
+  }else if(/iPhone|iPad|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1)){
+    location.replace("https://apps.apple.com/app/id6787343747");
+  }
+})();
+</script>
 <title>バウンドリ</title>
 <meta name="description" content="狙って、放す。とりがバウンドして、当たったブロックを削っていく。ピンボール風スコアアタックゲーム。">
 <link rel="canonical" href="https://maropiyo.com/boundbird/">
