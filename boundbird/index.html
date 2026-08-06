@@ -7,7 +7,7 @@
  
 (function(){
   var ua=navigator.userAgent;
-  if(/bot|crawler|spider|preview/i.test(ua))return;
+  if(/bot|crawler|spider|preview|facebookexternalhit|embed|Slack|Discord|Twitter|LINE/i.test(ua))return;
   if(/Android/i.test(ua)){
     location.replace("https://play.google.com/store/apps/details?id=com.maropiyo.boundbird");
   }else if(/iPhone|iPad|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1)){
@@ -16,11 +16,14 @@
 })();
 </script>
 <title>バウンドリ</title>
-<meta name="description" content="狙って、放す。とりがバウンドして、当たったブロックを削っていく。ピンボール風スコアアタックゲーム。">
+<meta name="description" content="鳥をバウンドさせてブロックを壊すゲーム">
 <link rel="canonical" href="https://maropiyo.com/boundbird/">
 <meta property="og:title" content="バウンドリ">
-<meta property="og:description" content="狙って、放す。とりがバウンドして、当たったブロックを削っていく。">
+<meta property="og:description" content="鳥をバウンドさせてブロックを壊すゲーム">
 <meta property="og:image" content="https://maropiyo.com/boundbird/image/ogp.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="バウンドリ - 鳥をバウンドさせてブロックを壊すゲーム">
 <meta property="og:url" content="https://maropiyo.com/boundbird/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="バウンドリ">
@@ -28,8 +31,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@maropiyooo">
 <meta name="twitter:title" content="バウンドリ">
-<meta name="twitter:description" content="狙って、放す。とりがバウンドして、当たったブロックを削っていく。">
+<meta name="twitter:description" content="鳥をバウンドさせてブロックを壊すゲーム">
 <meta name="twitter:image" content="https://maropiyo.com/boundbird/image/ogp.png">
+<meta name="twitter:image:alt" content="バウンドリ - 鳥をバウンドさせてブロックを壊すゲーム">
 <link rel="icon" href="https://maropiyo.com/boundbird/image/app-icon.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -37,7 +41,7 @@
   "@type":"MobileApplication",
   "name":"バウンドリ",
   "alternateName":"BOUND BIRD",
-  "description":"狙って、放す。とりがバウンドして、当たったブロックを削っていく。ピンボール風スコアアタックゲーム。",
+  "description":"鳥をバウンドさせてブロックを壊すゲーム",
   "operatingSystem":"iOS, iPadOS, Android",
   "applicationCategory":"GameApplication",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},
