@@ -465,6 +465,13 @@
         
         <guid>https://maropiyo.com/works/</guid>
         <description>&lt;div class=&#34;app-list&#34;&gt;
+  &lt;a href=&#34;https://maropiyo.com/connectbird/&#34; class=&#34;app-card&#34;&gt;
+    &lt;img src=&#34;https://maropiyo.com/connectbird/image/app-icon.png&#34; alt=&#34;&#34; class=&#34;app-card-icon&#34;&gt;
+    &lt;div class=&#34;app-card-info&#34;&gt;
+      &lt;div class=&#34;app-card-name&#34;&gt;コネクトリ &lt;span class=&#34;app-card-type&#34;&gt;ゲーム&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&#34;app-card-desc&#34;&gt;同じ色の鳥をなぞってつなげて消すゲーム&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
   &lt;a href=&#34;https://maropiyo.com/boundbird/&#34; class=&#34;app-card&#34;&gt;
     &lt;img src=&#34;https://maropiyo.com/boundbird/image/app-icon.png&#34; alt=&#34;&#34; class=&#34;app-card-icon&#34;&gt;
     &lt;div class=&#34;app-card-info&#34;&gt;
