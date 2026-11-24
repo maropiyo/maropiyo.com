@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.maropiyo.reminderparrot",
+      "sha256_cert_fingerprints": [
+        "99:49:E5:01:80:4D:69:9A:67:EA:A2:1D:08:D3:BA:31:FD:1C:1E:C4:87:33:ED:07:14:4B:4C:80:69:D6:82:D2"
+      ]
+    }
+  }
+]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>リマインコに招待されたよ</title>
+<meta name="description" content="押すとアプリで参加できるよ">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta property="og:title" content="リマインコに招待されたよ">
+<meta property="og:description" content="押すとアプリで参加できるよ">
+<meta property="og:image" content="https://maropiyo.com/reminder-parrot/image/ogp.png">
+<meta property="og:url" content="https://maropiyo.com/reminder-parrot/join/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="リマインコ">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://maropiyo.com/reminder-parrot/image/app-icon.png" type="image/png">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Hiragino Maru Gothic ProN","Rounded Mplus 1c",sans-serif;font-weight:700;color:#5D4037;background:#F5EED8;min-height:100vh;display:flex;justify-content:center;padding:40px 20px}
+main{width:100%;max-width:400px;text-align:center}
+.parrot{width:140px;display:block;margin:0 auto -6px}
+.card{background:#fff;border-radius:28px;padding:28px 20px;box-shadow:0 8px 40px rgba(120,80,20,.08)}
+h1{font-size:21px;line-height:1.5}
+p{font-size:14px;line-height:1.8;margin-top:12px;color:#8D6E63}
+.button{display:block;margin-top:20px;padding:15px;border-radius:18px;background:#E59F43;color:#fff;text-decoration:none;font-size:17px}
+.stores{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
+.stores img{display:block}
+.apple{height:46px}
+.google{height:66px}
+[hidden]{display:none}
+</style>
+</head>
+<body>
+<main>
+  <img class="parrot" src="https://maropiyo.com/reminder-parrot/image/reminko_raising_hand.png" alt="">
+  <div class="card" id="invite" hidden>
+    <h1><span id="kind">リマイングループ</span>に<br>招待されたよ！</h1>
+    <a class="button" id="open">アプリで開く</a>
+    <p>アプリがまだなら、入れたあとで<br>もう一度この招待を開いてね</p>
+    <div class="stores">
+      <a href="https://apps.apple.com/app/id6748996182"><img class="apple" src="https://maropiyo.com/reminder-parrot/image/Download_on_the_App_Store_Badge.svg" alt="App Store からダウンロード"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.maropiyo.reminderparrot"><img class="google" src="https://maropiyo.com/reminder-parrot/image/google-play-badge.png" alt="Google Play で手に入れよう"></a>
+    </div>
+  </div>
+  <div class="card" id="broken">
+    <h1>招待を読めなかったよ</h1>
+    <p>リンクが途中で切れているかも。<br>もう一度、送ってもらってね</p>
+  </div>
+</main>
+<script>
+
+function show() {
+  var code = location.hash.slice(1).toUpperCase();
+  var ok = /^(C-)?[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{22}$/.test(code);
+  document.getElementById('invite').hidden = !ok;
+  document.getElementById('broken').hidden = ok;
+  if (!ok) return;
+  
+  document.getElementById('kind').textContent = code.indexOf('C-') === 0 ? 'リマインチャレンジ' : 'リマイングループ';
+  document.getElementById('open').href = 'reminderparrot://join/' + code;
+}
+window.addEventListener('hashchange', show);
+show();
+</script>
+</body>
+</html>
